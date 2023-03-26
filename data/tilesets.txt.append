@@ -266,7 +266,7 @@ past/exhaust/secret/ {
 	npc_3 NPCsD1
 
 	art_alts [
-	[Floater, FloaterTile]
+	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, none2]
 	]
 
 	platform_physics "data/platformphysics_steam.txt"
@@ -294,6 +294,13 @@ past/exhaust/secret/ {
 		music jelly_faded.ogg
 	}
 	6 {
+		music jelly_faded.ogg
+	}
+	8 {
+		music jelly_faded.ogg
+	}
+	9 {
+		decoration_3 DiseasesRunesBlock
 		music jelly_faded.ogg
 	}
 }
