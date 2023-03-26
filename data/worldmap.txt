@@ -1,0 +1,453 @@
+pages {
+    lightworld {
+        collectibles 51 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+    }
+    
+    darkworld {
+        collectibles 0 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+    }
+    
+    console {
+        collectibles 0 //lives + biglives + carts + bodyparts
+    }
+}
+
+meta {
+    default_node Splunt
+    
+    leftwipes [past/exhaust/secret/-start past/splunt/-1]
+    rightwipes [past/splunt/-1]
+    upwipes []
+    downwipes [past/splunt/-1]
+    
+    stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
+    steventhreshtumors [50 100 170 300]
+    stevenlevels [10x-7 10x-5 10x-3 10x-1]
+    
+    mainworlds [past/depths/main/ past/exhaust/main/ past/splunt/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    cartworlds [carts/normal/exhaust/ carts/iron/exhaust/] //launch console automatically when you exit from these worlds
+    
+    headlevel 5a-22
+    bodylevel 5c-21
+    heartlevel 5b-23
+    
+    mute_warpunlock_message [past/splunt/-1 past/exhaust/main/-17] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    
+    game_over_checkpoints [[1d 1d-1] [2d 2d-0] [3d 3d-1] [4d 4d-hub1] [4c 4c-1d] [14 14-1] [6 6-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
+    iron_cart_entrypoints [carts/iron/exhaust/-1] //used to set the respawn point in an iron cart
+    timed_cart_entrypoints [g5-1] //maybe you want to put a timer on other carts?
+    console_entry_levels [past/splunt/-1]
+    nevermore_entry 7-0
+    escape_entry past/depths/main/-21
+    nevermore_tumorthresh 450
+    timer_bypass_levels [past/depths/main/-1]
+    timer_buttonopen_levels [past/depths/main/-2 past/depths/main/-3 past/depths/main/-4 past/depths/main/-6 past/depths/main/-7 past/depths/main/-8 past/depths/main/-9 past/depths/main/-11 past/depths/main/-12 past/depths/main/-13 past/depths/main/-20 past/depths/main/-21] //if the timer is open, button4 has its state toggled in these rooms
+    
+    megacart_entry_levels [c6-1]
+    towercart_entry_levels [$i1-1]
+    cart_lives_overrides [[$c1-1 39]]
+    cart_title_overrides [[$c1-1 "AllStars"] [$i1-1 "Acceptance"]]
+    
+    savefile_completion_counter_max 285 //count of total collectible tumors, carts, body parts (3), cart achievements, map warp points (number of levels in the array below), and endings (2)
+    savefile_completion_warpoints [1-1 2-0 3-1 4a-1 4b-1 4c-1 5a-1 5b-1 5c-1 4-1hub 1d-1 2d-0 3d-1 6-1 6-21 7-0] //visiting these levels counts for save file completion
+    save_initiallevel c9-0
+    save_lightspawn past/splunt/-1
+    save_darkspawn 1d-1
+    save_lightspawnlabel "The Splunt"  //since the game can set your save to these levels without visiting them, their names need to be manually set so they show up on the save
+    save_darkspawnlabel "Anguish"
+    
+    
+}
+
+nodes {
+    //The Past
+    Splunt {
+		clipname split
+		entrylevel past/splunt/-1
+		page lightworld
+		levelgroups [past/splunt/]
+		unlock_condition always_unlocked
+		
+		down Depths
+		right Exhaust
+	}
+	
+	Depths {
+		clipname pit
+		entrylevel past/depths/main/-1
+		page lightworld
+		levelgroups [past/depths/main/ past/depths/secret/]
+		
+		up Splunt
+	}
+	
+	Exhaust {
+		clipname valley
+		entrylevel past/exhaust/main/-1
+		page lightworld
+		levelgroups [past/exhaust/main/ past/exhaust/secret/]
+		
+		left Splunt
+	}
+    
+    //TheFuture
+    ThePast {
+        clipname past
+        entrylevel none
+        page darkworld
+        unlock_condition visited_levels_all
+        unlock_condition_levels [1d-1]
+        
+        select TheFuture
+        down Anguish
+    }
+    
+    Anguish {
+        clipname darkcity
+        entrylevel 1d-1
+        page darkworld
+        levelgroups [1d 6x]
+        
+        up ThePast
+        right Gloom
+    }
+    
+    Gloom {
+        clipname darkfields
+        entrylevel 2d-0
+        page darkworld
+        levelgroups [2d 7x]
+        
+        left Anguish
+        right Blight
+    }
+    
+    Blight {
+        clipname darkbridge
+        entrylevel 3d-1
+        page darkworld
+        levelgroups [3d 8x]
+        
+        left Gloom
+	right TheFracture
+        down Ruin
+    }
+    
+    Ruin {
+        clipname sewers
+        entrylevel 6-1
+        page darkworld
+        levelgroups [6 9x]
+        
+        up Blight
+        left Acceptance
+    }
+    
+    Acceptance {
+        clipname escape
+        entrylevel 6-21
+        page darkworld
+        levelgroups [9x]
+        
+        right Ruin
+        left Nevermore
+    }
+    
+    Nevermore {
+        clipname superhell
+        entrylevel 7-0
+        page darkworld
+        levelgroups [7]
+        
+        right Acceptance
+    }
+
+    
+    //carts
+    
+    Cart1 {
+        clipname c1
+        entrylevel c1-1
+        page console
+        cart_cheevolevel c1-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [1xu-6]    
+        
+        down Cart2
+        up GlitchCart9
+    }
+    
+    Cart2 {
+        clipname c2
+        entrylevel c2-1
+        page console
+        cart_cheevolevel c2-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [2xu-6]   
+        
+        down Cart3
+        up Cart1
+    }
+    
+    Cart3 {
+        clipname c3
+        entrylevel c3-1
+        page console
+        cart_cheevolevel c3-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [3xu-6]   
+        
+        down Cart4c
+        up Cart2
+    }
+    
+    Cart4c {
+        clipname c4c
+        entrylevel carts/normal/exhaust/-1
+        page console
+        cart_cheevolevel carts/normal/exhaust/-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [past/exhaust/secret/-7]   
+        
+        down Cart5c
+        up Cart3
+    }
+    
+    Cart5c {
+        clipname c5c
+        entrylevel c5c-1
+        page console
+        cart_cheevolevel c5c-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [5cx-12]
+        
+        down Cart4a
+        up Cart4c
+    }
+    
+    Cart4a {
+        clipname c4a
+        entrylevel c4a-1
+        page console
+        cart_cheevolevel c4a-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [4ax-5]
+        
+        down Cart5a
+        up Cart5c
+    }
+    
+    Cart5a {
+        clipname c5a
+        entrylevel c5a-1
+        page console
+        cart_cheevolevel c5a-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [5ax-14]
+        
+        down Cart4b
+        up Cart4a
+    }
+    
+    Cart4b {
+        clipname c4b
+        entrylevel c4b-1
+        page console
+        cart_cheevolevel c4b-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [4bx-6]
+        
+        down Cart5b
+        up Cart5a
+    }
+    
+    Cart5b {
+        clipname c5b
+        entrylevel c5b-1
+        page console
+        cart_cheevolevel c5b-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [5bxd-4]
+        
+        down MegaCart
+        up Cart4b
+    }
+    
+    MegaCart {
+        clipname allstars_1
+        entrylevel $c1-1
+        page console
+        cart_cheevolevel c6-all
+        cart_splashframe allstar
+        unlock_condition collected_carts_all
+        unlock_condition_levels [1xu-6 2xu-6 3xu-6 4ax-5 4bx-6 4cx-6 5ax-14 5bxd-4 5cx-12]
+        
+        down IronCart1
+        up Cart5b
+    }
+    
+    IronCart1 {
+        clipname i1
+        entrylevel carts/iron/exhaust/-1
+        page console
+        cart_cheevolevel i1-all
+        cart_splashframe ironman
+        unlock_condition collected_carts_all
+        unlock_condition_levels [future/exhaust/main/-5x]
+        
+        down IronCart2
+        up MegaCart
+    }
+    
+    IronCart2 {
+        clipname i2
+        entrylevel i2-1
+        page console
+        cart_cheevolevel i2-all
+        cart_splashframe ironman
+        unlock_condition collected_carts_all
+        unlock_condition_levels [10x-6]
+        
+        down IronCart3
+        up IronCart1
+    }
+    
+    IronCart3 {
+        clipname i3
+        entrylevel i3-1
+        page console
+        cart_cheevolevel i3-all
+        cart_splashframe ironman
+        unlock_condition collected_carts_all
+        unlock_condition_levels [10x-4]
+        
+        down IronCart4
+        up IronCart2
+    }
+    
+    IronCart4 {
+        clipname i4
+        entrylevel i4-1
+        page console
+        cart_cheevolevel i4-all
+        cart_splashframe ironman
+        unlock_condition collected_carts_all
+        unlock_condition_levels [10x-2]
+        
+        down TowerCart
+        up IronCart3
+    }
+    
+    TowerCart {
+        clipname allstars_2
+        entrylevel $i1-1
+        page console
+        cart_cheevolevel i5-all
+        cart_splashframe ironman
+        unlock_condition collected_carts_all
+        unlock_condition_levels [10x-2 10x-4 10x-6 10x-8]
+        
+        down GlitchCart2
+        up IronCart4
+    }
+    
+    GlitchCart2 {
+        clipname g2
+        entrylevel g2-1
+        page console
+        cart_cheevolevel g2-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [6x-6]
+        
+        down GlitchCart3
+        up TowerCart
+    }
+    
+    GlitchCart3 {
+        clipname g3
+        entrylevel g3-1
+        page console
+        cart_cheevolevel g3-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [7x-6]
+        
+        down GlitchCart4
+        up GlitchCart2
+    }
+    
+    GlitchCart4 {
+        clipname g4
+        entrylevel g4-1
+        page console
+        cart_cheevolevel g4-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [8x-6]
+        
+        down GlitchCart5
+        up GlitchCart3
+    }
+    
+    GlitchCart5 {
+        clipname g5
+        entrylevel g0-1
+        page console
+        cart_cheevolevel g0-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [9x-6]
+        
+        down GlitchCart6
+        up GlitchCart4
+    }
+    
+    GlitchCart6 {
+        clipname g6
+        entrylevel g5-1
+        page console
+        cart_cheevolevel g5-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [9x-8]
+        
+        down GlitchCart1
+        up GlitchCart5
+    }
+    
+    GlitchCart1 {
+        clipname g1
+        entrylevel g1-1
+        page console
+        cart_cheevolevel g1-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [1d-0]
+        
+        down GlitchCart9
+        up GlitchCart6
+    }
+    
+    GlitchCart9 {
+        clipname c9
+        entrylevel g9-0
+        page console
+        cart_cheevolevel g9-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [7-15]
+        
+        down Cart1
+        up GlitchCart1
+    }
+}

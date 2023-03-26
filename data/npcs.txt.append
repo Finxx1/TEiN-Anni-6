@@ -1,0 +1,193 @@
+NPCcry {
+	movieclip NPCG4
+	sound_id NPCGhost
+	text [
+		"Listen to \nthe cry of \nthe acolytes"
+	]
+}
+
+NPCthem {
+	movieclip NPCG4
+	sound_id NPCGhost
+	text [
+		"They loom overhead \njust out of sight"
+		"better get going,\nash."
+	]
+}
+
+NPCbeasts {
+	movieclip NPCG4
+	sound_id NPCGhost
+	text [
+		"would you like \nto feed the \nbeasts?"
+		"they havent eaten \nin months"
+	]
+}
+
+NPCcorpse {
+	movieclip NPC4
+	sound_id NPCGhost
+	text [
+		"placeholder"
+	]
+}
+
+NPCDECEND {
+	movieclip NPCGFaith
+	sound_id death3
+	text [
+		"you've left all \nthat can help you \nnow"
+		"decend into \nthe dark"
+		"the unknown \nwill kill you"
+		"decend into \nthe unknown"
+		"you're falling"
+		"embrace it, \ndeny your \nsoul"
+		"dencend \ndecend, \ndecend with us"
+		"you've left all \nthat can help you"
+		"you're alone \n..."
+		"abandon all hope"
+		"and decend \nfurther into the \ncatacombs, Ash" 
+	]
+}
+
+NPCTOAST {
+	movieclip NPC4
+	sound_id NPCGhost
+	text [
+		"hey, you"
+		"have you seen \nthese weird skull \nbeasts?"
+		"theyre parasites"
+		"we need these \ncorpses for rituals \nn' shit"
+		"we cant do \nthem with these infecting \nthe corpses"
+		"if you see \none"
+		"itd be a HUGE \nhelp if you \nkilled it"
+		"theres too many"
+		"..."
+		"hmm? me? \nyea im dead"
+		"and i eagerly \nawait the \nsecond death"
+		"if youre not \ngoing to help \nthen fuck off"
+		"thanks <3"
+	]
+}
+
+NPCCULT {
+	movieclip NPC4
+	sound_id NPCGhost
+	text [
+		"you dont look \nlike one of them"
+		"you new here /ntoo?"
+		"i was tired /n of being lonely"
+		"..."
+		"and dead, \nnot much they can \ndo about that though"
+		"i dont care \nabout any of this \ncult stuff"
+		"i just wanted to \nhang out with \nsomeone"
+		"but these guys \nare lame!"
+		"they dont even \nhave any punch"
+		"... \nprobably a \ngood thing"
+		"..."
+		"..."
+		"i keep getting \nlost"
+		"so I added these \nfake walls with \nsygils on them"
+		"they think its for \ndecoration or something"
+	]
+}
+
+NPCs1 {
+#anni 6 is a metroidvania confirmed
+    movieclip NPC3
+    sound_id NPCSkull
+    text [
+        "\ney!"
+		"i've got a\nmessage just\nfor you!"
+		"a message\nfrom . . .\nthe dead!"
+		"\n(aka, me)"
+		"the message\nis actually\na proverb!"
+		"goes\nlike this:\n. . ."
+		"SOMETIMES WE\nDON'T SEE THE\nFULL PICTURE"
+		"SO YOU'VE GOTTA\nLIKE, GO DO\nSOMETHING ELSE"
+		"AND THEN\nMAYBE YOU'LL\nGET IT LATER"
+		"LIKE, *FINISH\nTHE AREA FIRST*\nKIND OF LATER"
+		"OR\nSOME SHIT,\nYOU KNOW?"
+		"\n. . ."
+		"does\nthat make\nsense?"
+    ]
+}
+
+NPCsG1 {
+#cozy ghost
+    movieclip NPCsG1
+    sound_id NPCGhost
+    text [
+        "\n. . ."
+        "\nhi . . ."
+		"let me\ntell you\nsomething"
+		"it might be\nnice and cozy\nin here"
+		"\nbut out there?"
+		"out there\nshit's hitting\nthe fan"
+		"you've seen it,\nshit crumbling,\ndying, rotting"
+		"bad news:\nthe end\nis nigh"
+		"and we can't\nstop it,\ncan we"
+		"\n. . ."
+		"i think\ni'll just sit\nthis one out"
+		"world's too harsh\nfor a little\nguy like me!"
+    ]
+}
+
+NPCsB1 {
+#cringe blob
+    movieclip NPCsB1
+    sound_id NPCBlob
+    text [
+		"hello,\ncursed\ncreature"
+		"i've been\nobserving you\nfrom up here"
+		"you, the one\nthat comes\nfrom below"
+		"you, climbing,\ndigging your\nnails in steel"
+		"don't you\nrealise the\nfutility of it?"
+		"you've been cursed,\nfor as long as\nyou've been alive"
+		"you belong to\nthe deepest\nhole . . ."
+		"and yet you\ndare to climb\nthis high"
+		"every stepping\nstone, a soul\nyou've doomed"
+		"to\nwhat\npurpose?"
+		"to fall down\nall over\nagain?"
+		"to act like\nyou deserve\nbetter . . ."
+		"and then let the\nworld swallow\nyou back up?"
+		"\n. . ."
+		"you truly are\nthe scum of\nthe earth"
+    ]
+}
+
+NPCsD1 {
+#based blob
+    movieclip NPCsD1
+    sound_id NPCBlob
+    text [
+		"\nhey"
+		"\nheyyyyy"
+		"\nlook!"
+		"ive made a\nstatue out of\nscrap and feces!"
+		"\nlook!"
+		"\nlook at itttt!"
+		"\n. . ."
+		"pretty\nneat,\nright?"
+    ]
+}
+
+NPCsD2 {
+#self-insert blob
+    movieclip NPCsD2
+    sound_id NPCBlob
+    text [
+		"\n. . ."
+		"oh\n. . .\nhey"
+		"didn't expect\nto see new\nfaces around"
+		"or, you know,\nany face\nat all really"
+		"\n. . ."
+		"it's getting\npretty hot\nin here, no?"
+		"that there\noil's melting\neverything down"
+		"it's a\nshame,\nreally"
+		"these lost souls\ndeserve some rest,\ndon't you think?"
+		"i guess some\nsouls are just\ncursed to linger"
+		"\n. . ."
+		". . .\nare you\none of them?"
+    ]
+}
