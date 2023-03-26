@@ -191,29 +191,3 @@ NPCsD2 {
 		". . .\nare you\none of them?"
     ]
 }
-
-NPCdemo {
-#demo guide
-    movieclip NPC0
-    sound_id NPCSkull
-    text [
-		"\noi!"
-		"this is\nthe demo\nfor this mod"
-		"on this level\nare the actually\n finished areas\n"
-		"up above are\nunfinished ones"
-		"you can find\nthe futures\nup there too"
-    ]
-}
-
-NPCdemo2 {
-#demo guide
-    movieclip NPC0
-    sound_id NPCSkull
-    text [
-		"\nuhh..."
-		"\numm..."
-		"to the bottom\nand right are\nfutures"
-		"up there is\n. . .\nuhh"
-		"\nunfinished stuff"
-    ]
-}

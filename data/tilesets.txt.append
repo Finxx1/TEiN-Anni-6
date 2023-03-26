@@ -266,7 +266,7 @@ past/exhaust/secret/ {
 	npc_3 NPCsD1
 
 	art_alts [
-	[Floater, FloaterTile]
+	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, none2]
 	]
 
 	platform_physics "data/platformphysics_steam.txt"
@@ -294,6 +294,13 @@ past/exhaust/secret/ {
 		music jelly_faded.ogg
 	}
 	6 {
+		music jelly_faded.ogg
+	}
+	8 {
+		music jelly_faded.ogg
+	}
+	9 {
+		decoration_3 DiseasesRunesBlock
 		music jelly_faded.ogg
 	}
 }
@@ -399,8 +406,8 @@ past/splunt/ {
 	fx_shader reflectionripples
 	palette 4
 
-	npc_1 NPCdemo
-	npc_2 none
+	npc_1 NPC10
+	npc_2 NPC17
 	npc_3 none
 	decoration_1 FinxxPlank2
 	decoration_2 Decoration6
@@ -410,26 +417,4 @@ past/splunt/ {
 	
 	music [none, none]
 	ambience wind.ogg
-}
-
-future/splunt/ {
-	area_name "The Splort"
-	area_label_frame 4
-	tile_graphics Tiletox
-	overlay_graphics Overlaystox
-	background_graphics ch4abg
-	foreground_graphics None
-	fx_shader reflectionripples
-	palette 3
-
-	npc_1 NPCdemo2
-	npc_2 none
-	npc_3 none
-	decoration_1 FinxxPlank2
-	decoration_2 Decoration6
-	decoration_3 FinxxPlank
-	
-	area_type normal
-	
-	music [none, none]
 }
