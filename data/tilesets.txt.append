@@ -84,7 +84,7 @@ past/depths/secret/ {
 
 # Future Depths
 future/depths/main/ {
-	area_name "Depths"
+	area_name "Abyss"
 	area_label_frame 0
 	tile_graphics Tilehell
 	overlay_graphics Overlayscomplex
@@ -115,7 +115,7 @@ future/depths/main/ {
 	  	[Floater, DeathGhost][OrbChomp, SmallElectroBall]
 	]
 
-	music [depths_loop.ogg, depths_loop.ogg]
+	music [depths_loop_dark.ogg, depths_loop_dark.ogg]
 
 	8 {
 		decoration_3 Decoration5
@@ -420,7 +420,7 @@ past/splunt/ {
 }
 
 future/splunt/ {
-	area_name "The Splort"
+	area_name "The Sploont"
 	area_label_frame 4
 	tile_graphics Tiletox
 	overlay_graphics Overlaystox
