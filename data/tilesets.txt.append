@@ -124,7 +124,7 @@ carts/normal/depths/ {
 	overlay_graphics Overlaysretro
 	background_graphics bgretro
 	foreground_graphics none
-	palette 3
+	palette 6
 	
 	music [retro/faith.ogg, retro/faith.ogg]
 	
@@ -136,7 +136,7 @@ carts/normal/depths/ {
 	area_type cart
 	
 	cart_intro_png FAtE
-	cart_intro_palette 3
+	cart_intro_palette 6
 
 	art_alts [
 	   [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
