@@ -15,8 +15,8 @@ pages {
 meta {
     default_node Splunt
     
-    leftwipes [past/exhaust/secret/-start past/splunt/-1]
-    rightwipes [past/splunt/-1]
+    leftwipes [past/splunt/-1 future/splunt/-1 future/splunt/-2]
+    rightwipes [past/exhaust/secret/-start]
     upwipes [past/splunt/-1]
     downwipes [past/splunt/-1]
     
@@ -24,7 +24,7 @@ meta {
     steventhreshtumors [50 100 170 300]
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
-    mainworlds [past/depths/main/ past/exhaust/main/ past/splunt/ future/splunt future/depths/main/ future/exhaust/main] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [past/depths/main/ past/exhaust/main/ past/splunt/ future/splunt future/depths/main/ future/exhaust/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [carts/normal/depths/ carts/normal/exhaust/ carts/iron/exhaust/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22

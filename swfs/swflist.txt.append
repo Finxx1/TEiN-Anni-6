@@ -1,6 +1,5 @@
 game [
     adenators_dumb_assets.swf
-	anni6_map.swf
 	anni6_npcs.swf
 	deco_skeletons.swf
 	despair.swf
@@ -14,4 +13,5 @@ game [
 	retro-assets.swf
 	saws.swf
 	stuff.swf
+	anni6_map.swf
 ]
