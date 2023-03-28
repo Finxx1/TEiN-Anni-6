@@ -1,5 +1,5 @@
 game [
-    adenators_dumb_assets.swf
+	adenators_dumb_assets.swf
 	anni6_npcs.swf
 	deco_skeletons.swf
 	despair.swf
@@ -14,4 +14,5 @@ game [
 	saws.swf
 	stuff.swf
 	anni6_map.swf
+	main_menu.swf
 ]
