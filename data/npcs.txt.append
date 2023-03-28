@@ -51,7 +51,7 @@ NPCDECEND {
 }
 
 NPCTOAST {
-	movieclip DepthsThing3
+	movieclip NPC4
 	sound_id NPCGhost
 	text [
 		"hey, you"
@@ -71,7 +71,7 @@ NPCTOAST {
 }
 
 NPCCULT {
-	movieclip NPC4
+	movieclip DepthsThing3
 	sound_id NPCGhost
 	text [
 		"you dont look \nlike one of them"
@@ -93,7 +93,7 @@ NPCCULT {
 }
 
 NPCHELL {
-	movieclip NPC4
+	movieclip NPCHand
 	sound_id NPCGhost
 	text [
 		"Some guy told \nme a riddle"
