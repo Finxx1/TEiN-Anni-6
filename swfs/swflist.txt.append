@@ -1,16 +1,18 @@
 game [
-    saws.swf
     adenators_dumb_assets.swf
-    poster.swf
-    radley.swf
-    nothing.swf
-    comp_labels.swf
-    retro-assets.swf
-    futuresplitmap.swf
-    pixlie_has_an_aneurism.swf
-    deco_skeletons.swf
-    anni6_npcs.swf
-	exhaust_tileset.swf
-	despair.swf
 	anni6_map.swf
+	anni6_npcs.swf
+	deco_skeletons.swf
+	despair.swf
+	exhaust_tileset.swf
+	FC_is_my_passion.swf
+	futuresplitmap.swf
+	givemeahand.swf
+	nothing.swf
+	pixlie_has_an_aneurism.swf
+	poster.swf
+	radley.swf
+	retro-assets.swf
+	saws.swf
+	stuff.swf
 ]

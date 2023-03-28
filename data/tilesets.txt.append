@@ -22,7 +22,7 @@ past/depths/main/ {
 	npc_3 NPCDECEND
 
 	art_alts [
-	  	[Floater, DeathGhost][OrbChomp, SmallElectroBall]
+		[Floater, DeathGhost][OrbChomp, SmallElectroBall]
 	]
 
 	music [depths_loop.ogg, depths_loop.ogg]
@@ -39,6 +39,17 @@ past/depths/main/ {
 		npc_1 NPCCULT
 	}
 	
+	20 {
+		npc_1 NPCHELL
+	}
+	
+	21 {
+		decoration_2 TheHeart
+		
+		art_alts [
+			[GlowShroom, nothing]
+		]
+	}
 }
 
 past/depths/secret/ {
@@ -63,6 +74,7 @@ past/depths/secret/ {
 	tile_particle_1 drip
 
 	npc_1 NPCbeasts
+	npc_2 NPCHELL
 	
 
 	art_alts [
@@ -77,9 +89,62 @@ past/depths/secret/ {
 	stop_previous_music false
 
 	3 {
-		area_name "none"
+	   area_name "none"
+	music none
+	}
+	19 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
 		music none
 	}
+	20 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
+	music none
+	}
+	21 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
+		music none
+	}
+	21 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall][Cartridge, cart2]
+		]
+		decoration_2 TheHeart
+		music none
+	}
+}
+
+carts/normal/depths/ {
+	tile_graphics TileGlitchDepths
+	overlay_graphics Overlaysretro
+	background_graphics bgretro
+	foreground_graphics none
+	palette 3
+	
+	music [retro/faith.ogg, retro/faith.ogg]
+	
+	music_volume 1
+	ambience_volume 1
+
+	decoration_1 DiseasesRunesRetro
+
+	area_type cart
+	
+	cart_intro_png FAtE
+	cart_intro_palette 3
+
+	art_alts [
+	   [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
+	   [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+	   [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+	   [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro2][ChainLink, ChainLinkretro2][ChainLink2, ChainLinkretro2]
+	   [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+	]
 }
 
 # Future Depths

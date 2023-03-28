@@ -1,5 +1,5 @@
 NPCcry {
-	movieclip NPCG4
+	movieclip DepthsThing1
 	sound_id NPCGhost
 	text [
 		"Listen to \nthe cry of \nthe acolytes"
@@ -7,7 +7,7 @@ NPCcry {
 }
 
 NPCthem {
-	movieclip NPCG4
+	movieclip DepthsThing2
 	sound_id NPCGhost
 	text [
 		"They loom overhead \njust out of sight"
@@ -51,7 +51,7 @@ NPCDECEND {
 }
 
 NPCTOAST {
-	movieclip NPC4
+	movieclip DepthsThing3
 	sound_id NPCGhost
 	text [
 		"hey, you"
@@ -75,8 +75,8 @@ NPCCULT {
 	sound_id NPCGhost
 	text [
 		"you dont look \nlike one of them"
-		"you new here /ntoo?"
-		"i was tired /n of being lonely"
+		"you new here \ntoo?"
+		"i was tired \n of being lonely"
 		"..."
 		"and dead, \nnot much they can \ndo about that though"
 		"i dont care \nabout any of this \ncult stuff"
@@ -89,6 +89,16 @@ NPCCULT {
 		"i keep getting \nlost"
 		"so I added these \nfake walls with \nsygils on them"
 		"they think its for \ndecoration or something"
+	]
+}
+
+NPCHELL {
+	movieclip NPC4
+	sound_id NPCGhost
+	text [
+		"Some guy told \nme a riddle"
+		"'how do you \nmake a portal to \nhell'"
+		"i think his name \nwas gregory or something"
 	]
 }
 
