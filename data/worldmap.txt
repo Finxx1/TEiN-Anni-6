@@ -193,12 +193,12 @@ nodes {
     
     Cart3 {
         clipname c3
-        entrylevel c3-1
+        entrylevel carts/normal/depths/-1
         page console
         cart_cheevolevel c3-all
         cart_splashframe basiccart
         unlock_condition collected_carts_all
-        unlock_condition_levels [3xu-6]   
+        unlock_condition_levels [past/depths/secret/-25]   
         
         down Cart4c
         up Cart2

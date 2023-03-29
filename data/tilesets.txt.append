@@ -6,7 +6,7 @@ past/depths/main/ {
 	background_graphics bgretro2
 	foreground_graphics none
 	fx_shader sludgeripples
-	palette 5
+	palette 7
 
 	fx_shader_mid lighting
 	midfx_graphics ShadeBox
@@ -60,7 +60,7 @@ past/depths/secret/ {
 	background_graphics bgretro2
 	foreground_graphics none
 	fx_shader sludgeripples
-	palette 5
+	palette 7
 
 	fx_shader_mid lighting
 	midfx_graphics ShadeBox
@@ -124,7 +124,7 @@ carts/normal/depths/ {
 	overlay_graphics Overlaysretro
 	background_graphics bgretro
 	foreground_graphics none
-	palette 6
+	palette 8
 	
 	music [retro/faith.ogg, retro/faith.ogg]
 	
@@ -136,7 +136,7 @@ carts/normal/depths/ {
 	area_type cart
 	
 	cart_intro_png FAtE
-	cart_intro_palette 6
+	cart_intro_palette 8
 
 	art_alts [
 	   [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
@@ -156,7 +156,7 @@ future/depths/main/ {
 	background_graphics hellbg
 	foreground_graphics none
 	fx_shader sludgeripples
-	palette 5
+	palette 7
 
 	fx_shader_mid sludgeglow2
 	midfx_graphics SolidBox
@@ -204,7 +204,7 @@ ult {
 	background_graphics neverbg
 	foreground_graphics none
 	fx_shader distortionparticles
-	palette 4
+	palette 3
 
 
 	tile_particle_1 drip
@@ -228,7 +228,7 @@ past/exhaust/main/ {
 	fx_shader reflectionripples
 	fx_shader_mid cloudripples
 	midfx_layer 2
-	palette 0
+	palette 2
 	
 	area_type normal
 
@@ -309,7 +309,7 @@ past/exhaust/secret/ {
 	background_graphics ch3bg
 	foreground_graphics None
 	fx_shader reflectionripples
-	palette 0
+	palette 2
 	
 	area_type normal
 
@@ -379,7 +379,7 @@ future/exhaust/main/ {
 	fx_shader lavaripples
 	fx_shader_mid lavaglow_exhaust
 	midfx_graphics SolidBox
-	palette 2
+	palette 4
 	
 	area_type dark
 	npc_1 NPCsD2
@@ -410,10 +410,10 @@ carts/normal/exhaust/ {
 	overlay_graphics Overlaysretro
 	background_graphics bgretro
 	foreground_graphics none
-	palette 1
+	palette 3
 
 	cart_intro_png Mortaman
-	cart_intro_palette 1
+	cart_intro_palette 3
 	
 	music [retro/danse_intro.ogg, retro/danse_loop.ogg]
 	
@@ -437,14 +437,14 @@ carts/iron/exhaust/ {
 	overlay_graphics Overlaysretro
 	background_graphics bgretrox
 	foreground_graphics none
-	palette 3
+	palette 5
 	decoration_1 deco_retrofossils
 	decoration_2 ChainLinkretro
 	
 	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
 
 	cart_intro_png acceptance
-	cart_intro_palette 3
+	cart_intro_palette 5
 	
 	platform_physics "data/platformphysics_steam_end.txt"
 	
@@ -469,7 +469,7 @@ past/splunt/ {
 	background_graphics ch4abg
 	foreground_graphics None
 	fx_shader reflectionripples
-	palette 4
+	palette 6
 
 	npc_1 NPCdemo
 	npc_2 none
@@ -492,7 +492,7 @@ future/splunt/ {
 	background_graphics ch4abg
 	foreground_graphics None
 	fx_shader reflectionripples
-	palette 3
+	palette 5
 
 	npc_1 NPCdemo2
 	npc_2 none
