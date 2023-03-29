@@ -15,8 +15,8 @@ pages {
 meta {
     default_node Splunt
     
-    leftwipes [past/splunt/-1 future/splunt/-1 future/splunt/-2]
-    rightwipes [past/exhaust/secret/-start]
+    leftwipes [past/splunt/-1 future/splunt/-1 future/splunt/-2 past/exhaust/secret/-start]
+    rightwipes [past/splunt/-1]
     upwipes [past/splunt/-1]
     downwipes [past/splunt/-1]
     

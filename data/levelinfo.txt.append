@@ -88,6 +88,7 @@
 "past/exhaust/main/-8" {name="Exhaust 8" id=8} #life
 "past/exhaust/main/-9" {name="Exhaust 9" id=9} #life
 
+"past/exhaust/secret/-start" {name="???" id=-1}
 "past/exhaust/secret/-0" {name="???" id=-1}
 "past/exhaust/secret/-0x" {name="???" id=-1}
 "past/exhaust/secret/-1" {name="???" id=1} #biglife
