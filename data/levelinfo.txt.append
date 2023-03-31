@@ -1,144 +1,155 @@
-"past/ssshithill/main/-0" {name="SssHitHill 1" id=1}
-"past/ssshithill/main/-a1" {name="SssHitHill A2" id=2}
-"past/ssshithill/main/-a2" {name="SssHitHill A3" id=3}
-"past/ssshithill/main/-a3" {name="SssHitHill A4" id=4}
-"past/ssshithill/main/-a4" {name="SssHitHill A5" id=5}
-"past/ssshithill/main/-a5" {name="SssHitHill A6" id=1} #cart
-"past/ssshithill/main/-b1" {name="SssHitHill B2" id=7}
-"past/ssshithill/main/-b2" {name="SssHitHill B3" id=8}
-"past/ssshithill/main/-b3" {name="SssHitHill B4" id=9}
-"past/ssshithill/main/-b4" {name="SssHitHill B5" id=10}
-"past/ssshithill/main/-b5" {name="SssHitHill B6" id=11}
+"ssshithill/main/-0" {name="SssHitHill 1" id=1}
+"ssshithill/main/-a1" {name="SssHitHill A2" id=2}
+"ssshithill/main/-a2" {name="SssHitHill A3" id=3}
+"ssshithill/main/-a3" {name="SssHitHill A4" id=4}
+"ssshithill/main/-a4" {name="SssHitHill A5" id=5}
+"ssshithill/main/-a5" {name="SssHitHill A6" id=1} #cart
+"ssshithill/main/-b1" {name="SssHitHill B2" id=7}
+"ssshithill/main/-b2" {name="SssHitHill B3" id=8}
+"ssshithill/main/-b3" {name="SssHitHill B4" id=9}
+"ssshithill/main/-b4" {name="SssHitHill B5" id=10}
+"ssshithill/main/-b5" {name="SssHitHill B6" id=11}
 
-"past/depths/main/-1" {name="Depths 1" id=1}
-"past/depths/main/-2" {name="Depths 2" id=2} 
-"past/depths/main/-3" {name="Depths 3" id=3}
-"past/depths/main/-4" {name="Depths 4" id=4} #biglife
-"past/depths/main/-5" {name="Depths 5" id=5}
-"past/depths/main/-6" {name="Depths 6" id=6}
-"past/depths/main/-7" {name="Depths 7" id=7}
-"past/depths/main/-8" {name="Depths 8" id=8} #cart
-"past/depths/main/-9" {name="Depths 9" id=9}
-"past/depths/main/-10" {name="Depths 10" id=10}
-"past/depths/main/-11" {name="Depths 11" id=11} #biglife
-"past/depths/main/-12" {name="Depths 12" id=12}
-"past/depths/main/-13" {name="Depths 13" id=13} #biglife
-"past/depths/main/-14" {name="Depths 14" id=14}
-"past/depths/main/-15" {name="Depths 15" id=15} 
-"past/depths/main/-16" {name="Depths 16" id=16} #biglife
-"past/depths/main/-17" {name="Depths 17" id=17} #biglife
-"past/depths/main/-18" {name="Depths 18" id=18} 
-"past/depths/main/-19" {name="Depths 19" id=19} #biglife
-"past/depths/main/-20" {name="Depths 20" id=20}
-"past/depths/main/-21" {name="Salvation" id=-1} #biglife
+"depths/main/-1" {name="Depths 1" id=1}
+"depths/main/-2" {name="Depths 2" id=2} 
+"depths/main/-3" {name="Depths 3" id=3}
+"depths/main/-4" {name="Depths 4" id=4} #biglife
+"depths/main/-5" {name="Depths 5" id=5}
+"depths/main/-6" {name="Depths 6" id=6}
+"depths/main/-7" {name="Depths 7" id=7}
+"depths/main/-8" {name="Depths 8" id=8} #cart
+"depths/main/-9" {name="Depths 9" id=9}
+"depths/main/-10" {name="Depths 10" id=10}
+"depths/main/-11" {name="Depths 11" id=11} #biglife
+"depths/main/-12" {name="Depths 12" id=12}
+"depths/main/-13" {name="Depths 13" id=13} #biglife
+"depths/main/-14" {name="Depths 14" id=14}
+"depths/main/-15" {name="Depths 15" id=15} 
+"depths/main/-16" {name="Depths 16" id=16} #biglife
+"depths/main/-17" {name="Depths 17" id=17} #biglife
+"depths/main/-18" {name="Depths 18" id=18} 
+"depths/main/-19" {name="Depths 19" id=19} #biglife
+"depths/main/-20" {name="Depths 20" id=20}
+"depths/main/-21" {name="Salvation" id=-1} #biglife
 
-"past/depths/secret/-1" {name="???" id=-1}
-"past/depths/secret/-2" {name="???" id=1}
-"past/depths/secret/-3" {name="Depths" id=-1}
-"past/depths/secret/-4" {name="???" id=1} 
-"past/depths/secret/-5" {name="???" id=2}
-"past/depths/secret/-6" {name="???" id=-1} 
-"past/depths/secret/-7" {name="???" id=3} 
-"past/depths/secret/-8" {name="???" id=4}
-"past/depths/secret/-9" {name="???" id=5}
-"past/depths/secret/-10" {name="???" id=-1}
-"past/depths/secret/-11" {name="???" id=7}
-"past/depths/secret/-12" {name="???" id=6}
-"past/depths/secret/-14" {name="???" id=-1}
-"past/depths/secret/-15" {name="???" id=-1}
-"past/depths/secret/-16" {name="???" id=-1}
-"past/depths/secret/-17" {name="???" id=8}
-"past/depths/secret/-18" {name="???" id=-1}
-"past/depths/secret/-19" {name="???" id=-1}
-"past/depths/secret/-20" {name="???" id=-1}
-"past/depths/secret/-21" {name="???" id=-1}
-"past/depths/secret/-22" {name="???" id=-1}
-"past/depths/secret/-23" {name="???" id=-1}
-"past/depths/secret/-24" {name="???" id=9}
-"past/depths/secret/-25" {name="???" id=2}
+"depths/secret/-1" {name="???" id=-1}
+"depths/secret/-2" {name="???" id=1}
+"depths/secret/-3" {name="Depths" id=-1}
+"depths/secret/-4" {name="???" id=1} 
+"depths/secret/-5" {name="???" id=2}
+"depths/secret/-6" {name="???" id=-1} 
+"depths/secret/-7" {name="???" id=3} 
+"depths/secret/-8" {name="???" id=4}
+"depths/secret/-9" {name="???" id=5}
+"depths/secret/-10" {name="???" id=-1}
+"depths/secret/-11" {name="???" id=7}
+"depths/secret/-12" {name="???" id=6}
+"depths/secret/-14" {name="???" id=-1}
+"depths/secret/-15" {name="???" id=-1}
+"depths/secret/-16" {name="???" id=-1}
+"depths/secret/-17" {name="???" id=8}
+"depths/secret/-18" {name="???" id=-1}
+"depths/secret/-19" {name="???" id=-1}
+"depths/secret/-20" {name="???" id=-1}
+"depths/secret/-21" {name="???" id=-1}
+"depths/secret/-22" {name="???" id=-1}
+"depths/secret/-23" {name="???" id=-1}
+"depths/secret/-24" {name="???" id=9}
+"depths/secret/-25" {name="???" id=2}
 
-"future/depths/main/-1" {name="Abyss 1" id=1}
-"future/depths/main/-2" {name="Abyss 2" id=2} 
-"future/depths/main/-3" {name="Abyss 3" id=3}
-"future/depths/main/-4" {name="Abyss 4" id=4} #biglife
-"future/depths/main/-5" {name="Abyss 5" id=5}
-"future/depths/main/-6" {name="Abyss 6" id=6}
-"future/depths/main/-7" {name="Abyss 7" id=7}
-"future/depths/main/-8" {name="Abyss 8" id=8} #cart
-"future/depths/main/-9" {name="Abyss 9" id=9}
-"future/depths/main/-10" {name="Abyss 10" id=10}
-"future/depths/main/-11" {name="Abyss 11" id=11} #biglife
-"future/depths/main/-12" {name="Abyss 12" id=12}
-"future/depths/main/-13" {name="Abyss 13" id=13} #biglife
-"future/depths/main/-14" {name="Abyss 14" id=14}
-"future/depths/main/-15" {name="Abyss 15" id=15} 
-"future/depths/main/-16" {name="Abyss 16" id=16} #biglife
-"future/depths/main/-17" {name="Abyss 17" id=17} #biglife
-"future/depths/main/-18" {name="Abyss 18" id=18} 
-"future/depths/main/-19" {name="Abyss 19" id=19} #biglife
-"future/depths/main/-20" {name="Abyss 20" id=20}
-"future/depths/main/-21" {name="The Remains" id=-1} #biglife
+"fate/-1" {name="FAtE 1" id=1}
+"fate/-2" {name="FAtE 2" id=2}
+"fate/-3" {name="FAtE 3" id=3}
+"fate/-4" {name="FAtE 4" id=4}
+"fate/-5" {name="FAtE 5" id=5}
+"fate/-6" {name="FAtE 6" id=6}
+"fate/-7" {name="FAtE 7" id=7}
+"fate/-8" {name="FAtE 8" id=8}
+"fate/-9" {name="FAtE 9" id=9}
+"fate/-10" {name="FAtE 10" id=10}
 
-"past/exhaust/main/-1" {name="Exhaust 1" id=1} #life
-"past/exhaust/main/-10" {name="Exhaust 10" id=10} #life
-"past/exhaust/main/-11" {name="Exhaust 11" id=11} #life
-"past/exhaust/main/-12" {name="Exhaust 12" id=12} #life
-"past/exhaust/main/-13" {name="Exhaust 13" id=13} #life
-"past/exhaust/main/-14" {name="Exhaust 14" id=14} #life
-"past/exhaust/main/-15" {name="Exhaust 15" id=15} #life
-"past/exhaust/main/-16" {name="Exhaust" id=-1}
-"past/exhaust/main/-16x" {name="Exhaust" id=-1}
-"past/exhaust/main/-17" {name="Exhaust" id=-1}
-"past/exhaust/main/-2" {name="Exhaust 2" id=2} #life
-"past/exhaust/main/-2x" {name="Exhaust 2" id=-1}
-"past/exhaust/main/-3" {name="Exhaust 3" id=3} #life
-"past/exhaust/main/-4" {name="Exhaust 4" id=4} #life
-"past/exhaust/main/-5" {name="Exhaust 5" id=5} #life
-"past/exhaust/main/-5x" {name="Exhaust" id=-1}
-"past/exhaust/main/-6" {name="Exhaust 6" id=6} #life
-"past/exhaust/main/-7" {name="Exhaust 7" id=7} #life
-"past/exhaust/main/-8" {name="Exhaust 8" id=8} #life
-"past/exhaust/main/-9" {name="Exhaust 9" id=9} #life
+"abyss/main/-1" {name="Abyss 1" id=1}
+"abyss/main/-2" {name="Abyss 2" id=2} 
+"abyss/main/-3" {name="Abyss 3" id=3}
+"abyss/main/-4" {name="Abyss 4" id=4} #biglife
+"abyss/main/-5" {name="Abyss 5" id=5}
+"abyss/main/-6" {name="Abyss 6" id=6}
+"abyss/main/-7" {name="Abyss 7" id=7}
+"abyss/main/-8" {name="Abyss 8" id=8} #cart
+"abyss/main/-9" {name="Abyss 9" id=9}
+"abyss/main/-10" {name="Abyss 10" id=10}
+"abyss/main/-11" {name="Abyss 11" id=11} #biglife
+"abyss/main/-12" {name="Abyss 12" id=12}
+"abyss/main/-13" {name="Abyss 13" id=13} #biglife
+"abyss/main/-14" {name="Abyss 14" id=14}
+"abyss/main/-15" {name="Abyss 15" id=15} 
+"abyss/main/-16" {name="Abyss 16" id=16} #biglife
+"abyss/main/-17" {name="Abyss 17" id=17} #biglife
+"abyss/main/-18" {name="Abyss 18" id=18} 
+"abyss/main/-19" {name="Abyss 19" id=19} #biglife
+"abyss/main/-20" {name="Abyss 20" id=20}
+"abyss/main/-21" {name="The Remains" id=-1} #biglife
 
-"past/exhaust/secret/-start" {name="???" id=-1}
-"past/exhaust/secret/-0" {name="???" id=-1}
-"past/exhaust/secret/-0x" {name="???" id=-1}
-"past/exhaust/secret/-1" {name="???" id=1} #biglife
-"past/exhaust/secret/-2" {name="???" id=2} #biglife
-"past/exhaust/secret/-3" {name="???" id=3} #biglife
-"past/exhaust/secret/-4" {name="???" id=-1}
-"past/exhaust/secret/-5" {name="???" id=-1}
-"past/exhaust/secret/-6" {name="???" id=-1}
-"past/exhaust/secret/-7" {name="???" id=1} #cart
-"past/exhaust/secret/-8" {name="???" id=-1}
-"past/exhaust/secret/-9" {name="???" id=4} #biglife
+"exhaust/main/-1" {name="Exhaust 1" id=1} #life
+"exhaust/main/-10" {name="Exhaust 10" id=10} #life
+"exhaust/main/-11" {name="Exhaust 11" id=11} #life
+"exhaust/main/-12" {name="Exhaust 12" id=12} #life
+"exhaust/main/-13" {name="Exhaust 13" id=13} #life
+"exhaust/main/-14" {name="Exhaust 14" id=14} #life
+"exhaust/main/-15" {name="Exhaust 15" id=15} #life
+"exhaust/main/-16" {name="Exhaust" id=-1}
+"exhaust/main/-16x" {name="Exhaust" id=-1}
+"exhaust/main/-17" {name="Exhaust" id=-1}
+"exhaust/main/-2" {name="Exhaust 2" id=2} #life
+"exhaust/main/-2x" {name="Exhaust 2" id=-1}
+"exhaust/main/-3" {name="Exhaust 3" id=3} #life
+"exhaust/main/-4" {name="Exhaust 4" id=4} #life
+"exhaust/main/-5" {name="Exhaust 5" id=5} #life
+"exhaust/main/-5x" {name="Exhaust" id=-1}
+"exhaust/main/-6" {name="Exhaust 6" id=6} #life
+"exhaust/main/-7" {name="Exhaust 7" id=7} #life
+"exhaust/main/-8" {name="Exhaust 8" id=8} #life
+"exhaust/main/-9" {name="Exhaust 9" id=9} #life
+ 
+"exhaust/secret/-start" {name="???" id=-1}
+"exhaust/secret/-0" {name="???" id=-1}
+"exhaust/secret/-0x" {name="???" id=-1}
+"exhaust/secret/-1" {name="???" id=1} #biglife
+"exhaust/secret/-2" {name="???" id=2} #biglife
+"exhaust/secret/-3" {name="???" id=3} #biglife
+"exhaust/secret/-4" {name="???" id=-1}
+"exhaust/secret/-5" {name="???" id=-1}
+"exhaust/secret/-6" {name="???" id=-1}
+"exhaust/secret/-7" {name="???" id=1} #cart
+"exhaust/secret/-8" {name="???" id=-1}
+"exhaust/secret/-9" {name="???" id=4} #biglife
 
-"future/exhaust/main/-1" {name="???" id=-1}
-"future/exhaust/main/-2" {name="???" id=-1}
-"future/exhaust/main/-3" {name="???" id=-1}
-"future/exhaust/main/-4" {name="???" id=-1}
-"future/exhaust/main/-5" {name="???" id=-1}
-"future/exhaust/main/-5x" {name="???" id=1} #cart
+"boilingpoint/main/-1" {name="???" id=-1}
+"boilingpoint/main/-2" {name="???" id=-1}
+"boilingpoint/main/-3" {name="???" id=-1}
+"boilingpoint/main/-4" {name="???" id=-1}
+"boilingpoint/main/-5" {name="???" id=-1}
+"boilingpoint/main/-5x" {name="???" id=1} #cart
 
-"past/splunt/-1" {name="The Splunt" id=-1}
+"splunt/-1" {name="The Splunt" id=-1}
 
-"future/splunt/-1" {name="???" id=-1}
-"future/splunt/-2" {name="The Sploot" id=-1}
+"sploot/-1" {name="???" id=-1}
+"sploot/-2" {name="The Sploot" id=-1}
 
-"carts/normal/exhaust/-1" {name="Membrane In My Pocket 1" id=1}
-"carts/normal/exhaust/-2" {name="Membrane In My Pocket 2" id=2}
-"carts/normal/exhaust/-3" {name="Membrane In My Pocket 3" id=3}
-"carts/normal/exhaust/-4" {name="Membrane In My Pocket 4" id=4}
-"carts/normal/exhaust/-5" {name="Membrane In My Pocket 5" id=5}
-"carts/normal/exhaust/-6" {name="Membrane In My Pocket 6" id=6}
-"carts/normal/exhaust/-7" {name="Membrane In My Pocket 7" id=7}
-"carts/normal/exhaust/-8" {name="Membrane In My Pocket 8" id=8}
-"carts/normal/exhaust/-9" {name="Membrane In My Pocket 9" id=9}
-"carts/normal/exhaust/-10" {name="Membrane In My Pocket 10" id=10}
+"membrane/-1" {name="Membrane In My Pocket 1" id=1}
+"membrane/-2" {name="Membrane In My Pocket 2" id=2}
+"membrane/-3" {name="Membrane In My Pocket 3" id=3}
+"membrane/-4" {name="Membrane In My Pocket 4" id=4}
+"membrane/-5" {name="Membrane In My Pocket 5" id=5}
+"membrane/-6" {name="Membrane In My Pocket 6" id=6}
+"membrane/-7" {name="Membrane In My Pocket 7" id=7}
+"membrane/-8" {name="Membrane In My Pocket 8" id=8}
+"membrane/-9" {name="Membrane In My Pocket 9" id=9}
+"membrane/-10" {name="Membrane In My Pocket 10" id=10}
 
-"carts/iron/exhaust/-1" {name="?-1" id=-1}
-"carts/iron/exhaust/-1x" {name="?-1" id=-1}
-"carts/iron/exhaust/-2" {name="?-2" id=-1}
-"carts/iron/exhaust/-3" {name="?-3" id=-1}
-"carts/iron/exhaust/-4" {name="?-4" id=-1}
-"carts/iron/exhaust/-5" {name="?-5" id=-1}
+"fallacy/-1" {name="?-1" id=-1}
+"fallacy/-1x" {name="?-1" id=-1}
+"fallacy/-2" {name="?-2" id=-1}
+"fallacy/-3" {name="?-3" id=-1}
+"fallacy/-4" {name="?-4" id=-1}
+"fallacy/-5" {name="?-5" id=-1}

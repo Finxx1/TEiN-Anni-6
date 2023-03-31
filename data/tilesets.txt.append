@@ -1,4 +1,4 @@
-past/depths/main/ {
+depths/main/ {
 	area_name "Depths"
 	area_label_frame 0
 	tile_graphics Tilehell
@@ -52,7 +52,7 @@ past/depths/main/ {
 	}
 }
 
-past/depths/secret/ {
+depths/secret/ {
 	area_name "???"
 	area_label_frame 0
 	tile_graphics Tilehell
@@ -119,7 +119,7 @@ past/depths/secret/ {
 	}
 }
 
-carts/normal/depths/ {
+fate/ {
 	tile_graphics TileGlitchDepths
 	overlay_graphics Overlaysretro
 	background_graphics bgretro
@@ -148,7 +148,7 @@ carts/normal/depths/ {
 }
 
 # Future Depths
-future/depths/main/ {
+abyss/main/ {
 	area_name "Abyss"
 	area_label_frame 0
 	tile_graphics Tilehell
@@ -196,30 +196,7 @@ future/depths/main/ {
 	
 }
 
-ult {
-	area_name "Ultimatum"
-	area_label_frame 15
-	tile_graphics TileEnd
-	overlay_graphics Overlaystox2
-	background_graphics neverbg
-	foreground_graphics none
-	fx_shader distortionparticles
-	palette 3
-
-
-	tile_particle_1 drip
-	tile_particle_2 splash
-	global_particle_1 none
-	global_particle_2 none
-	global_particle_3 none
-
-	music [fur_elise_intro.ogg, fur_elise_loop.ogg]
-	ambience ruins.ogg
-	music_volume 1
-	ambience_volume 1
-}
-
-past/exhaust/main/ {
+exhaust/main/ {
 	area_name "Exhaust"
 	area_label_frame 1
 	tile_graphics Tileindustrial
@@ -301,7 +278,8 @@ past/exhaust/main/ {
 		ambience_volume .2
 	}
 }
-past/exhaust/secret/ {
+
+exhaust/secret/ {
 	area_name "Exhaust"
 	area_label_frame 1
 	tile_graphics Tileindustrial
@@ -370,7 +348,7 @@ past/exhaust/secret/ {
 	}
 }
 
-future/exhaust/main/ {
+boilingpoint/main/ {
 	area_name "Boiling Point"
 	area_label_frame 0
 	tile_graphics Tileindustrialdark
@@ -405,7 +383,7 @@ future/exhaust/main/ {
 	
 }
 
-carts/normal/exhaust/ {
+membrane/ {
 	tile_graphics Tileretroindustrial
 	overlay_graphics Overlaysretro
 	background_graphics bgretro
@@ -431,7 +409,7 @@ carts/normal/exhaust/ {
 	]
 }
 
-carts/iron/exhaust/ {
+fallacy/ {
 	area_name "Fallacy"
 	tile_graphics Tileretrobricks
 	overlay_graphics Overlaysretro
@@ -461,7 +439,7 @@ carts/iron/exhaust/ {
 	]
 }
 
-past/splunt/ {
+splunt/ {
 	area_name "The Splunt"
 	area_label_frame 4
 	tile_graphics Tiletox
@@ -484,8 +462,8 @@ past/splunt/ {
 	ambience wind.ogg
 }
 
-future/splunt/ {
-	area_name "The Sploont"
+sploot/ {
+	area_name "The Sploot"
 	area_label_frame 4
 	tile_graphics Tiletox
 	overlay_graphics Overlaystox
@@ -506,7 +484,7 @@ future/splunt/ {
 	music [none, none]
 }
 
-past/ssshithill/main/ {
+ssshithill/main/ {
     area_name "SssHitHill"
     area_label_frame 3
     tile_graphics Tilecaves
@@ -534,7 +512,7 @@ past/ssshithill/main/ {
     ambience ruins.ogg
 }
 
-past/ssshithill/secret/ {
+ssshithill/secret/ {
     area_name "???"
     area_label_frame 3
     tile_graphics Tilecaves
