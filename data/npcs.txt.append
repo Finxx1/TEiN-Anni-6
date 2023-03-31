@@ -226,3 +226,41 @@ NPCdemo2 {
 		"\ni think"
     ]
 }
+
+NPCSHH1 {
+#basic sideways
+    movieclip NPC4
+    sound_id NPCSkull
+    text [
+        "Seems like \nI have forgotten. . ."
+        "Something important"
+        " I even forgot \nwhat or \nwho it was"
+        "..."
+    ]
+}
+
+NPCSHH2 {
+#basic sideways
+    movieclip NPC4
+    sound_id NPCSkull
+    text [
+        "So you are saying \nthat my brother. . ."
+        "Is alive?"
+        "Thanks for telling me"
+        "I will always remember"
+    ]
+}
+
+NPCSHH3 {
+#basic upright skull looks left
+    movieclip NPC16
+    sound_id NPCSkull
+    text [
+        "Hello you... \nWeird blob thing."
+        "Ah the glory \nof being alive"
+        "Even dead \nI think \nabout videogames"
+        "Specially those \nI played with my brother"
+        "No need to \nsay anything"
+        "He is here \nin my heart"
+    ]
+}

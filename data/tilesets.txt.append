@@ -505,3 +505,61 @@ future/splunt/ {
 	
 	music [none, none]
 }
+
+past/ssshithill/main/ {
+    area_name "SssHitHill"
+    area_label_frame 3
+    tile_graphics Tilecaves
+    overlay_graphics Overlayscaves
+    background_graphics ch3bg
+    foreground_graphics None
+    fx_shader reflectionripples
+    fx_shader_mid cloudripples
+    palette 12
+    midfx_layer 2
+
+    tile_particle_1 waterfall
+    tile_particle_2 waterfall_splash
+    tile_particle_3 bubbles
+    tile_particle_4 drip
+
+    decoration_1 Decoration4
+    decoration_2 Decoration5
+
+    area_type normal
+
+    npc_3 NPCSHH3
+
+    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+    ambience ruins.ogg
+}
+
+past/ssshithill/secret/ {
+    area_name "???"
+    area_label_frame 3
+    tile_graphics Tilecaves
+    overlay_graphics Overlayscaves
+    background_graphics ch3bg
+    foreground_graphics None
+    fx_shader_mid lighting
+    palette 12
+    midfx_layer 2
+    midfx_graphics ShadeBox
+    shader_param 0.2
+
+    tile_particle_1 waterfall
+    tile_particle_2 waterfall_splash
+    tile_particle_3 bubbles
+    tile_particle_4 drip
+
+    decoration_1 Decoration4
+    decoration_2 Decoration5
+
+    area_type normal
+
+    npc_1 NPCSHH1
+    npc_2 NPCSHH2
+
+    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+    ambience ruins.ogg
+}

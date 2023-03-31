@@ -24,14 +24,14 @@ meta {
     steventhreshtumors [50 100 170 300]
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
-    mainworlds [past/depths/main/ past/exhaust/main/ past/splunt/ future/splunt future/depths/main/ future/exhaust/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [past/depths/main/ past/exhaust/main/ past/splunt/ future/splunt/ future/depths/main/ future/exhaust/main/ past/ssshithill/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [carts/normal/depths/ carts/normal/exhaust/ carts/iron/exhaust/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22
     bodylevel 5c-21
     heartlevel 5b-23
     
-    mute_warpunlock_message [past/splunt/-1 past/exhaust/main/-17] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [past/splunt/-1 past/exhaust/main/-17 past/ssshithill/main/-a5] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[1d 1d-1] [2d 2d-0] [3d 3d-1] [4d 4d-hub1] [4c 4c-1d] [14 14-1] [6 6-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [carts/iron/exhaust/-1] //used to set the respawn point in an iron cart
@@ -61,6 +61,15 @@ meta {
 
 nodes {
     //The Past
+	SssHitHill {
+		clipname hill
+		entrylevel past/ssshithill/main/-0
+		page lightworld
+		levelgroups [past/ssshithill/main/ past/ssshithill/secret/]
+		
+		right Splunt
+	}
+	
     Splunt {
 		clipname split
 		entrylevel past/splunt/-1
@@ -68,6 +77,8 @@ nodes {
 		levelgroups [past/splunt/]
 		unlock_condition always_unlocked
 		
+		up TheFuture
+		left SssHitHill
 		down Depths
 		right Exhaust
 	}
@@ -89,82 +100,59 @@ nodes {
 		
 		left Splunt
 	}
+	
+	TheFuture {
+        clipname future
+        entrylevel none
+        page lightworld
+        unlock_condition always_unlocked
+        
+        select ThePast
+        down Splunt
+    }
     
     //TheFuture
     ThePast {
         clipname past
         entrylevel none
         page darkworld
-        unlock_condition visited_levels_all
-        unlock_condition_levels [1d-1]
+        unlock_condition always_unlocked
         
         select TheFuture
-        down Anguish
+        down Sploot
     }
     
-    Anguish {
-        clipname darkcity
-        entrylevel 1d-1
+    Sploot {
+        clipname splitdark
+        entrylevel future/splunt/-2
         page darkworld
-        levelgroups [1d 6x]
+        levelgroups [future/splunt/]
+		unlock_condition always_unlocked
         
         up ThePast
-        right Gloom
+        right Pot
+		down Abyss
     }
     
-    Gloom {
-        clipname darkfields
-        entrylevel 2d-0
+    Pot {
+        clipname pot
+        entrylevel future/exhaust/main/-1
         page darkworld
-        levelgroups [2d 7x]
+        levelgroups [future/exhaust/main/]
         
-        left Anguish
-        right Blight
+        left Sploot
     }
     
-    Blight {
-        clipname darkbridge
-        entrylevel 3d-1
+    Abyss {
+        clipname abyss
+        entrylevel future/depths/main/-1
         page darkworld
-        levelgroups [3d 8x]
+        levelgroups [future/depths/main/]
         
-        left Gloom
-	right TheFracture
-        down Ruin
+        up Sploot
     }
-    
-    Ruin {
-        clipname sewers
-        entrylevel 6-1
-        page darkworld
-        levelgroups [6 9x]
-        
-        up Blight
-        left Acceptance
-    }
-    
-    Acceptance {
-        clipname escape
-        entrylevel 6-21
-        page darkworld
-        levelgroups [9x]
-        
-        right Ruin
-        left Nevermore
-    }
-    
-    Nevermore {
-        clipname superhell
-        entrylevel 7-0
-        page darkworld
-        levelgroups [7]
-        
-        right Acceptance
-    }
-
-    
+	
     //carts
-    
     Cart1 {
         clipname c1
         entrylevel c1-1

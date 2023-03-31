@@ -1,3 +1,15 @@
+"past/ssshithill/main/-0" {name="SssHitHill 1" id=1}
+"past/ssshithill/main/-a1" {name="SssHitHill A2" id=2}
+"past/ssshithill/main/-a2" {name="SssHitHill A3" id=3}
+"past/ssshithill/main/-a3" {name="SssHitHill A4" id=4}
+"past/ssshithill/main/-a4" {name="SssHitHill A5" id=5}
+"past/ssshithill/main/-a5" {name="SssHitHill A6" id=1} #cart
+"past/ssshithill/main/-b1" {name="SssHitHill B2" id=7}
+"past/ssshithill/main/-b2" {name="SssHitHill B3" id=8}
+"past/ssshithill/main/-b3" {name="SssHitHill B4" id=9}
+"past/ssshithill/main/-b4" {name="SssHitHill B5" id=10}
+"past/ssshithill/main/-b5" {name="SssHitHill B6" id=11}
+
 "past/depths/main/-1" {name="Depths 1" id=1}
 "past/depths/main/-2" {name="Depths 2" id=2} 
 "past/depths/main/-3" {name="Depths 3" id=3}
@@ -111,7 +123,7 @@
 "past/splunt/-1" {name="The Splunt" id=-1}
 
 "future/splunt/-1" {name="???" id=-1}
-"future/splunt/-2" {name="The Sploont" id=-1}
+"future/splunt/-2" {name="The Sploot" id=-1}
 
 "carts/normal/exhaust/-1" {name="Membrane In My Pocket 1" id=1}
 "carts/normal/exhaust/-2" {name="Membrane In My Pocket 2" id=2}
