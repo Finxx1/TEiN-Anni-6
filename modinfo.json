@@ -1,0 +1,7 @@
+{
+    "name": "Anniversary 6 demo",
+    "author": "Finxx + TEiN community",
+    "description": "The demo for the grand 6th anniversary mod",
+    "savefile_suffix": ".anni6demo",
+    "inherit_save": "none"
+}
