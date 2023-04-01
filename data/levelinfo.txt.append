@@ -124,12 +124,13 @@
 "exhaust/secret/-8" {name="???" id=-1}
 "exhaust/secret/-9" {name="???" id=4} #biglife
 
-"boilingpoint/main/-1" {name="???" id=-1}
-"boilingpoint/main/-2" {name="???" id=-1}
-"boilingpoint/main/-3" {name="???" id=-1}
-"boilingpoint/main/-4" {name="???" id=-1}
-"boilingpoint/main/-5" {name="???" id=-1}
-"boilingpoint/main/-5x" {name="???" id=1} #cart
+"boilingpoint/main/-0" {name="???" id=-1}
+"boilingpoint/main/-1" {name="Boiling Point 1" id=-1}
+"boilingpoint/main/-2" {name="Boiling Point 2" id=-1}
+"boilingpoint/main/-3" {name="Boiling Point 3" id=-1}
+"boilingpoint/main/-4" {name="Boiling Point 4" id=-1}
+"boilingpoint/main/-5" {name="Boiling Point 5" id=-1}
+"boilingpoint/main/-5x" {name="Boiling Point 6" id=1} #cart
 
 "splunt/-1" {name="The Splunt" id=-1}
 

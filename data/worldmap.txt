@@ -15,7 +15,7 @@ pages {
 meta {
     default_node Splunt
     
-    leftwipes [splunt/-1 exhaust/secret/-start]
+    leftwipes [splunt/-1 exhaust/secret/-start boilingpoint/main/-0]
     rightwipes [ssshithill/main/-0 splunt/-1 sploot/-2]
     upwipes [splunt/-1]
     downwipes [splunt/-1 sploot/-2]
@@ -25,7 +25,7 @@ meta {
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ carts/iron/exhaust/] //launch console automatically when you exit from these worlds
+    cartworlds [fate/ membrane/ fallacy/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22
     bodylevel 5c-21
@@ -33,8 +33,8 @@ meta {
     
     mute_warpunlock_message [splunt/-1 exhaust/main/-17 ssshithill/main/-a5] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
-    game_over_checkpoints [[1d 1d-1] [2d 2d-0] [3d 3d-1] [4d 4d-hub1] [4c 4c-1d] [14 14-1] [6 6-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
-    iron_cart_entrypoints [carts/iron/exhaust/-1] //used to set the respawn point in an iron cart
+    game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
+    iron_cart_entrypoints [fallacy/-1] //used to set the respawn point in an iron cart
     timed_cart_entrypoints [g5-1] //maybe you want to put a timer on other carts?
     console_entry_levels [splunt/-1]
     nevermore_entry 7-0
@@ -139,6 +139,8 @@ nodes {
         entrylevel boilingpoint/main/-1
         page darkworld
         levelgroups [boilingpoint/main/]
+		unlock_condition visited_levels_all
+		unlock_condition_levels [boilingpoint/main/-0]
         
         left Sploot
     }
@@ -285,7 +287,7 @@ nodes {
     
     IronCart1 {
         clipname i1
-        entrylevel carts/iron/exhaust/-1
+        entrylevel fallacy/-1
         page console
         cart_cheevolevel i1-all
         cart_splashframe ironman
