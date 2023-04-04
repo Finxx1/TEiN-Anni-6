@@ -504,4 +504,7 @@ SoundEffectGroups {
     NPCStevenCameo {
         files [StevenNPC.wav]
     }
+	Silence {
+        files [silence.wav]
+    }
 }

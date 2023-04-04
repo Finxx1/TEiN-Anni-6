@@ -541,3 +541,55 @@ ssshithill/secret/ {
     music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
     ambience ruins.ogg
 }
+
+steamworks/main/ {
+	area_name "Steamworks"
+	area_label_frame 0
+	
+	tile_graphics theglow
+	overlay_graphics Overlaystheglow
+    background_graphics field2bg
+    foreground_graphics None
+    fx_shader sludgeripples
+    palette 5
+	
+	toxic_timer .05
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	npc_1 NPCSWSIGN
+	
+	music [mountainking_fakeout.ogg, mountainking_loop.ogg]
+    ambience ruins.ogg
+}
+
+steamworks/secret/ {
+	area_name "Steamworks"
+	area_label_frame 0
+	
+	tile_graphics theglow
+	overlay_graphics Overlaystheglow
+    background_graphics field2bg
+    foreground_graphics None
+    fx_shader sludgeripples
+    palette 5
+	
+	toxic_timer .05
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	npc_1 NPCSWDYR
+	npc_2 NPCSWCRA
+	npc_3 NPCSWBYA
+	
+	4 {
+		npc_1 NPCSWADA
+	}
+	
+	music [none, none]
+    ambience ruins.ogg
+}

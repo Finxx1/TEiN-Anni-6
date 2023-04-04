@@ -264,3 +264,61 @@ NPCSHH3 {
         "He is here \nin my heart"
     ]
 }
+
+NPCSWSIGN {
+#intro sign
+	movieclip Sign
+	sound_id silence
+	text [
+		"THE STEAMWORKS\nSINCE 1884\nNOW HIRING!"
+	]
+}
+
+NPCSWDYR {
+	movieclip LoreTablet
+	sound_id silence
+	text [
+		"\nRecord Dyr:"
+		"Just us,\nand that\nis little"
+		"Management?\nnot even\nreal"
+		"Why are we\nhere? No\nreturn"
+		"Slave for\npaycheck, living\nfor nothing.]]"
+	]
+}
+
+NPCSWCRA {
+	movieclip LoreTablet
+	sound_id silence
+	text [
+		"\nRecord Cra:"
+		"And so they\n\ndo too"
+		"Us left and\n\nhow long"
+		"Same day\n\nby night"
+		"Revolution\nto\nstruggle"
+	]
+}
+
+NPCSWBYA {
+	movieclip LoreTablet2
+	sound_id silence
+	text [
+		"\nRecord Bya:"
+		"Sector\nD\ninoperative"
+		"We are\nleft with\nmore"
+		"Perish as\n\nthey too?"
+		"Put up\na fight\nno more?"
+	]
+}
+
+NPCSWADA {
+#first lore tablet
+	movieclip LoreTablet
+	sound_id silence
+	text [
+		"\nRecord Ada:"
+		"\nIan is no more"
+		"Thus starts\nthe movement"
+		"A protest\nto remember"
+		"Join him\nwe shall"
+	]
+}
