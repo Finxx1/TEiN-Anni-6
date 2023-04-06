@@ -5,3 +5,6 @@ steam_api.dll
 settings.txt
 loader.gpak
 game.gpak
+Profile/IGGGAMES/SteamUserID.cfg
+*.sav
+*.old
