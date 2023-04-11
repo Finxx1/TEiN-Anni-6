@@ -569,7 +569,7 @@ steamworks/secret/ {
 	area_name "Steamworks"
 	area_label_frame 0
 	
-	tile_graphics theglow
+	tile_graphics Tilecomplex
 	overlay_graphics Overlaystheglow
     background_graphics field2bg
     foreground_graphics None
@@ -588,6 +588,10 @@ steamworks/secret/ {
 	
 	4 {
 		npc_1 NPCSWADA
+	}
+	
+	7 {
+		decoration_1
 	}
 	
 	music [none, none]
