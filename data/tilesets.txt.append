@@ -546,12 +546,12 @@ steamworks/main/ {
 	area_name "Steamworks"
 	area_label_frame 0
 	
-	tile_graphics theglow
+	tile_graphics Tilecomplex
 	overlay_graphics Overlaystheglow
-    background_graphics field2bg
+    background_graphics bgurban
     foreground_graphics None
-    fx_shader sludgeripples
-    palette 5
+    fx_shader gravripples
+    palette 9
 	
 	toxic_timer .05
 	
@@ -561,20 +561,20 @@ steamworks/main/ {
 	
 	npc_1 NPCSWSIGN
 	
-	music [mountainking_fakeout.ogg, mountainking_loop.ogg]
+	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
     ambience ruins.ogg
 }
 
 steamworks/secret/ {
-	area_name "Steamworks"
+	area_name "???"
 	area_label_frame 0
 	
 	tile_graphics Tilecomplex
-	overlay_graphics Overlaystheglow
-    background_graphics field2bg
+	overlay_graphics Overlayscomplex
+    background_graphics bgurban
     foreground_graphics None
-    fx_shader sludgeripples
-    palette 5
+    fx_shader gravripples
+    palette 9
 	
 	toxic_timer .05
 	
@@ -591,9 +591,9 @@ steamworks/secret/ {
 	}
 	
 	7 {
-		decoration_1
+		tile_graphics Tileroof
 	}
 	
 	music [none, none]
-    ambience ruins.ogg
+    ambience cogs.ogg
 }
