@@ -390,8 +390,8 @@ membrane/ {
 	foreground_graphics none
 	palette 3
 
-	cart_intro_png Mortaman
-	cart_intro_palette 3
+	cart_intro_png Membrane
+	cart_intro_palette 13
 	
 	music [retro/danse_intro.ogg, retro/danse_loop.ogg]
 	
@@ -421,7 +421,7 @@ fallacy/ {
 	
 	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
 
-	cart_intro_png acceptance
+	cart_intro_png Fallacy
 	cart_intro_palette 5
 	
 	platform_physics "data/platformphysics_steam_end.txt"
