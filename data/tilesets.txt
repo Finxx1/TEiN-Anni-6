@@ -1,0 +1,903 @@
+depths/main/ {
+	area_name "Depths"
+	area_label_frame 0
+	tile_graphics Tilehell
+	overlay_graphics Overlayscomplex
+	background_graphics bgretro2
+	foreground_graphics none
+	fx_shader sludgeripples
+	palette 7
+
+	fx_shader_mid lighting
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .5
+
+	decoration_1 DiseasesRunes
+	decoration_2 DiseasesRunesBlock
+	decoration_3 DecorationSkeletons
+
+	npc_1 NPCcry
+	npc_2 NPCthem
+	npc_3 NPCDECEND
+
+	art_alts [
+		[Floater, DeathGhost][OrbChomp, SmallElectroBall]
+	]
+
+	music [depths_loop.ogg, depths_loop.ogg]
+
+	8 {
+		decoration_3 Decoration5
+	}
+	
+	13 {
+		npc_1 NPCTOAST
+	}
+	
+	18 {
+		npc_1 NPCCULT
+	}
+	
+	20 {
+		npc_1 NPCHELL
+	}
+	
+	21 {
+		decoration_2 TheHeart
+		
+		art_alts [
+			[GlowShroom, nothing]
+		]
+	}
+}
+
+depths/secret/ {
+	area_name "???"
+	area_label_frame 0
+	tile_graphics Tilehell
+	overlay_graphics Overlayscomplex
+	background_graphics bgretro2
+	foreground_graphics none
+	fx_shader sludgeripples
+	palette 7
+
+	fx_shader_mid lighting
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .3
+
+	decoration_1 DiseasesRunes
+	decoration_2 DiseasesRunesBlock
+	decoration_3 DecorationSkeletons
+
+	tile_particle_1 drip
+
+	npc_1 NPCbeasts
+	npc_2 NPCHELL
+	
+
+	art_alts [
+	  	[Floater, DeathGhost][OrbChomp, SmallElectroBall]
+	]
+
+	music_volume 1
+	ambience_volume 3
+
+	music none
+	ambience flesh.ogg
+	stop_previous_music false
+
+	3 {
+	   area_name "none"
+	music none
+	}
+	19 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
+		music none
+	}
+	20 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
+	music none
+	}
+	21 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall]
+		]
+		music none
+	}
+	21 {
+		art_alts [
+			[Floater, BigLife][OrbChomp, SmallElectroBall][Cartridge, cart2]
+		]
+		decoration_2 TheHeart
+		music none
+	}
+}
+
+fate/ {
+	tile_graphics TileGlitchDepths
+	overlay_graphics Overlaysretro
+	background_graphics bgretro
+	foreground_graphics none
+	palette 8
+	
+	music [retro/faith.ogg, retro/faith.ogg]
+	
+	music_volume 1
+	ambience_volume 1
+
+	decoration_1 DiseasesRunesRetro
+
+	area_type cart
+	
+	cart_intro_png FAtE
+	cart_intro_palette 8
+
+	art_alts [
+	   [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
+	   [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+	   [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+	   [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+	   [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+	]
+}
+
+# Future Depths
+abyss/main/ {
+	area_name "Abyss"
+	area_label_frame 0
+	tile_graphics Tilehell
+	overlay_graphics Overlayscomplex
+	background_graphics hellbg
+	foreground_graphics none
+	fx_shader sludgeripples
+	palette 7
+
+	fx_shader_mid sludgeglow2
+	midfx_graphics SolidBox
+	midfx_layer 2
+
+	decoration_1 DiseasesRunes
+	decoration_2 DiseasesRunesBlock
+	decoration_3 DecorationSkeletons
+
+	npc_1 NPCcry
+	npc_2 NPCthem
+	npc_3 NPCDECEND
+	
+	2 {
+		art_alts [
+			[Floater, DeathGhost]
+		]
+	}
+	
+	art_alts [
+	  	[Floater, DeathGhost][OrbChomp, SmallElectroBall]
+	]
+
+	music [depths_loop_dark.ogg, depths_loop_dark.ogg]
+
+	8 {
+		decoration_3 Decoration5
+	}
+	
+	13 {
+		npc_1 NPCTOAST
+	}
+	
+	18 {
+		npc_1 NPCCULT
+	}
+	
+}
+
+exhaust/main/ {
+	area_name "Exhaust"
+	area_label_frame 1
+	tile_graphics Tileindustrial
+	overlay_graphics Overlaysairship
+	background_graphics ch3bg
+	fx_shader reflectionripples
+	fx_shader_mid cloudripples
+	midfx_layer 2
+	palette 2
+	
+	area_type normal
+
+	tile_particle_1 smoke_contact
+	tile_particle_2 smoke2
+	tile_particle_3 smoke_contact2
+	tile_particle_4 smoke_contactright
+	decoration_1 SteamGrate1
+	decoration_2 SteamGrate2
+	decoration_3 SteamGrate3
+	
+	music [jelly_intro.ogg, jelly_loop.ogg]
+	ambience clockwork.ogg
+	sfx_file mainsounds_steam.txt
+
+	art_alts [
+	[Floater, FloaterTile]
+	]
+
+	platform_physics "data/platformphysics_steam.txt"
+	
+	5x {
+		sfx_file mainsounds.txt
+	}
+	6 {
+		sfx_file mainsounds.txt
+	}
+	7 {
+		decoration_1 SteamGrate4
+	}
+	
+	9 {
+		decoration_3 SteamGrate5
+	}
+	
+	10 {
+		decoration_3 SteamGrate4
+		sfx_file mainsounds.txt
+	}
+	11 {
+		sfx_file mainsounds.txt
+	}
+	12 {
+		sfx_file mainsounds.txt
+	}
+	13 {
+		sfx_file mainsounds.txt
+	}
+	14 {
+		sfx_file mainsounds.txt
+	}
+	15 {
+		sfx_file mainsounds.txt
+		decoration_1 SteamGrate5
+		platform_physics "data/platformphysics_steam_end.txt"
+	}
+	16 {
+		decoration_1 ExhaustEyelid1
+		decoration_3 ExhaustEyelid2
+		ambience_volume .4
+	}
+	16x {
+		global_particle_1 wind
+		ambience wind.ogg
+		ambience_volume .2
+	}
+	17 {
+		global_particle_1 wind
+		ambience wind.ogg
+		ambience_volume .2
+	}
+}
+
+exhaust/secret/ {
+	area_name "Exhaust"
+	area_label_frame 1
+	tile_graphics Tileindustrial
+	overlay_graphics Overlaysairship
+	background_graphics ch3bg
+	foreground_graphics None
+	fx_shader reflectionripples
+	palette 2
+	
+	area_type normal
+
+	tile_particle_1 smoke_contact
+	tile_particle_2 smoke2
+	tile_particle_3 smoke_contact2
+	tile_particle_4 smoke_contactright
+	decoration_1 SteamGrate1
+	decoration_2 SteamGrate2
+	decoration_3 SteamGrate3
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	stop_previous_music false
+	ambience clockwork.ogg
+	sfx_file mainsounds_steam.txt
+	
+	npc_1 NPCsG1
+	npc_2 NPCsB1
+	npc_3 NPCsD1
+
+	art_alts [
+	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, none2]
+	]
+
+	platform_physics "data/platformphysics_steam.txt"
+	
+	start {
+		area_label_frame 0
+		music none
+	}
+	0 {
+		music jelly_faded.ogg
+		music_volume 1.3
+		sfx_file mainsounds.txt
+	}
+	0x {
+		music jelly_faded.ogg
+		music_volume 1.3
+		sfx_file mainsounds.txt
+		decoration_1 SteamGrate4
+		npc_1 NPCs1
+	}
+	2 {
+		music jelly_faded.ogg
+	}
+	5 {
+		music jelly_faded.ogg
+	}
+	6 {
+		music jelly_faded.ogg
+	}
+	8 {
+		music jelly_faded.ogg
+	}
+	9 {
+		decoration_3 DiseasesRunesBlock
+		music jelly_faded.ogg
+	}
+}
+
+boilingpoint/main/ {
+	area_name "Boiling Point"
+	area_label_frame 0
+	tile_graphics Tileindustrialdark
+	overlay_graphics Overlaysend
+	background_graphics ch3bg
+	fx_shader lavaripples
+	fx_shader_mid lavaglow_exhaust
+	midfx_graphics SolidBox
+	palette 4
+	
+	area_type dark
+	npc_1 NPCsD2
+
+	tile_particle_1 lavadump
+	tile_particle_2 toxicdump_left
+	tile_particle_3 toxicdump_right
+	tile_particle_5 toxicbubbles
+	global_particle_1 embers
+	decoration_1 SteamGrate1
+	decoration_2 SteamGrate2
+	decoration_3 SteamGrate3
+	
+	music jelly_faded.ogg
+	ambience volcano.ogg
+
+	art_alts [
+	[Floater, FloaterTile][Cartridge, cart3]
+	]
+
+	platform_physics "data/platformphysics_steam.txt"
+	toxic_timer 0
+	
+}
+
+membrane/ {
+	tile_graphics Tileretroindustrial
+	overlay_graphics Overlaysretro
+	background_graphics bgretro
+	foreground_graphics none
+	palette 3
+
+	cart_intro_png Membrane
+	cart_intro_palette 13
+	
+	music [retro/danse_intro.ogg, retro/danse_loop.ogg]
+	
+	music_volume .8
+	ambience_volume 1
+	
+	area_type cart
+
+	art_alts [
+		[Player, PlayerRetro][Frog, Frogretro][Floater, Floater2][Slug, Slugretro]
+		[SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+		[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+		[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+		[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ThwampEye,ThwampEyeRetro]
+	]
+}
+
+fallacy/ {
+	area_name "Fallacy"
+	tile_graphics Tileretrobricks
+	overlay_graphics Overlaysretro
+	background_graphics bgretrox
+	foreground_graphics none
+	palette 5
+	decoration_1 deco_retrofossils
+	decoration_2 ChainLinkretro
+	
+	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
+
+	cart_intro_png Fallacy
+	cart_intro_palette 5
+	
+	platform_physics "data/platformphysics_steam_end.txt"
+	
+	area_type ironcart
+	art_alts [
+		[Player, PlayerRetro][Frog, Frogretro][Floater, Centipede1retro][Slug, Slugretro]
+		[SkullFloater, Centipede2retro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+		[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, eyeshooterretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+		[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink2, ChainLinkretro][ChainLink, ChainLinkretro]
+		[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+		[OrbLarge, pacman][ThwampGear, ThwampGearRetro][SpeechBubble, SpeechBubbleRetro][SpeechBubble2, SpeechBubbleRetro]
+		
+		[MiniFrog, MiniFlearetro]
+	]
+}
+
+splunt/ {
+	area_name "The Splunt"
+	area_label_frame 4
+	tile_graphics Tiletox
+	overlay_graphics Overlaystox
+	background_graphics ch4abg
+	foreground_graphics None
+	fx_shader reflectionripples
+	palette 6
+
+	npc_1 NPCdemo
+	npc_2 none
+	npc_3 none
+	decoration_1 FinxxPlank2
+	decoration_2 Decoration6
+	decoration_3 FinxxPlank
+	
+	area_type normal
+	
+	music [none, none]
+	ambience wind.ogg
+}
+
+sploot/ {
+	area_name "The Sploot"
+	area_label_frame 4
+	tile_graphics Tiletox
+	overlay_graphics Overlaystox
+	background_graphics ch4abg
+	foreground_graphics None
+	fx_shader reflectionripples
+	palette 5
+
+	npc_1 NPCdemo2
+	npc_2 none
+	npc_3 none
+	decoration_1 FinxxPlank2
+	decoration_2 Decoration6
+	decoration_3 FinxxPlank
+	
+	area_type normal
+	
+	music [none, none]
+}
+
+ssshithill/main/ {
+    area_name "SssHitHill"
+    area_label_frame 3
+    tile_graphics Tilecaves
+    overlay_graphics Overlayscaves
+    background_graphics ch3bg
+    foreground_graphics None
+    fx_shader reflectionripples
+    fx_shader_mid cloudripples
+    palette 12
+    midfx_layer 2
+
+    tile_particle_1 waterfall
+    tile_particle_2 waterfall_splash
+    tile_particle_3 bubbles
+    tile_particle_4 drip
+
+    decoration_1 Decoration4
+    decoration_2 Decoration5
+
+    area_type normal
+
+    npc_3 NPCSHH3
+
+    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+    ambience ruins.ogg
+}
+
+ssshithill/secret/ {
+    area_name "???"
+    area_label_frame 3
+    tile_graphics Tilecaves
+    overlay_graphics Overlayscaves
+    background_graphics ch3bg
+    foreground_graphics None
+    fx_shader_mid lighting
+    palette 12
+    midfx_layer 2
+    midfx_graphics ShadeBox
+    shader_param 0.2
+
+    tile_particle_1 waterfall
+    tile_particle_2 waterfall_splash
+    tile_particle_3 bubbles
+    tile_particle_4 drip
+
+    decoration_1 Decoration4
+    decoration_2 Decoration5
+
+    area_type normal
+
+    npc_1 NPCSHH1
+    npc_2 NPCSHH2
+
+    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+    ambience ruins.ogg
+}
+
+steamworks/main/ {
+	area_name "Steamworks"
+	area_label_frame 0
+	
+	tile_graphics Tilecomplex
+	overlay_graphics Overlaystheglow
+    background_graphics bgurban
+    foreground_graphics None
+    fx_shader gravripples
+    palette 9
+	
+	toxic_timer .05
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	npc_1 NPCSWSIGN
+	
+	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
+    ambience ruins.ogg
+}
+
+steamworks/secret/ {
+	area_name "???"
+	area_label_frame 0
+	
+	tile_graphics Tilecomplex
+	overlay_graphics Overlayscomplex
+    background_graphics bgurban
+    foreground_graphics None
+    fx_shader gravripples
+    palette 9
+	
+	toxic_timer .05
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	npc_1 NPCSWDYR
+	npc_2 NPCSWCRA
+	npc_3 NPCSWBYA
+	
+	4 {
+		npc_1 NPCSWADA
+	}
+	
+	7 {
+		tile_graphics Tileroof
+	}
+	
+	music [none, none]
+    ambience cogs.ogg
+}
+
+swamplands/ {
+    area_name "Swamplands"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	global_particle_2 fgrain_light
+	global_particle_3 bgrain_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	npc_1 NPC_Stench
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	5 {
+	global_particle_2 None
+	global_particle_3 None
+	}
+
+	6 {
+	global_particle_2 None
+	global_particle_3 None
+	}
+	
+	music [newworld_intro.ogg, newworld_loop.ogg]
+	ambience wind.ogg
+}
+
+swamplands/xd {
+    area_name "???"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	stop_previous_music false
+	
+	music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+	ambience underwater.ogg
+}
+
+swamplands/xu {
+    area_name "???"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	global_particle_2 fgrain_light
+	global_particle_3 bgrain_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	stop_previous_music false
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience wind.ogg
+}
+
+ghostship/ {
+	area_name "Ghost Ship"
+	area_label_frame 6
+	tile_graphics Tileairship
+	overlay_graphics Overlaysairship
+	background_graphics airshipbg
+	palette 15
+	
+	do_wobble true
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	tile_particle_1 smoke_windr
+	tile_particle_2 smoke2_windr
+	tile_particle_3 smoke
+	tile_particle_5 splash
+	
+    global_particle_1 cloudwind_heavy
+	global_particle_2 storm2
+	global_particle_3 fgrain2
+	
+	decoration_1 shipi1
+	decoration_2 shipi2
+	decoration_3 shipi3
+	
+	npc_1 NPCGHOST_1
+	npc_2 NPCGHOST_2
+	
+	art_alts [
+		[Floater, Ghost]
+	]
+	
+	music [slave_intro.ogg, slave_loop.ogg]
+	ambience storm.ogg
+	ambience_volume 1.4
+	
+	1x {
+	decoration_1 JarDeco
+	}
+	
+	0y {
+		area_label_frame 0
+	}
+	
+	0z {
+		area_label_frame 0
+	}
+	
+	0 {
+		area_label_frame 0
+	}
+	
+	16 {
+	player_physics "data/playerphysics-BIGbomb.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	17 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	18 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	19 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	20 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	21 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	22 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	23 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23a {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23b {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23c {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	24 {
+	tile_graphics Tilegraveyard
+	background_graphics field2bg
+	overlay_graphics Overlaysfield
+	music none
+	do_wobble false
+	shader_param .6
+	}
+	
+	25 {
+	tile_graphics Tilegraveyard
+	background_graphics field2bg
+	overlay_graphics Overlaysfield
+    music none
+	do_wobble false
+	shader_param .6
+	}
+}
+
+ghostship/x {
+	area_name "???"
+	area_label_frame 6
+	tile_graphics Tileairship
+	overlay_graphics Overlaysairship
+	background_graphics airshipbg
+	palette 15
+	
+	do_wobble true
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	tile_particle_1 smoke_windr
+	tile_particle_2 smoke2_windr
+	tile_particle_3 drip
+	tile_particle_5 splash
+
+	decoration_1 shipi1
+	decoration_2 shipi2
+	decoration_3 shipi3
+	
+    global_particle_1 cloudwind_heavy
+	global_particle_2 storm2
+	global_particle_3 fgrain2
+	
+	art_alts [
+		[Floater, Ghost]
+	]
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience storm.ogg
+	stop_previous_music false
+	ambience_volume 1.4
+}

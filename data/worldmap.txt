@@ -24,7 +24,7 @@ meta {
     steventhreshtumors [50 100 170 300]
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/ ghostship/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22
@@ -50,10 +50,10 @@ meta {
     
     savefile_completion_counter_max 285 //count of total collectible tumors, carts, body parts (3), cart achievements, map warp points (number of levels in the array below), and endings (2)
     savefile_completion_warpoints [1-1 2-0 3-1 4a-1 4b-1 4c-1 5a-1 5b-1 5c-1 4-1hub 1d-1 2d-0 3d-1 6-1 6-21 7-0] //visiting these levels counts for save file completion
-    save_initiallevel splunt/-1
-    save_lightspawn splunt/-1
+    save_initiallevel swamplands/-0
+    save_lightspawn swamplands/-0
     save_darkspawn 1d-1
-    save_lightspawnlabel "The Splunt"  //since the game can set your save to these levels without visiting them, their names need to be manually set so they show up on the save
+    save_lightspawnlabel "Swamplands"  //since the game can set your save to these levels without visiting them, their names need to be manually set so they show up on the save
     save_darkspawnlabel "Anguish"
     
     
@@ -67,7 +67,31 @@ nodes {
 		page lightworld
 		levelgroups [ssshithill/main/ ssshithill/secret/]
 		
+		right Swamplands
+		down TheFuture
+	}
+	
+	Swamplands {
+		clipname swamp
+		entrylevel swamplands/-0
+		page lightworld
+		levelgroups [swamplands/ swamplands/xu swamplands/xd]
+		
+		unlock_condition always_unlocked
+		
+		right Steamworks
+		left SssHitHill
+		down TheFuture
+	}
+	
+	Steamworks {
+		clipname steamworks
+		entrylevel steamworks/main/-1
+		page lightworld
+		levelgroups [steamworks/main/ steamworks/secret/]
+		
 		right Splunt
+		left Swamplands
 	}
 	
     Splunt {
@@ -75,12 +99,20 @@ nodes {
 		entrylevel splunt/-1
 		page lightworld
 		levelgroups [splunt/]
-		unlock_condition always_unlocked
 		
-		up TheFuture
-		left SssHitHill
+		up GhostShip
+		left Steamworks
 		down Depths
 		right Exhaust
+	}
+	
+	GhostShip {
+		clipname airship
+		entrylevel ghostship/-1
+		page lightworld
+		levelgroups [ghostship/ ghostship/x]
+		
+		down Splunt
 	}
 	
 	Depths {
@@ -108,10 +140,10 @@ nodes {
         unlock_condition always_unlocked
         
         select ThePast
-        down Splunt
+        up Swamplands
     }
     
-    //TheFuture
+    //The Future
     ThePast {
         clipname past
         entrylevel none
