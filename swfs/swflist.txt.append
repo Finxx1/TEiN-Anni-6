@@ -13,6 +13,8 @@ game [
 	retro-assets.swf
 	saws.swf
 	stuff.swf
+	remake_tilesets.swf
+	tilegraveyard.swf
 	anni6_map.swf
 	main_menu.swf
 ]

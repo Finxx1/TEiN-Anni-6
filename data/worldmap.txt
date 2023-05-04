@@ -15,7 +15,7 @@ pages {
 meta {
     default_node Splunt
     
-    leftwipes [splunt/-1 exhaust/secret/-start boilingpoint/main/-0]
+    leftwipes [splunt/-1 exhaust/secret/-start boilingpoint/main/-0 swamplands/-0t]
     rightwipes [ssshithill/main/-0 splunt/-1 sploot/-2]
     upwipes [splunt/-1]
     downwipes [splunt/-1 sploot/-2]
@@ -24,7 +24,7 @@ meta {
     steventhreshtumors [50 100 170 300]
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22

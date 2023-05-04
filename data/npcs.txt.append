@@ -322,3 +322,53 @@ NPCSWADA {
 		"Join him\nwe shall"
 	]
 }
+
+NPC_Stench {
+#stinky
+    movieclip NPC5
+    sound_id NPCSkull
+    text [
+		"do you\nsmell\nthat?"
+		"the smell\nof your\nFUCKING ASS!"
+		"i don't\neven have\na nose"
+		"and even i\ncan feel\nthat stench"
+		"go take\na bath\nor something"
+		"\njesus"
+    ]
+}
+
+NPCGHOST_1 {
+    movieclip NPC2
+	sound_id NPCSkull
+	text [
+         "\nHEY YOU"
+		 "dont you DARE\ntouch my\nexplosive balls"
+		 "they were hand made\nby myself\nto murder stuff"
+		 "and only i\ncan kill you\nwith them"
+		 "so try not\nto kill yourself\nalright?"
+		 "\njust for me"
+    ]
+}
+
+NPCGHOST_2 {
+    movieclip NPC5
+	sound_id NPCSkull
+	text [
+	     "\nwoah"
+		 "an actual\nalive\nthing . . ."
+		 "\nthat is cool"
+		 "\ni think?"
+		 "well you see,\nright here i have\nsomething special"
+		 "my magnum opus\nof blowing up\ncrap"
+		 "i was gonna\nuse this bad boy\nto get my revenge"
+		 "that William guy\nSUCKED you know?"
+		 "fucker did not even\nlet me go take\na shit in peace"
+		 "and this was\nmy plan to show\nhim a lesson"
+		 "but before that\nthe storm came"
+		 "and you can see\nhow that ended up"
+		 "\n. . ."
+		 "you should probably\nwatch out close\nto that thing"
+         "im not sure how\npowerful it really is"
+         "i just kinda stole\nthis bomb from\nsomeone else"
+    ]
+}	

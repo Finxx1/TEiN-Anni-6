@@ -597,3 +597,295 @@ steamworks/secret/ {
 	music [none, none]
     ambience cogs.ogg
 }
+
+swamplands/ {
+    area_name "Swamplands"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	global_particle_2 fgrain_light
+	global_particle_3 bgrain_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	npc_1 NPC_Stench
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	5 {
+	global_particle_2 None
+	global_particle_3 None
+	}
+
+	6 {
+	global_particle_2 None
+	global_particle_3 None
+	}
+	
+	music [newworld_intro.ogg, newworld_loop.ogg]
+	ambience wind.ogg
+}
+
+swamplands/xd {
+    area_name "???"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	stop_previous_music false
+	
+	music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+	ambience underwater.ogg
+}
+
+swamplands/xu {
+    area_name "???"
+	area_label_frame 1
+	tile_graphics Tileradmarsh
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	palette 14
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	global_particle_1 fog_light
+	global_particle_2 fgrain_light
+	global_particle_3 bgrain_light
+	tile_particle_1 bubbles
+	tile_particle_2 meatdump_down
+	tile_particle_3 meatdump_left
+	tile_particle_4 meatdump_right
+	tile_particle_5 drip
+	
+	art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+	]
+	
+	stop_previous_music false
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience wind.ogg
+}
+
+ghost {
+	area_name "Ghost Ship"
+	area_label_frame 6
+	tile_graphics Tileairship
+	overlay_graphics Overlaysairship
+	background_graphics airshipbg
+	palette 15
+	
+	do_wobble true
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	tile_particle_1 smoke_windr
+	tile_particle_2 smoke2_windr
+	tile_particle_3 smoke
+	tile_particle_5 splash
+	
+    global_particle_1 cloudwind_heavy
+	global_particle_2 storm2
+	global_particle_3 fgrain2
+	
+	decoration_1 shipi1
+	decoration_2 shipi2
+	decoration_3 shipi3
+	
+	npc_1 NPCGHOST_1
+	npc_2 NPCGHOST_2
+	
+	art_alts [
+		[Floater, Ghost]
+	]
+	
+	music [slave_intro.ogg, slave_loop.ogg]
+	ambience storm.ogg
+	ambience_volume 1.4
+	
+	1x {
+	decoration_1 JarDeco
+	}
+	
+	16 {
+	player_physics "data/playerphysics-BIGbomb.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	17 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	18 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	19 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	
+	art_alts [
+	    [ChainLink2, None]
+		[FloatingMine, BIGbomb]
+	]
+	}
+	
+	20 {
+	player_physics "data/playerphysics-BIGbomb2.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	21 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	22 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	23 {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23a {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23b {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	23c {
+	player_physics "data/playerphysics-BIGbomb3.txt"
+	music none
+	}
+	
+	24 {
+	tile_graphics Tilegraveyard
+	background_graphics field2bg
+	overlay_graphics Overlaysfield
+	music none
+	do_wobble false
+	shader_param .6
+	}
+	
+	25 {
+	tile_graphics Tilegraveyard
+	background_graphics field2bg
+	overlay_graphics Overlaysfield
+    music none
+	do_wobble false
+	shader_param .6
+	}
+}
+
+ghostx {
+	area_name "???"
+	area_label_frame 6
+	tile_graphics Tileairship
+	overlay_graphics Overlaysairship
+	background_graphics airshipbg
+	palette 15
+	
+	do_wobble true
+	
+	fx_shader sludgeripples
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .7
+	
+	tile_particle_1 smoke_windr
+	tile_particle_2 smoke2_windr
+	tile_particle_3 drip
+	tile_particle_5 splash
+
+	decoration_1 shipi1
+	decoration_2 shipi2
+	decoration_3 shipi3
+	
+    global_particle_1 cloudwind_heavy
+	global_particle_2 storm2
+	global_particle_3 fgrain2
+	
+	art_alts [
+		[Floater, Ghost]
+	]
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience storm.ogg
+	stop_previous_music false
+	ambience_volume 1.4
+}

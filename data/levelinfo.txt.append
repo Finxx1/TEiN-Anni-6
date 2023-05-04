@@ -154,3 +154,74 @@
 "fallacy/-3" {name="?-3" id=-1}
 "fallacy/-4" {name="?-4" id=-1}
 "fallacy/-5" {name="?-5" id=-1}
+
+"swamplands/-0t" {name="Swamplands" id=-1}
+"swamplands/-0" {name="Swamplands" id=-1}
+"swamplands/-1" {name="Swamplands 1" id=1}
+"swamplands/-2" {name="Swamplands 2" id=2}
+"swamplands/-3" {name="Swamplands 3" id=3}
+"swamplands/-4" {name="Swamplands 4" id=4}
+"swamplands/-5" {name="Swamplands 5" id=5}
+"swamplands/-6" {name="Swamplands 6" id=6}
+"swamplands/-6t" {name="Swamplands" id=-1}
+"swamplands/-7" {name="Swamplands 7" id=7}
+"swamplands/-8" {name="Swamplands 8" id=8}
+"swamplands/-9" {name="Swamplands 9" id=9}
+"swamplands/-10" {name="Swamplands 10" id=10}
+"swamplands/-11" {name="Swamplands 11" id=11}
+"swamplands/-12" {name="Swamplands 12" id=12}
+"swamplands/-13" {name="Swamplands 13" id=13}
+"swamplands/-14" {name="Swamplands 14" id=14}
+"swamplands/-15" {name="Swamplands 15" id=15}
+"swamplands/xu-1" {name="???" id=2}
+"swamplands/xu-2" {name="???" id=5}
+"swamplands/xu-3" {name="???" id=3}
+"swamplands/xd-1" {name="???" id=1}
+"swamplands/xd-2" {name="???" id=4}
+
+"ghostship/-0" {name="Ghost Ship" id=-1}
+"ghostship/-0x" {name="Ghost Ship" id=-1}
+"ghostship/-0y" {name="Ghost Ship" id=-1}
+"ghostship/-0z" {name="Ghost Ship" id=-1}
+"ghostship/-0zt" {name="Ghost Ship" id=-1}
+"ghostship/-1" {name="Ghost Ship 1" id=1}
+"ghostship/-1x" {name="Ghost Ship" id=-1}
+"ghostship/-2" {name="Ghost Ship 2" id=2}
+"ghostship/-3" {name="Ghost Ship 3" id=3}
+"ghostship/-4" {name="Ghost Ship 4" id=4}
+"ghostship/-5" {name="Ghost Ship 5" id=5}
+"ghostship/-6" {name="Ghost Ship 6" id=6}
+"ghostship/-7" {name="Ghost Ship 7" id=7}
+"ghostship/-8" {name="Ghost Ship 8" id=8}
+"ghostship/-9" {name="Ghost Ship 9" id=9}
+"ghostship/-9t" {name="Ghost Ship" id=-1}
+"ghostship/-10" {name="Ghost Ship 10" id=10}
+"ghostship/-11" {name="Ghost Ship 11" id=11}
+"ghostship/-11t" {name="Ghost Ship" id=-1}
+"ghostship/-12" {name="Ghost Ship 12" id=12}
+"ghostship/-13" {name="Ghost Ship 13" id=13}
+"ghostship/-14" {name="Ghost Ship 14" id=14}
+"ghostship/-15" {name="Ghost Ship 15" id=15}
+"ghostship/-15t" {name="Ghost Ship" id=-1}
+"ghostship/-16" {name="Ghost Ship" id=-1}
+"ghostship/-17" {name="Ghost Ship" id=-1}
+"ghostship/-18" {name="Ghost Ship" id=-1}
+"ghostship/-19" {name="Ghost Ship" id=-1}
+"ghostship/-20" {name="Ghost Ship" id=-1}
+"ghostship/-21" {name="???" id=-1}
+"ghostship/-22" {name="???" id=-1}
+"ghostship/-23" {name="???" id=-1}
+"ghostship/-23a" {name="???" id=-1}
+"ghostship/-23b" {name="???" id=-1}
+"ghostship/-23c" {name="???" id=-1}
+"ghostship/-24" {name="???" id=-1}
+"ghostship/-25" {name="???" id=-1}
+
+"ghostship/x-1" {name="???" id=1}
+"ghostship/x-2" {name="???" id=-1}
+"ghostship/x-3" {name="???" id=-1}
+"ghostship/x-4" {name="???" id=-1}
+"ghostship/x-5" {name="???" id=2}
+"ghostship/x-6" {name="???" id=-1}
+"ghostship/x-7" {name="???" id=-1}
+"ghostship/x-8" {name="???" id=3}
