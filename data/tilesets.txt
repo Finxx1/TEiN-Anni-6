@@ -488,8 +488,8 @@ ssshithill/main/ {
     area_name "SssHitHill"
     area_label_frame 3
     tile_graphics Tilecaves
-    overlay_graphics Overlayscaves
-    background_graphics ch3bg
+    overlay_graphics Overlaysfield
+    background_graphics bgmarsh
     foreground_graphics None
     fx_shader reflectionripples
     fx_shader_mid cloudripples
@@ -500,6 +500,8 @@ ssshithill/main/ {
     tile_particle_2 waterfall_splash
     tile_particle_3 bubbles
     tile_particle_4 drip
+	
+	global_particle_1 cloudwind_heavy
 
     decoration_1 Decoration4
     decoration_2 Decoration5
