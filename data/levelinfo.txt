@@ -90,26 +90,60 @@
 "abyss/main/-20" {name="Abyss 20" id=20}
 "abyss/main/-21" {name="The Remains" id=-1} #biglife
 
+"bastion/main/-1" {name="Bastion Of Hope 1" id=1} #life
+"bastion/main/-10" {name="Bastion Of Hope 10" id=10} #life
+"bastion/main/-11" {name="Bastion Of Hope 11" id=11} #life
+"bastion/main/-12" {name="Bastion Of Hope 12" id=12} #life
+"bastion/main/-13" {name="Bastion Of Hope 13" id=13} #life
+"bastion/main/-14" {name="Bastion Of Hope 14" id=14} #life
+"bastion/main/-15" {name="Bastion Of Hope 15" id=15} #life
+"bastion/main/-16" {name="Bastion Of Hope 16" id=16} #life
+"bastion/main/-17" {name="Bastion Of Hope 17" id=17} #life
+"bastion/main/-18" {name="Bastion Of Hope 18" id=18} #life
+"bastion/main/-19" {name="Bastion Of Hope 19" id=19} #life
+"bastion/main/-20" {name="Bastion Of Hope 20" id=20} #life
+"bastion/main/-21" {name="Bastion Of Hope 21" id=-1}
+"bastion/main/-22" {name="Bastion Of Hope 22" id=-1}
+"bastion/main/-2" {name="Bastion Of Hope 2" id=2} #life
+"bastion/main/-3" {name="Bastion Of Hope 3" id=3} #life
+"bastion/main/-4" {name="Bastion Of Hope 4" id=4} #life
+"bastion/main/-5" {name="Bastion Of Hope 5" id=5} #life
+"bastion/main/-6" {name="Bastion Of Hope 6" id=6} #life
+"bastion/main/-7" {name="Bastion Of Hope 7" id=7} #life
+"bastion/main/-8" {name="Bastion Of Hope 8" id=8} #life
+"bastion/main/-9" {name="Bastion Of Hope 9" id=9} #life
+
+"bastion/secret/-1" {name="???" id=1} #biglife
+"bastion/secret/-2" {name="???" id=-1}
+"bastion/secret/-3" {name="???" id=2} #biglife
+"bastion/secret/-4" {name="???" id=-1}
+"bastion/secret/-5" {name="???" id=3} #biglife
+"bastion/secret/-6" {name="???" id=4} #biglife
+"bastion/secret/-7" {name="???" id=-1}
+"bastion/secret/-8" {name="???" id=-1}
+"bastion/secret/-9" {name="???" id=1} #cart
+"bastion/secret/-10" {name="???" id=5} #biglife
+
 "exhaust/main/-1" {name="Exhaust 1" id=1} #life
-"exhaust/main/-10" {name="Exhaust 10" id=10} #life
-"exhaust/main/-11" {name="Exhaust 11" id=11} #life
-"exhaust/main/-12" {name="Exhaust 12" id=12} #life
-"exhaust/main/-13" {name="Exhaust 13" id=13} #life
-"exhaust/main/-14" {name="Exhaust 14" id=14} #life
-"exhaust/main/-15" {name="Exhaust 15" id=15} #life
-"exhaust/main/-16" {name="Exhaust" id=-1}
-"exhaust/main/-16x" {name="Exhaust" id=-1}
-"exhaust/main/-17" {name="Exhaust" id=-1}
+"exhaust/main/-11" {name="Exhaust 11" id=10} #life
+"exhaust/main/-12" {name="Exhaust 12" id=11} #life
+"exhaust/main/-13" {name="Exhaust 13" id=12} #life
+"exhaust/main/-14" {name="Exhaust 14" id=13} #life
+"exhaust/main/-15" {name="Exhaust 15" id=14} #life
+"exhaust/main/-16" {name="Exhaust 16" id=15} #life
+"exhaust/main/-17" {name="Exhaust 17" id=-1}
+"exhaust/main/-17x" {name="Exhaust 17" id=-1}
+"exhaust/main/-18" {name="Exhaust 18" id=-1}
 "exhaust/main/-2" {name="Exhaust 2" id=2} #life
 "exhaust/main/-2x" {name="Exhaust 2" id=-1}
 "exhaust/main/-3" {name="Exhaust 3" id=3} #life
 "exhaust/main/-4" {name="Exhaust 4" id=4} #life
 "exhaust/main/-5" {name="Exhaust 5" id=5} #life
-"exhaust/main/-5x" {name="Exhaust" id=-1}
-"exhaust/main/-6" {name="Exhaust 6" id=6} #life
-"exhaust/main/-7" {name="Exhaust 7" id=7} #life
-"exhaust/main/-8" {name="Exhaust 8" id=8} #life
-"exhaust/main/-9" {name="Exhaust 9" id=9} #life
+"exhaust/main/-5x" {name="Exhaust 6" id=-1}
+"exhaust/main/-7" {name="Exhaust 7" id=6} #life
+"exhaust/main/-8" {name="Exhaust 8" id=7} #life
+"exhaust/main/-9" {name="Exhaust 9" id=8} #life
+"exhaust/main/-10" {name="Exhaust 10" id=9} #life
  
 "exhaust/secret/-start" {name="???" id=-1}
 "exhaust/secret/-0" {name="???" id=-1}
@@ -119,8 +153,8 @@
 "exhaust/secret/-3" {name="???" id=3} #biglife
 "exhaust/secret/-4" {name="???" id=-1}
 "exhaust/secret/-5" {name="???" id=-1}
-"exhaust/secret/-6" {name="???" id=-1}
-"exhaust/secret/-7" {name="???" id=1} #cart
+"exhaust/secret/-6" {name="???" id=1} #cart
+"exhaust/secret/-7" {name="???" id=-1}
 "exhaust/secret/-8" {name="???" id=-1}
 "exhaust/secret/-9" {name="???" id=4} #biglife
 
