@@ -13,25 +13,25 @@ pages {
 }
 
 meta {
-    default_node Splunt
+    default_node Swamplands
     
     leftwipes [splunt/-1 exhaust/secret/-start boilingpoint/main/-0 swamplands/-0t]
     rightwipes [ssshithill/main/-0 splunt/-1 sploot/-2]
     upwipes [splunt/-1]
-    downwipes [splunt/-1 sploot/-2]
+    downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
     steventhreshtumors [50 100 170 300]
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/ ghostship/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22
     bodylevel 5c-21
     heartlevel 5b-23
     
-    mute_warpunlock_message [splunt/-1 exhaust/main/-17 ssshithill/main/-a5] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1] //used to set the respawn point in an iron cart
@@ -233,7 +233,7 @@ nodes {
         cart_cheevolevel membrane/-all
         cart_splashframe basiccart
         unlock_condition collected_carts_all
-        unlock_condition_levels [exhaust/secret/-7]   
+        unlock_condition_levels [exhaust/secret/-6]   
         
         down Cart5c
         up Cart3

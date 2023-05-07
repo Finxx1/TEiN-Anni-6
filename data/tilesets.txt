@@ -196,6 +196,128 @@ abyss/main/ {
 	
 }
 
+bastion/main/ {
+    area_name "Bastion Of Hope"
+    area_label_frame 1
+    tile_graphics Tilesanctuary
+    overlay_graphics Overlayssanctuary
+    background_graphics bgsanctuary
+    foreground_graphics none
+    fx_shader ripples
+    palette 11
+	
+    area_type normal
+	
+	decoration_1 HangingBell
+	decoration_2 HalfBlock
+	
+	npc_1 NPCs2
+	
+    tile_particle_1 dust
+    tile_particle_2 hugeBellRing
+    global_particle_1 leaves
+    global_particle_2 wind
+	global_particle_3 cloudwind
+    
+    music [hungarian_rhapsody_intro.ogg, hungarian_rhapsody_loop.ogg]
+	music_volume 1
+    ambience chimes.ogg
+	ambience_volume 1
+	
+	sfx_file bellbuttons.txt
+	
+	art_alts [
+		[Floater, nothing]
+	]
+	
+}
+
+bastion/secret/ {
+    area_name "???"
+    area_label_frame 1
+    tile_graphics Tilesanctuary
+    overlay_graphics Overlayssanctuary
+    background_graphics bgsanctuary
+    foreground_graphics none
+    fx_shader ripples
+    palette 11
+	
+    area_type normal
+	
+	npc_1 NPCsB3
+	npc_2 NPCsB4
+	npc_3 NPCsB2
+	
+	decoration_1 HangingBell
+	decoration_2 HalfBlock
+	
+    tile_particle_1 dust
+    tile_particle_2 smoke_windright_bg
+	tile_particle_3 dripwhite
+    global_particle_1 leaves
+    global_particle_2 wind
+	global_particle_3 cloudwind
+    
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	music_volume 1
+    ambience chimes.ogg
+	ambience_volume 1
+	stop_previous_music false
+	
+	sfx_file bellbuttons.txt
+	
+	art_alts [
+		[Floater, nothing][GlowShroom, firehazard]
+	]
+	
+	2 {
+	fx_shader_mid heatwave2
+	midfx_graphics ShadeBox
+	
+	global_particle_2 embers
+	ambience volcano.ogg
+	}
+	
+	5 {
+	fx_shader_mid heatwave2
+	midfx_graphics ShadeBox
+	
+	global_particle_2 embers
+	ambience volcano.ogg
+	}
+	
+	7 {
+	art_alts [
+		[GlowShroom, SwitchLabel1][GlowShroomSmall, SwitchLabel2]
+	]
+	decoration_1 SwitchLabelTile1
+	decoration_2 SwitchLabelTile2
+	sfx_file bellbuttons_secret.txt
+	}
+	
+	8 {
+	art_alts [
+		[GlowShroom, SwitchLabel1][GlowShroomSmall, SwitchLabel2]
+	]
+	decoration_1 SwitchLabelTile1
+	decoration_2 SwitchLabelTile2
+	sfx_file bellbuttons_secret.txt
+	}
+	
+	9 {
+	art_alts [
+		[GlowShroom, SwitchLabel1][GlowShroomSmall, SwitchLabel2]
+	]
+	decoration_1 SwitchLabelTile1
+	decoration_2 SwitchLabelTile2
+	sfx_file bellbuttons_secret.txt
+	}
+	
+	10 {
+	npc_1 NPCsB5
+	}
+}
+
 exhaust/main/ {
 	area_name "Exhaust"
 	area_label_frame 1
@@ -217,7 +339,7 @@ exhaust/main/ {
 	decoration_2 SteamGrate2
 	decoration_3 SteamGrate3
 	
-	music [jelly_intro.ogg, jelly_loop.ogg]
+	music [exhaust_intro.ogg, exhaust_loop.ogg]
 	ambience clockwork.ogg
 	sfx_file mainsounds_steam.txt
 
@@ -227,25 +349,22 @@ exhaust/main/ {
 
 	platform_physics "data/platformphysics_steam.txt"
 	
-	5x {
-		sfx_file mainsounds.txt
-	}
 	6 {
 		sfx_file mainsounds.txt
 	}
 	7 {
+		sfx_file mainsounds.txt
+	}
+	8 {
 		decoration_1 SteamGrate4
 	}
 	
-	9 {
+	10 {
 		decoration_3 SteamGrate5
 	}
 	
-	10 {
-		decoration_3 SteamGrate4
-		sfx_file mainsounds.txt
-	}
 	11 {
+		decoration_3 SteamGrate4
 		sfx_file mainsounds.txt
 	}
 	12 {
@@ -259,20 +378,23 @@ exhaust/main/ {
 	}
 	15 {
 		sfx_file mainsounds.txt
+	}
+	16 {
+		sfx_file mainsounds.txt
 		decoration_1 SteamGrate5
 		platform_physics "data/platformphysics_steam_end.txt"
 	}
-	16 {
+	17 {
 		decoration_1 ExhaustEyelid1
 		decoration_3 ExhaustEyelid2
 		ambience_volume .4
 	}
-	16x {
+	17x {
 		global_particle_1 wind
 		ambience wind.ogg
 		ambience_volume .2
 	}
-	17 {
+	18 {
 		global_particle_1 wind
 		ambience wind.ogg
 		ambience_volume .2
@@ -309,7 +431,7 @@ exhaust/secret/ {
 	npc_3 NPCsD1
 
 	art_alts [
-	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, none2]
+	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, nothing]
 	]
 
 	platform_physics "data/platformphysics_steam.txt"
@@ -319,32 +441,47 @@ exhaust/secret/ {
 		music none
 	}
 	0 {
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
 		music_volume 1.3
 		sfx_file mainsounds.txt
 	}
 	0x {
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
 		music_volume 1.3
 		sfx_file mainsounds.txt
 		decoration_1 SteamGrate4
 		npc_1 NPCs1
 	}
 	2 {
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
+		music_volume 1.3
 	}
 	5 {
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
+		music_volume 1.3
 	}
-	6 {
-		music jelly_faded.ogg
+	7 {
+		music exhaust_faded.ogg
+		music_volume 1.3
 	}
 	8 {
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
+		music_volume 1.3
+		fx_shader_mid heatwave2
+		midfx_graphics ShadeBox
+		
+		global_particle_1 embers
+		ambience volcano.ogg
 	}
 	9 {
 		decoration_3 DiseasesRunesBlock
-		music jelly_faded.ogg
+		music exhaust_faded.ogg
+		music_volume 1.3
+		fx_shader_mid heatwave2
+		midfx_graphics ShadeBox
+		
+		global_particle_1 embers
+		ambience volcano.ogg
 	}
 }
 

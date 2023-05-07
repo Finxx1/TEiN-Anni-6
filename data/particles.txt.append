@@ -32,6 +32,39 @@ lavadump {
     tags [collide_water, player_bounce_waterfall ]
 }
 
+dripwhite {
+    #system properties
+    movieclip cloud
+    max_particles 250
+    layer 1
+    livebounds [-10, 64, -10, 42]
+    batched false
+    
+    #emitter properties
+    emit_rate [.1,.4]
+    emit_amount 1
+    emit_direction [0, -1]
+    emit_spread 0
+    emit_box [1, 0]
+    emit_offset [0,.5]
+    
+    #particle animation properties
+    particle_lifetime 5
+    initial_speed [1, 4]
+    initial_rotation 0
+    rotation_speed 0
+    force [0, -10]
+    friction 1
+    size_start [1,1.5]
+    size_end 1
+    alpha_start 1
+    alpha_end 1
+    face_moving_direction true
+    speed_scale 0.14
+    inherit_speed 0
+    tags [collide_tile]
+}
+
 smoke_contact {
     #system properties
     movieclip TestParticle2
@@ -389,6 +422,39 @@ fgrain2 {
     speed_scale .5
     inherit_speed 0
     tags [collide_tile, collide_water]
+}
+
+smoke_windright_bg {
+    #system properties
+    movieclip TestParticle2
+    max_particles 500
+    layer 1
+    livebounds [-10, 64, -10, 42]
+    batched false
+    
+    #emitter properties
+    emit_rate 40
+    emit_amount [0,1]
+    emit_direction [0, 1]
+    emit_spread 90
+    emit_box [.8, 0]      #54 for "level width", 32 for "level height"    
+    emit_offset [0,-.2]   #27,16 for middle of the level. 0,0 for bottom left. 54,32 for upper right. this one sets it as a strip at the top 
+    
+    #particle animation properties
+    particle_lifetime [2,3.5]
+    initial_speed [1, 5]
+    initial_rotation 0
+    rotation_speed 0
+    force [4, 7]
+    friction [.95, .959]
+    size_start [4,8]
+    size_end  [0, .75]
+    alpha_start 3 #more than one alpha just means its full alpha for longer before it fades out
+    alpha_end 0
+    face_moving_direction true
+    speed_scale 0
+    inherit_speed 1
+    tags [player_push]
 }
 
 smoke_windr {
