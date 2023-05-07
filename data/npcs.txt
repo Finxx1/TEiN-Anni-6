@@ -123,6 +123,23 @@ NPCs1 {
     ]
 }
 
+NPCs2 {
+#bastion is a wonky ass mess confirmed
+    movieclip NPC2
+    sound_id NPCSkull
+    text [
+        "hey!\nwanna know\na fun fact?"
+		"\nsee these bells?"
+		"you can ring them\nas many times\nas you want . . ."
+		"however, the first\ntime will always\nbe faster"
+		"\n. . . why?"
+		"cause\nyour a\nvirgin!"
+		"\n. . . bluffing!"
+		"i dont\nactually\nknow why"
+		"\n. . ."
+    ]
+}
+
 NPCsG1 {
 #cozy ghost
     movieclip NPCsG1
@@ -163,6 +180,79 @@ NPCsB1 {
 		"and then let the\nworld swallow\nyou back up?"
 		"\n. . ."
 		"you truly are\nthe scum of\nthe earth"
+    ]
+}
+
+NPCsB2 {
+#twins blob
+    movieclip NPCsB2
+    sound_id NPCBlob
+    text [
+		"oh\n. . .\nhi"
+		"you must\nbe the\none"
+		"my sibling\nhas told me\na lot about you"
+		"about your\nways, and,\nuh . . ."
+		"\n. . ."
+		". . . sorry,\nwe shouldn't\nbe talking"
+		"my sibling\nisn't too\nfond of you"
+		"\n. . . sorry!"
+    ]
+}
+
+NPCsB3 {
+#weird blob
+    movieclip NPCsD3
+    sound_id NPCBlob
+    text [
+		"hey!\nyou\nthere!"
+		"get me\ndown from\nhere!"
+		"hanging up here,\nit makes me\noh so dizzy"
+		"i can't\nconcentrate\nlike this"
+		"\n. . ."
+		"this tower, you\nknow what it was\nbuilt for, right?"
+		"a tower so tall,\nit could breach\ninto heaven"
+		"now it's\njust an\nabsolute wreck"
+		"just\nlike my\nlife!"
+		"now,\nseriously, give me\na hand here"
+		"this bell i've got up\nmy ass ain't giving\nup anytime soon"
+		"\n. . . what?"
+    ]
+}
+
+NPCsB4 {
+#weird blob
+    movieclip NPCsD4
+    sound_id NPCBlob
+    text [
+		"you've done\nsomething wicked,\nfucked up"
+		"or so\nwe've been told,\nbut . . ."
+		"maybe\n*you*\nhaven't"
+		"you're not really\nwhat we've\nbeen waiting for"
+		"similar,\nbut not\nquite the same"
+		"\n. . . no"
+		"our sight\ndoesn't\nbetray us"
+		"but this fate\nwe know of,\nis it really yours?"
+		"is it really\n. . .\nours?"
+		"\n. . ."
+    ]
+}
+
+NPCsB5 {
+#the noodle
+    movieclip NPCsB3
+    sound_id NPCBlob
+    text [
+		"GAH!\nshit's fucking\nunbelievable!"
+		"'ve you seen\nthem? 've you\nHEARD them?!"
+		"of course\nyou fucking\nhave!"
+		"breakin'\nthe rules,\nthe customs!"
+		"left and\nright and\nall around"
+		"should just\nstick with\nUP and DOWN!"
+		"why don't\nthey understand\n? ! ?"
+		"aah,\nbut fuck\nthem!"
+		"gonna keep the\ntradition alive\nall on our own!"
+		"just fucking . . .\nstay up here\n. . ."
+		"just like\nWE WERE\nBORN TO"
     ]
 }
 
