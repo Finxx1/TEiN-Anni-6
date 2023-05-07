@@ -485,63 +485,63 @@ sploot/ {
 }
 
 ssshithill/main/ {
-    area_name "SssHitHill"
-    area_label_frame 3
-    tile_graphics Tilecaves
-    overlay_graphics Overlaysfield
-    background_graphics bgmarsh
-    foreground_graphics None
-    fx_shader reflectionripples
-    fx_shader_mid cloudripples
-    palette 12
-    midfx_layer 2
+	area_name "SssHitHill"
+	area_label_frame 3
+	tile_graphics Tilecaves
+	overlay_graphics Overlaysfield
+	background_graphics bgmarsh
+	foreground_graphics None
+	fx_shader reflectionripples
+	fx_shader_mid cloudripples
+	palette 12
+	midfx_layer 2
 
-    tile_particle_1 waterfall
-    tile_particle_2 waterfall_splash
-    tile_particle_3 bubbles
-    tile_particle_4 drip
+	tile_particle_1 waterfall
+	tile_particle_2 waterfall_splash
+	tile_particle_3 bubbles
+	tile_particle_4 drip
 	
 	global_particle_1 cloudwind_heavy
 
-    decoration_1 Decoration4
-    decoration_2 Decoration5
+	decoration_1 Decoration4
+	decoration_2 Decoration5
 
-    area_type normal
+	area_type normal
 
-    npc_3 NPCSHH3
+	npc_3 NPCSHH3
 
-    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
-    ambience ruins.ogg
+	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+	ambience ruins.ogg
 }
 
 ssshithill/secret/ {
-    area_name "???"
-    area_label_frame 3
-    tile_graphics Tilecaves
-    overlay_graphics Overlayscaves
-    background_graphics ch3bg
-    foreground_graphics None
-    fx_shader_mid lighting
-    palette 12
-    midfx_layer 2
-    midfx_graphics ShadeBox
-    shader_param 0.2
+	area_name "???"
+	area_label_frame 3
+	tile_graphics Tilecaves
+	overlay_graphics Overlayscaves
+	background_graphics ch3bg
+	foreground_graphics None
+	fx_shader_mid lighting
+	palette 12
+	midfx_layer 2
+	midfx_graphics ShadeBox
+	shader_param 0.2
 
-    tile_particle_1 waterfall
-    tile_particle_2 waterfall_splash
-    tile_particle_3 bubbles
-    tile_particle_4 drip
+	tile_particle_1 waterfall
+	tile_particle_2 waterfall_splash
+	tile_particle_3 bubbles
+	tile_particle_4 drip
 
-    decoration_1 Decoration4
-    decoration_2 Decoration5
+	decoration_1 Decoration4
+	decoration_2 Decoration5
 
-    area_type normal
+	area_type normal
 
-    npc_1 NPCSHH1
-    npc_2 NPCSHH2
+	npc_1 NPCSHH1
+	npc_2 NPCSHH2
 
-    music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
-    ambience ruins.ogg
+	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+	ambience ruins.ogg
 }
 
 steamworks/main/ {
@@ -550,10 +550,10 @@ steamworks/main/ {
 	
 	tile_graphics Tilecomplex
 	overlay_graphics Overlaystheglow
-    background_graphics bgurban
-    foreground_graphics None
-    fx_shader gravripples
-    palette 9
+	background_graphics bgurban
+	foreground_graphics None
+	fx_shader gravripples
+	palette 9
 	
 	toxic_timer .05
 	
@@ -564,7 +564,7 @@ steamworks/main/ {
 	npc_1 NPCSWSIGN
 	
 	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
-    ambience ruins.ogg
+	ambience ruins.ogg
 }
 
 steamworks/secret/ {
@@ -573,10 +573,10 @@ steamworks/secret/ {
 	
 	tile_graphics Tilecomplex
 	overlay_graphics Overlayscomplex
-    background_graphics bgurban
-    foreground_graphics None
-    fx_shader gravripples
-    palette 9
+	background_graphics bgurban
+	foreground_graphics None
+	fx_shader gravripples
+	palette 9
 	
 	toxic_timer .05
 	
@@ -597,11 +597,11 @@ steamworks/secret/ {
 	}
 	
 	music [none, none]
-    ambience cogs.ogg
+	ambience cogs.ogg
 }
 
 swamplands/ {
-    area_name "Swamplands"
+	area_name "Swamplands"
 	area_label_frame 1
 	tile_graphics Tileradmarsh
 	overlay_graphics Overlaysfield
@@ -646,7 +646,7 @@ swamplands/ {
 }
 
 swamplands/xd {
-    area_name "???"
+	area_name "???"
 	area_label_frame 1
 	tile_graphics Tileradmarsh
 	overlay_graphics Overlaysfield
@@ -679,7 +679,7 @@ swamplands/xd {
 }
 
 swamplands/xu {
-    area_name "???"
+	area_name "???"
 	area_label_frame 1
 	tile_graphics Tileradmarsh
 	overlay_graphics Overlaysfield
@@ -734,7 +734,7 @@ ghostship/ {
 	tile_particle_3 smoke
 	tile_particle_5 splash
 	
-    global_particle_1 cloudwind_heavy
+	global_particle_1 cloudwind_heavy
 	global_particle_2 storm2
 	global_particle_3 fgrain2
 	
@@ -773,7 +773,7 @@ ghostship/ {
 	player_physics "data/playerphysics-BIGbomb.txt"
 	
 	art_alts [
-	    [ChainLink2, None]
+		[ChainLink2, None]
 		[FloatingMine, BIGbomb]
 	]
 	}
@@ -782,7 +782,7 @@ ghostship/ {
 	player_physics "data/playerphysics-BIGbomb2.txt"
 	
 	art_alts [
-	    [ChainLink2, None]
+		[ChainLink2, None]
 		[FloatingMine, BIGbomb]
 	]
 	}
@@ -791,7 +791,7 @@ ghostship/ {
 	player_physics "data/playerphysics-BIGbomb2.txt"
 	
 	art_alts [
-	    [ChainLink2, None]
+		[ChainLink2, None]
 		[FloatingMine, BIGbomb]
 	]
 	}
@@ -800,7 +800,7 @@ ghostship/ {
 	player_physics "data/playerphysics-BIGbomb2.txt"
 	
 	art_alts [
-	    [ChainLink2, None]
+		[ChainLink2, None]
 		[FloatingMine, BIGbomb]
 	]
 	}
@@ -859,7 +859,7 @@ ghostship/ {
 	tile_graphics Tilegraveyard
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
-    music none
+	music none
 	do_wobble false
 	shader_param .6
 	}
@@ -890,7 +890,7 @@ ghostship/x {
 	decoration_2 shipi2
 	decoration_3 shipi3
 	
-    global_particle_1 cloudwind_heavy
+	global_particle_1 cloudwind_heavy
 	global_particle_2 storm2
 	global_particle_3 fgrain2
 	
@@ -902,4 +902,35 @@ ghostship/x {
 	ambience storm.ogg
 	stop_previous_music false
 	ambience_volume 1.4
+}
+
+poached/ {
+	area_name "Poached Tumors"
+	area_label_frame 0
+	
+	tile_graphics Tilefield
+	overlay_graphics Overlaystheglow
+	background_graphics ch2bg
+	foreground_graphics None
+	fx_shader gravripples
+	palette 16
+	
+	toxic_timer .05
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	npc_1 NPCSWSIGN
+	
+	art_alts [
+		[Player, Player2]
+	]
+	
+	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
+	ambience ruins.ogg
+}
+
+poached/x {
+
 }
