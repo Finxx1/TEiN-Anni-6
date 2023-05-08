@@ -631,6 +631,14 @@ swamplands/ {
 		[ChainLink2, None]
 	]
 	
+	0 {
+		area_label_frame 0
+	}
+	
+	0t {
+		area_label_frame 0
+	}
+	
 	5 {
 	global_particle_2 None
 	global_particle_3 None
