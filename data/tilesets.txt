@@ -1045,24 +1045,19 @@ poached/ {
 	area_name "Poached Tumors"
 	area_label_frame 0
 	
-	tile_graphics Tilefield
-	overlay_graphics Overlaystheglow
-	background_graphics ch2bg
+	tile_graphics Tileangrybirds
+	overlay_graphics Overlaysangrybirds
+	background_graphics bgpoached
 	foreground_graphics None
-	fx_shader gravripples
+	fx_shader lighting
 	palette 16
 	
 	toxic_timer .05
 	
-	decoration_1 block
-	decoration_2 ChainLink3
-	decoration_3 Sign
+	decoration_1 AngryBirdsGrass
 	
 	npc_1 NPCSWSIGN
 	
-	art_alts [
-		[Player, Player2]
-	]
 	
 	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
 	ambience ruins.ogg
