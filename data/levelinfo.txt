@@ -139,7 +139,7 @@
 "exhaust/main/-3" {name="Exhaust 3" id=3} #life
 "exhaust/main/-4" {name="Exhaust 4" id=4} #life
 "exhaust/main/-5" {name="Exhaust 5" id=5} #life
-"exhaust/main/-5x" {name="Exhaust 6" id=-1}
+"exhaust/main/-6" {name="Exhaust 6" id=-1}
 "exhaust/main/-7" {name="Exhaust 7" id=6} #life
 "exhaust/main/-8" {name="Exhaust 8" id=7} #life
 "exhaust/main/-9" {name="Exhaust 9" id=8} #life

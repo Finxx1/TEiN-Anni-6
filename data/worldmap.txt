@@ -16,7 +16,7 @@ meta {
     default_node Swamplands
     
     leftwipes [splunt/-1 exhaust/secret/-start boilingpoint/main/-0 swamplands/-0t]
-    rightwipes [ssshithill/main/-0 splunt/-1 sploot/-2]
+    rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2]
     upwipes [splunt/-1]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
@@ -31,7 +31,7 @@ meta {
     bodylevel 5c-21
     heartlevel 5b-23
     
-    mute_warpunlock_message [splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1] //used to set the respawn point in an iron cart
