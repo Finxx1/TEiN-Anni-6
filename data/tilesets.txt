@@ -1064,10 +1064,12 @@ poached/ {
 	
 	decoration_1 AngryBirdsGrass
 	
+	global_particle_1 cloudwind
+	
 	npc_1 NPCSWSIGN
 	
 	
-	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
+	music [angrybirds.ogg, angrybirds.ogg]
 	ambience ruins.ogg
 }
 
