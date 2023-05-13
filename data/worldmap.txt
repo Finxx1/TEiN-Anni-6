@@ -25,7 +25,7 @@ meta {
     stevenlevels [10x-7 10x-5 10x-3 10x-1]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ fallacy/] //launch console automatically when you exit from these worlds
+    cartworlds [fate/ membrane/ fallacy/ hypertension/] //launch console automatically when you exit from these worlds
     
     headlevel 5a-22
     bodylevel 5c-21
@@ -36,7 +36,7 @@ meta {
     game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1] //used to set the respawn point in an iron cart
     timed_cart_entrypoints [g5-1] //maybe you want to put a timer on other carts?
-    console_entry_levels [splunt/-1]
+    console_entry_levels [swamplands/-0]
     nevermore_entry 7-0
     escape_entry depths/main/-21
     nevermore_tumorthresh 450
@@ -241,12 +241,12 @@ nodes {
     
     Cart5c {
         clipname c5c
-        entrylevel c5c-1
+        entrylevel hypertension/-1
         page console
-        cart_cheevolevel c5c-all
+        cart_cheevolevel hypertension/-all
         cart_splashframe basiccart
         unlock_condition collected_carts_all
-        unlock_condition_levels [5cx-12]
+        unlock_condition_levels [bastion/secret/-9]
         
         down Cart4a
         up Cart4c

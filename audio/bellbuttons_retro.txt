@@ -1,0 +1,195 @@
+SetName RetroSoundsBells
+Folder retrosfx
+
+SoundEffectBaseConstants { #relevant group properties are multiplied by these
+    volume 1
+    pitch 1
+    
+    pan_falloff_range [1, 54]
+    volume_falloff_range [10, 60]
+    
+    distance_scale [1, 1] # scales x, y distance by following value (so sound spreads farther horizontally than vertically, etc)
+    
+    falloff_mode linearsquare
+}
+
+SoundEffectGroups {
+    # Example {                                  # the name of the sound effect trigger for the engine to access (PlaySound("Example"))
+    #    files [file1.wav, file2.wav, file3.wav] # triggering this sound chooses 1 file from here at random
+    #    pitch 5                                 # shortcut for pitch_range [5,5]  (constant pitch)
+    #    volume 5                                # shortcut for volume_range [5,5] (constant volume)
+    #    pitch_range [.8, 1.2]                   # pitch randomized between .8 and 1.2
+    #    volume_range [.8, 1.2]                  # volume randomized between .8 and 1.2
+    #    falloff .5                              # multiplied by volume_falloff_range global setting
+    #    falloff_range [1, 1]                    # same but as a range [.5, 2] with a base settingh of [10, 20] results in a new range of [5, 40]
+    #    pan_falloff .5                          # multiplied by pan_falloff_range global setting (should not need)
+    #    pan_falloff_range [1, 1]                # same but as a range [.5, 2] with a base settingh of [10, 20] results in a new range of [5, 40] (should not need)
+    # }
+
+    #playersounds
+    Jump {
+        files [jump1.wav, jump2.wav, jump3.wav]
+        volume 2
+        pitch_range [1.2, 1.5]
+    }
+
+    Collide {
+        files [collide.wav]
+        volume 1
+        pitch_range [.8, 1.2]
+    }
+
+    LandSoft {
+        files [land.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    LandHard {
+        files [land.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    LedgeGrab {
+        files [ledge1.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    Death {
+        files [lose.wav]
+        volume 1
+    }
+    UnderwaterDeath {
+        files [lose.wav]
+        volume 1
+    }
+    DrownDeath {
+        files [lose.wav]
+        volume 1
+    }
+    
+    Crash {
+        files [crash.ogg]
+        volume 1
+    }
+    
+    Splash {
+        files [splash.wav]
+        volume 6
+        pitch_range [.8, 1.2]
+    }
+
+    Boing {
+        files [boing.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+
+    EnemyBounce {
+        files [enembounce.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    
+    Drown1 {
+        files [drown1.wav]
+        volume 4
+    }
+    Drown2 {
+        files [drown2.wav]
+        volume 4
+    }
+    Drown3 {
+        files [drown3.wav]
+        volume 4
+    }
+    
+    CollectCoin{
+        files [coin1.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    Crumble {
+        files [crumbleblock.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+
+    Click {
+        files [coin1.wav]
+        volume 3
+        pitch .5
+    }
+
+    RockSmash {
+        files [smashblock.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    
+    SpikeToggle{
+        files[spiketoggle.wav]
+        volume 2
+        falloff 999
+        pan_falloff 999
+    }
+
+    BlockToggle{
+        files[blocktoggle.wav]
+        volume 2
+        falloff 999
+        pan_falloff 999
+    }
+    
+    Shoot { 
+        files [shoot1.wav, shoot2.wav, shoot3.wav]
+        volume .6
+        pitch_range [.8, 1.2]
+        falloff .7
+    }
+    
+    
+    WinCart { 
+        files [win.wav]
+        volume 4
+    }
+    CrashThwamp {
+        files [thwamp.wav]
+        pitch_range [.8, 1.2]
+        volume 4
+    }
+
+    CrashHellThwamp {
+        files [hellthwamp.wav]
+        pitch_range [.8, 1.2]
+        volume 4
+    }
+    
+    ChompDash {
+        files [chomp.wav]
+        volume 4
+        pitch_range [.8, 1.2]
+    }
+    DemonAttack {
+        files [demon.wav]
+        volume 2
+        pitch_range [.8, 1.2]
+    }
+    SlugCharge {
+        files [grub.wav]
+        volume 1
+        pitch_range [1, 1.4]
+    }
+    CreepGrow {  #testlevels: 4b-15
+        files [creep.wav]
+        volume 5
+        pitch_range [.5, 1.2]
+        falloff .25
+    }
+
+    
+}

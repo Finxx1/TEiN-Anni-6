@@ -197,31 +197,31 @@ abyss/main/ {
 }
 
 bastion/main/ {
-    area_name "Bastion Of Hope"
-    area_label_frame 1
-    tile_graphics Tilesanctuary
-    overlay_graphics Overlayssanctuary
-    background_graphics bgsanctuary
-    foreground_graphics none
-    fx_shader ripples
-    palette 11
+	area_name "Bastion Of Hope"
+	area_label_frame 1
+	tile_graphics Tilesanctuary
+	overlay_graphics Overlayssanctuary
+	background_graphics bgsanctuary
+	foreground_graphics none
+	fx_shader ripples
+	palette 11
 	
-    area_type normal
+	area_type normal
 	
 	decoration_1 HangingBell
 	decoration_2 HalfBlock
 	
 	npc_1 NPCs2
 	
-    tile_particle_1 dust
-    tile_particle_2 hugeBellRing
-    global_particle_1 leaves
-    global_particle_2 wind
+	tile_particle_1 dust
+	tile_particle_2 hugeBellRing
+	global_particle_1 leaves
+	global_particle_2 wind
 	global_particle_3 cloudwind
-    
-    music [hungarian_rhapsody_intro.ogg, hungarian_rhapsody_loop.ogg]
+	
+	music [hungarian_rhapsody_intro.ogg, hungarian_rhapsody_loop.ogg]
 	music_volume 1
-    ambience chimes.ogg
+	ambience chimes.ogg
 	ambience_volume 1
 	
 	sfx_file bellbuttons.txt
@@ -233,16 +233,16 @@ bastion/main/ {
 }
 
 bastion/secret/ {
-    area_name "???"
-    area_label_frame 1
-    tile_graphics Tilesanctuary
-    overlay_graphics Overlayssanctuary
-    background_graphics bgsanctuary
-    foreground_graphics none
-    fx_shader ripples
-    palette 11
+	area_name "???"
+	area_label_frame 1
+	tile_graphics Tilesanctuary
+	overlay_graphics Overlayssanctuary
+	background_graphics bgsanctuary
+	foreground_graphics none
+	fx_shader ripples
+	palette 11
 	
-    area_type normal
+	area_type normal
 	
 	npc_1 NPCsB3
 	npc_2 NPCsB4
@@ -251,16 +251,16 @@ bastion/secret/ {
 	decoration_1 HangingBell
 	decoration_2 HalfBlock
 	
-    tile_particle_1 dust
-    tile_particle_2 smoke_windright_bg
+	tile_particle_1 dust
+	tile_particle_2 smoke_windright_bg
 	tile_particle_3 dripwhite
-    global_particle_1 leaves
-    global_particle_2 wind
+	global_particle_1 leaves
+	global_particle_2 wind
 	global_particle_3 cloudwind
-    
+	
 	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
 	music_volume 1
-    ambience chimes.ogg
+	ambience chimes.ogg
 	ambience_volume 1
 	stop_previous_music false
 	
@@ -316,6 +316,34 @@ bastion/secret/ {
 	10 {
 	npc_1 NPCsB5
 	}
+}
+
+hypertension/ {
+	tile_graphics Tileretrosanctuary
+	overlay_graphics Overlaysretro
+	background_graphics bgretro
+	foreground_graphics none
+	palette 17
+
+	cart_intro_png HypertensionOutrage
+	cart_intro_palette 18
+	
+	music [retro/hungarian_rhapsody_intro.ogg, retro/hungarian_rhapsody_loop.ogg]
+	
+	music_volume .8
+	ambience_volume 1
+	
+	sfx_file bellbuttons_retro.txt
+	
+	area_type cart
+
+	art_alts [
+		[Player, PlayerRetro][Frog, Frogretro][Floater, Floater2][Slug, Slugretro]
+		[SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+		[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+		[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+		[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ThwampEye,ThwampEyeRetro]
+	]
 }
 
 exhaust/main/ {
