@@ -1,6 +1,6 @@
 depths/main/ {
 	area_name "Depths"
-	area_label_frame 0
+	area_label_frame 4
 	tile_graphics Tilehell
 	overlay_graphics Overlayscomplex
 	background_graphics bgretro2
@@ -54,7 +54,7 @@ depths/main/ {
 
 depths/secret/ {
 	area_name "???"
-	area_label_frame 0
+	area_label_frame 4
 	tile_graphics Tilehell
 	overlay_graphics Overlayscomplex
 	background_graphics bgretro2
@@ -198,7 +198,7 @@ abyss/main/ {
 
 bastion/main/ {
 	area_name "Bastion Of Hope"
-	area_label_frame 1
+	area_label_frame 8
 	tile_graphics Tilesanctuary
 	overlay_graphics Overlayssanctuary
 	background_graphics bgsanctuary
@@ -234,7 +234,7 @@ bastion/main/ {
 
 bastion/secret/ {
 	area_name "???"
-	area_label_frame 1
+	area_label_frame 8
 	tile_graphics Tilesanctuary
 	overlay_graphics Overlayssanctuary
 	background_graphics bgsanctuary
@@ -348,7 +348,7 @@ hypertension/ {
 
 exhaust/main/ {
 	area_name "Exhaust"
-	area_label_frame 1
+	area_label_frame 6
 	tile_graphics Tileindustrial
 	overlay_graphics Overlaysairship
 	background_graphics ch3bg
@@ -431,7 +431,7 @@ exhaust/main/ {
 
 exhaust/secret/ {
 	area_name "Exhaust"
-	area_label_frame 1
+	area_label_frame 6
 	tile_graphics Tileindustrial
 	overlay_graphics Overlaysairship
 	background_graphics ch3bg
@@ -606,7 +606,7 @@ fallacy/ {
 
 splunt/ {
 	area_name "The Splunt"
-	area_label_frame 4
+	area_label_frame 3
 	tile_graphics Tiletox
 	overlay_graphics Overlaystox
 	background_graphics ch4abg
@@ -629,7 +629,7 @@ splunt/ {
 
 sploot/ {
 	area_name "The Sploot"
-	area_label_frame 4
+	area_label_frame 3
 	tile_graphics Tiletox
 	overlay_graphics Overlaystox
 	background_graphics ch4abg
@@ -651,7 +651,7 @@ sploot/ {
 
 ssshithill/main/ {
 	area_name "SssHitHill"
-	area_label_frame 3
+	area_label_frame 7
 	tile_graphics Tilecaves
 	overlay_graphics Overlaysfield
 	background_graphics bgmarsh
@@ -681,7 +681,7 @@ ssshithill/main/ {
 
 ssshithill/secret/ {
 	area_name "???"
-	area_label_frame 3
+	area_label_frame 7
 	tile_graphics Tilecaves
 	overlay_graphics Overlayscaves
 	background_graphics ch3bg
@@ -711,7 +711,7 @@ ssshithill/secret/ {
 
 steamworks/main/ {
 	area_name "Steamworks"
-	area_label_frame 0
+	area_label_frame 2
 	
 	tile_graphics Tilecomplex
 	overlay_graphics Overlaystheglow
@@ -734,7 +734,7 @@ steamworks/main/ {
 
 steamworks/secret/ {
 	area_name "???"
-	area_label_frame 0
+	area_label_frame 2
 	
 	tile_graphics Tilecomplex
 	overlay_graphics Overlayscomplex
@@ -888,7 +888,7 @@ swamplands/xu {
 
 ghostship/ {
 	area_name "Ghost Ship"
-	area_label_frame 6
+	area_label_frame 5
 	tile_graphics Tileairship
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
@@ -1040,7 +1040,7 @@ ghostship/ {
 
 ghostship/x {
 	area_name "???"
-	area_label_frame 6
+	area_label_frame 5
 	tile_graphics Tileairship
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
