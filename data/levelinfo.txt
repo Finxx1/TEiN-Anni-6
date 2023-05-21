@@ -124,6 +124,10 @@
 "bastion/secret/-9" {name="???" id=1} #cart
 "bastion/secret/-10" {name="???" id=5} #biglife
 
+"chimney/main/-0" {name="???" id=-1} #life
+"chimney/main/-1" {name="Chimney 1" id=-1} 
+"chimney/main/-2" {name="Chimney 2" id=-1} 
+
 "exhaust/main/-1" {name="Exhaust 1" id=1} #life
 "exhaust/main/-11" {name="Exhaust 11" id=10} #life
 "exhaust/main/-12" {name="Exhaust 12" id=11} #life
