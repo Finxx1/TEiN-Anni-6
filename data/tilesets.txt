@@ -752,12 +752,17 @@ steamworks/main/ {
 	area_name "Steamworks"
 	area_label_frame 2
 	
-	tile_graphics Tilecomplex
+	tile_graphics Tileatlantis
 	overlay_graphics Overlaystheglow
-	background_graphics bgurban
+	background_graphics bgsolid
 	foreground_graphics None
 	fx_shader gravripples
 	palette 9
+	
+	1 {
+		background_graphics bgurban
+		tile_graphics Tilecomplex
+	}
 	
 	toxic_timer .05
 	
