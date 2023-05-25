@@ -652,15 +652,54 @@ sploot/ {
 ssshithill/main/ {
 	area_name "SssHitHill"
 	area_label_frame 7
-	tile_graphics Tilecaves
+	tile_graphics Tilehill
 	overlay_graphics Overlaysfield
 	background_graphics bgmarsh
 	foreground_graphics None
-	fx_shader reflectionripples
-	fx_shader_mid cloudripples
+	fx_shader sludgeglow2
 	palette 12
-	midfx_layer 2
-
+	
+	0 {
+		fx_shader_mid sludgeglow2
+		midfx_graphics SolidBox
+		midfx_layer 2
+	}
+	
+	a1 {
+		fx_shader_mid lightingmodded
+		midfx_graphics SolidBox
+		midfx_layer 2
+		shader_param .4
+	}
+	
+	a2 {
+		fx_shader_mid lightingmodded
+		midfx_graphics SolidBox
+		midfx_layer 2
+		shader_param .4
+	}
+	
+	a3 {
+		fx_shader_mid lightingmodded
+		midfx_graphics SolidBox
+		midfx_layer 2
+		shader_param .4
+	}
+	
+	a4 {
+		fx_shader_mid lightingmodded
+		midfx_graphics SolidBox
+		midfx_layer 2
+		shader_param .4
+	}
+	
+	a5 {
+		fx_shader_mid lightingmodded
+		midfx_graphics SolidBox
+		midfx_layer 2
+		shader_param .4
+	}
+	
 	tile_particle_1 waterfall
 	tile_particle_2 waterfall_splash
 	tile_particle_3 bubbles
