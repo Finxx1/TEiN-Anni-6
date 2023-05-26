@@ -316,11 +316,15 @@ bastion/secret/ {
 	10 {
 	npc_1 NPCsB5
 	}
+	
+	11 {
+	npc_1 NPCH4
+	}
 }
 
-chimney/main/ {
+bastion/future/ {
 	area_name "Chimney"
-	area_label_frame 1
+	area_label_frame 16
 	tile_graphics Tilequarry
 	overlay_graphics Overlayscomplex
 	background_graphics bgsanctuary
@@ -357,12 +361,6 @@ chimney/main/ {
 		[Bullet, BulletLaser]
 		[Floater, LaserOrb]
 	]
-	
-	0 {
-		area_label_frame 0
-		music none
-		ambience_volume 1.3
-	}
 	
 }
 
@@ -559,11 +557,17 @@ exhaust/secret/ {
 		global_particle_1 embers
 		ambience volcano.ogg
 	}
+	10 {
+		music exhaust_faded.ogg
+		music_volume 1.3
+		
+		npc_1 NPCH2
+	}
 }
 
-boilingpoint/main/ {
+exhaust/future/ {
 	area_name "Boiling Point"
-	area_label_frame 0
+	area_label_frame 16
 	tile_graphics Tileindustrialdark
 	overlay_graphics Overlaysend
 	background_graphics ch3bg

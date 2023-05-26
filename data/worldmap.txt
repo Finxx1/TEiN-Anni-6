@@ -15,16 +15,16 @@ pages {
 meta {
     default_node Swamplands
     
-    leftwipes [splunt/-1 exhaust/secret/-start steamworks/main/-1 boilingpoint/main/-0 swamplands/-0t]
+    leftwipes [splunt/-1 exhaust/secret/-start steamworks/main/-1 swamplands/-0t]
     rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2]
     upwipes [splunt/-1 swamplands/xu-4]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
     steventhreshtumors [50 100 170 300]
-    stevenlevels [10x-7 10x-5 10x-3 10x-1]
+    stevenlevels [10x-7 exhaust/future/-1 10x-3 bastion/future/-0]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/ hypertension/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
@@ -81,7 +81,6 @@ nodes {
 		
 		right Steamworks
 		left SssHitHill
-		down TheFuture
 		up Bastion
 	}
 	
@@ -143,57 +142,13 @@ nodes {
 		left Splunt
 	}
 	
-	TheFuture {
-        clipname future
-        entrylevel none
+	StevenHead {
+        clipname steve
+        entrylevel 10x-1
         page lightworld
-        unlock_condition always_unlocked
-        
-        select ThePast
-        up Swamplands
-    }
-    
-    //The Future
-    ThePast {
-        clipname past
-        entrylevel none
-        page darkworld
-        unlock_condition always_unlocked
-        
-        select TheFuture
-        down Sploot
-    }
-    
-    Sploot {
-        clipname splitdark
-        entrylevel sploot/-2
-        page darkworld
-        levelgroups [sploot/]
-		unlock_condition always_unlocked
-        
-        up ThePast
-        right Pot
-		down Abyss
-    }
-    
-    Pot {
-        clipname pot
-        entrylevel boilingpoint/main/-1
-        page darkworld
-        levelgroups [boilingpoint/main/]
-		unlock_condition visited_levels_all
-		unlock_condition_levels [boilingpoint/main/-0]
-        
-        left Sploot
-    }
-    
-    Abyss {
-        clipname abyss
-        entrylevel abyss/main/-1
-        page darkworld
-        levelgroups [abyss/main/]
-        
-        up Sploot
+        levelgroups [exhaust/future/ bastion/future/]
+        unlock_condition collected_carts_any
+        unlock_condition_levels [10x-2 exhaust/future/-5x 10x-6 bastion/future/-6]    
     }
 	
     //carts
@@ -329,12 +284,12 @@ nodes {
     
     IronCart1 {
         clipname i1
-        entrylevel fallacy/-1
+        entrylevel i1/-1
         page console
         cart_cheevolevel i1-all
         cart_splashframe ironman
         unlock_condition collected_carts_all
-        unlock_condition_levels [boilingpoint/main/-5x]
+        unlock_condition_levels [10x-2]
         
         down IronCart2
         up MegaCart
@@ -342,12 +297,12 @@ nodes {
     
     IronCart2 {
         clipname i2
-        entrylevel i2-1
+        entrylevel fallacy/-1
         page console
-        cart_cheevolevel i2-all
+        cart_cheevolevel fallacy-all
         cart_splashframe ironman
         unlock_condition collected_carts_all
-        unlock_condition_levels [10x-6]
+        unlock_condition_levels [exhaust/future/-5x]
         
         down IronCart3
         up IronCart1
