@@ -17,7 +17,7 @@ meta {
     
     leftwipes [splunt/-1 exhaust/secret/-start steamworks/main/-1 boilingpoint/main/-0 swamplands/-0t]
     rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2]
-    upwipes [splunt/-1]
+    upwipes [splunt/-1 swamplands/xu-4]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
