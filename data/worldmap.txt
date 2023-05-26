@@ -17,7 +17,7 @@ meta {
     
     leftwipes [splunt/-1 exhaust/secret/-start steamworks/main/-1 boilingpoint/main/-0 swamplands/-0t]
     rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2]
-    upwipes [splunt/-1]
+    upwipes [splunt/-1 swamplands/xu-4]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
@@ -27,7 +27,7 @@ meta {
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ boilingpoint/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/ hypertension/] //launch console automatically when you exit from these worlds
     
-    headlevel 5a-22
+    headlevel ghostship/-25
     bodylevel 5c-21
     heartlevel 5b-23
     
