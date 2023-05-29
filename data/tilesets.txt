@@ -656,6 +656,64 @@ fallacy/ {
 	]
 }
 
+struggle/ {
+	area_name "Struggle"
+	tile_graphics Tileretrobricks
+	overlay_graphics Overlaysretro
+	background_graphics bgretrox
+	foreground_graphics none
+	palette 20
+	decoration_1 PortalUp_retro
+	decoration_2 PortalDown_retro
+	decoration_3 RetroWarpGate
+	
+	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
+
+	cart_intro_png Struggle
+	cart_intro_palette 19
+	
+	area_type ironcart
+	art_alts [
+		[Player, PlayerRetro][Frog, Frogretro][Floater, Centipede1retro][Slug, Slugretro]
+		[SkullFloater, Centipede2retro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+		[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, eyeshooterretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+		[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink2, ChainLinkretro][ChainLink, ChainLinkretro]
+		[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+		[OrbLarge, pacman][ThwampGear, ThwampGearRetro][SpeechBubble, SpeechBubbleRetro][SpeechBubble2, SpeechBubbleRetro]
+		
+		[MiniFrog, MiniFlearetro][MiniFly, MiniFlyretro][Fly, MiniFlyretro]
+	]
+}
+
+struggle/b {
+	area_name "Struggle"
+	tile_graphics Tileretrobricks
+	overlay_graphics Overlaysretro
+	background_graphics bgretrox
+	foreground_graphics none
+	palette 19
+	decoration_1 PortalUp_retro
+	decoration_2 PortalDown_retro
+	decoration_3 RetroWarpGate
+	
+	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
+
+	cart_intro_png Struggle
+	cart_intro_palette 19
+	
+	area_type ironcart
+	art_alts [
+		[Player, PlayerRetro][Frog, Frogretro][Floater, Centipede1retro][Slug, Slugretro]
+		[SkullFloater, Centipede2retro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+		[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, eyeshooterretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+		[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink2, ChainLinkretro][ChainLink, ChainLinkretro]
+		[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+		[OrbLarge, pacman][ThwampGear, ThwampGearRetro][SpeechBubble, SpeechBubbleRetro][SpeechBubble2, SpeechBubbleRetro]
+		
+		[MiniFrog, MiniFlearetro][MiniFly, MiniFlyretro][Fly, MiniFlyretro]
+	]
+}
+
 splunt/ {
 	area_name "The Splunt"
 	area_label_frame 3
