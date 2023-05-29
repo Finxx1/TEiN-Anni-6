@@ -123,6 +123,7 @@
 "bastion/secret/-8" {name="???" id=-1}
 "bastion/secret/-9" {name="???" id=1} #cart
 "bastion/secret/-10" {name="???" id=5} #biglife
+"bastion/secret/-11" {name="???" id=-1}
 
 "exhaust/main/-1" {name="Exhaust 1" id=1} #life
 "exhaust/main/-11" {name="Exhaust 11" id=10} #life
@@ -157,14 +158,7 @@
 "exhaust/secret/-7" {name="???" id=-1}
 "exhaust/secret/-8" {name="???" id=-1}
 "exhaust/secret/-9" {name="???" id=4} #biglife
-
-"boilingpoint/main/-0" {name="???" id=-1}
-"boilingpoint/main/-1" {name="Boiling Point 1" id=-1}
-"boilingpoint/main/-2" {name="Boiling Point 2" id=-1}
-"boilingpoint/main/-3" {name="Boiling Point 3" id=-1}
-"boilingpoint/main/-4" {name="Boiling Point 4" id=-1}
-"boilingpoint/main/-5" {name="Boiling Point 5" id=-1}
-"boilingpoint/main/-5x" {name="Boiling Point 6" id=1} #cart
+"exhaust/secret/-10" {name="???" id=-1}
 
 "splunt/-1" {name="The Splunt" id=-1}
 
@@ -271,3 +265,15 @@
 "ghostship/x-6" {name="???" id=-1}
 "ghostship/x-7" {name="???" id=-1}
 "ghostship/x-8" {name="???" id=3} #biglife
+
+"exhaust/future/-0" {name="???" id=-1}
+"exhaust/future/-1" {name="???" id=-1}
+"exhaust/future/-2" {name="???" id=-1}
+"exhaust/future/-3" {name="???" id=-1}
+"exhaust/future/-4" {name="???" id=-1}
+"exhaust/future/-5" {name="???" id=-1}
+"exhaust/future/-5x" {name="???" id=2} #cart
+
+"bastion/future/-0" {name="???" id=-1}
+"bastion/future/-1" {name="???" id=-1} 
+"bastion/future/-2" {name="???" id=-1} 

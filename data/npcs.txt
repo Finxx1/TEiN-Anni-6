@@ -461,4 +461,76 @@ NPCGHOST_2 {
          "im not sure how\npowerful it really is"
          "i just kinda stole\nthis bomb from\nsomeone else"
     ]
-}	
+}
+
+NPCH1 {
+#basic sideways
+    movieclip NPCH1
+    sound_id NPCSteven
+    text [
+		"hm,\nhow disappointing"
+		"we expected\nsome gains . . .\nsome . . . girth"
+		"more\nthan 50,\nat least"
+		"do you\nget what\ni'm saying?"
+		"do not fret,\nwe're not\ngoing anywhere"
+		"be on your\nway then,\nwe will wait"
+    ]
+    
+    alt_text [
+        "hmm,\nnot very\nimpressive"
+		"\n. . ."
+		"nevermind that,\nwe'll make\nit work"
+    ]
+}
+
+NPCH2 {
+#basic sideways
+    movieclip NPCH2
+    sound_id NPCSteven
+    text [
+		"this place,\nit will all go\ndown in due time"
+		"it'll be\nquite the sight\nlater on"
+		"oh?\nyou want\na glimpse?"
+		"mmm,\nlet me\nsee . . ."
+        "gah! don't\nwaste our time\nlike this"
+		"come back\nwith 100 or\nno go"
+    ]
+    
+    alt_text [
+        "mm, quite\nthe swarm\nyou got there"
+		"this'll do,\nthis'll do\n. . ."
+		"\nhop in now"
+    ]
+}
+
+NPCH3 {
+#basic sideways
+    movieclip NPCH3
+    sound_id NPCSteven
+    text [
+		"\n."
+    ]
+    
+    alt_text [
+        "\n."
+    ]
+}
+
+NPCH4 {
+#basic sideways
+    movieclip NPCH4
+    sound_id NPCSteven
+    text [
+		"\n. . ."
+		"ghhhh\n. . .\nuhh . . ."
+		"where . . .\n. . .\nare we . . ."
+		"you . . .\nmake it stop\n. . . please"
+		". . .\n300\n. . ."
+		". . .\nHURRY\n. . ."
+    ]
+    
+    alt_text [
+		"\n. . ."
+        "\nfinally . . ."
+    ]
+}
