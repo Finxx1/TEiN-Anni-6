@@ -21,7 +21,7 @@ meta {
     downwipes [splunt/-1 sploot/-2 bastion/main/-1]
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
-    steventhreshtumors [50 100 170 300]
+    steventhreshtumors [50 100 150 200]
     stevenlevels [10x-7 exhaust/future/-1 10x-3 bastion/future/-0]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
@@ -34,7 +34,7 @@ meta {
     mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
-    iron_cart_entrypoints [fallacy/-1] //used to set the respawn point in an iron cart
+    iron_cart_entrypoints [fallacy/-1 struggle/-1] //used to set the respawn point in an iron cart
     timed_cart_entrypoints [g5-1] //maybe you want to put a timer on other carts?
     console_entry_levels [swamplands/-0]
     nevermore_entry 7-0
@@ -148,7 +148,7 @@ nodes {
         page lightworld
         levelgroups [exhaust/future/ bastion/future/]
         unlock_condition collected_carts_any
-        unlock_condition_levels [10x-2 exhaust/future/-5x 10x-6 bastion/future/-6]    
+        unlock_condition_levels [10x-2 exhaust/future/-5x 10x-6 bastion/future/-5]    
     }
 	
     //carts
@@ -299,7 +299,7 @@ nodes {
         clipname i2
         entrylevel fallacy/-1
         page console
-        cart_cheevolevel fallacy-all
+        cart_cheevolevel fallacy/-all
         cart_splashframe ironman
         unlock_condition collected_carts_all
         unlock_condition_levels [exhaust/future/-5x]
@@ -323,12 +323,12 @@ nodes {
     
     IronCart4 {
         clipname i4
-        entrylevel i4-1
+        entrylevel struggle/-1
         page console
-        cart_cheevolevel i4-all
+        cart_cheevolevel struggle/-all
         cart_splashframe ironman
         unlock_condition collected_carts_all
-        unlock_condition_levels [10x-2]
+        unlock_condition_levels [bastion/future/-5]
         
         down TowerCart
         up IronCart3
