@@ -534,3 +534,17 @@ NPCH4 {
         "\nfinally . . ."
     ]
 }
+
+HNPC0 { 
+#basic upright skull looks left
+    movieclip NPC1
+    sound_id NPCSkull
+    text [
+        "i fucking hate bees\n"
+        "they ate my goddamn eyes"
+		"and they took my wallet"
+		"thieving bastards. . ."
+		". . ."
+		"don't get stung, chump!"
+    ]
+}

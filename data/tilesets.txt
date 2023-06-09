@@ -1225,3 +1225,161 @@ ghostship/x {
 	stop_previous_music false
 	ambience_volume 1.4
 }
+
+hive/h {
+    area_name "The Hive"
+    tile_graphics Tiletox
+    overlay_graphics Overlaystox
+    background_graphics hellbg
+    foreground_graphics None
+    palette 21
+
+    midfx_layer 2
+    
+    music [bumblebee_intro.ogg, bumblebee_loop.ogg]
+    ambience h_amb.ogg
+
+    tile_particle_1 drip
+    tile_particle_2 bubbles
+	
+    music_volume 1
+    ambience_volume 1
+
+    decoration_1 Deco11
+
+	npc_1 HNPC0
+
+    shader_param .8
+    
+    area_type normal
+
+    0 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .3
+   
+        shader_param .6
+      }
+
+    9 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+
+    10 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+
+	  14 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+	  
+	 15 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+	 16 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+	  21 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume .7
+
+        shader_param .6
+      }
+
+    art_alts [
+        [Floater, FloaterBuzz]
+		[OrbChomp, WatcherBee]
+
+    ]
+
+}
+
+
+hive/hxd {
+    area_name "The Hive"
+    tile_graphics Tiletox
+    overlay_graphics Overlaystox
+    background_graphics hellbg
+    foreground_graphics None
+    palette 21
+
+    midfx_layer 2
+    
+    music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+    ambience h_amb.ogg
+    stop_previous_music false
+    
+    music_volume 1
+    ambience_volume 0.8
+    
+    area_type normal
+	
+	    art_alts [
+        [Floater, FloaterBuzz]
+		[OrbChomp, WatcherBee]	
+		]
+		
+	1 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume 1
+
+        shader_param .4
+      }
+	  
+	3 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume 1
+
+        shader_param .6
+      }
+	  
+	4 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume 1
+
+        shader_param .6
+      }
+	5 {
+        fx_shader_mid lighting
+        midfx_graphics ShadeBox
+
+        music_volume 1
+
+        shader_param .6
+      }
+}
+
