@@ -283,3 +283,36 @@
 "ghostship/x-6" {name="???" id=-1}
 "ghostship/x-7" {name="???" id=-1}
 "ghostship/x-8" {name="???" id=3} #biglife
+
+
+"h-0" {name="The Hive" id=1}
+
+"h-1" {name="The Hive 1" id=1}
+"h-2" {name="The Hive 2" id=2}
+"h-3" {name="The Hive 3" id=3}
+"h-4" {name="The Hive 4" id=4}
+"h-5" {name="The Hive 5" id=5}
+"h-6" {name="The Hive 6" id=6}
+"h-7" {name="The Hive 7" id=7}
+"h-8" {name="The Hive 8" id=8}
+"h-9" {name="The Hive 9" id=9}
+"h-10" {name="The Hive 10" id=10}
+"h-11" {name="The Hive 11" id=11}
+"h-12" {name="The Hive 12" id=12}
+"h-13" {name="The Hive 13" id=13}
+"h-14" {name="The Hive 14" id=14}
+"h-15" {name="The Hive 15" id=15}
+"h-16" {name="The Hive 16" id=16}
+"h-17" {name="The Hive 17" id=17}
+"h-18" {name="The Hive 18" id=18}
+"h-19" {name="The Hive 19" id=19}
+"h-20" {name="The Hive 20" id=20}
+
+"h-21" {name="The Hive" id=1}
+
+"hxd-1" {name="???" id=1}
+"hxd-2" {name="???" id=2}
+"hxd-3" {name="???" id=3}
+"hxd-4" {name="???" id=4}
+"hxd-5" {name="???" id=5}
+"hxd-6" {name="???" id=6}
