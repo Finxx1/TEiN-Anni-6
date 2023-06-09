@@ -1226,7 +1226,7 @@ ghostship/x {
 	ambience_volume 1.4
 }
 
-h {
+hive/h {
     area_name "The Hive"
     tile_graphics Tiletox
     overlay_graphics Overlaystox
@@ -1322,7 +1322,9 @@ h {
 
 }
 
-hxd {
+
+
+hive/hxd {
     area_name "The Hive"
     tile_graphics Tiletox
     overlay_graphics Overlaystox
@@ -1380,4 +1382,5 @@ hxd {
 
         shader_param .6
       }
+
 }
