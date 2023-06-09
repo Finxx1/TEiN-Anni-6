@@ -1,0 +1,34 @@
+FIXES/CHANGES TO ORIGINAL
+- Removed secret path in h-5, feels wonky based on map layout
+
+- Filled in space around h-0 so that screenshake doesn't show empty space
+
+- Extended platform in h-3
+
+- Fixed falling block trigger placement in h-6
+
+- Added level trans to h-9 and added checkpoint
+
+- Removed sliding decoration from h-9, was not needed and looked kinda goofy
+
+- Added secret next to h-9
+
+- Changed hook and level transistion in h-10
+
+- Changed hook placement, and slightly change ceiling + breakable block, and shifted camera slightly in h-11
+
+NEW CONTENT
+
+- Added levels 13 - 21
+
+- Added Watcher enemies as another mechanic to area
+
+- Added secret areas 3 - 6
+
+- Bee buzzing ambience
+
+- New NPC in h-0
+
+TO DO
+
+- Maybe add a new music track?
