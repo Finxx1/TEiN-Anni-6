@@ -1,14 +1,15 @@
 "ssshithill/main/-0" {name="SssHitHill 1" id=1}
-"ssshithill/main/-a1" {name="SssHitHill A2" id=2}
-"ssshithill/main/-a2" {name="SssHitHill A3" id=3}
-"ssshithill/main/-a3" {name="SssHitHill A4" id=4}
-"ssshithill/main/-a4" {name="SssHitHill A5" id=5}
-"ssshithill/main/-a5" {name="SssHitHill A6" id=1} #cart
-"ssshithill/main/-b1" {name="SssHitHill B2" id=7}
-"ssshithill/main/-b2" {name="SssHitHill B3" id=8}
-"ssshithill/main/-b3" {name="SssHitHill B4" id=9}
-"ssshithill/main/-b4" {name="SssHitHill B5" id=10}
-"ssshithill/main/-b5" {name="SssHitHill B6" id=11}
+"ssshithill/main/-a1" {name="SssHitHill A1" id=2}
+"ssshithill/main/-a2" {name="SssHitHill A2" id=3}
+"ssshithill/main/-a3" {name="SssHitHill A3" id=4}
+"ssshithill/main/-a4" {name="SssHitHill A4" id=5}
+"ssshithill/main/-a5" {name="SssHitHill A5" id=1} #cart
+"ssshithill/main/-b1" {name="SssHitHill B1" id=7}
+"ssshithill/main/-b2" {name="SssHitHill B2" id=8}
+"ssshithill/main/-b3" {name="SssHitHill B3" id=9}
+"ssshithill/main/-b4" {name="SssHitHill B4" id=10}
+"ssshithill/main/-b5" {name="SssHitHill B5" id=11}
+"ssshithill/main/-1" {name="SssHitHill 2" id=12}
 
 "depths/main/-1" {name="Depths 1" id=1}
 "depths/main/-2" {name="Depths 2" id=2} 
@@ -284,7 +285,7 @@
 "ghostship/x-7" {name="???" id=-1}
 "ghostship/x-8" {name="???" id=3} #biglife
 
-"hive/h-0" {name="The Hive" id=1}
+"hive/h-0" {name="The Hive" id=-1}
 
 "hive/h-1" {name="The Hive 1" id=1}
 "hive/h-2" {name="The Hive 2" id=2}
@@ -310,9 +311,8 @@
 "hive/h-21" {name="The Hive" id=1}
 
 "hive/hxd-1" {name="???" id=1}
-"hive/hxd-2" {name="???" id=2}
-"hive/hxd-3" {name="???" id=3}
-"hive/hxd-4" {name="???" id=4}
-"hive/hxd-5" {name="???" id=5}
-"hive/hxd-6" {name="???" id=6}
+"hive/hxd-3" {name="???" id=2}
+"hive/hxd-4" {name="???" id=3}
+"hive/hxd-5" {name="???" id=4}
+"hive/hxd-6" {name="???" id=5}
 
