@@ -25,7 +25,7 @@ meta {
     stevenlevels [10x-7 exhaust/future/-1 10x-3 bastion/future/-0]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/ hive/h] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ fallacy/ hypertension/] //launch console automatically when you exit from these worlds
+    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
     bodylevel 5c-21
@@ -82,6 +82,16 @@ nodes {
 		right Steamworks
 		left SssHitHill
 		up Bastion
+		down TheHive
+	}
+	
+	TheHive {
+		clipname hive
+		entrylevel hive/h-0
+		page lightworld
+		levelgroups [hive/h hive/hxd]
+		
+		up Swamplands
 	}
 	
 	Bastion {

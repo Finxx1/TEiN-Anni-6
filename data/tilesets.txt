@@ -343,7 +343,9 @@ bastion/future/ {
 	decoration_2 HalfBlock
 	decoration_3 OrbHolder
 	
-	npc_1 NPCs2
+	npc_1 NPCsD3
+	
+	do_wobble true
 	
 	global_particle_1 embers
 	global_particle_2 mist2
@@ -358,8 +360,7 @@ bastion/future/ {
 	sfx_file bellbuttons_future.txt
 	
 	art_alts [
-		[Bullet, BulletLaser]
-		[Floater, LaserOrb]
+		[Bullet, BulletLaser][Floater, LaserOrb][Cartridge, cart3]
 	]
 	
 }
@@ -566,7 +567,7 @@ exhaust/secret/ {
 }
 
 exhaust/future/ {
-	area_name "Boiling Point"
+	area_name "The Future"
 	area_label_frame 16
 	tile_graphics Tileindustrialdark
 	overlay_graphics Overlaysend
@@ -575,6 +576,8 @@ exhaust/future/ {
 	fx_shader_mid lavaglow_exhaust
 	midfx_graphics SolidBox
 	palette 4
+	
+	do_tilt true
 	
 	area_type dark
 	npc_1 NPCsD2
@@ -588,7 +591,7 @@ exhaust/future/ {
 	decoration_2 SteamGrate2
 	decoration_3 SteamGrate3
 	
-	music jelly_faded.ogg
+	music [requiem_intro.ogg, requiem_loop.ogg]
 	ambience volcano.ogg
 
 	art_alts [
@@ -1260,6 +1263,7 @@ hive/h {
         music_volume .3
    
         shader_param .6
+		area_label_frame 9
       }
 
     9 {
