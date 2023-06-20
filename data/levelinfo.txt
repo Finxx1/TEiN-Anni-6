@@ -211,7 +211,17 @@
 "fallacy/-5" {name="-2-5" id=-1}
 
 "struggle/-1" {name="-4-1" id=-1}
+"struggle/-1x" {name="-4-1" id=-1}
 "struggle/b-1" {name="+4-1" id=-1}
+"struggle/-2" {name="-4-2" id=-1}
+"struggle/b-2" {name="+4-2" id=-1}
+"struggle/-3" {name="-4-3" id=-1}
+"struggle/b-3" {name="+4-3" id=-1}
+"struggle/-4" {name="-4-4" id=-1}
+"struggle/b-4" {name="+4-4" id=-1}
+"struggle/-5" {name="-4-5" id=-1}
+"struggle/-5x" {name="-4-5" id=-1}
+"struggle/b-5" {name="+4-5" id=-1}
 
 "swamplands/-0t" {name="Swamplands" id=-1}
 "swamplands/-0" {name="Swamplands" id=-1}
