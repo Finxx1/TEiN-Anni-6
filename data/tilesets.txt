@@ -219,8 +219,8 @@ bastion/main/ {
 	global_particle_2 wind
 	global_particle_3 cloudwind
 	
-	music [hungarian_rhapsody_intro.ogg, hungarian_rhapsody_loop.ogg]
-	music_volume 1
+	music [lacrimal_frost_intro.ogg, lacrimal_frost_loop.ogg]
+	music_volume 1.3
 	ambience chimes.ogg
 	ambience_volume 1
 	
@@ -668,7 +668,7 @@ struggle/ {
 	palette 20
 	decoration_1 PortalUp_retro
 	decoration_2 PortalDown_retro
-	decoration_3 RetroWarpGate
+	decoration_3 PortalRight_retro
 	
 	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
 
@@ -697,7 +697,7 @@ struggle/b {
 	palette 19
 	decoration_1 PortalUp_retro
 	decoration_2 PortalDown_retro
-	decoration_3 RetroWarpGate
+	decoration_3 PortalLeft_retro
 	
 	music [retro/requiem_intro.ogg, retro/requiem_loop.ogg]
 
