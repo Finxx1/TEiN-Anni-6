@@ -769,7 +769,7 @@ ssshithill/main/ {
 	overlay_graphics Overlaysfield
 	background_graphics bgmarsh
 	foreground_graphics None
-	fx_shader sludgeglow2
+	fx_shader cloudripples
 	palette 12
 	
 	0 {
@@ -1231,13 +1231,13 @@ ghostship/x {
 
 hive/h {
     area_name "The Hive"
-    tile_graphics Tiletox
+    tile_graphics TileHive
     overlay_graphics Overlaystox
     background_graphics hellbg
     foreground_graphics None
     palette 21
-
-    midfx_layer 2
+	
+	midfx_layer 2
     
     music [bumblebee_intro.ogg, bumblebee_loop.ogg]
     ambience h_amb.ogg
@@ -1321,7 +1321,7 @@ hive/h {
     art_alts [
         [Floater, FloaterBuzz]
 		[OrbChomp, WatcherBee]
-
+		[GlowShroomSmall, HoneyLampSmall][GlowShroom, HoneyLamp]
     ]
 
 }
@@ -1330,13 +1330,16 @@ hive/h {
 
 hive/hxd {
     area_name "The Hive"
-    tile_graphics Tiletox
+    tile_graphics TileHive
     overlay_graphics Overlaystox
     background_graphics hellbg
     foreground_graphics None
     palette 21
 
     midfx_layer 2
+	
+	tile_particle_1 drip
+    tile_particle_2 bubbles
     
     music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
     ambience h_amb.ogg
@@ -1350,6 +1353,7 @@ hive/hxd {
 	    art_alts [
         [Floater, FloaterBuzz]
 		[OrbChomp, WatcherBee]	
+		[GlowShroomSmall, HoneyLampSmall][GlowShroom, HoneyLamp]
 		]
 		
 	1 {
