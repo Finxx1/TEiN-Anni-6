@@ -223,6 +223,29 @@
 "struggle/-5x" {name="-4-5" id=-1}
 "struggle/b-5" {name="+4-5" id=-1}
 
+"war/us-0" {name="???" id=-1}
+"war/us-1" {name="WAR 1" id=55}
+"war/us-2" {name="WAR 2" id=55}
+"war/us-3" {name="WAR 3" id=55}
+"war/us-4" {name="WAR 4" id=55}
+"war/us-5" {name="WAR 5" id=55}
+"war/us-6" {name="WAR 6" id=55}
+"war/us-7" {name="WAR 7" id=55}
+"war/us-8" {name="WAR 8" id=55}
+"war/us-9" {name="WAR 9" id=55}
+"war/us-10" {name="WAR 10" id=55}
+"war/us-11" {name="WAR 11" id=55}
+"war/us-12" {name="WAR 12" id=55}
+"war/us-13" {name="WAR 13" id=55}
+"war/us-14" {name="WAR 14" id=55}
+"war/us-15" {name="WAR 15" id=55}
+"war/us-16" {name="WAR 16" id=55}
+"war/us-17" {name="WAR 17" id=55}
+"war/us-18" {name="WAR 18" id=55}
+"war/us-19" {name="WAR 19" id=55}
+"war/us-20" {name="WAR 20" id=55}
+"war/usx-1" {name="???" id=1}
+
 "swamplands/-0t" {name="Swamplands" id=-1}
 "swamplands/-0" {name="Swamplands" id=-1}
 "swamplands/-1" {name="Swamplands 1" id=1}

@@ -486,6 +486,66 @@ NPCGHOST_2 {
     ]
 }
 
+CE1 {
+#basic sideways
+    movieclip NPCDR2
+    sound_id NPCBlob
+    text [
+        "..."
+        "I can't hear mothers voice"
+        "I'm scared"
+        "..."
+    ]
+}
+
+CE3 {
+#basic sideways
+    movieclip NPCDR3
+    sound_id NPCBlob
+    text [
+        "SEE YOU IN GEHENNA\nFUCK FACE"
+    ]
+}
+
+
+CE2 {
+#basic sideways
+    movieclip NPCDR1
+    sound_id NPCBlob
+    text [
+        "Dumass"
+        "..."
+    ]
+}
+
+CE4 {
+#basic sideways
+    movieclip NPC6
+    sound_id NPCSkull
+    text [
+        "Dude you should have seen what happend here!"
+        "there was like a big explosion and all the blobs went BOOOMM!"
+        "then when i opened my eyes i saw that ash was pouring from the sky!"
+        "and most of the buildings fell down!"
+        "..."
+        "it was very cool"
+    ]
+}
+
+NPCME {
+#ME
+    movieclip NPCX1
+    sound_id NPCMEH32
+    text [
+        "Thanks for completing my demo for war!"
+        "And as thanks I will give you... \n NOTHING!"
+        "HAHAHAHAHHAAHAHAHHAAHHAA JK"
+        "also I will let you in on a little secret. . ."
+        "TYPE IN grc1-1 FOR A FUN CHALENGE :)"
+        "ps your a lucky goober "
+    ]
+}
+
 NPCH1 {
 #basic sideways
     movieclip NPCH1
@@ -555,6 +615,20 @@ NPCH4 {
     alt_text [
 		"\n. . ."
         "\nfinally . . ."
+    ]
+}
+
+NPCHCRYO {
+#basic sideways
+    movieclip NPCHCRYO
+    sound_id NPCSteven
+    text [
+		"a"
+    ]
+    
+    alt_text [
+		"\nWARP IS READY"
+        "\nDO NOT MOVE"
     ]
 }
 
