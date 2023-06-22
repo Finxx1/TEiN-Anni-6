@@ -18,14 +18,14 @@ meta {
     leftwipes [splunt/-1 exhaust/secret/-start steamworks/main/-1 swamplands/-0t]
     rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2]
     upwipes [splunt/-1 swamplands/xu-4]
-    downwipes [splunt/-1 sploot/-2 bastion/main/-1]
+    downwipes [splunt/-1 sploot/-2 bastion/main/-1 swamplands/-6t]
     
-    stevenheads [NPCH1 NPCH2 NPCH3 NPCH4]
-    steventhreshtumors [50 100 150 200]
-    stevenlevels [10x-7 exhaust/future/-1 10x-3 bastion/future/-0]
+    stevenheads [NPCH1 NPCH2 NPCH3 NPCH4 NPCHCRYO]
+    steventhreshtumors [50 100 150 200 0]
+    stevenlevels [10x-7 exhaust/future/-1 10x-3 bastion/future/-0 war/us-0]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ ghostship/ bastion/main/ hive/h] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/] //launch console automatically when you exit from these worlds
+    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
     bodylevel 5c-21
@@ -159,6 +159,15 @@ nodes {
         levelgroups [exhaust/future/ bastion/future/]
         unlock_condition collected_carts_any
         unlock_condition_levels [10x-2 exhaust/future/-5x 10x-6 bastion/future/-5]    
+    }
+	
+	War {
+        clipname war
+        entrylevel steamworks/main/-1
+        page lightworld
+        levelgroups [war/us war/usx]
+        unlock_condition visited_levels_any
+        unlock_condition_levels [war/us-1]    
     }
 	
     //carts
@@ -359,12 +368,12 @@ nodes {
     
     GlitchCart2 {
         clipname g2
-        entrylevel g2-1
+        entrylevel war/crt1-1
         page console
-        cart_cheevolevel g2-all
-        cart_splashframe glitch
+        cart_cheevolevel war/crt1-all
+        cart_splashframe basiccart
         unlock_condition collected_carts_all
-        unlock_condition_levels [6x-6]
+        unlock_condition_levels [war/usx-1]
         
         down GlitchCart3
         up TowerCart

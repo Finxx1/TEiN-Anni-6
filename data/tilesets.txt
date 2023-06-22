@@ -905,6 +905,10 @@ steamworks/secret/ {
 	npc_2 NPCSWCRA
 	npc_3 NPCSWBYA
 	
+	0 {
+		npc_1 NPCHCRYO
+	}
+	
 	4 {
 		npc_1 NPCSWADA
 	}
@@ -964,6 +968,10 @@ swamplands/ {
 	6 {
 	global_particle_2 None
 	global_particle_3 None
+	}
+	
+	7t {
+	decoration_1 SteamGrate1
 	}
 	
 	music [newworld_intro.ogg, newworld_loop.ogg]
@@ -1390,5 +1398,131 @@ hive/hxd {
 
         shader_param .6
       }
+
+}
+
+war/us {
+    area_name "WAR"
+    area_label_frame 10
+    tile_graphics underside
+    overlay_graphics Overlaysrot
+    background_graphics burntbg
+    foreground_graphics none
+    fx_shader distortionparticles
+    palette 22
+    
+    music [hevilmenuloopintro.ogg, hevilmenuloop.ogg]
+    ambience ruins.ogg
+    
+    music_volume 1.5
+    ambience_volume 1
+    
+    tile_particle_1 drip
+    tile_particle_2 splash
+    global_particle_1 rotting 
+    global_particle_2 ghosts
+    global_particle_3 lightning
+
+    npc_1 CE1 
+    npc_2 CE2 
+    npc_3 NPCME
+    decoration_1 CryoDeco
+    decoration_2 Decoration1
+    decoration_3 inst10
+    
+    area_type normal
+
+	art_alts [
+        [Floater, SkullBat]
+        [OrbSmall, RotBlob1]
+        [ChainLink2, None]
+        [OrbChomp, MovingOrbBlob]
+        [OrbLarge, RotBlob2]
+        [AimSpitter, AimSpitter2]
+        [Mask, Mask2]
+        [Gasser, Gasser2]
+        [Splatter, Splatter2]
+        [Frog, Frog_DeadAsh2]
+        [Fly, blackpart]
+        [MiniFly, blackpart]
+    ]
+	
+	0 {
+		area_label_frame 00
+	}
+
+}
+
+war/usx {
+     area_name "???"
+    area_label_frame 10
+    tile_graphics underside
+    overlay_graphics Overlaysrot
+    background_graphics burntbg
+    foreground_graphics none
+    fx_shader distortionparticles
+    palette 22
+    
+    music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+    ambience ruins.ogg
+    stop_previous_music false
+    
+    music_volume 1
+    ambience_volume 1
+    
+    tile_particle_1 drip
+    tile_particle_2 splash
+    global_particle_1 rotting 
+    global_particle_2 ghosts
+    global_particle_3 lightning
+
+    npc_1 CE3
+    npc_2 CE2 
+    npc_3 NPC2
+    decoration_1 Decoration0
+    decoration_2 Decoration1
+    decoration_3 inst10
+    
+    area_type normal
+
+ art_alts [
+        [Floater, SkullBat]
+        [OrbSmall, RotBlob1]
+        [ChainLink2, None]
+        [OrbChomp, MovingOrbBlob]
+        [OrbLarge, RotBlob2]
+        [AimSpitter, AimSpitter2]
+        [Mask, Mask2]
+        [Gasser, Gasser2]
+        [Splatter, Splatter2]
+        [Frog, Frog_DeadAsh2]
+    ]
+
+}
+
+war/crt1 {
+    tile_graphics Tileretro
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 23
+
+    cart_intro_png Spr_titlecards_10
+    cart_intro_palette 23
+    
+    music [ch2retrointro.ogg, ch2retro.ogg]
+    
+    music_volume 1.2
+    ambience_volume 1
+    
+    area_type cart
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro2][Floater, Floater2][Slug, Slugretro]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge]
+    ]
 
 }
