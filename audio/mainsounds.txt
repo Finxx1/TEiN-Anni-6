@@ -507,4 +507,10 @@ SoundEffectGroups {
 	Silence {
         files [silence.wav]
     }
+    NPCAxy {
+        files [ghostlaugh2.wav]
+    }
+    NPCIce {
+        files [ghostlaugh.wav]
+    }
 }

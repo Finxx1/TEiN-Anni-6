@@ -546,6 +546,205 @@ NPCME {
     ]
 }
 
+CHARON1 {
+#ferryman of gehenna
+	movieclip FerryNPC
+	sound_id NPCSkull
+	text [
+		"follow me\ninto the\ndarkness"
+		"walking by\nthe sinners\nkneeling"
+		"in the\nsixth infernal\ncircle"
+		"where their\nwounds are\nnever healing"
+	]
+}
+CHARON2 {
+#ferryman of gehenna
+	movieclip FerryNPC
+	sound_id NPCSkull
+	text [
+		"we descend\nacross their\npyre"
+		"burning tombs\nof\neternal fire"
+		"but beware\nthe sound\nyouare hearing"
+		"out the\npipes of organs\nscreaming"
+	]
+}
+CHARON3 {
+#ferryman of gehenna
+	movieclip FerryNPC
+	sound_id NPCSkull
+	text [
+		"painted\nred or\npainted black"
+                "are the\ncolumns you\nshould crack"
+                "made of\nhidden\nlayered skin"
+                "holding\nsacred code\nwithin"
+	]
+}
+CHARON4 {
+#ferryman of gehenna
+	movieclip FerryNPC
+	sound_id NPCSkull
+	text [
+		". . .\n. . .\n. . ."
+		". . .\n. . .\n. . ."
+		". . .\n. . .\n. . ."
+		"scendi\nnelle\ntenebre"
+	]
+}
+AXYGHOST {
+#axy cameo!
+	movieclip NPCG3
+	sound_id NPCAxy
+	text [
+		"\nhi"
+                "up ahead\nactually is\nwhere i died"
+                "same will\nprobably\ngo for you"
+                "have fun\nwhile alive!"
+	]
+}
+ICEGHOST {
+#ice cameo!
+	movieclip NPCB2
+	sound_id NPCIce
+	text [
+		"\nhey!!!"
+                "just so\nyou know"
+                "you're missing\nout on some"
+                "real cool\nstuff here\nin this spot"
+                "unfortunately\nfor you\nyou're not invited"
+	]
+}
+ROMEO {
+#romeo
+	movieclip NPC_bow2
+	sound_id Spook
+	text [
+		"i miss her\nso much"
+                "i wish i\ncould ascend"
+                "but alas\npure my soul\nis not"
+                "she's probably\nforgotten about me\nanyway"
+                "not like i\ndeserved her in\nthe first place"
+                "i'd do anything\nto get up there"
+                "to be with\nher again"
+                "leveled and twisted\nin this frozen ground"
+                "what kind of prison\nis the love i found?"
+	]
+}
+JULIETTE {
+#juliette
+	movieclip NPC_bow1
+	sound_id GhostChoose
+	text [
+		"oh my\nsweet romeo"
+                "what i'd do\nto descend\ndown there"
+                "to risk it all\nto jump below"
+                "even if for\njust a fleeting\nmoment"
+                "to be with\nhim again"
+                "i wish we\nmade up before\ndeath did us apart"
+                "it'd be nice to\nhave a friend\nin this burning hell"
+                "don't have a penny\nfor the wishing well"
+	]
+}
+DetroitNPC {
+#basic sideways
+	movieclip NPC0
+	sound_id NPCSkull
+	text [
+		"you are\nlitterally stealing\nmy last breath"
+                "\n. . ."
+                "\ncant have shit\nin Detroit"
+	]
+}
+PIXLIEBLOB {
+#pixlie cameo!
+	movieclip blobnerd
+	sound_id NPCBlob
+	text [
+		"honestly im\nreally sick of\nall this red"
+                "i mean i built\nthis whole\nplace"
+                "and they made it\nall just the same\nshade of red?"
+                "dang darn\ndammit\ndag nabbit"
+	]
+}
+ASHFROMANNI5 {
+#oh no not this freak again
+	movieclip ashfromanni5
+	sound_id NPCBlob
+	text [
+		"hello fellow\ndescender"
+                "hmmmmm\n. . .\n. . ."
+                "you seem\noddly familiar"
+                "anyhow it seems\nive managed to\ntrap myself"
+                "\nwithin this maze"
+                "have you found\na way out yet?"
+	]
+}
+DWARVESWONTFLYSOHIGH {
+#aden complains about peep litterally just making a mod that's dwarf fortress from anni 2 then making a future version of anni 1 & 2 remake as a standalone mod
+	movieclip NPCMA
+	sound_id NPCBlob
+	text [
+		"\nhi there"
+                "some freak\npushed me into\nthis giant cavern"
+                "he did it after\ni caught him\npeeping on my work"
+                "what a thief\nfuckin rat"
+                "im still mad\nthat guy isnt dead"
+	]
+}
+NPC_Spectrum {
+#notwendy is tired
+	movieclip tirednpc
+	sound_id NPCGhost
+	text [
+		"Oh.\n. . .\nHi."
+                "I'll be completely\nhonest with you,"
+                "I have no idea\nwhere we are."
+                "Somehow I'm\nstill tired"
+                "Even after spending\nyears trapped in\nthis place."
+	]
+}
+NPC_Potassium {
+#farewell tein its been really nice modding honestly but im just tired, maybe i could come back but i dont see it happening. you guys have all been really cool to me for the most part and its made me feel pretty appreciated. you're real awesome people tbh most of you atleast and i wish you the best in your modding endeavors if you do continue
+	movieclip banana
+	sound_id NPCBlob
+	text [
+		"\nyoooo"
+                "youre one of those\nuhhh playing guys right"
+                "i mostly just sit\nway up here and\nwatch you play but"
+                "its actually kinda cool\nmeeting you directly"
+                "feel free to\nstick around\nif you want"
+                "tho i dont see why\nyoud actually want\nto be around me"
+                "sorry for that\ni just havent been\nfeeling right recently"
+                "\nhave fun ig"
+                "its probably best\nto forget about me\njust go on ahead"
+	]
+}
+ANGUISHNPC {
+#anguish npc
+	movieclip NPC9
+	sound_id NPCSkull
+	text [
+		"\nDUDE"
+                "\n. . ."
+                "imagine if someone\nslept through this\nentire ordeal"
+                "it'd be so funny\nto tell them what\nthey missed out on"
+                "all the fire and\nbrimstone they just\nfailed to witness"
+                "fucking hysterical\njust thinking\nabout it"
+                "\n. . ."
+                "\ni miss my family"
+	]
+}
+butchernpc {
+#ptsd
+	movieclip axons
+	sound_id NPCBlob
+	text [
+		"\nomg hiiii"
+                "\n. . ."
+                "i hate these\ntwo fuckers\nso much"
+                "please rip\nthem off\nof me"
+	]
+}
+
 NPCH1 {
 #basic sideways
     movieclip NPCH1
