@@ -1,4 +1,7 @@
 game [
+	stuff.swf
+	theo.swf
+	
 	underside_ob2.swf
 	adenators_dumb_assets.swf
 	anni6_npcs.swf
@@ -9,7 +12,6 @@ game [
 	radley.swf
 	retro-assets.swf
 	saws.swf
-	stuff.swf
 	remake_tilesets.swf
 	tilegraveyard.swf
 	anni6_map.swf
