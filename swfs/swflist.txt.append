@@ -1,21 +1,10 @@
 game [
+	anni6_cutscenes.swf
 	stuff.swf
 	theo.swf
-	
-	underside_ob2.swf
+	anni6.swf
+	mm_tileset.swf
 	adenators_dumb_assets.swf
-	anni6_npcs.swf
-	deco_skeletons.swf
-	despair.swf
-	exhaust_tileset.swf
-	poster.swf
-	radley.swf
-	retro-assets.swf
 	saws.swf
-	remake_tilesets.swf
-	tilegraveyard.swf
-	anni6_map.swf
-	main_menu.swf
-	BEE.swf
-	BEE2.swf
+	anni6_selectscreen.swf
 ]

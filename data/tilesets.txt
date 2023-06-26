@@ -1,3 +1,27 @@
+6 {
+	area_name "Depths"
+	area_label_frame 4
+	tile_graphics Tilehell
+	overlay_graphics Overlayscomplex
+	background_graphics bgretro2
+	foreground_graphics none
+	fx_shader sludgeripples
+	palette 7
+
+	fx_shader_mid lighting
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param .5
+
+	decoration_1 DiseasesRunes
+	decoration_2 DiseasesRunesBlock
+	decoration_3 DecorationSkeletons
+
+	art_alts [
+		[Floater, DeathGhost]
+	]
+}
+
 depths/main/ {
 	area_name "Depths"
 	area_label_frame 4
@@ -147,7 +171,6 @@ fate/ {
 	]
 }
 
-# Future Depths
 abyss/main/ {
 	area_name "Abyss"
 	area_label_frame 0
@@ -206,8 +229,6 @@ bastion/main/ {
 	fx_shader ripples
 	palette 11
 	
-	area_type normal
-	
 	decoration_1 HangingBell
 	decoration_2 HalfBlock
 	
@@ -219,7 +240,7 @@ bastion/main/ {
 	global_particle_2 wind
 	global_particle_3 cloudwind
 	
-	music [lacrimal_frost_intro.ogg, lacrimal_frost_loop.ogg]
+	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
 	music_volume 1.3
 	ambience chimes.ogg
 	ambience_volume 1
@@ -241,8 +262,6 @@ bastion/secret/ {
 	foreground_graphics none
 	fx_shader ripples
 	palette 11
-	
-	area_type normal
 	
 	npc_1 NPCsB3
 	npc_2 NPCsB4
@@ -267,7 +286,7 @@ bastion/secret/ {
 	sfx_file bellbuttons.txt
 	
 	art_alts [
-		[Floater, nothing][GlowShroom, firehazard]
+		[Floater, nothing][GlowShroom, FireHazard]
 	]
 	
 	2 {
@@ -337,8 +356,6 @@ bastion/future/ {
 	midfx_graphics ShadeBox
 	shader_param 0.8
 	
-	area_type dark
-	
 	decoration_1 HangingBell
 	decoration_2 HalfBlock
 	decoration_3 OrbHolder
@@ -403,8 +420,6 @@ exhaust/main/ {
 	fx_shader_mid cloudripples
 	midfx_layer 2
 	palette 2
-	
-	area_type normal
 
 	tile_particle_1 smoke_contact
 	tile_particle_2 smoke2
@@ -485,8 +500,6 @@ exhaust/secret/ {
 	foreground_graphics None
 	fx_shader reflectionripples
 	palette 2
-	
-	area_type normal
 
 	tile_particle_1 smoke_contact
 	tile_particle_2 smoke2
@@ -506,7 +519,7 @@ exhaust/secret/ {
 	npc_3 NPCsD1
 
 	art_alts [
-	[Floater, FloaterTile][OrbSmall, firehazard][GlowShroom, firehazard][GlowShroomSmall, GlowCandle][OrbLarge, nothing]
+	[Floater, FloaterTile][OrbSmall, FireHazard][GlowShroom, FireHazard][GlowShroomSmall, GlowCandle][OrbLarge, nothing]
 	]
 
 	platform_physics "data/platformphysics_steam.txt"
@@ -514,6 +527,18 @@ exhaust/secret/ {
 	start {
 		area_label_frame 0
 		music none
+		tile_graphics TileUz
+		overlay_graphics Overlaystheglow
+
+		palette 44
+		
+		fx_shader distortionparticles
+		fx_shader_mid cloudripples
+		midfx_layer 2
+		ambience wind.ogg
+		global_particle_1 cloudwind
+		global_particle_2 fallout3Rwind
+		global_particle_3 wind2
 	}
 	0 {
 		music exhaust_faded.ogg
@@ -578,8 +603,6 @@ exhaust/future/ {
 	palette 4
 	
 	do_tilt true
-	
-	area_type dark
 	npc_1 NPCsD2
 
 	tile_particle_1 lavadump
@@ -717,51 +740,6 @@ struggle/b {
 	]
 }
 
-splunt/ {
-	area_name "The Splunt"
-	area_label_frame 3
-	tile_graphics Tiletox
-	overlay_graphics Overlaystox
-	background_graphics ch4abg
-	foreground_graphics None
-	fx_shader reflectionripples
-	palette 6
-
-	npc_1 NPCdemo
-	npc_2 none
-	npc_3 none
-	decoration_1 FinxxPlank2
-	decoration_2 Decoration6
-	decoration_3 FinxxPlank
-	
-	area_type normal
-	
-	music [none, none]
-	ambience wind.ogg
-}
-
-sploot/ {
-	area_name "The Sploot"
-	area_label_frame 3
-	tile_graphics Tiletox
-	overlay_graphics Overlaystox
-	background_graphics ch4abg
-	foreground_graphics None
-	fx_shader reflectionripples
-	palette 5
-
-	npc_1 NPCdemo2
-	npc_2 none
-	npc_3 none
-	decoration_1 FinxxPlank2
-	decoration_2 Decoration6
-	decoration_3 FinxxPlank
-	
-	area_type normal
-	
-	music [none, none]
-}
-
 ssshithill/main/ {
 	area_name "SssHitHill"
 	area_label_frame 7
@@ -823,8 +801,6 @@ ssshithill/main/ {
 	decoration_1 Decoration4
 	decoration_2 Decoration5
 
-	area_type normal
-
 	npc_3 NPCSHH3
 
 	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
@@ -852,73 +828,11 @@ ssshithill/secret/ {
 	decoration_1 Decoration4
 	decoration_2 Decoration5
 
-	area_type normal
-
 	npc_1 NPCSHH1
 	npc_2 NPCSHH2
 
 	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
 	ambience ruins.ogg
-}
-
-steamworks/main/ {
-	area_name "Steamworks"
-	area_label_frame 2
-	
-	tile_graphics Tilecomplex
-	overlay_graphics Overlaystheglow
-	background_graphics bgurban
-	foreground_graphics None
-	fx_shader gravripples
-	palette 9
-	
-	toxic_timer .05
-	
-	decoration_1 block
-	decoration_2 ChainLink3
-	decoration_3 Sign
-	
-	npc_1 NPCSWSIGN
-	
-	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
-	ambience ruins.ogg
-}
-
-steamworks/secret/ {
-	area_name "???"
-	area_label_frame 2
-	
-	tile_graphics Tilecomplex
-	overlay_graphics Overlayscomplex
-	background_graphics bgurban
-	foreground_graphics None
-	fx_shader gravripples
-	palette 9
-	
-	toxic_timer .05
-	
-	decoration_1 block
-	decoration_2 ChainLink3
-	decoration_3 Sign
-	
-	npc_1 NPCSWDYR
-	npc_2 NPCSWCRA
-	npc_3 NPCSWBYA
-	
-	0 {
-		npc_1 NPCHCRYO
-	}
-	
-	4 {
-		npc_1 NPCSWADA
-	}
-	
-	7 {
-		tile_graphics Tileroof
-	}
-	
-	music [none, none]
-	ambience cogs.ogg
 }
 
 swamplands/ {
@@ -1046,6 +960,336 @@ swamplands/xu {
 	ambience wind.ogg
 }
 
+swamplands/future/ {
+     area_name "Phlegethon"
+     area_label_frame 1
+     tile_graphics Tileradmarsh
+     overlay_graphics Overlaysfield
+     background_graphics bgmarsh
+     palette 43
+
+     fx_shader bloodripples
+     fx_shader_mid lightingmodded
+     midfx_graphics ShadeBox
+     midfx_layer 2
+     shader_param .7
+
+     npc_1 NPC_prediction
+
+     global_particle_1 fog_light_light
+     global_particle_2 fgrain 
+     global_particle_3 storm
+     tile_particle_1 bubbles
+     tile_particle_5 drip
+
+     decoration_2 ChainLink3
+     decoration_3 TheBody
+	
+     art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+		[AimSpitter, eyeshooter]
+		[Bullet, eyebullet]
+	]
+
+     music [newworld_intro_dark.ogg, newworld_loop_dark.ogg]
+     ambience wind.ogg
+     ambience flesh.ogg
+
+     ambience_volume 90
+
+	1 {
+		global_particle_2 fgrain_light
+	}
+}
+
+swamplands/future/x {
+     area_name "???"
+     area_label_frame 1
+     tile_graphics Tileradmarsh
+     overlay_graphics Overlaysfield
+     background_graphics bgmarsh
+     palette 43
+
+     fx_shader bloodripples
+     fx_shader_mid lightingmodded
+     midfx_graphics ShadeBox
+     midfx_layer 2
+     shader_param .7
+
+     npc_1 NPC_prediction
+
+     global_particle_1 fog_light_light
+     global_particle_2 fgrain 
+     global_particle_3 storm
+     tile_particle_1 bubbles
+     tile_particle_5 drip
+
+     decoration_2 ChainLink3
+     decoration_3 TheBody
+	
+     art_alts [
+		[OrbSmall, orbblob]
+		[OrbLarge, LargeGlub]
+		[ChainLink2, None]
+		[AimSpitter, eyeshooter]
+		[Bullet, eyebullet]
+	]
+
+     music music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+     stop_previous_music false
+     ambience wind.ogg
+     ambience flesh.ogg
+
+     ambience_volume 90
+
+	1 {
+		global_particle_2 fgrain_light
+	}
+}
+
+steamworks/main/ {
+	area_name "Steamworks"
+	area_label_frame 2
+	
+	tile_graphics TilecomplexSteam
+	overlay_graphics Overlayscomplex
+	background_graphics bgurban
+	foreground_graphics None
+	fx_shader gravripples
+    fx_shader_mid cloudripples
+    midfx_layer 2
+	palette 9
+	
+	tile_particle_1 steam
+	tile_particle_2 steam_right
+	tile_particle_3 steam_left
+	tile_particle_4 steam_down
+	tile_particle_5 drip
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 DecorationSmokeJump
+	
+	water_physics "data/playerphysics_water_steam.txt"
+    lowgrav_physics "data/playerphysics_lowgrav_steam.txt"
+	
+	npc_1 NPCSWSIGN
+	
+	sfx_file mainsounds_steam_butforworks.txt
+	
+	music [turkishmarch_intro.ogg, turkishmarch_loop.ogg]
+	ambience ruins.ogg
+	music_volume 0.6
+}
+
+steamworks/secret/ {
+	area_name "???"
+	area_label_frame 2
+	
+	tile_graphics TilecomplexSteam
+	overlay_graphics Overlayscomplex
+	background_graphics bgurban
+	foreground_graphics None
+	fx_shader gravripples
+	palette 9
+	
+	toxic_timer .05
+	
+	tile_particle_1 steam
+	tile_particle_2 steam_right
+	tile_particle_3 steam_left
+	tile_particle_4 steam_down
+	tile_particle_5 drip
+	
+	decoration_1 block
+	decoration_2 ChainLink3
+	decoration_3 Sign
+	
+	water_physics "data/playerphysics_water_steam.txt"
+    lowgrav_physics "data/playerphysics_lowgrav_steam.txt"
+	
+	npc_1 NPCSWDYR
+	npc_2 NPCSWCRA
+	npc_3 NPCSWBYA
+	
+	sfx_file mainsounds_steam_butforworks.txt
+	
+	4 {
+		npc_1 NPCSWADA
+	}
+	
+	6 {
+    	music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+		
+		background_graphics bgsolid
+		
+        fx_shader_mid lightingmodded
+        midfx_graphics ShadeBox
+        midfx_layer 2
+		
+	    shader_param .8
+	}
+	
+	7 {
+        music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+		
+		tile_particle_1 bubbles
+		
+		background_graphics bgsolid
+		
+	    fx_shader_mid lightingmodded
+        midfx_graphics ShadeBox
+        midfx_layer 2
+		
+        shader_param .6
+		
+        sfx_file mainsounds.txt
+	}
+	
+	8 {
+		npc_1 NPCHCRYO
+	}
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience cogs.ogg
+	stop_previous_music false
+}
+
+mountmoriah/ {
+	area_name "Mount Moriah"
+	area_label_frame 3
+	tile_graphics TileUz
+	overlay_graphics Overlaysfield
+	background_graphics airshipbg
+
+	palette 44
+	
+	fx_shader distortionparticles
+	fx_shader_mid cloudripples
+    midfx_layer 2
+	
+	tile_particle_1 dust
+	tile_particle_2 debris_slow
+	tile_particle_5 debris_slow_wr
+	global_particle_1 cloudwind
+	global_particle_2 fallout3Rwind
+	global_particle_3 wind2
+	
+	art_alts [
+	[OrbSmall, nothing]
+	]
+	
+	music [hungarian_rhapsody_intro.ogg, hungarian_rhapsody_loop.ogg]
+	ambience wind.ogg
+	
+	7b {
+	background_graphics bgsolid
+	global_particle_2 none
+	global_particle_3 none
+	}	
+	
+	8b {
+	background_graphics bgsolid
+	global_particle_2 none
+	global_particle_3 none
+	}
+	
+	5a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	5aty {
+	overlay_graphics Overlaystheglow
+	}
+	
+	6a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	7a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	8a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	9at {
+	overlay_graphics Overlaystheglow
+	}
+	
+	9a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	10a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	11a {
+	overlay_graphics Overlaystheglow
+	}
+	
+	12a {
+	overlay_graphics Overlaystheglow
+	background_graphics ch3bg
+	}
+	
+	13a {
+	overlay_graphics Overlaystheglow
+	background_graphics ch3bg
+	}
+}
+
+mountmoriah/x {
+	area_name "Mount Moriah"
+	area_label_frame 3
+	tile_graphics TileUz
+	overlay_graphics Overlaysfield
+	background_graphics airshipbg
+
+	palette 44
+	
+	fx_shader distortionparticles
+	fx_shader_mid cloudripples
+    midfx_layer 2
+	
+	tile_particle_1 dust
+	tile_particle_2 debris_slow
+	tile_particle_5 debris_slow_wr
+	global_particle_1 cloudwind
+	global_particle_2 fallout3Rwind
+	global_particle_3 wind2
+	
+	npc_1 NPC_MM1
+	
+	art_alts [
+	[OrbSmall, nothing]
+	]
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience wind.ogg
+	stop_previous_music false
+	
+	1 {
+	background_graphics bgsolid
+	global_particle_2 none
+	global_particle_3 none
+	}	
+	
+	2 {
+	background_graphics bgsolid
+	global_particle_2 none
+	global_particle_3 none
+	}
+
+	4 {
+	overlay_graphics Overlaystheglow
+	}
+}
+
 ghostship/ {
 	area_name "Ghost Ship"
 	area_label_frame 5
@@ -1079,7 +1323,7 @@ ghostship/ {
 	npc_2 NPCGHOST_2
 	
 	art_alts [
-		[Floater, Ghost]
+		[Floater, Ghost][OrbSmall, nothing]
 	]
 	
 	music [slave_intro.ogg, slave_loop.ogg]
@@ -1180,7 +1424,7 @@ ghostship/ {
 	}
 	
 	24 {
-	tile_graphics Tilegraveyard
+	tile_graphics Tilefield
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
 	music none
@@ -1189,7 +1433,7 @@ ghostship/ {
 	}
 	
 	25 {
-	tile_graphics Tilegraveyard
+	tile_graphics Tilefield
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
 	music none
@@ -1261,8 +1505,6 @@ hive/h {
 	npc_1 HNPC0
 
     shader_param .8
-    
-    area_type normal
 
     0 {
         fx_shader_mid lighting
@@ -1355,8 +1597,6 @@ hive/hxd {
     
     music_volume 1
     ambience_volume 0.8
-    
-    area_type normal
 	
 	    art_alts [
         [Floater, FloaterBuzz]
@@ -1429,8 +1669,6 @@ war/us {
     decoration_1 CryoDeco
     decoration_2 Decoration1
     decoration_3 inst10
-    
-    area_type normal
 
 	art_alts [
         [Floater, SkullBat]
@@ -1482,10 +1720,8 @@ war/usx {
     decoration_1 Decoration0
     decoration_2 Decoration1
     decoration_3 inst10
-    
-    area_type normal
 
- art_alts [
+	art_alts [
         [Floater, SkullBat]
         [OrbSmall, RotBlob1]
         [ChainLink2, None]
@@ -1527,6 +1763,37 @@ war/crt1 {
 
 }
 
+1d {
+    area_name "Gehenna"
+    area_label_frame 0
+    overlay_graphics Overlayscaves
+    tile_graphics Tilecitygirders
+    background_graphics bg2
+	palette 34
+	
+    sfx_file gehennasounds.txt
+    global_particle_1 embers
+    global_particle_2 blbgrain
+	global_particle_3 cloudwind_light
+	global_particle_4 blfgrain
+
+	area_type dark
+    tile_particle_1 drip
+	tile_particle_2 debris
+	tile_particle_3 firesmoke2
+	tile_particle_4 blsplash
+    
+    fx_shader_mid lightingmodded
+    midfx_graphics ShadeBox
+    midfx_layer 2
+    shader_param .5
+	
+    ambience cult.ogg
+	art_alts [
+		[GlowShroom, nothing][GlowShroomSmall, nothing][MiniFly, MiniWisp]
+	]
+}
+
 gehenna/gh {
     area_name "Gehenna"
     area_label_frame 11
@@ -1556,555 +1823,554 @@ gehenna/gh {
     midfx_graphics ShadeBox
     midfx_layer 2
     shader_param 0
-    #global_particle_1 lightingmoddedtest
     
-    #music [gehenna_intro.ogg, gehenna.ogg]
     music [tenebre_intro.ogg, tenebre_loop.ogg]
     ambience cult.ogg
 	art_alts [
         [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
 		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, nothing][Frog, Frog_DeadAsh]
+		[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, nothing][Frog, Frog_DeadAsh]
 	]
 
 	1 {
-    tile_graphics Tilecitygirders
-    background_graphics bg2
-    music none
-palette 34
+		area_label_frame 0
+		tile_graphics Tilecitygirders
+		background_graphics bg2
+		music none
+		palette 34
 	}
 	2 {
-    tile_graphics Tilecitygirders
-    background_graphics bg2
-    music none
-palette 34
+		area_label_frame 0
+		tile_graphics Tilecitygirders
+		background_graphics bg2
+		music none
+		palette 34
 	}
-8 {
-    global_particle_4 blfgrain
-}
-9 {
-    global_particle_4 blfgrain
-decoration_1 WarpzonePortal
-}
-10 {
-    global_particle_4 blfgrain
-}
-11 {
-    global_particle_4 blfgrain
-}
-12 {
-    global_particle_4 blfgrain
-    	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][ThwampEye, ThwampGearFastLeft][Floater, nothing]] 
-}
-13 {
-    global_particle_4 blfgrain
-    npc_1 CHARON4
-}
+	8 {
+		global_particle_4 blfgrain
+	}
+	9 {
+		global_particle_4 blfgrain
+		decoration_1 WarpzonePortal
+	}
+	10 {
+		global_particle_4 blfgrain
+	}
+	11 {
+		global_particle_4 blfgrain
+	}
+	12 {
+		global_particle_4 blfgrain
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[ThwampGear, ThwampGearFastRight][ThwampEye, ThwampGearFastLeft][Floater, nothing]
+		] 
+	}
+	13 {
+		global_particle_4 blfgrain
+		npc_1 CHARON4
+	}
 	14 {
-music_volume 0.5
+		music_volume 0.5
 	}
 	15 {
-music_volume 0
-music none
-    npc_1 ICEGHOST
-    npc_2 AXYGHOST
+		music_volume 0
+		music none
+		npc_1 ICEGHOST
+		npc_2 AXYGHOST
 	}
 	16 {
-music none
+		music none
 	}
 	17 {
-fx_shader bloodripples
-    fx_shader_mid postal
-    midfx_graphics SolidBox
+		fx_shader bloodripples
+		fx_shader_mid postal
+		midfx_graphics SolidBox
 
-    shader_param 0.25
-    background_graphics neverbg
-    global_particle_1 stench
-    global_particle_2 cloudwind
-        toxic_timer 0
-	palette 28
-    tile_particle_1 toxicbubbles
-    tile_particle_5 toxicbubblesflipped
-music_volume 1
-	music [trs2_intro.ogg, trs2_loop.ogg]
-    tile_graphics Tilefleshy
-    overlay_graphics Overlaysfleshy
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[Floater, Ghost]
-        [OrbSmall, OrbBlob2]
-        [OrbLarge, OrbLarge2]
-        [ChainLink2, None]
-        [ChainLink, None]
-	]
+		shader_param 0.25
+		background_graphics neverbg
+		global_particle_1 stench
+		global_particle_2 cloudwind
+		toxic_timer 0
+		palette 28
+		tile_particle_1 toxicbubbles
+		tile_particle_5 toxicbubblesflipped
+		music_volume 1
+		music [trs2_intro.ogg, trs2_loop.ogg]
+		tile_graphics Tilefleshy
+		overlay_graphics Overlaysfleshy
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[Floater, Ghost]
+			[OrbSmall, OrbBlob2]
+			[OrbLarge, OrbLarge2]
+			[ChainLink2, None]
+			[ChainLink, None]
+		]
 	}
 	18 {
-fx_shader bloodripples
-    fx_shader_mid postal
-    midfx_graphics SolidBox
+		fx_shader bloodripples
+		fx_shader_mid postal
+		midfx_graphics SolidBox
 
-    shader_param 0.25
-    background_graphics neverbg
-    global_particle_1 stench
-    global_particle_2 cloudwind
-        toxic_timer 0
-	palette 28
-    tile_particle_1 toxicbubbles
-    tile_particle_5 toxicbubblesflipped
-music_volume 1
-	music [trs2_intro.ogg, trs2_loop.ogg]
-    tile_graphics Tilefleshy
-    overlay_graphics Overlaysfleshy
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[Floater, Ghost]
-        [OrbSmall, OrbBlob2]
-        [OrbLarge, OrbLarge2]
-        [ChainLink2, None]
-        [ChainLink, None]
-	]
+		shader_param 0.25
+		background_graphics neverbg
+		global_particle_1 stench
+		global_particle_2 cloudwind
+		toxic_timer 0
+		palette 28
+		tile_particle_1 toxicbubbles
+		tile_particle_5 toxicbubblesflipped
+		music_volume 1
+		music [trs2_intro.ogg, trs2_loop.ogg]
+		tile_graphics Tilefleshy
+		overlay_graphics Overlaysfleshy
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[Floater, Ghost]
+			[OrbSmall, OrbBlob2]
+			[OrbLarge, OrbLarge2]
+			[ChainLink2, None]
+			[ChainLink, None]
+		]
 	}
 	19 {
-fx_shader bloodripples
-    fx_shader_mid postal
-    midfx_graphics SolidBox
+		fx_shader bloodripples
+		fx_shader_mid postal
+		midfx_graphics SolidBox
 
-    shader_param 0.25
-    background_graphics neverbg
-    global_particle_1 stench
-    global_particle_2 cloudwind
-        toxic_timer 0
-	palette 28
-    tile_particle_1 toxicbubbles
-    tile_particle_5 toxicbubblesflipped
-music_volume 1
-	music [trs2_intro.ogg, trs2_loop.ogg]
-    tile_graphics Tilefleshy
-    overlay_graphics Overlaysfleshy
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[Floater, Ghost]
-        [OrbSmall, OrbBlob2]
-        [OrbLarge, OrbLarge2]
-        [ChainLink2, None]
-        [ChainLink, None]
-	]
+		shader_param 0.25
+		background_graphics neverbg
+		global_particle_1 stench
+		global_particle_2 cloudwind
+		toxic_timer 0
+		palette 28
+		tile_particle_1 toxicbubbles
+		tile_particle_5 toxicbubblesflipped
+		music_volume 1
+		music [trs2_intro.ogg, trs2_loop.ogg]
+		tile_graphics Tilefleshy
+		overlay_graphics Overlaysfleshy
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[Floater, Ghost]
+			[OrbSmall, OrbBlob2]
+			[OrbLarge, OrbLarge2]
+			[ChainLink2, None]
+			[ChainLink, None]
+		]
 	}
 	20 {
-fx_shader bloodripples
-    fx_shader_mid postal
-    midfx_graphics SolidBox
+		fx_shader bloodripples
+		fx_shader_mid postal
+		midfx_graphics SolidBox
 
-    shader_param 0.25
-    background_graphics neverbg
-    global_particle_1 stench
-    global_particle_2 cloudwind
-        toxic_timer 0
-	palette 28
-    tile_particle_1 toxicbubbles
-    tile_particle_5 toxicbubblesflipped
-music_volume 1
-	music [trs2_intro.ogg, trs2_loop.ogg]
-    tile_graphics Tilefleshy
-    overlay_graphics Overlaysfleshy
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[Floater, Ghost]
-        [OrbSmall, OrbBlob2]
-        [OrbLarge, OrbLarge2]
-        [ChainLink2, None]
-        [ChainLink, None]
-	]
+		shader_param 0.25
+		background_graphics neverbg
+		global_particle_1 stench
+		global_particle_2 cloudwind
+		toxic_timer 0
+		palette 28
+		tile_particle_1 toxicbubbles
+		tile_particle_5 toxicbubblesflipped
+		music_volume 1
+		music [trs2_intro.ogg, trs2_loop.ogg]
+		tile_graphics Tilefleshy
+		overlay_graphics Overlaysfleshy
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[Floater, Ghost]
+			[OrbSmall, OrbBlob2]
+			[OrbLarge, OrbLarge2]
+			[ChainLink2, None]
+			[ChainLink, None]
+		]
 	}
-22 {
-	music [trs3_intro.ogg, trs3_loop.ogg]
-}
-21 {
-	music [trs2_outro.ogg, none]
-}
+	22 {
+		music [trs3_intro.ogg, trs3_loop.ogg]
+	}
+	21 {
+		music [trs2_outro.ogg, none]
+	}
 
 	f1 {
-    background_graphics bg2
-    shader_param 0.25
-    fx_shader_mid fire
-music none
+		background_graphics bg2
+		fx_shader_mid fire
+		shader_param 0.25
+		music none
 	}
 	f2 {
-    background_graphics bg2
-    shader_param 0.5
-    fx_shader_mid fire
-music none
+		background_graphics bg2
+		fx_shader_mid fire
+		shader_param 0.5
+		music none
 	}
 	f3 {
-    background_graphics bg2
-    shader_param 0.75
-    fx_shader_mid fire
-music [gehenna_intro.ogg, gehenna.ogg]
+		background_graphics bg2
+		fx_shader_mid fire
+		shader_param 0.75
+		music [gehenna_intro.ogg, gehenna.ogg]
 	}
-
 
 	23 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-palette 25
-music [gehenna_intro.ogg, gehenna.ogg]
-    global_particle_4 blfgrain
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		music [gehenna_intro.ogg, gehenna.ogg]
+		global_particle_4 blfgrain
 	}
 	24 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-palette 25
-music [gehenna_intro.ogg, gehenna.ogg]
-    global_particle_4 blfgrain
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		music [gehenna_intro.ogg, gehenna.ogg]
+		global_particle_4 blfgrain
 	}
 	25 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-palette 25
-music [gehenna_intro.ogg, gehenna.ogg]
-    global_particle_4 blfgrain
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		music [gehenna_intro.ogg, gehenna.ogg]
+		global_particle_4 blfgrain
 	}
 	26 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-palette 25
-music [gehenna_intro.ogg, gehenna.ogg]
-    global_particle_4 blfgrain
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		music [gehenna_intro.ogg, gehenna.ogg]
+		global_particle_4 blfgrain
 	}
 	27 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-palette 25
-music [gehenna_intro.ogg, gehenna.ogg]
-    global_particle_4 blfgrain
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		music [gehenna_intro.ogg, gehenna.ogg]
+		global_particle_4 blfgrain
 	}
 
-28 {
-    fx_shader_mid fire
-palette 25
-    background_graphics gehennabg
-	music [church_intro.ogg, church_loop.ogg]
+	28 {
+		fx_shader_mid fire
+		palette 25
+		background_graphics gehennabg
+		music [church_intro.ogg, church_loop.ogg]
         shader_param 1
 
-    global_particle_4 blfgrain
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob]
-	]
-    tile_particle_2 starghost
-}
-29 {
-    tile_graphics Tilecoldsweat
-    fx_shader_mid fire
-palette 25
-    background_graphics gehennabg
-	music [church_intro.ogg, church_loop.ogg]
-        shader_param 1
-
-    global_particle_4 blfgrain
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob]
-	]
-    tile_particle_2 starghost
-    npc_1 ROMEO
-    npc_2 JULIETTE
-}
-30 {
-    fx_shader_mid fire
-palette 25
-    background_graphics gehennabg
-	music [church_intro.ogg, church_loop.ogg]
-        shader_param 1
-
-    global_particle_4 blfgrain
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-    tile_particle_2 starghost
-    npc_1 ROMEO
-    npc_2 JULIETTE
-}
-31 {
-    fx_shader_mid fire
-palette 25
-    background_graphics gehennabg
-	music [church_intro.ogg, church_loop.ogg]
-        shader_param 1
-
-    global_particle_4 blfgrain
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-    tile_particle_2 starghost
-    npc_1 ROMEO
-    npc_2 JULIETTE
-}
-38 {
-    fx_shader_mid lightingmodded
-palette 25
-    background_graphics gehennabg
-	music [gehenna_intro.ogg, http.ogg]
-        shader_param 0.75
-
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-39 {
-    fx_shader_mid lightingmodded
-palette 25
-    background_graphics gehennabg
-	music [gehenna_intro.ogg, http.ogg]
-        shader_param 0.75
-
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-40 {
-    fx_shader_mid lightingmodded
-palette 25
-    background_graphics gehennabg
-	music [gehenna_intro.ogg, http.ogg]
-        shader_param 0.75
-        platform_physics "data/platformphysicsfactory.txt"
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-41 {
-    fx_shader_mid lightingmodded
-palette 25
-    background_graphics gehennabg
-	music [gehenna_intro.ogg, http.ogg]
-        shader_param 0.75
-        platform_physics "data/platformphysicsfactory.txt"
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-42 {
-    fx_shader_mid lightingmodded
-palette 25
-    background_graphics gehennabg
-	music [gehenna_intro.ogg, http.ogg]
-        shader_param 0.75
-        platform_physics "data/platformphysicsfactory.txt"
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-43 {
-    global_particle_2 dark
-    global_particle_4 cold
-    fx_shader_mid lightingmodded
-palette 31
-    fx_shader nooverlay
-    background_graphics hellbg
-    toxic_timer 8
-    tile_graphics Tilefarlands
-    overlay_graphics Overlaystox
-	music deepblue.ogg
-        ambience oxygendeprived.ogg
-        shader_param 0
-
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-44 {
-
-    global_particle_2 dark
-    global_particle_4 cold
-    fx_shader_mid lightingmodded
-palette 31
-    fx_shader nooverlay
-    background_graphics hellbg
-    toxic_timer 8
-    tile_graphics Tilefarlands
-    overlay_graphics Overlaystox
-	music deepblue.ogg
-        ambience oxygendeprived.ogg
-        shader_param 0
-
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-
-45 {
-
-    tile_particle_1 oxygen
-    global_particle_2 dark
-    global_particle_4 cold
-    fx_shader_mid lightingmodded
-palette 31
-    fx_shader nooverlay
-    background_graphics hellbg
-    toxic_timer 8
-    tile_graphics Tilefarlands
-    overlay_graphics Overlaystox
-	music deepblue.ogg
-        ambience oxygendeprived.ogg
-        shader_param 0
-
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-46 {
-    tile_particle_1 oxygen
-    global_particle_2 dark
-    global_particle_4 cold
-    fx_shader_mid lightingmodded
-palette 31
-    fx_shader nooverlay
-    background_graphics hellbg
-    toxic_timer 8
-    tile_graphics Tilefarlands
-    overlay_graphics Overlaystox
-	music deepblue.ogg
-        ambience oxygendeprived.ogg
-        shader_param 0
-
-    npc_1 DetroitNPC
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-        [ChainLink2, None]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-47 {
-    tile_particle_1 oxygen
-    global_particle_2 dark
-    global_particle_4 cold
-    fx_shader_mid lightingmodded
-palette 31
-    fx_shader nooverlay
-    background_graphics hellbg
-    toxic_timer 8
-    tile_graphics Tilefarlands
-    overlay_graphics Overlaystox
-	music deepblue.ogg
-        ambience oxygendeprived.ogg
-        shader_param 0
-
-    npc_1 DetroitNPC
-	art_alts [
-        [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
-		[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-		[ThwampGear, ThwampGearFastRight][Floater, fire_my_guy][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
-	]
-}
-
-48 {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tilefield
-    music foghorns.ogg
-palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
+		global_particle_4 blfgrain
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob]
+		]
+		tile_particle_2 starghost
 	}
-49 {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tilefield
-    music foghorns.ogg
-palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
+	29 {
+		tile_graphics Tilecoldsweat
+		fx_shader_mid fire
+		palette 25
+		background_graphics gehennabg
+		music [church_intro.ogg, church_loop.ogg]
+		shader_param 1
+
+		global_particle_4 blfgrain
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob]
+		]
+		tile_particle_2 starghost
+		npc_1 ROMEO
+		npc_2 JULIETTE
+	}
+	30 {
+		fx_shader_mid fire
+		palette 25
+		background_graphics gehennabg
+		music [church_intro.ogg, church_loop.ogg]
+		shader_param 1
+
+		global_particle_4 blfgrain
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+		tile_particle_2 starghost
+		npc_1 ROMEO
+		npc_2 JULIETTE
+	}
+	31 {
+		fx_shader_mid fire
+		palette 25
+		background_graphics gehennabg
+		music [church_intro.ogg, church_loop.ogg]
+		shader_param 1
+
+		global_particle_4 blfgrain
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+		tile_particle_2 starghost
+		npc_1 ROMEO
+		npc_2 JULIETTE
+	}
+	38 {
+		fx_shader_mid lightingmodded
+		palette 25
+		background_graphics gehennabg
+		music [gehenna_intro.ogg, http.ogg]
+		shader_param 0.75
+
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	39 {
+		fx_shader_mid lightingmodded
+		palette 25
+		background_graphics gehennabg
+		music [gehenna_intro.ogg, http.ogg]
+		shader_param 0.75
+
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	40 {
+		fx_shader_mid lightingmodded
+		palette 25
+		background_graphics gehennabg
+		music [gehenna_intro.ogg, http.ogg]
+		shader_param 0.75
+		platform_physics "data/platformphysicsfactory.txt"
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	41 {
+		fx_shader_mid lightingmodded
+		palette 25
+		background_graphics gehennabg
+		music [gehenna_intro.ogg, http.ogg]
+		shader_param 0.75
+		platform_physics "data/platformphysicsfactory.txt"
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	42 {
+		fx_shader_mid lightingmodded
+		palette 25
+		background_graphics gehennabg
+		music [gehenna_intro.ogg, http.ogg]
+		shader_param 0.75
+		platform_physics "data/platformphysicsfactory.txt"
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	43 {
+		global_particle_2 dark
+		global_particle_4 cold
+		fx_shader_mid lightingmodded
+		palette 31
+		fx_shader nooverlay
+		background_graphics hellbg
+		toxic_timer 8
+		tile_graphics Tilefarlands
+		overlay_graphics Overlaystox
+		music deepblue.ogg
+		ambience oxygendeprived.ogg
+		shader_param 0
+
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	44 {
+		global_particle_2 dark
+		global_particle_4 cold
+		fx_shader_mid lightingmodded
+		palette 31
+		fx_shader nooverlay
+		background_graphics hellbg
+		toxic_timer 8
+		tile_graphics Tilefarlands
+		overlay_graphics Overlaystox
+		music deepblue.ogg
+		ambience oxygendeprived.ogg
+		shader_param 0
+
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
 	}
 
-50 {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tilefield
-    music foghorns.ogg
-palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
+	45 {
+		tile_particle_1 oxygen
+		global_particle_2 dark
+		global_particle_4 cold
+		fx_shader_mid lightingmodded
+		palette 31
+		fx_shader nooverlay
+		background_graphics hellbg
+		toxic_timer 8
+		tile_graphics Tilefarlands
+		overlay_graphics Overlaystox
+		music deepblue.ogg
+		ambience oxygendeprived.ogg
+		shader_param 0
+
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	46 {
+		tile_particle_1 oxygen
+		global_particle_2 dark
+		global_particle_4 cold
+		fx_shader_mid lightingmodded
+		palette 31
+		fx_shader nooverlay
+		background_graphics hellbg
+		toxic_timer 8
+		tile_graphics Tilefarlands
+		overlay_graphics Overlaystox
+		music deepblue.ogg
+		ambience oxygendeprived.ogg
+		shader_param 0
+
+		npc_1 DetroitNPC
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ChainLink2, None]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+	47 {
+		tile_particle_1 oxygen
+		global_particle_2 dark
+		global_particle_4 cold
+		fx_shader_mid lightingmodded
+		palette 31
+		fx_shader nooverlay
+		background_graphics hellbg
+		toxic_timer 8
+		tile_graphics Tilefarlands
+		overlay_graphics Overlaystox
+		music deepblue.ogg
+		ambience oxygendeprived.ogg
+		shader_param 0
+
+		npc_1 DetroitNPC
+		art_alts [
+			[MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
+			[GlowShroom, nothing][GlowShroomSmall, nothing][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+			[ThwampGear, ThwampGearFastRight][Floater, FireHazard][ElectroBall, nothing][ChainChomp, Ghost][ChainHitch, MovingOrbBlob][Frog, Frog_DeadAsh]
+		]
+	}
+
+	48 {
+		background_graphics bgmarsh
+		ambience none
+		tile_graphics Tilefield
+		music foghorns.ogg
+		palette 26
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		global_particle_4 none
+		shader_param 1
+		overlay_graphics Overlaysfield
+		lowgrav_physics "data/abduction.txt"
+	}
+	
+	49 {
+		background_graphics bgmarsh
+		ambience none
+		tile_graphics Tilefield
+		music foghorns.ogg
+		palette 26
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		global_particle_4 none
+		shader_param 1
+		overlay_graphics Overlaysfield
+		lowgrav_physics "data/abduction.txt"
+	}
+
+	50 {
+		background_graphics bgmarsh
+		ambience none
+		tile_graphics Tilefield
+		music foghorns.ogg
+		palette 26
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		global_particle_4 none
+		shader_param 1
+		overlay_graphics Overlaysfield
+		lowgrav_physics "data/abduction.txt"
 	}
 	
 	47x {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tilefield
-    music foghorns.ogg
-	palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
+		background_graphics bgmarsh
+		ambience none
+		tile_graphics Tilefield
+		music foghorns.ogg
+		palette 26
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		global_particle_4 none
+		shader_param 1
+		overlay_graphics Overlaysfield
+		lowgrav_physics "data/abduction.txt"
 	}
 
 	51 {
-	music none
+		music none
 
-    npc_1 ANGUISHNPC
-	sfx_file gehennasounds.txt
+		npc_1 ANGUISHNPC
+		sfx_file gehennasounds.txt
 	}
 
 }
@@ -2195,300 +2461,210 @@ gehenna/ghx {
     midfx_graphics ShadeBox
     midfx_layer 2
     shader_param 0
-    #global_particle_1 lightingmoddedtest
     
     ambience_volume 1
     ambience cult.ogg
 	art_alts [
         [MiniFly, MiniWisp][MiniRat, MiniRatWhite][MiniFrog, MiniFrogWhite]
 		[GlowShroom, nothing][GlowShroomSmall, nothing][Frog, Frog_DeadAsh][Cartridge, cart2]
-		[ThwampGear, ThwampGearFastRight][ThwampEye, ThwampGearFastLeft][Floater, fire_my_guy][ElectroBall, nothing][ChargeSlug, Player]
+		[ThwampGear, ThwampGearFastRight][ThwampEye, ThwampGearFastLeft][Floater, FireHazard][ElectroBall, nothing][ChargeSlug, Player]
 	]
+	
     2 {
-    tile_graphics Tilefield
-    ambience_volume 1
-    music_volume 2
-    background_graphics bg2
-    fx_shader_mid sun
-    shader_param 1
-    palette 30
-    tile_particle_1 dust
-    global_particle_2 wind
-    global_particle_3 wind2
+		tile_graphics Tilefield
+		ambience_volume 1
+		music_volume 2
+		background_graphics bg2
+		fx_shader_mid sun
+		shader_param 1
+		palette 30
+		tile_particle_1 dust
+		global_particle_2 wind
+		global_particle_3 wind2
         music [desert_showdown_intro.ogg, desert_showdown_loop.ogg]
     }
     3 {
-    tile_graphics Tilefield
-    ambience_volume 1
-    music_volume 2
-    background_graphics bg2
-    fx_shader_mid sun
-    shader_param 1
-    palette 30
-    tile_particle_1 dust
-    global_particle_2 wind
-    global_particle_3 wind2
+		tile_graphics Tilefield
+		ambience_volume 1
+		music_volume 2
+		background_graphics bg2
+		fx_shader_mid sun
+		shader_param 1
+		palette 30
+		tile_particle_1 dust
+		global_particle_2 wind
+		global_particle_3 wind2
         music [desert_showdown_intro.ogg, desert_showdown_loop.ogg]
     }
     4 {
-    tile_graphics Tilefield
-    ambience_volume 1
-    music_volume 2
-    background_graphics bg2
-    fx_shader_mid sun
-    shader_param 1
-    palette 30
-    tile_particle_1 dust
-    global_particle_2 wind
-    global_particle_3 wind2
+		tile_graphics Tilefield
+		ambience_volume 1
+		music_volume 2
+		background_graphics bg2
+		fx_shader_mid sun
+		shader_param 1
+		palette 30
+		tile_particle_1 dust
+		global_particle_2 wind
+		global_particle_3 wind2
         music [desert_showdown_intro.ogg, desert_showdown_loop.ogg]
     }
     5 {
-    background_graphics gehennabg
-    shader_param 1
-    fx_shader_mid fire
-	palette 25
-    global_particle_4 blfgrain
-    npc_1 PIXLIEBLOB
+		background_graphics gehennabg
+		fx_shader_mid fire
+		shader_param 1
+		palette 25
+		global_particle_4 blfgrain
+		npc_1 PIXLIEBLOB
     }
     6 {
-    background_graphics bgsolid
-    shader_param 0
-    fx_shader_mid lightingmodded
-    decoration_1 CreepingMass
-palette 34
-    global_particle_2 wind
-	global_particle_3 wind2
-    #global_particle_4 blfgrain
-    npc_1 ASHFROMANNI5    
-art_alts [[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
-        [OrbSmall, dudsawsmall][OrbLarge, dudsawbig][Frog, Frog_DeadAsh]
-        [ChainLink2, None]]
-    }
-    7 {
-    shader_param 0.5
-    tile_graphics Tilecaves
-    fx_shader_mid lightingmodded
-palette 32
-    global_particle_2 cold
-	global_particle_3 dark
-    #global_particle_4 blfgrain
-        music [diggyhole_intro.ogg, diggyhole_loop.ogg]
-art_alts [[MiniFly, MiniWisp]]
-        ambience oxygendeprived.ogg
-    tile_particle_1 oxygen
-    background_graphics hellbg
-    toxic_timer 8
-    }
-    8 {
-    shader_param 0.5
-    tile_graphics Tilecaves
-    fx_shader_mid lightingmodded
-palette 32
-    global_particle_2 cold
-	global_particle_3 dark
-    #global_particle_4 blfgrain
-        music [diggyhole_intro.ogg, diggyhole_loop.ogg]
-art_alts [[MiniFly, MiniWisp]]
-        ambience oxygendeprived.ogg
-    tile_particle_1 oxygen
-    background_graphics hellbg
-    toxic_timer 8
-    }
-    9 {
-    npc_1 DWARVESWONTFLYSOHIGH
-    shader_param 0.5
-    tile_graphics Tilecaves
-    fx_shader_mid lightingmodded
-palette 32
-    global_particle_2 cold
-	global_particle_3 dark
-    #global_particle_4 blfgrain
-        music [diggyhole_intro.ogg, diggyhole_loop.ogg]
-art_alts [[MiniFly, MiniWisp]]
-        ambience oxygendeprived.ogg
-    tile_particle_1 oxygen
-    background_graphics hellbg
-    toxic_timer 8
+		background_graphics bgsolid
+		fx_shader_mid lightingmodded
+		shader_param 0
+		decoration_1 CreepingMass
+		palette 34
+		global_particle_2 wind
+		global_particle_3 wind2
+		npc_1 ASHFROMANNI5    
+		art_alts [
+			[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
+			[OrbSmall, dudsawsmall][OrbLarge, dudsawbig][Frog, Frog_DeadAsh]
+			[ChainLink2, None]
+		]
     }
     10 {
-    npc_1 NPC_Spectrum
-    tile_graphics Tile
-palette 33
-    shader_param 1
-    global_particle_1 none
-    global_particle_2 none
-    global_particle_3 none
-    global_particle_4 none
-        music secret.ogg
-        ambience none
-    background_graphics secretbg
-art_alts [[OutWarp, none]]
-decoration_1 WarpzonePortal
+		npc_1 NPC_Spectrum
+		tile_graphics Tile
+		palette 33
+		shader_param 1
+		global_particle_1 none
+		global_particle_2 none
+		global_particle_3 none
+		global_particle_4 none
+		music secret.ogg
+		ambience none
+		background_graphics secretbg
+		art_alts [
+			[OutWarp, none]
+		]
+		decoration_1 WarpzonePortal
     }
-11 {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tilefield
-    music foghorns.ogg
-palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
+	
+	16 {
+		tile_graphics Tilecomplex
+		overlay_graphics Overlayscomplex
+		background_graphics bgsolid
+		foreground_graphics None
+		midfx_graphics none
+		fx_shader gravripples
+		palette 36
+		toxic_timer 0
+		fx_shader_mid cloudripples
+		midfx_layer 2
+
+		tile_particle_1 spark2
+		tile_particle_2 smoke
+		tile_particle_3 fallout2tile
+		global_particle_1 rocks
+		global_particle_2 fallout2    
+		global_particle_3 rocks
+		global_particle_4 none
+		npc_1 butchernpc
+		art_alts [
+			[Fireball, ThwampGear][OrbSmall, dudsawsmall][OrbLarge, dudsawbig][ChainLink2, None][Cartridge, cart3b]
+		]
+
+		music [PTSD/summer_intro.ogg, PTSD/summer_loop.ogg]
+		ambience labloop.ogg
 	}
-
-	50 {
-        shader_param 0.8
-palette 25
-        fx_shader_mid fire
-        global_particle_4 blfgrain
-        background_graphics gehennabg
-	music none
-	}
-
-	51 {
-	music none
-
-	sfx_file gehennasounds.txt
-	}
-12 {
-    background_graphics bgmarsh
-    ambience none
-    tile_graphics Tileairship
-    music foghorns.ogg
-palette 26
-    global_particle_1 lightning
-	global_particle_2 none
-	global_particle_3 none
-	global_particle_4 none
-    shader_param 1
-    overlay_graphics Overlaysfield
-    lowgrav_physics "data/abduction.txt"
-    art_alts [[OrbSmall, orbblob]
-        [ChainLink2, None]
-[OrbLarge, LargeGlub]]
-	}
-
-
-    13{
-
-    tile_graphics Tileairship
-    overlay_graphics Overlayscomplex
-    background_graphics ch3bg
-    foreground_graphics None
-    fx_shader_mid fire
-    midfx_graphics ShadeBox
-    shader_param 0.5
-    palette 27
-        midfx_layer 2
-    area_type dark
-
-    lowgrav_physics "data/abduction.txt"
-
-    global_particle_1 wind
-    decoration_1 Deco10
-    decoration_2 Deco11
-    decoration_3 none
-    
-    tile_particle_1 abduction
-
-    art_alts [[OrbSmall, orbblob]
-        [ChainLink2, None]
-[OrbLarge, LargeGlub]]
-
-    music [facility_intro.ogg, facility_loop.ogg]
-    ambience cogs.ogg
 }
-    14{
 
-    tile_graphics Tileairship
-    overlay_graphics Overlayscomplex
-    background_graphics ch3bg
-    foreground_graphics None
-    fx_shader_mid fire
-    midfx_graphics ShadeBox
-    shader_param 0.5
-    palette 27
-        midfx_layer 2
-    area_type dark
-
-    lowgrav_physics "data/abduction.txt"
-
-    global_particle_1 wind
-    decoration_1 Deco10
-    decoration_2 Deco11
-    decoration_3 none
-    
-    tile_particle_1 abduction
-
-    art_alts [[OrbSmall, orbblob]
-        [ChainLink2, None]
-[OrbLarge, LargeGlub]]
-
-    music [facility_intro.ogg, facility_loop.ogg]
-    ambience cogs.ogg
+gehenna/ghx2 {
+	tile_graphics Tilecaves
+	background_graphics hellbg
+	overlay_graphics Overlayscaves
+	palette 32
+	
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	
+	shader_param 0.5
+	area_type dark
+	
+	global_particle_1 cold
+	global_particle_2 dark
+	tile_particle_1 oxygen
+	
+	toxic_timer 8
+	
+	music [diggyhole_intro.ogg, diggyhole_loop.ogg]
+	ambience oxygendeprived.ogg
+	
+	npc_1 DWARVESWONTFLYSOHIGH
+	
+	art_alts [
+		[MiniFly, MiniWisp][GasCloud, none]
+	]
 }
-    15{
 
-    tile_graphics Tileairship
-    overlay_graphics Overlayscomplex
-    background_graphics ch3bg
-    foreground_graphics None
-    fx_shader_mid fire
-    midfx_graphics ShadeBox
-    shader_param 0.5
-    palette 27
-        midfx_layer 2
-    area_type dark
+gehenna/ghx3 {
+	tile_graphics Tileairship
+	overlay_graphics Overlayscomplex
+	background_graphics ch3bg
+	palette 27
+	
+	fx_shader_mid fire
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	
+	shader_param 0.5
+	area_type dark
 
-    lowgrav_physics "data/abduction.txt"
+	lowgrav_physics "data/abduction.txt"
 
-    global_particle_1 wind
-    decoration_1 Deco10
-    decoration_2 Deco11
-    decoration_3 none
-    
-    tile_particle_1 abduction
+	global_particle_1 wind
+	global_particle_2 blbgrain
+	global_particle_3 cloudwind_light
+	
+	tile_particle_1 abduction
 
-    npc_1 NPC_Potassium
-    art_alts [[OrbSmall, orbblob]
-        [ChainLink2, None]
-[OrbLarge, LargeGlub]]
+	npc_1 NPC_Potassium
 
-    music [facility_intro.ogg, facility_loop.ogg]
-    ambience cogs.ogg
-  }
-16{
-    tile_graphics Tilecomplex
-    overlay_graphics Overlayscomplex
-    background_graphics bgsolid
-    foreground_graphics None
-    midfx_graphics none
-    fx_shader gravripples
-    palette 36
-    toxic_timer 0
-    fx_shader_mid cloudripples
-    midfx_layer 2
-
-    tile_particle_1 spark2
-    tile_particle_2 smoke
-    tile_particle_3 fallout2tile
-    global_particle_1 rocks
-    global_particle_2 fallout2    
-    global_particle_3 rocks
-    global_particle_4 none
-    npc_1 butchernpc
-    art_alts [
-        [Fireball, ThwampGear][OrbSmall, dudsawsmall][OrbLarge, dudsawbig][ChainLink2, None][Cartridge, cart3b]
-    ]
-
-    music [PTSD/summer_intro.ogg, PTSD/summer_loop.ogg]
-    ambience labloop.ogg
-  }
+	music [facility_intro.ogg, facility_loop.ogg]
+	ambience cogs.ogg
+	
+	art_alts [
+		[OrbSmall, orbblob][ChainLink2, None][OrbLarge, LargeGlub]
+	]
+	
+	0 {
+		background_graphics bgmarsh
+		ambience none
+		tile_graphics Tilefield
+		music foghorns.ogg
+		palette 26
+		
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		
+		shader_param 1
+		overlay_graphics Overlaysfield
+	}
+	
+	0x {
+		background_graphics bgmarsh
+		ambience none
+		music foghorns.ogg
+		palette 26
+		
+		global_particle_1 lightning
+		global_particle_2 none
+		global_particle_3 none
+		
+		shader_param 1
+	}
 }
 
 gehenna/ghw {
@@ -2506,11 +2682,11 @@ gehenna/ghw {
 
     shader_param 0.5
 
-0{    music [bloodsewers_intro.ogg, none]
-    shader_param 0.25
-}
+	0 {    
+		music [bloodsewers_intro.ogg, none]
+		shader_param 0.25
+	}
 
-    #global_particle_1 cloudwind_light
     global_particle_2 bgrain3
     global_particle_3 fgrain3
     global_particle_4 lightning
@@ -2528,9 +2704,12 @@ gehenna/ghw {
     music_volume 1
     ambience_volume 0.5
     
-    art_alts [[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
+    art_alts [
+		[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
         [OrbSmall, dudsawsmall][OrbLarge, dudsawbig][Frog, Frog_DeadAsh]
-        [ChainLink2, None]]
+        [ChainLink2, None]
+	]
+	
     npc_1 NPCB2
     npc_2 NPCG5
     npc_3 none
@@ -2551,7 +2730,6 @@ gehenna/jv {
 
     shader_param 1
 
-    #global_particle_1 cloudwind_light
     global_particle_4 lightning
     tile_particle_1 waterfall_thin
     tile_particle_2 sidesplash
@@ -2559,17 +2737,18 @@ gehenna/jv {
     tile_particle_4 drip
     tile_particle_5 toxicbubbles
 
-    area_type normal
-
     music joker.ogg
     ambience cogs.ogg
     
     music_volume 1
     ambience_volume 0.5
     
-    art_alts [[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
+    art_alts [
+		[GlowShroom, GlowBulb][GlowShroomSmall, GlowBulbSmall]
         [OrbSmall, dudsawsmall][OrbLarge, dudsawbig][Frog, Frog_DeadAsh]
-        [ChainLink2, None]]
+        [ChainLink2, None]
+	]
+	
     npc_1 NPCB2
     npc_2 NPCG5
     npc_3 none
@@ -2600,16 +2779,17 @@ gehenna/ggh1 {
         [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro]
         [ChainHitch,ChainHitchRetro][ThwampEye,ThwampEyeRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Floater, bonfireretro][ElectroBall, nothing][OrbChomp, OrbChompretro][SkullFloaterBreaky, SkullFloaterretroBreaky]
     ]
-   9{
-    art_alts [
-        [Player, PlayerRetro][Frog, Frogretro][Slug, Slugretro]
-        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
-        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
-        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
-        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro]
-        [ChainHitch,ChainHitchRetro][ThwampEye,ThwampEyeRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Floater, FloaterGlitch][ElectroBall, nothing][OrbChomp, OrbChompretro][SkullFloaterBreaky, SkullFloaterretroBreaky]
-    ]
-}
+	
+	9{
+		art_alts [
+			[Player, PlayerRetro][Frog, Frogretro][Slug, Slugretro]
+			[SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+			[SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+			[Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+			[Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro]
+			[ChainHitch,ChainHitchRetro][ThwampEye,ThwampEyeRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Floater, FloaterGlitch][ElectroBall, nothing][OrbChomp, OrbChompretro][SkullFloaterBreaky, SkullFloaterretroBreaky]
+		]
+	}
 }
 
 gehenna/ggh2 {
@@ -2698,6 +2878,37 @@ gehenna/ggh3x {
 
 }
 
+gehenna/gend {
+    tile_graphics Tileretro
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 42
+
+    music [retro/unowen_intro.ogg, retro/unowen_loop.ogg]
+
+    cart_intro_png titlecart
+    cart_intro_palette 38
+    
+    music_volume 1
+    ambience_volume 1
+    
+	0 {
+		area_type glitch
+	}
+	
+    area_type ironcart
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro][Floater, Floater2][Slug, Slugretro]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, none]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Fish, RetroFish][CreepingMass, CreepingMassRetro][FloatingMine, FloatingMineRetro]
+    ]
+	
+}
+
 gehenna/gult {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
@@ -2712,7 +2923,8 @@ gehenna/gult {
     
     music_volume 1
     ambience_volume 1
-    0{
+    
+	0 {
 		area_type glitch
 	}
 	
@@ -2726,4 +2938,42 @@ gehenna/gult {
         [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Fish, RetroFish][CreepingMass, CreepingMassRetro][FloatingMine, FloatingMineRetro]
     ]
 	
+}
+
+ultimatum/ {
+     area_name "Ultimatum"
+     area_label_frame 15
+     tile_graphics Tilesewers
+     overlay_graphics Overlaystox2
+     background_graphics neverbg
+     foreground_graphics none
+     fx_shader distortionparticles
+     palette 7
+
+     tile_particle_1 drip
+     tile_particle_2 splash
+     global_particle_1 none
+     global_particle_2 none
+     global_particle_3 none
+
+     art_alts [
+	[ChainLink2, None][OrbSmall, Saw1][OrbLarge, Saw2]
+	]
+
+     music [fur_elise_intro.ogg, fur_elise_loop.ogg]
+     ambience ruins.ogg
+     music_volume 1
+     ambience_volume 1
+   
+	3 {
+	fx_shader gravripples
+	}
+	4 {
+	fx_shader nooverlay
+	}
+	5 {
+	fx_shader gravripples
+	platform_physics "data/platformphysics_steam.txt"
+	tile_particle_5 toxicbubblesflipped
+	}
 }

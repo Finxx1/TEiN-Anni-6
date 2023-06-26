@@ -102,6 +102,21 @@ NPCHELL {
 	]
 }
 
+NPC_MM1 {
+#angry mf
+	movieclip NPCD2
+	sound_id NPCBlob
+	text [
+	    "hello there,\nif i could ask\ncould you"
+		"GET THE FUCK\nOUT OF OUR\nROOM!?!?"
+		"I WAS HAVING\nA PEACEFUL TALK\nWITH MY FRIEND"
+		"ONLY FOR YOU\nTO APPEAR"
+		"MY BUDDY HERE\nJUST GOT DIVORCED"
+		"HE NEEDS\nSOME PERSONAL\nSPACE"
+		"DO.\nYOU.\nUNDERSTAND?!?!"
+	]
+}
+
 NPCs1 {
 #anni 6 is a metroidvania confirmed
     movieclip NPC3
@@ -745,6 +760,24 @@ butchernpc {
 	]
 }
 
+NPC_prediction {
+	movieclip NPC17
+	sound_id NPCSkull
+	text [
+		"WHAT THE FUCK \nWAS THAT"
+		"oh its another \nperson"
+		"you know, back in \nmy day everyone \nwasnt dead"
+		"you lazy bastards \ndont even work"
+		"since you might be \nthe last living thing here"
+		"other than those \neyeshooters"
+		"i'll give you some \nadvice"
+		"the eyeshooters are ASSHOLES"
+		"they'll try to \npredict where you're going"
+		"they have nothing else \ngoing on in their \nstupid lives"
+		"they should \nmight as well ruin your day aswell"
+	]
+}
+
 NPCH1 {
 #basic sideways
     movieclip NPCH1
@@ -826,7 +859,7 @@ NPCHCRYO {
     ]
     
     alt_text [
-		"\nWARP IS READY"
+		"\nWARP READY"
         "\nDO NOT MOVE"
     ]
 }
