@@ -31,9 +31,9 @@ meta {
     bodylevel 5c-21
     heartlevel 6-1end
     
-    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
-    game_over_checkpoints [[abyss/main/ sploot/-1] [boilingpoint/main/ sploot/-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
+    game_over_checkpoints [[1d 1d-1] [gehenna/gh 1d-1] [gehenna/sd 1d-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1 struggle/-1 gehenna/gult-1] //used to set the respawn point in an iron cart
     timed_cart_entrypoints [gehenna/ggh2-1] //maybe you want to put a timer on other carts?
     console_entry_levels [swamplands/-0]
@@ -249,6 +249,15 @@ nodes {
         levelgroups [gehenna/gh gehenna/ghx gehenna/sd gehenna/vd gehenna/ghw]
 		
 		up ThePast
+		down RockBottom
+    }
+	
+	RockBottom {
+        clipname rockbottom
+        entrylevel gehenna/gh-51
+        page darkworld
+		
+		up Gehenna
     }
 	
     //carts
