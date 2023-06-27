@@ -512,10 +512,7 @@ swamplands/future/ {
 	]
 
      music [newworld_intro_dark.ogg, newworld_loop_dark.ogg]
-     ambience wind.ogg
      ambience flesh.ogg
-
-     ambience_volume 90
 
 	1 {
 		global_particle_2 fgrain_light
@@ -557,10 +554,7 @@ swamplands/future/x {
 
      music music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
      stop_previous_music false
-     ambience wind.ogg
      ambience flesh.ogg
-
-     ambience_volume 90
 
 	1 {
 		global_particle_2 fgrain_light
@@ -788,7 +782,8 @@ ssshithill/main/ {
 
 	npc_3 NPCSHH3
 
-	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+	music [symphony7_intro.ogg, symphony7_loop.ogg]
+	music_volume 1.2
 	ambience ruins.ogg
 }
 
@@ -816,7 +811,8 @@ ssshithill/secret/ {
 	npc_1 NPCSHH1
 	npc_2 NPCSHH2
 
-	music [gnossiennes_intro.ogg, gnossiennes_loop.ogg]
+	music [symphony7_intro.ogg, symphony7_loop.ogg]
+	music_volume 1.2
 	ambience ruins.ogg
 }
 
@@ -2905,7 +2901,7 @@ ultimatum/ {
      global_particle_3 none
 
      art_alts [
-	[ChainLink2, None][OrbSmall, Saw1][OrbLarge, Saw2]
+		[ChainLink2, None][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
 	]
 
      music [fur_elise_intro.ogg, fur_elise_loop.ogg]

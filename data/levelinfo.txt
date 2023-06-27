@@ -125,11 +125,11 @@
 "swamplands/-14" {name="Swamplands 14" id=14}
 "swamplands/-15" {name="Swamplands 15" id=15}
 "swamplands/xu-1" {name="???" id=2}
-"swamplands/xu-2" {name="???" id=5}
-"swamplands/xu-3" {name="???" id=3}
+"swamplands/xu-2" {name="???" id=3}
+"swamplands/xu-3" {name="???" id=4}
 "swamplands/xu-4" {name="???" id=-1}
 "swamplands/xd-1" {name="???" id=1}
-"swamplands/xd-2" {name="???" id=4}
+"swamplands/xd-2" {name="???" id=5}
 
 "hive/h-0" {name="The Hive" id=-1}
 "hive/h-1" {name="The Hive 1" id=1}
