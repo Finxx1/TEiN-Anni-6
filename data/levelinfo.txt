@@ -126,10 +126,30 @@
 "swamplands/-15" {name="Swamplands 15" id=15}
 "swamplands/xu-1" {name="???" id=2}
 "swamplands/xu-2" {name="???" id=3}
-"swamplands/xu-3" {name="???" id=4}
+"swamplands/xu-3" {name="???" id=5}
 "swamplands/xu-4" {name="???" id=-1}
 "swamplands/xd-1" {name="???" id=1}
-"swamplands/xd-2" {name="???" id=5}
+"swamplands/xd-2" {name="???" id=4}
+
+"swamplands/future/-0" {name="Phlegethon" id=-1}
+"swamplands/future/-1" {name="Phlegethon 1" id=-1}
+"swamplands/future/-2" {name="Phlegethon 2" id=-1}
+"swamplands/future/-3" {name="Phlegethon 3" id=-1}
+"swamplands/future/-4" {name="Phlegethon 4" id=-1}
+"swamplands/future/-5" {name="Phlegethon 5" id=-1}
+"swamplands/future/-6" {name="Phlegethon 6" id=-1}
+"swamplands/future/-7" {name="Phlegethon 7" id=-1}
+"swamplands/future/-8" {name="Phlegethon 8" id=-1}
+"swamplands/future/-9" {name="Phlegethon 9" id=-1}
+"swamplands/future/-10" {name="Phlegethon 10" id=-1}
+"swamplands/future/-11" {name="Phlegethon 11" id=-1}
+"swamplands/future/-12" {name="Phlegethon 12" id=-1}
+"swamplands/future/-13" {name="Phlegethon 13" id=-1}
+"swamplands/future/-14" {name="Phlegethon 14" id=-1}
+"swamplands/future/-15" {name="Phlegethon 15" id=-1}
+"swamplands/future/-16" {name="Phlegethon 16" id=-1}
+"swamplands/future/x-1" {name="???" id=-1}
+"swamplands/future/x-2" {name="???" id=3}
 
 "hive/h-0" {name="The Hive" id=-1}
 "hive/h-1" {name="The Hive 1" id=1}
@@ -419,7 +439,7 @@
 "bastion/future/-4" {name="???" id=-1} 
 "bastion/future/-5" {name="???" id=4} 
 
-"1d-1" {name="???" id=-1}
+"1d-1" {name="???" id=-1} # just delete gehenna if youre going to collect_everything
 "gehenna/gh-1" {name="Gehenna 1" id=-1}
 "gehenna/gh-2" {name="Gehenna 2" id=-1}
 "gehenna/gh-3" {name="Gehenna 3" id=-1}

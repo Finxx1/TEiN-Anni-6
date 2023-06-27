@@ -485,6 +485,8 @@ swamplands/future/ {
      overlay_graphics Overlaysfield
      background_graphics bgmarsh
      palette 43
+	 
+	 area_type dark
 
      fx_shader bloodripples
      fx_shader_mid lightingmodded
@@ -526,6 +528,8 @@ swamplands/future/x {
      overlay_graphics Overlaysfield
      background_graphics bgmarsh
      palette 43
+	 
+	 area_type dark
 
      fx_shader bloodripples
      fx_shader_mid lightingmodded
@@ -726,14 +730,9 @@ ssshithill/main/ {
 	overlay_graphics Overlaysfield
 	background_graphics bgmarsh
 	foreground_graphics None
-	fx_shader cloudripples
+	fx_shader_mid cloudripples
+	midfx_layer 2
 	palette 12
-	
-	0 {
-		fx_shader_mid sludgeglow2
-		midfx_graphics SolidBox
-		midfx_layer 2
-	}
 	
 	a1 {
 		fx_shader_mid lightingmodded
@@ -1534,6 +1533,8 @@ exhaust/main/ {
 	decoration_2 SteamGrate2
 	decoration_3 SteamGrate3
 	
+	npc_1 NPCs0
+	
 	music [exhaust_intro.ogg, exhaust_loop.ogg]
 	ambience clockwork.ogg
 	sfx_file mainsounds_steam.txt
@@ -1707,6 +1708,8 @@ exhaust/future/ {
 	midfx_graphics SolidBox
 	palette 4
 	
+	area_type dark
+	
 	do_tilt true
 	npc_1 NPCsD2
 
@@ -1862,6 +1865,8 @@ bastion/future/ {
 	foreground_graphics none
 	fx_shader ripples
 	palette 19
+	
+	area_type dark
 	
 	fx_shader_mid lightingmodded
 	midfx_layer 2
@@ -2701,7 +2706,7 @@ gehenna/ghx {
 		global_particle_4 none
 		npc_1 butchernpc
 		art_alts [
-			[Fireball, ThwampGear][OrbSmall, dudsawsmall][OrbLarge, dudsawbig][ChainLink2, None][Cartridge, cart3b]
+			[Fireball, ThwampGear][Floater, FloaterSaw][OrbSmall, dudsawsmall][OrbLarge, dudsawbig][ChainLink2, None][Cartridge, cart3b]
 		]
 
 		music [PTSD/summer_intro.ogg, PTSD/summer_loop.ogg]
@@ -2710,6 +2715,7 @@ gehenna/ghx {
 }
 
 gehenna/ghx2 {
+	area_label_frame 11
 	tile_graphics Tilecaves
 	background_graphics hellbg
 	overlay_graphics Overlayscaves
@@ -2739,6 +2745,7 @@ gehenna/ghx2 {
 }
 
 gehenna/ghx3 {
+	area_label_frame 11
 	tile_graphics Tileairship
 	overlay_graphics Overlayscomplex
 	background_graphics ch3bg
