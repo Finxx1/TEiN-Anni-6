@@ -377,6 +377,7 @@ swamplands/ {
 	tile_particle_5 drip
 	
 	npc_1 NPC_Stench
+	npc_2 NPCH4
 	
 	art_alts [
 		[OrbSmall, orbblob]
@@ -556,7 +557,7 @@ swamplands/future/x {
 		[Bullet, eyebullet]
 	]
 
-     music music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+     music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
      stop_previous_music false
      ambience flesh.ogg
 
@@ -1695,6 +1696,9 @@ exhaust/secret/ {
 		
 		npc_1 NPCH2
 	}
+	69 {
+		music [diggyhole_intro.ogg, diggyhole_loop.ogg]
+	}
 }
 
 exhaust/future/ {
@@ -1852,7 +1856,7 @@ bastion/secret/ {
 	}
 	
 	11 {
-	npc_1 NPCH4
+	npc_1 NPCH3
 	}
 }
 

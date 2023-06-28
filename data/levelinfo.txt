@@ -44,18 +44,18 @@
 "fallacy/-4" {name="-2-4" id=-1}
 "fallacy/-5" {name="-2-5" id=-1}
 
-"struggle/-1" {name="-4-1" id=-1}
-"struggle/-1x" {name="-4-1" id=-1}
-"struggle/b-1" {name="+4-1" id=-1}
-"struggle/-2" {name="-4-2" id=-1}
-"struggle/b-2" {name="+4-2" id=-1}
-"struggle/-3" {name="-4-3" id=-1}
-"struggle/b-3" {name="+4-3" id=-1}
-"struggle/-4" {name="-4-4" id=-1}
-"struggle/b-4" {name="+4-4" id=-1}
-"struggle/-5" {name="-4-5" id=-1}
-"struggle/-5x" {name="-4-5" id=-1}
-"struggle/b-5" {name="+4-5" id=-1}
+"struggle/-1" {name="-3-1" id=-1}
+"struggle/-1x" {name="-3-1" id=-1}
+"struggle/b-1" {name="+3-1" id=-1}
+"struggle/-2" {name="-3-2" id=-1}
+"struggle/b-2" {name="+3-2" id=-1}
+"struggle/-3" {name="-3-3" id=-1}
+"struggle/b-3" {name="+3-3" id=-1}
+"struggle/-4" {name="-3-4" id=-1}
+"struggle/b-4" {name="+3-4" id=-1}
+"struggle/-5" {name="-3-5" id=-1}
+"struggle/-5x" {name="-3-5" id=-1}
+"struggle/b-5" {name="+3-5" id=-1}
 
 "gehenna/ggh1-1x" {name="TMJ Evilution 1" id=-1}
 "gehenna/ggh1-1" {name="TMJ Evilution 1" id=-1}
@@ -149,7 +149,7 @@
 "swamplands/future/-15" {name="Phlegethon 15" id=-1}
 "swamplands/future/-16" {name="Phlegethon 16" id=-1}
 "swamplands/future/x-1" {name="???" id=-1}
-"swamplands/future/x-2" {name="???" id=3}
+"swamplands/future/x-2" {name="???" id=4}
 
 "hive/h-0" {name="The Hive" id=-1}
 "hive/h-1" {name="The Hive 1" id=1}
@@ -391,6 +391,7 @@
 "exhaust/secret/-8" {name="???" id=-1}
 "exhaust/secret/-9" {name="???" id=4} #biglife
 "exhaust/secret/-10" {name="???" id=-1}
+"exhaust/secret/-69" {name="??????" id=-1}
 "exhaust/future/-0" {name="???" id=-1}
 "exhaust/future/-1" {name="???" id=-1}
 "exhaust/future/-2" {name="???" id=-1}
@@ -437,7 +438,7 @@
 "bastion/future/-2" {name="???" id=-1} 
 "bastion/future/-3" {name="???" id=-1} 
 "bastion/future/-4" {name="???" id=-1} 
-"bastion/future/-5" {name="???" id=4} 
+"bastion/future/-5" {name="???" id=3} 
 
 "1d-1" {name="???" id=-1} # just delete gehenna if youre going to collect_everything
 "gehenna/gh-1" {name="Gehenna 1" id=-1}

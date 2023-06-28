@@ -343,7 +343,7 @@ NPCsD3 {
 		"THE END IS\nNOW, BECAUSE WE\nMADE IT SO!"
 		"TURN THIS\nTOWER UPSIDE\nDOWN WE DID!"
 		"I'M SORRY,\nTHIS IS\nNOT ENOUGH!"
-		"BLAST THE GROUND,\nCUT A HOLE,\nLET'S GO DEEPER!"
+		"BLAST IT DOWN,\nCUT A HOLE,\nLET'S GO DEEPER!"
 		"NO, WE NEED\nTO HIT\nTHE BOTTOM!!"
 		"\nHAHAHAHAHAHA!"
     ]
@@ -866,7 +866,7 @@ NPCH4 {
 		"ghhhh\n. . .\nuhh . . ."
 		"where . . .\n. . .\nare we . . ."
 		"you . . .\nmake it stop\n. . . please"
-		". . .\n350\n. . ."
+		". . .\n300\n. . ."
 		". . .\nHURRY\n. . ."
     ]
     
