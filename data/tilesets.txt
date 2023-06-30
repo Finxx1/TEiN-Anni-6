@@ -1,4 +1,4 @@
-gehenna/gend {
+machiavellismask/x {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretro
@@ -199,7 +199,34 @@ struggle/b {
 	]
 }
 
-gehenna/ggh1 {
+war/crt1 {
+    tile_graphics Tileretro
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 23
+
+    cart_intro_png Spr_titlecards_10
+    cart_intro_palette 23
+    
+    music [retro/ch2retrointro.ogg, retro/ch2retro.ogg]
+    
+    music_volume 1.2
+    ambience_volume 1
+    
+    area_type cart
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro2][Floater, Floater2][Slug, Slugretro]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge]
+    ]
+
+}
+
+tmjevilution/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretrox
@@ -208,8 +235,8 @@ gehenna/ggh1 {
     
     music [retro/trs_intro.ogg, retro/trs_loop.ogg]
 
-    cart_intro_png Painfultonia
-    cart_intro_palette 25
+    cart_intro_png TMJEvilution
+    cart_intro_palette 46
     
     music_volume 1
     ambience_volume 1
@@ -237,7 +264,7 @@ gehenna/ggh1 {
 	}
 }
 
-gehenna/ggh2 {
+painfultonia/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretro
@@ -268,7 +295,7 @@ gehenna/ggh2 {
 
 }
 
-gehenna/ggh3 {
+rootvain/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretro
@@ -295,7 +322,7 @@ gehenna/ggh3 {
 
 }
 
-gehenna/ggh3x {
+rootvain/x {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretro
@@ -322,7 +349,7 @@ gehenna/ggh3x {
 
 }
 
-gehenna/gult {
+machiavellismask/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
     background_graphics bgretro
@@ -479,9 +506,9 @@ swamplands/xu {
 	ambience wind.ogg
 }
 
-swamplands/future/ {
+phlegethon/ {
      area_name "Phlegethon"
-     area_label_frame 1
+     area_label_frame 13
      tile_graphics Tileradmarsh
      overlay_graphics Overlaysfield
      background_graphics bgmarsh
@@ -522,9 +549,9 @@ swamplands/future/ {
 	}
 }
 
-swamplands/future/x {
+phlegethon/x {
      area_name "???"
-     area_label_frame 1
+     area_label_frame 13
      tile_graphics Tileradmarsh
      overlay_graphics Overlaysfield
      background_graphics bgmarsh
@@ -782,7 +809,7 @@ ssshithill/main/ {
 
 	npc_3 NPCSHH3
 
-	music [symphony7_intro.ogg, symphony7_loop.ogg]
+	music [gnossiennes_real_intro.ogg, gnossiennes_real_loop.ogg]
 	music_volume 1.2
 	ambience ruins.ogg
 }
@@ -811,7 +838,7 @@ ssshithill/secret/ {
 	npc_1 NPCSHH1
 	npc_2 NPCSHH2
 
-	music [symphony7_intro.ogg, symphony7_loop.ogg]
+	music [gnossiennes_real_intro.ogg, gnossiennes_real_loop.ogg]
 	music_volume 1.2
 	ambience ruins.ogg
 }
@@ -1015,33 +1042,6 @@ war/usx {
         [Gasser, Gasser2]
         [Splatter, Splatter2]
         [Frog, Frog_DeadAsh2]
-    ]
-
-}
-
-war/crt1 {
-    tile_graphics Tileretro
-    overlay_graphics Overlaysretro
-    background_graphics bgretro
-    foreground_graphics none
-    palette 23
-
-    cart_intro_png Spr_titlecards_10
-    cart_intro_palette 23
-    
-    music [ch2retrointro.ogg, ch2retro.ogg]
-    
-    music_volume 1.2
-    ambience_volume 1
-    
-    area_type cart
-
-    art_alts [
-        [Player, PlayerRetro][Frog, Frogretro2][Floater, Floater2][Slug, Slugretro]
-        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
-        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
-        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, ChainLinkretro]
-        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge]
     ]
 
 }
@@ -1702,8 +1702,8 @@ exhaust/secret/ {
 }
 
 exhaust/future/ {
-	area_name "The Future"
-	area_label_frame 16
+	area_name "Boiling Point"
+	area_label_frame 14
 	tile_graphics Tileindustrialdark
 	overlay_graphics Overlaysend
 	background_graphics ch3bg
@@ -1861,8 +1861,8 @@ bastion/secret/ {
 }
 
 bastion/future/ {
-	area_name "Chimney"
-	area_label_frame 16
+	area_name "Laser-Cut"
+	area_label_frame 12
 	tile_graphics Tilequarry
 	overlay_graphics Overlayscomplex
 	background_graphics bgsanctuary
@@ -2131,13 +2131,13 @@ gehenna/gh {
 			[ChainLink, None]
 		]
 	}
-	22 {
-		music [trs3_intro.ogg, trs3_loop.ogg]
-	}
 	21 {
 		music [trs2_outro.ogg, none]
 	}
-
+	22 {
+		music [trs3_intro.ogg, trs3_loop.ogg]
+	}
+	
 	f1 {
 		background_graphics bg2
 		fx_shader_mid fire
@@ -2858,7 +2858,7 @@ gehenna/ghw {
 
 gehenna/jv {
     area_name "Comic Relief"
-    area_label_frame 11
+    area_label_frame 19
     tile_graphics Tilecult
     overlay_graphics Overlayscaves
     background_graphics jevilbg
@@ -2897,7 +2897,7 @@ gehenna/jv {
 
 ultimatum/ {
      area_name "Ultimatum"
-     area_label_frame 15
+     area_label_frame 18
      tile_graphics Tilesewers
      overlay_graphics Overlaystox2
      background_graphics neverbg

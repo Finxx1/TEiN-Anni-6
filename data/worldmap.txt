@@ -22,21 +22,21 @@ meta {
     
     stevenheads [NPCH1 NPCH2 NPCH3 NPCH4 NPCHCRYO]
     steventhreshtumors [50 100 200 300 0]
-    stevenlevels [10x-7 exhaust/future/-1 bastion/future/-0 swamplands/future/-1 war/us-0]
+    stevenlevels [10x-7 exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us swamplands/future/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 gehenna/ggh1 gehenna/ggh2 gehenna/ggh3 gehenna/gult] //launch console automatically when you exit from these worlds
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us phlegethon/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
     bodylevel exhaust/main/-17
     heartlevel 6-1end
     
-    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 swamplands/future/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
-    game_over_checkpoints [[swamplands/future/ swamplands/future/-2] [1d 1d-1] [gehenna/gh 1d-1] [gehenna/sd 1d-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
-    iron_cart_entrypoints [fallacy/-1 struggle/-1 gehenna/gult-1] //used to set the respawn point in an iron cart
-    timed_cart_entrypoints [gehenna/ggh2-1] //maybe you want to put a timer on other carts?
-    console_entry_levels [swamplands/-0 swamplands/future/-1]
+    game_over_checkpoints [[phlegethon/ phlegethon/-2] [1d 1d-1] [gehenna/gh 1d-1] [gehenna/sd 1d-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
+    iron_cart_entrypoints [fallacy/-1 struggle/-1 machiavellismask/-1] //used to set the respawn point in an iron cart
+    timed_cart_entrypoints [painfultonia/-1] //maybe you want to put a timer on other carts?
+    console_entry_levels [swamplands/-0]
     nevermore_entry 7-0
     escape_entry depths/main/-21
     nevermore_tumorthresh 450
@@ -50,7 +50,7 @@ meta {
     
     savefile_completion_counter_max 285 //count of total collectible tumors, carts, body parts (3), cart achievements, map warp points (number of levels in the array below), and endings (2)
     savefile_completion_warpoints [1-1 2-0 3-1 4a-1 4b-1 4c-1 5a-1 5b-1 5c-1 4-1hub 1d-1 2d-0 3d-1 6-1 6-21 7-0] //visiting these levels counts for save file completion
-    save_initiallevel gehenna/gend-1
+    save_initiallevel machiavellismask/x-1
     save_lightspawn swamplands/-0
     save_darkspawn 1d-1
     save_lightspawnlabel "Swamplands"  //since the game can set your save to these levels without visiting them, their names need to be manually set so they show up on the save
@@ -177,9 +177,9 @@ nodes {
         clipname stevepast
         entrylevel none
         page lightworld
-        levelgroups [exhaust/future/ bastion/future/ depths/future/ war/usx swamplands/future/x]
+        levelgroups [exhaust/future/ bastion/future/ depths/future/ war/usx phlegethon/x]
         unlock_condition visited_levels_any
-        unlock_condition_levels [swamplands/future/-1 exhaust/future/-1 bastion/future/-1 war/us-0]
+        unlock_condition_levels [phlegethon/-1 exhaust/future/-1 bastion/future/-1 war/us-0]
 		
 		select StevenHead
 		up Steamworks
@@ -201,9 +201,9 @@ nodes {
         clipname steve
         entrylevel none
         page darkworld
-		levelgroups [exhaust/future/ bastion/future/ depths/future/ war/usx swamplands/future/x]
+		levelgroups [exhaust/future/ bastion/future/ depths/future/ war/usx phlegethon/x]
         unlock_condition visited_levels_any
-        unlock_condition_levels [swamplands/future/-1 exhaust/future/-1 bastion/future/-1 war/us-0]
+        unlock_condition_levels [phlegethon/-1 exhaust/future/-1 bastion/future/-1 war/us-0]
 
 		select StevenPast
 		down War
@@ -225,10 +225,10 @@ nodes {
 	
 	Phlegethon {
         clipname phlegethon
-        entrylevel swamplands/future/-2
+        entrylevel phlegethon/-2
         page darkworld
-        unlock_condition visited_levels_any
-        unlock_condition_levels [swamplands/future/-1]
+		unlock_condition visited_levels_any
+        unlock_condition_levels [phlegethon/-1]
 		
 		right StevenHead
     }
@@ -261,6 +261,7 @@ nodes {
 		
 		up ThePast
 		down RockBottom
+		right Shutdown
     }
 	
 	RockBottom {
@@ -269,6 +270,23 @@ nodes {
         page darkworld
 		
 		up Gehenna
+		right Ultimatum
+    }
+	
+	Shutdown {
+        clipname shutdown
+        entrylevel gehenna/sd-666
+        page darkworld
+		
+		left Gehenna
+    }
+	
+	Ultimatum {
+        clipname ultimatum
+        entrylevel ultimatum/-1
+        page darkworld
+		
+		left RockBottom
     }
 	
     //carts
@@ -508,9 +526,9 @@ nodes {
     
     GlitchCart5 {
         clipname g5
-        entrylevel gehenna/ggh1-1
+        entrylevel tmjevilution/-1
         page console
-        cart_cheevolevel gehenna/ggh1-all
+        cart_cheevolevel tmjevilution/-all
         cart_splashframe glitch
         unlock_condition collected_carts_all
         unlock_condition_levels [gehenna/ghx-1]
@@ -521,9 +539,9 @@ nodes {
     
     GlitchCart6 {
         clipname g6
-        entrylevel gehenna/ggh2-1
+        entrylevel painfultonia/-1
         page console
-        cart_cheevolevel gehenna/ggh2-all
+        cart_cheevolevel painfultonia/-all
         cart_splashframe glitch
         unlock_condition collected_carts_all
         unlock_condition_levels [gehenna/ghx-4]
@@ -534,9 +552,9 @@ nodes {
     
     GlitchCart1 {
         clipname g1
-		entrylevel gehenna/ggh3x-1
+		entrylevel rootvain/x-1
         page console
-        cart_cheevolevel gehenna/ggh3x-all
+        cart_cheevolevel rootvain/x-all
         cart_splashframe glitch
         unlock_condition collected_carts_all
         unlock_condition_levels [9x-6]
@@ -547,9 +565,9 @@ nodes {
     
     GlitchCart9 {
         clipname c9
-        entrylevel gehenna/gult-1
+        entrylevel machiavellismask/-1
         page console
-        cart_cheevolevel gehenna/gult-all
+        cart_cheevolevel machiavellismask/-all
         cart_splashframe ironman
         unlock_condition collected_carts_all
         unlock_condition_levels [gehenna/ghx-16]   

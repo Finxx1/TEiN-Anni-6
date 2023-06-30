@@ -1,8 +1,8 @@
-"gehenna/gend-1" {name="The End Is Nigh 1" id=-1}
-"gehenna/gend-2" {name="The End Is Nigh 2" id=-1}
-"gehenna/gend-3" {name="The End Is Nigh 3" id=-1}
-"gehenna/gend-4" {name="The End Is Nigh 4" id=-1}
-"gehenna/gend-5" {name="The End Is Nigh 5" id=-1}
+"machiavellismask/x-1" {name="The End Is Nigh 1" id=-1}
+"machiavellismask/x-2" {name="The End Is Nigh 2" id=-1}
+"machiavellismask/x-3" {name="The End Is Nigh 3" id=-1}
+"machiavellismask/x-4" {name="The End Is Nigh 4" id=-1}
+"machiavellismask/x-5" {name="The End Is Nigh 5" id=-1}
 
 "fate/-1" {name="FAtE 1" id=1}
 "fate/-2" {name="FAtE 2" id=2}
@@ -57,54 +57,54 @@
 "struggle/-5x" {name="-3-5" id=-1}
 "struggle/b-5" {name="+3-5" id=-1}
 
-"gehenna/ggh1-1x" {name="TMJ Evilution 1" id=-1}
-"gehenna/ggh1-1" {name="TMJ Evilution 1" id=-1}
-"gehenna/ggh1-2" {name="TMJ Evilution 2" id=-1}
-"gehenna/ggh1-3" {name="TMJ Evilution 3" id=-1}
-"gehenna/ggh1-4" {name="TMJ Evilution 4" id=-1}
-"gehenna/ggh1-5" {name="TMJ Evilution 5" id=-1}
-"gehenna/ggh1-6" {name="TMJ Evilution 6" id=-1}
-"gehenna/ggh1-7" {name="TMJ Evilution 7" id=-1}
-"gehenna/ggh1-8" {name="TMJ Evilution 8" id=-1}
-"gehenna/ggh1-9" {name="TMJ Evilution 9" id=-1}
-"gehenna/ggh1-10" {name="TMJ Evilution 10" id=-1}
-"gehenna/ggh1-10x" {name="TMJ Evilution 10" id=-1}
+"tmjevilution/-1x" {name="TMJ Evilution 1" id=-1}
+"tmjevilution/-1" {name="TMJ Evilution 1" id=-1}
+"tmjevilution/-2" {name="TMJ Evilution 2" id=-1}
+"tmjevilution/-3" {name="TMJ Evilution 3" id=-1}
+"tmjevilution/-4" {name="TMJ Evilution 4" id=-1}
+"tmjevilution/-5" {name="TMJ Evilution 5" id=-1}
+"tmjevilution/-6" {name="TMJ Evilution 6" id=-1}
+"tmjevilution/-7" {name="TMJ Evilution 7" id=-1}
+"tmjevilution/-8" {name="TMJ Evilution 8" id=-1}
+"tmjevilution/-9" {name="TMJ Evilution 9" id=-1}
+"tmjevilution/-10" {name="TMJ Evilution 10" id=-1}
+"tmjevilution/-10x" {name="TMJ Evilution 10" id=-1}
 
-"gehenna/ggh2-1x" {name="Painfultonia 1" id=-1}
-"gehenna/ggh2-1" {name="Painfultonia 1" id=-1}
-"gehenna/ggh2-2" {name="Painfultonia 2" id=-1}
-"gehenna/ggh2-3" {name="Painfultonia 3" id=-1}
-"gehenna/ggh2-4" {name="Painfultonia 4" id=-1}
-"gehenna/ggh2-5" {name="Painfultonia 5" id=-1}
-"gehenna/ggh2-6" {name="Painfultonia 6" id=-1}
-"gehenna/ggh2-7" {name="Painfultonia 7" id=-1}
-"gehenna/ggh2-8" {name="Painfultonia 8" id=-1}
-"gehenna/ggh2-9" {name="Painfultonia 9" id=-1}
-"gehenna/ggh2-10" {name="Painfultonia 10" id=-1}
-"gehenna/ggh2-10x" {name="Painfultonia 10" id=-1}
+"painfultonia/-1x" {name="Painfultonia 1" id=-1}
+"painfultonia/-1" {name="Painfultonia 1" id=-1}
+"painfultonia/-2" {name="Painfultonia 2" id=-1}
+"painfultonia/-3" {name="Painfultonia 3" id=-1}
+"painfultonia/-4" {name="Painfultonia 4" id=-1}
+"painfultonia/-5" {name="Painfultonia 5" id=-1}
+"painfultonia/-6" {name="Painfultonia 6" id=-1}
+"painfultonia/-7" {name="Painfultonia 7" id=-1}
+"painfultonia/-8" {name="Painfultonia 8" id=-1}
+"painfultonia/-9" {name="Painfultonia 9" id=-1}
+"painfultonia/-10" {name="Painfultonia 10" id=-1}
+"painfultonia/-10x" {name="Painfultonia 10" id=-1}
 
-"gehenna/ggh3-1" {name="Root Vain" id=-1}
-"gehenna/ggh3-2" {name="Root Vain" id=-1}
-"gehenna/ggh3-3" {name="Root Vain" id=-1}
-"gehenna/ggh3-4" {name="Root Vain" id=-1}
-"gehenna/ggh3-5" {name="Root Vain" id=-1}
-"gehenna/ggh3-6" {name="Root Vain" id=-1}
-"gehenna/ggh3-7" {name="Root Vain" id=-1}
-"gehenna/ggh3-8" {name="Root Vain" id=-1}
-"gehenna/ggh3-9" {name="Root Vain" id=-1}
-"gehenna/ggh3-10" {name="Root Vain" id=-1}
-"gehenna/ggh3x-1" {name="Root Vain 1" id=-1}
-"gehenna/ggh3x-2" {name="Root Vain 2" id=-1}
-"gehenna/ggh3x-3" {name="Root Vain 3" id=-1}
-"gehenna/ggh3x-4" {name="Root Vain 4" id=-1}
-"gehenna/ggh3x-5" {name="Root Vain 5" id=-1}
+"rootvain/-1" {name="Root Vain" id=-1}
+"rootvain/-2" {name="Root Vain" id=-1}
+"rootvain/-3" {name="Root Vain" id=-1}
+"rootvain/-4" {name="Root Vain" id=-1}
+"rootvain/-5" {name="Root Vain" id=-1}
+"rootvain/-6" {name="Root Vain" id=-1}
+"rootvain/-7" {name="Root Vain" id=-1}
+"rootvain/-8" {name="Root Vain" id=-1}
+"rootvain/-9" {name="Root Vain" id=-1}
+"rootvain/-10" {name="Root Vain" id=-1}
+"rootvain/x-1" {name="Root Vain 1" id=-1}
+"rootvain/x-2" {name="Root Vain 2" id=-1}
+"rootvain/x-3" {name="Root Vain 3" id=-1}
+"rootvain/x-4" {name="Root Vain 4" id=-1}
+"rootvain/x-5" {name="Root Vain 5" id=-1}
 
-"gehenna/gult-1x" {name="Machiavelli's Mask 1" id=-1}
-"gehenna/gult-1" {name="Machiavelli's Mask 1" id=-1}
-"gehenna/gult-2" {name="Machiavelli's Mask 2" id=-1}
-"gehenna/gult-3" {name="Machiavelli's Mask 3" id=-1}
-"gehenna/gult-4" {name="Machiavelli's Mask 4" id=-1}
-"gehenna/gult-5" {name="Machiavelli's Mask 5" id=-1}
+"machiavellismask/-1x" {name="Machiavelli's Mask 1" id=-1}
+"machiavellismask/-1" {name="Machiavelli's Mask 1" id=-1}
+"machiavellismask/-2" {name="Machiavelli's Mask 2" id=-1}
+"machiavellismask/-3" {name="Machiavelli's Mask 3" id=-1}
+"machiavellismask/-4" {name="Machiavelli's Mask 4" id=-1}
+"machiavellismask/-5" {name="Machiavelli's Mask 5" id=-1}
 
 "swamplands/-0t" {name="Swamplands" id=-1}
 "swamplands/-0" {name="Swamplands" id=-1}
@@ -131,25 +131,25 @@
 "swamplands/xd-1" {name="???" id=1}
 "swamplands/xd-2" {name="???" id=4}
 
-"swamplands/future/-0" {name="Phlegethon" id=-1}
-"swamplands/future/-1" {name="Phlegethon 1" id=-1}
-"swamplands/future/-2" {name="Phlegethon 2" id=-1}
-"swamplands/future/-3" {name="Phlegethon 3" id=-1}
-"swamplands/future/-4" {name="Phlegethon 4" id=-1}
-"swamplands/future/-5" {name="Phlegethon 5" id=-1}
-"swamplands/future/-6" {name="Phlegethon 6" id=-1}
-"swamplands/future/-7" {name="Phlegethon 7" id=-1}
-"swamplands/future/-8" {name="Phlegethon 8" id=-1}
-"swamplands/future/-9" {name="Phlegethon 9" id=-1}
-"swamplands/future/-10" {name="Phlegethon 10" id=-1}
-"swamplands/future/-11" {name="Phlegethon 11" id=-1}
-"swamplands/future/-12" {name="Phlegethon 12" id=-1}
-"swamplands/future/-13" {name="Phlegethon 13" id=-1}
-"swamplands/future/-14" {name="Phlegethon 14" id=-1}
-"swamplands/future/-15" {name="Phlegethon 15" id=-1}
-"swamplands/future/-16" {name="Phlegethon 16" id=-1}
-"swamplands/future/x-1" {name="???" id=-1}
-"swamplands/future/x-2" {name="???" id=4}
+"phlegethon/-0" {name="Phlegethon" id=-1}
+"phlegethon/-1" {name="Phlegethon 1" id=-1}
+"phlegethon/-2" {name="Phlegethon 2" id=-1}
+"phlegethon/-3" {name="Phlegethon 3" id=-1}
+"phlegethon/-4" {name="Phlegethon 4" id=-1}
+"phlegethon/-5" {name="Phlegethon 5" id=-1}
+"phlegethon/-6" {name="Phlegethon 6" id=-1}
+"phlegethon/-7" {name="Phlegethon 7" id=-1}
+"phlegethon/-8" {name="Phlegethon 8" id=-1}
+"phlegethon/-9" {name="Phlegethon 9" id=-1}
+"phlegethon/-10" {name="Phlegethon 10" id=-1}
+"phlegethon/-11" {name="Phlegethon 11" id=-1}
+"phlegethon/-12" {name="Phlegethon 12" id=-1}
+"phlegethon/-13" {name="Phlegethon 13" id=-1}
+"phlegethon/-14" {name="Phlegethon 14" id=-1}
+"phlegethon/-15" {name="Phlegethon 15" id=-1}
+"phlegethon/-16" {name="Phlegethon 16" id=-1}
+"phlegethon/x-1" {name="???" id=-1}
+"phlegethon/x-2" {name="???" id=4}
 
 "hive/h-0" {name="The Hive" id=-1}
 "hive/h-1" {name="The Hive 1" id=1}
@@ -393,12 +393,12 @@
 "exhaust/secret/-10" {name="???" id=-1}
 "exhaust/secret/-69" {name="??????" id=-1}
 "exhaust/future/-0" {name="???" id=-1}
-"exhaust/future/-1" {name="???" id=-1}
-"exhaust/future/-2" {name="???" id=-1}
-"exhaust/future/-3" {name="???" id=-1}
-"exhaust/future/-4" {name="???" id=-1}
-"exhaust/future/-5" {name="???" id=-1}
-"exhaust/future/-5x" {name="???" id=2} #cart
+"exhaust/future/-1" {name="Boiling Point 1" id=-1}
+"exhaust/future/-2" {name="Boiling Point 2" id=-1}
+"exhaust/future/-3" {name="Boiling Point 3" id=-1}
+"exhaust/future/-4" {name="Boiling Point 4" id=-1}
+"exhaust/future/-5" {name="Boiling Point 5" id=-1}
+"exhaust/future/-5x" {name="Boiling Point 6" id=2} #cart
 
 "bastion/main/-1" {name="Bastion Of Hope 1" id=1} #life
 "bastion/main/-10" {name="Bastion Of Hope 10" id=10} #life
@@ -433,14 +433,14 @@
 "bastion/secret/-9" {name="???" id=1} #cart
 "bastion/secret/-10" {name="???" id=5} #biglife
 "bastion/secret/-11" {name="???" id=-1}
-"bastion/future/-0" {name="???" id=-1}
-"bastion/future/-1" {name="???" id=-1} 
-"bastion/future/-2" {name="???" id=-1} 
-"bastion/future/-3" {name="???" id=-1} 
-"bastion/future/-4" {name="???" id=-1} 
-"bastion/future/-5" {name="???" id=3} 
+"bastion/future/-0" {name="Laser-Cut 1" id=-1}
+"bastion/future/-1" {name="Laser-Cut 2" id=-1} 
+"bastion/future/-2" {name="Laser-Cut 3" id=-1} 
+"bastion/future/-3" {name="Laser-Cut 4" id=-1} 
+"bastion/future/-4" {name="Laser-Cut 5" id=-1} 
+"bastion/future/-5" {name="Laser-Cut 6" id=3} 
 
-"1d-1" {name="???" id=-1} # just delete gehenna if youre going to collect_everything
+"1d-1" {name="???" id=-1}
 "gehenna/gh-1" {name="Gehenna 1" id=-1}
 "gehenna/gh-2" {name="Gehenna 2" id=-1}
 "gehenna/gh-3" {name="Gehenna 3" id=-1}
