@@ -763,7 +763,15 @@ ANGUISHNPC {
                 "it'd be so funny\nto tell them what\nthey missed out on"
                 "all the fire and\nbrimstone they just\nfailed to witness"
                 "fucking hysterical\njust thinking\nabout it"
-                "\n. . ."
+				"\n. . . anyways"
+				"now we're\nsort of stuck\nhere, huh?"
+				"that path down\nthere looks like\na dead end"
+				"i guess that's\nwhat this\nis, then"
+				"\nan 'ending'"
+				"really\nmakes you\nthink"
+				"\nwell, who knows"
+				"maybe if we\nwait long enough\nsomething'll show up"
+				"\n. . ."
                 "\ni miss my family"
 	]
 }
@@ -802,12 +810,12 @@ NPCH1 {
     movieclip NPCH1
     sound_id NPCSteven
     text [
-		"hm,\nhow disappointing"
-		"we expected\nsome gains . . .\nsome . . . girth"
-		"more\nthan 50,\nat least"
-		"do you\nget what\ni'm saying?"
-		"do not fret,\nwe're not\ngoing anywhere"
-		"be on your\nway then,\nwe will wait"
+		"this place,\nit will all go\ndown in due time"
+		"it'll be\nquite the sight\nlater on"
+		"oh?\nyou want\na glimpse?"
+		"mmm,\nlet me\nsee . . ."
+        "gah! don't\nwaste our time\nlike this"
+		"come back\nwith 100 or\nno go"
     ]
     
     alt_text [
@@ -822,15 +830,15 @@ NPCH2 {
     movieclip NPCH2
     sound_id NPCSteven
     text [
-		"this place,\nit will all go\ndown in due time"
-		"it'll be\nquite the sight\nlater on"
-		"oh?\nyou want\na glimpse?"
-		"mmm,\nlet me\nsee . . ."
-        "gah! don't\nwaste our time\nlike this"
-		"come back\nwith 100 or\nno go"
+		"hm,\nhow disappointing"
+		"we expected\nsome gains . . .\nsome . . . girth"
+		"more\nthan 200,\nat least"
+		"do you\nget what\ni'm saying?"
+		"do not fret,\nwe're not\ngoing anywhere"
+		"be on your\nway then,\nwe will wait"
     ]
     
-    alt_text [
+	alt_text [
         "mm, quite\nthe swarm\nyou got there"
 		"this'll do,\nthis'll do\n. . ."
 		"\nhop in now"
@@ -840,26 +848,6 @@ NPCH2 {
 NPCH3 {
 #basic sideways
     movieclip NPCH3
-    sound_id NPCSteven
-    text [
-		"hm,\nhow disappointing"
-		"we expected\nsome gains . . .\nsome . . . girth"
-		"more\nthan 200,\nat least"
-		"do you\nget what\ni'm saying?"
-		"do not fret,\nwe're not\ngoing anywhere"
-		"be on your\nway then,\nwe will wait"
-    ]
-    
-    alt_text [
-        "hmm,\nnot very\nimpressive"
-		"\n. . ."
-		"nevermind that,\nwe'll make\nit work"
-    ]
-}
-
-NPCH4 {
-#basic sideways
-    movieclip NPCH4
     sound_id NPCSteven
     text [
 		"\n. . ."

@@ -29,6 +29,14 @@ machiavellismask/x {
 	
 }
 
+c1 {
+	overlay_graphics Overlaysretro
+	music [retro/faith.ogg, retro/faith.ogg]
+	area_type cart
+	cart_intro_png FAtE
+	cart_intro_palette 8
+}
+
 fate/ {
 	tile_graphics TileGlitchDepths
 	overlay_graphics Overlaysretro
@@ -274,7 +282,6 @@ painfultonia/ {
     midfx_graphics ShadeBox
     midfx_layer 2    
 
-
     music [retro/chaos_intro.ogg, retro/chaos_loop.ogg]
 
     cart_intro_png Painfultonia
@@ -404,7 +411,7 @@ swamplands/ {
 	tile_particle_5 drip
 	
 	npc_1 NPC_Stench
-	npc_2 NPCH4
+	npc_2 NPCH3
 	
 	art_alts [
 		[OrbSmall, orbblob]
@@ -1694,7 +1701,7 @@ exhaust/secret/ {
 		music exhaust_faded.ogg
 		music_volume 1.3
 		
-		npc_1 NPCH2
+		npc_1 NPCH1
 	}
 	69 {
 		music [diggyhole_intro.ogg, diggyhole_loop.ogg]
@@ -1856,7 +1863,7 @@ bastion/secret/ {
 	}
 	
 	11 {
-	npc_1 NPCH3
+	npc_1 NPCH2
 	}
 }
 

@@ -149,7 +149,7 @@
 "phlegethon/-15" {name="Phlegethon 15" id=-1}
 "phlegethon/-16" {name="Phlegethon 16" id=-1}
 "phlegethon/x-1" {name="???" id=-1}
-"phlegethon/x-2" {name="???" id=4}
+"phlegethon/x-2" {name="???" id=3}
 
 "hive/h-0" {name="The Hive" id=-1}
 "hive/h-1" {name="The Hive 1" id=1}
@@ -235,7 +235,7 @@
 "war/us-18" {name="WAR 18" id=55}
 "war/us-19" {name="WAR 19" id=55}
 "war/us-20" {name="WAR 20" id=55}
-"war/usx-1" {name="???" id=5}
+"war/usx-1" {name="???" id=4}
 
 "mountmoriah/-1" {name="Mount Moriah 1" id=1} #life
 "mountmoriah/-2" {name="Mount Moriah 2" id=2} #life
@@ -398,7 +398,7 @@
 "exhaust/future/-3" {name="Boiling Point 3" id=-1}
 "exhaust/future/-4" {name="Boiling Point 4" id=-1}
 "exhaust/future/-5" {name="Boiling Point 5" id=-1}
-"exhaust/future/-5x" {name="Boiling Point 6" id=2} #cart
+"exhaust/future/-5x" {name="Boiling Point 6" id=1} #cart
 
 "bastion/main/-1" {name="Bastion Of Hope 1" id=1} #life
 "bastion/main/-10" {name="Bastion Of Hope 10" id=10} #life
@@ -438,7 +438,7 @@
 "bastion/future/-2" {name="Laser-Cut 3" id=-1} 
 "bastion/future/-3" {name="Laser-Cut 4" id=-1} 
 "bastion/future/-4" {name="Laser-Cut 5" id=-1} 
-"bastion/future/-5" {name="Laser-Cut 6" id=3} 
+"bastion/future/-5" {name="Laser-Cut 6" id=2} 
 
 "1d-1" {name="???" id=-1}
 "gehenna/gh-1" {name="Gehenna 1" id=-1}
@@ -515,4 +515,4 @@
 "gehenna/ghx3-1" {name="???" id=-1}
 "gehenna/ghx3-2" {name="???" id=-1}
 "gehenna/ghx3-3" {name="???" id=-1}
-"gehenna/ghx-16" {name="???" id=4} #cart
+"gehenna/ghx-16" {name="???" id=3} #cart
