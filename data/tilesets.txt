@@ -244,7 +244,7 @@ tmjevilution/ {
     music [retro/trs_intro.ogg, retro/trs_loop.ogg]
 
     cart_intro_png TMJEvilution
-    cart_intro_palette 46
+    cart_intro_palette 6
     
     music_volume 1
     ambience_volume 1
@@ -1423,6 +1423,7 @@ depths/main/ {
 	}
 	
 	21 {
+		area_name "Salvation"
 		decoration_2 TheHeart
 		
 		art_alts [
