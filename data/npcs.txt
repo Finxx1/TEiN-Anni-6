@@ -341,11 +341,47 @@ NPCsD3 {
 		"FUCK THAT SHIT,\nWE'RE DOING OUR\nOWN THING HERE!"
 		"THAT'S RIGHT!\n*WE'RE*\nDOING IT!"
 		"THE END IS\nNOW, BECAUSE WE\nMADE IT SO!"
+		"FALLEN DOWN?!\nWHAT DOES IT\nFUCKING MATTER!"
 		"TURN THIS\nTOWER UPSIDE\nDOWN WE DID!"
 		"I'M SORRY,\nTHIS IS\nNOT ENOUGH!"
-		"BLAST IT DOWN,\nCUT A HOLE,\nLET'S GO DEEPER!"
-		"NO, WE NEED\nTO HIT\nTHE BOTTOM!!"
-		"\nHAHAHAHAHAHA!"
+		"NO, WE NEED\nTO HIT\nTHE BOTTOM!"
+		"BLAST IT DOWN,\nCUT A HOLE,\nLET'S GO DEEPER!!!"
+		"\nHAHAHAHAHAHA!!!"
+    ]
+}
+
+NPCsD4 {
+#azazel
+    movieclip NPCsD5
+    sound_id NPCBlob
+    text [
+		"\nhm . . ."
+		"\nit's you again"
+		"\nwe've met before"
+		"or have we?\nit's impossible\nto tell"
+		"you like what\nwe did to\nthe place?"
+		"turns out our\nwhole belief\nsystem was flawed"
+		"needed a\nbit of a\n. . . renovation"
+		"in other words,\naiming a bunch of\nlasers at the ground"
+		"and not\nstopping until\nsomething happens"
+		"but hey, it\nlooks like we're\ngetting somewhere"
+		"we didn't just\nthrow it all\naway for nothing!"
+		"\n. . ."
+		"at least we\nhave this cool\nass music"
+		"kinda feel\nlike dancing\nright now . . ."
+		". . . but\nyou're kind of\nruining the mood"
+		"and i also\nhave a severe\nlack of hips"
+    ]
+}
+
+NPCsX1 {
+#is that a fucking
+    movieclip NPCsX1
+    sound_id NPCSkull
+    text [
+		"i'm . . .\n. . .\n. . . melting . . ."
+		"\nnah just kidding"
+		"would be\nfucked up\ntho"
     ]
 }
 

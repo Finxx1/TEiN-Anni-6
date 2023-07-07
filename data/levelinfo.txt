@@ -49,9 +49,9 @@
 "struggle/b-1" {name="+3-1" id=-1}
 "struggle/-2" {name="-3-2" id=-1}
 "struggle/b-2" {name="+3-2" id=-1}
-"struggle/-3" {name="-3-3" id=-1}
+"struggle/-3" {name="-3-4" id=-1}
 "struggle/b-3" {name="+3-3" id=-1}
-"struggle/-4" {name="-3-4" id=-1}
+"struggle/-4" {name="-3-3" id=-1}
 "struggle/b-4" {name="+3-4" id=-1}
 "struggle/-5" {name="-3-5" id=-1}
 "struggle/-5x" {name="-3-5" id=-1}
@@ -332,6 +332,7 @@
 "depths/main/-19" {name="Depths 19" id=16}
 "depths/main/-20" {name="Depths 20" id=17}
 "depths/main/-21" {name="Salvation" id=-1}
+"depths/main/-21x" {name="Salvation" id=-1}
 "6-1end" {name="Depths" id=1}
 "depths/secret/-1" {name="???" id=-1}
 "depths/secret/-2" {name="???" id=1}
@@ -399,6 +400,9 @@
 "exhaust/future/-4" {name="Boiling Point 4" id=-1}
 "exhaust/future/-5" {name="Boiling Point 5" id=-1}
 "exhaust/future/-5x" {name="Boiling Point 6" id=1} #cart
+"exhaust/future/-6" {name="???" id=-1}
+"exhaust/future/-6x" {name="???" id=-1}
+"exhaust/future/-7" {name="????????" id=-1}
 
 "bastion/main/-1" {name="Bastion Of Hope 1" id=1} #life
 "bastion/main/-10" {name="Bastion Of Hope 10" id=10} #life
@@ -439,6 +443,8 @@
 "bastion/future/-3" {name="Laser-Cut 4" id=-1} 
 "bastion/future/-4" {name="Laser-Cut 5" id=-1} 
 "bastion/future/-5" {name="Laser-Cut 6" id=2} 
+"bastion/future/-6" {name="???" id=-1} 
+"bastion/future/-7" {name="???" id=-1} 
 
 "1d-1" {name="???" id=-1}
 "gehenna/gh-1" {name="Gehenna 1" id=-1}

@@ -40,8 +40,8 @@ meta {
     nevermore_entry 7-0
     escape_entry depths/main/-21
     nevermore_tumorthresh 450
-    timer_bypass_levels [depths/main/-1]
-    timer_buttonopen_levels [depths/main/-2 depths/main/-3 depths/main/-4 depths/main/-6 depths/main/-7 depths/main/-8 depths/main/-9 depths/main/-11 depths/main/-12 depths/main/-13 depths/main/-20 depths/main/-21] //if the timer is open, button4 has its state toggled in these rooms
+    timer_bypass_levels [depths/main/-1 depths/main/-21]
+    timer_buttonopen_levels [depths/main/-2 depths/main/-3 depths/main/-4 depths/main/-6 depths/main/-7 depths/main/-8 depths/main/-9 depths/main/-11 depths/main/-12 depths/main/-13 depths/main/-20 depths/main/-21x] //if the timer is open, button4 has its state toggled in these rooms
     
     megacart_entry_levels [c6-1]
     towercart_entry_levels [$i1-1]

@@ -1320,7 +1320,7 @@ ghostship/ {
 	}
 	
 	24 {
-	tile_graphics Tilefield
+	tile_graphics Tilegraveyard
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
 	music none
@@ -1329,10 +1329,10 @@ ghostship/ {
 	}
 	
 	25 {
-	tile_graphics Tilefield
+	tile_graphics Tilegraveyard
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
-	music none
+    music none
 	do_wobble false
 	shader_param .6
 	}
@@ -1429,6 +1429,10 @@ depths/main/ {
 		art_alts [
 			[GlowShroom, nothing]
 		]
+	}
+	
+	21x {
+		decoration_3 JarDeco
 	}
 }
 
@@ -1724,6 +1728,7 @@ exhaust/future/ {
 	
 	do_tilt true
 	npc_1 NPCsD2
+	npc_2 NPCsX1
 
 	tile_particle_1 lavadump
 	tile_particle_2 toxicdump_left
@@ -1744,6 +1749,9 @@ exhaust/future/ {
 	platform_physics "data/platformphysics_steam.txt"
 	toxic_timer 0
 	
+	7 {
+		global_particle_2 cloudwind2
+	}
 }
 
 bastion/main/ {
@@ -1890,6 +1898,7 @@ bastion/future/ {
 	decoration_3 OrbHolder
 	
 	npc_1 NPCsD3
+	npc_2 NPCsD4
 	
 	do_wobble true
 	
@@ -1898,8 +1907,7 @@ bastion/future/ {
 	tile_particle_1 dust
 	tile_particle_2 hugeBellRing
 	
-	music [alchemy_intro.ogg, alchemy_loop.ogg]
-	music_volume 1.3
+	music [striken_intro.ogg, striken_loop.ogg]
 	ambience labloop_laser.ogg
 	ambience_volume 0.4
 	
@@ -1909,6 +1917,15 @@ bastion/future/ {
 		[Bullet, BulletLaser][Floater, LaserOrb][Cartridge, cart3]
 	]
 	
+	6 {
+		tile_graphics Tilecomplex
+		sfx_file muteturrets.txt
+	}
+	
+	7 {
+		palette 39
+		global_particle_3 cold
+	}
 }
 
 1d {
