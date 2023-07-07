@@ -1,10 +1,11 @@
 game [
+	anni6_selectscreen.swf
 	anni6_cutscenes.swf
+	tilegraveyard.swf
+	mm_tileset.swf
 	good_stuff.swf
 	theo.swf
 	anni6.swf
-	mm_tileset.swf
 	adenators_dumb_assets.swf
 	saws.swf
-	anni6_selectscreen.swf
 ]

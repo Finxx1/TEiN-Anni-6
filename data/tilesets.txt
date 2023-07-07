@@ -29,6 +29,14 @@ machiavellismask/x {
 	
 }
 
+c1 {
+	overlay_graphics Overlaysretro
+	music [retro/faith.ogg, retro/faith.ogg]
+	area_type cart
+	cart_intro_png FAtE
+	cart_intro_palette 8
+}
+
 fate/ {
 	tile_graphics TileGlitchDepths
 	overlay_graphics Overlaysretro
@@ -236,7 +244,7 @@ tmjevilution/ {
     music [retro/trs_intro.ogg, retro/trs_loop.ogg]
 
     cart_intro_png TMJEvilution
-    cart_intro_palette 46
+    cart_intro_palette 6
     
     music_volume 1
     ambience_volume 1
@@ -273,7 +281,6 @@ painfultonia/ {
     fx_shader_mid redalertretro
     midfx_graphics ShadeBox
     midfx_layer 2    
-
 
     music [retro/chaos_intro.ogg, retro/chaos_loop.ogg]
 
@@ -404,7 +411,7 @@ swamplands/ {
 	tile_particle_5 drip
 	
 	npc_1 NPC_Stench
-	npc_2 NPCH4
+	npc_2 NPCH3
 	
 	art_alts [
 		[OrbSmall, orbblob]
@@ -1313,7 +1320,7 @@ ghostship/ {
 	}
 	
 	24 {
-	tile_graphics Tilefield
+	tile_graphics Tilegraveyard
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
 	music none
@@ -1322,10 +1329,10 @@ ghostship/ {
 	}
 	
 	25 {
-	tile_graphics Tilefield
+	tile_graphics Tilegraveyard
 	background_graphics field2bg
 	overlay_graphics Overlaysfield
-	music none
+    music none
 	do_wobble false
 	shader_param .6
 	}
@@ -1416,11 +1423,16 @@ depths/main/ {
 	}
 	
 	21 {
+		area_name "Salvation"
 		decoration_2 TheHeart
 		
 		art_alts [
 			[GlowShroom, nothing]
 		]
+	}
+	
+	21x {
+		decoration_3 JarDeco
 	}
 }
 
@@ -1694,7 +1706,7 @@ exhaust/secret/ {
 		music exhaust_faded.ogg
 		music_volume 1.3
 		
-		npc_1 NPCH2
+		npc_1 NPCH1
 	}
 	69 {
 		music [diggyhole_intro.ogg, diggyhole_loop.ogg]
@@ -1716,6 +1728,7 @@ exhaust/future/ {
 	
 	do_tilt true
 	npc_1 NPCsD2
+	npc_2 NPCsX1
 
 	tile_particle_1 lavadump
 	tile_particle_2 toxicdump_left
@@ -1736,6 +1749,9 @@ exhaust/future/ {
 	platform_physics "data/platformphysics_steam.txt"
 	toxic_timer 0
 	
+	7 {
+		global_particle_2 cloudwind2
+	}
 }
 
 bastion/main/ {
@@ -1856,7 +1872,7 @@ bastion/secret/ {
 	}
 	
 	11 {
-	npc_1 NPCH3
+	npc_1 NPCH2
 	}
 }
 
@@ -1882,6 +1898,7 @@ bastion/future/ {
 	decoration_3 OrbHolder
 	
 	npc_1 NPCsD3
+	npc_2 NPCsD4
 	
 	do_wobble true
 	
@@ -1890,8 +1907,7 @@ bastion/future/ {
 	tile_particle_1 dust
 	tile_particle_2 hugeBellRing
 	
-	music [alchemy_intro.ogg, alchemy_loop.ogg]
-	music_volume 1.3
+	music [striken_intro.ogg, striken_loop.ogg]
 	ambience labloop_laser.ogg
 	ambience_volume 0.4
 	
@@ -1901,6 +1917,15 @@ bastion/future/ {
 		[Bullet, BulletLaser][Floater, LaserOrb][Cartridge, cart3]
 	]
 	
+	6 {
+		tile_graphics Tilecomplex
+		sfx_file muteturrets.txt
+	}
+	
+	7 {
+		palette 39
+		global_particle_3 cold
+	}
 }
 
 1d {

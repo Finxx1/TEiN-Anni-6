@@ -1,10 +1,10 @@
 pages {
     lightworld {
-        collectibles 51 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+        collectibles 159 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
     
     darkworld {
-        collectibles 0 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+        collectibles 8 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
     
     console {
@@ -20,9 +20,9 @@ meta {
     upwipes [splunt/-1 swamplands/xu-4 mountmoriah/-5atx steamworks/main/-13]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1 swamplands/-6t mountmoriah/-1 mountmoriah/-8b]
     
-    stevenheads [NPCH1 NPCH2 NPCH3 NPCH4 NPCHCRYO]
-    steventhreshtumors [50 100 200 300 0]
-    stevenlevels [10x-7 exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
+    stevenheads [NPCH1 NPCH2 NPCH3 NPCHCRYO]
+    steventhreshtumors [100 200 300 0]
+    stevenlevels [exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
     
     mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us phlegethon/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/] //launch console automatically when you exit from these worlds
@@ -40,8 +40,8 @@ meta {
     nevermore_entry 7-0
     escape_entry depths/main/-21
     nevermore_tumorthresh 450
-    timer_bypass_levels [depths/main/-1]
-    timer_buttonopen_levels [depths/main/-2 depths/main/-3 depths/main/-4 depths/main/-6 depths/main/-7 depths/main/-8 depths/main/-9 depths/main/-11 depths/main/-12 depths/main/-13 depths/main/-20 depths/main/-21] //if the timer is open, button4 has its state toggled in these rooms
+    timer_bypass_levels [depths/main/-1 depths/main/-21]
+    timer_buttonopen_levels [depths/main/-2 depths/main/-3 depths/main/-4 depths/main/-6 depths/main/-7 depths/main/-8 depths/main/-9 depths/main/-11 depths/main/-12 depths/main/-13 depths/main/-20 depths/main/-21x] //if the timer is open, button4 has its state toggled in these rooms
     
     megacart_entry_levels [c6-1]
     towercart_entry_levels [$i1-1]
@@ -261,7 +261,7 @@ nodes {
 		
 		up ThePast
 		down RockBottom
-		right Shutdown
+		//right Shutdown
     }
 	
 	RockBottom {
@@ -270,67 +270,43 @@ nodes {
         page darkworld
 		
 		up Gehenna
-		right Ultimatum
+		//right Ultimatum
     }
 	
+	/*
 	Shutdown {
         clipname shutdown
         entrylevel gehenna/sd-666
         page darkworld
 		
 		left Gehenna
-    }
+    }*/
 	
+	/*
 	Ultimatum {
         clipname ultimatum
         entrylevel ultimatum/-1
         page darkworld
 		
 		left RockBottom
-    }
+    }*/
 	
     //carts
     Cart1 {
         clipname c1
         entrylevel c1-1
         page console
-        cart_cheevolevel c1-all
-        cart_splashframe ironman
-        unlock_condition collected_carts_all
-        unlock_condition_levels [6x-1]    
-        
-        down Cart2
-        up GlitchCart9
-    }
-    
-    Cart2 {
-        clipname c2
-        entrylevel c2-1
-        page console
-        cart_cheevolevel c2-all
-        cart_splashframe basiccart
-        unlock_condition collected_carts_all
-        unlock_condition_levels [2xu-6]   
-        
-        down Cart3
-        up Cart1
-    }
-    
-    Cart3 {
-        clipname c3
-        entrylevel fate/-1
-        page console
-        cart_cheevolevel c3-all
+        cart_cheevolevel fate/-all
         cart_splashframe basiccart
         unlock_condition collected_carts_all
         unlock_condition_levels [depths/secret/-25]   
         
-        down Cart4c
-        up Cart2
+        down Cart2
+        up IronCart5
     }
     
-    Cart4c {
-        clipname c4c
+    Cart2 {
+        clipname c2
         entrylevel membrane/-1
         page console
         cart_cheevolevel membrane/-all
@@ -338,12 +314,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [exhaust/secret/-6]   
         
-        down Cart5c
-        up Cart3
+        down Cart3
+        up Cart1
     }
     
-    Cart5c {
-        clipname c5c
+    Cart3 {
+        clipname c3
         entrylevel hypertension/-1
         page console
         cart_cheevolevel hypertension/-all
@@ -351,90 +327,25 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [bastion/secret/-9]
         
-        down Cart4a
-        up Cart4c
+        down Cart4
+        up Cart2
     }
-    
-    Cart4a {
-        clipname c4a
-        entrylevel c4a-1
+	
+	Cart4 {
+        clipname c4
+        entrylevel hypertension/-1
         page console
-        cart_cheevolevel c4a-all
+        cart_cheevolevel hypertension/-all
         cart_splashframe basiccart
         unlock_condition collected_carts_all
-        unlock_condition_levels [4ax-5]
-        
-        down Cart5a
-        up Cart5c
-    }
-    
-    Cart5a {
-        clipname c5a
-        entrylevel c5a-1
-        page console
-        cart_cheevolevel c5a-all
-        cart_splashframe basiccart
-        unlock_condition collected_carts_all
-        unlock_condition_levels [5ax-14]
-        
-        down Cart4b
-        up Cart4a
-    }
-    
-    Cart4b {
-        clipname c4b
-        entrylevel c4b-1
-        page console
-        cart_cheevolevel c4b-all
-        cart_splashframe basiccart
-        unlock_condition collected_carts_all
-        unlock_condition_levels [4bx-6]
-        
-        down Cart5b
-        up Cart5a
-    }
-    
-    Cart5b {
-        clipname c5b
-        entrylevel c5b-1
-        page console
-        cart_cheevolevel c5b-all
-        cart_splashframe basiccart
-        unlock_condition collected_carts_all
-        unlock_condition_levels [5bxd-4]
-        
-        down MegaCart
-        up Cart4b
-    }
-    
-    MegaCart {
-        clipname allstars_1
-        entrylevel $c1-1
-        page console
-        cart_cheevolevel c6-all
-        cart_splashframe allstar
-        unlock_condition collected_carts_all
-        unlock_condition_levels [1xu-6 2xu-6 3xu-6 4ax-5 4bx-6 4cx-6 5ax-14 5bxd-4 5cx-12]
+        unlock_condition_levels [10x-2]
         
         down IronCart1
-        up Cart5b
+        up Cart3
     }
     
     IronCart1 {
         clipname i1
-        entrylevel i1/-1
-        page console
-        cart_cheevolevel i1-all
-        cart_splashframe ironman
-        unlock_condition collected_carts_all
-        unlock_condition_levels [10x-2]
-        
-        down IronCart2
-        up MegaCart
-    }
-    
-    IronCart2 {
-        clipname i2
         entrylevel fallacy/-1
         page console
         cart_cheevolevel fallacy/-all
@@ -442,12 +353,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [exhaust/future/-5x]
         
-        down IronCart3
-        up IronCart1
+        down IronCart2
+        up Cart4
     }
     
-    IronCart3 {
-        clipname i3
+    IronCart2 {
+        clipname i2
 		entrylevel struggle/-1
         page console
         cart_cheevolevel struggle/-all
@@ -455,38 +366,25 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [bastion/future/-5]
         
-        down IronCart4
+        down GlitchCart0
+        up IronCart1
+    }
+    
+    GlitchCart0 {
+        clipname g0
+        entrylevel war/crt1-1
+        page console
+        cart_cheevolevel war/crt1-all
+        cart_splashframe glitch
+        unlock_condition collected_carts_all
+        unlock_condition_levels [10x-2]
+        
+        down Cart5
         up IronCart2
     }
-    
-    IronCart4 {
-        clipname i4
-        entrylevel i3-1
-        page console
-        cart_cheevolevel i3-all
-        cart_splashframe ironman
-        unlock_condition collected_carts_all
-        unlock_condition_levels [10x-4]
-        
-        down TowerCart
-        up IronCart3
-    }
-    
-    TowerCart {
-        clipname allstars_2
-        entrylevel $i1-1
-        page console
-        cart_cheevolevel i5-all
-        cart_splashframe ironman
-        unlock_condition collected_carts_all
-        unlock_condition_levels [10x-2 10x-4 10x-6 10x-8]
-        
-        down GlitchCart2
-        up IronCart4
-    }
-    
-    GlitchCart2 {
-        clipname g2
+	
+	Cart5 {
+        clipname c5
         entrylevel war/crt1-1
         page console
         cart_cheevolevel war/crt1-all
@@ -494,38 +392,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [war/usx-1]
         
-        down GlitchCart3
-        up TowerCart
+        down GlitchCart1
+        up GlitchCart0
     }
     
-    GlitchCart3 {
-        clipname g3
-        entrylevel g1-1
-        page console
-        cart_cheevolevel g1-all
-        cart_splashframe glitch
-        unlock_condition collected_carts_all
-        unlock_condition_levels [1d-0]
-        
-        down GlitchCart4
-        up GlitchCart2
-    }
-    
-    GlitchCart4 {
-        clipname g4
-        entrylevel g1-1
-        page console
-        cart_cheevolevel g1-all
-        cart_splashframe glitch
-        unlock_condition collected_carts_all
-        unlock_condition_levels [1d-0]
-        
-        down GlitchCart5
-        up GlitchCart3
-    }
-    
-    GlitchCart5 {
-        clipname g5
+    GlitchCart1 {
+        clipname g1
         entrylevel tmjevilution/-1
         page console
         cart_cheevolevel tmjevilution/-all
@@ -533,12 +405,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [gehenna/ghx-1]
         
-        down GlitchCart6
-        up GlitchCart4
+        down GlitchCart2
+        up Cart5
     }
     
-    GlitchCart6 {
-        clipname g6
+    GlitchCart2 {
+        clipname g2
         entrylevel painfultonia/-1
         page console
         cart_cheevolevel painfultonia/-all
@@ -546,12 +418,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [gehenna/ghx-4]
         
-        down GlitchCart1
-        up GlitchCart5
+        down GlitchCart3
+        up GlitchCart1
     }
     
-    GlitchCart1 {
-        clipname g1
+    GlitchCart3 {
+        clipname g3
 		entrylevel rootvain/x-1
         page console
         cart_cheevolevel rootvain/x-all
@@ -559,12 +431,12 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [9x-6]
         
-        down GlitchCart9
-        up GlitchCart6
+        down IronCart5
+        up GlitchCart2
     }
     
-    GlitchCart9 {
-        clipname c9
+    IronCart5 {
+        clipname i5
         entrylevel machiavellismask/-1
         page console
         cart_cheevolevel machiavellismask/-all
@@ -573,6 +445,6 @@ nodes {
         unlock_condition_levels [gehenna/ghx-16]   
         
         down Cart1
-        up GlitchCart1
+        up GlitchCart3
     }
 }
