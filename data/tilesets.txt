@@ -1750,6 +1750,7 @@ exhaust/future/ {
 	toxic_timer 0
 	
 	7 {
+		sfx_file muteturretsandbuttons.txt
 		global_particle_2 cloudwind2
 	}
 }
