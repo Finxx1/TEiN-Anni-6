@@ -24,7 +24,7 @@ meta {
     steventhreshtumors [100 200 300 0]
     stevenlevels [exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us phlegethon/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us phlegethon/ exhaust/future/ bastion/future/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
