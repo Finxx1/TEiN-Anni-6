@@ -769,43 +769,8 @@ ssshithill/main/ {
 	midfx_layer 2
 	palette 12
 	
-	a1 {
-		fx_shader_mid lightingmodded
-		midfx_graphics SolidBox
-		midfx_layer 2
-		shader_param .4
-	}
-	
-	a2 {
-		fx_shader_mid lightingmodded
-		midfx_graphics SolidBox
-		midfx_layer 2
-		shader_param .4
-	}
-	
-	a3 {
-		fx_shader_mid lightingmodded
-		midfx_graphics SolidBox
-		midfx_layer 2
-		shader_param .4
-	}
-	
-	a4 {
-		fx_shader_mid lightingmodded
-		midfx_graphics SolidBox
-		midfx_layer 2
-		shader_param .4
-	}
-	
-	a5 {
-		fx_shader_mid lightingmodded
-		midfx_graphics SolidBox
-		midfx_layer 2
-		shader_param .4
-	}
-	
-	tile_particle_1 waterfall
-	tile_particle_2 waterfall_splash
+	tile_particle_1 fgrain_tile
+	tile_particle_2 splash
 	tile_particle_3 bubbles
 	tile_particle_4 drip
 	
@@ -819,12 +784,16 @@ ssshithill/main/ {
 	music [gnossiennes_real_intro.ogg, gnossiennes_real_loop.ogg]
 	music_volume 1.2
 	ambience ruins.ogg
+	
+	art_alts [
+		[GlowShroomSmall, SmallFlowerDeco][GlowShroom, FlowerDeco]
+	]
 }
 
 ssshithill/secret/ {
 	area_name "???"
 	area_label_frame 7
-	tile_graphics Tilecaves
+	tile_graphics Tilehill
 	overlay_graphics Overlayscaves
 	background_graphics ch3bg
 	foreground_graphics None
@@ -834,8 +803,8 @@ ssshithill/secret/ {
 	midfx_graphics ShadeBox
 	shader_param 0.2
 
-	tile_particle_1 waterfall
-	tile_particle_2 waterfall_splash
+	tile_particle_1 fgrain_tile
+	tile_particle_2 splash
 	tile_particle_3 bubbles
 	tile_particle_4 drip
 
