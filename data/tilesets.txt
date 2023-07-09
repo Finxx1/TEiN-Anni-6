@@ -1372,7 +1372,7 @@ depths/main/ {
 	 music [depths_loop.ogg, depths_loop.ogg]
 
      art_alts [
-       	 [Floater, Ghost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
+       	 [Floater, DeathdlyGhost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
     	]
 	
      7 {
@@ -1401,7 +1401,7 @@ depths/secret/ {
 	 area_name "???"
      area_label_frame 4
      tile_graphics Tilehell
-     overlay_graphics Overlayscomplex
+     overlay_graphics Overlaysend
      background_graphics bgretro2
      foreground_graphics none
      fx_shader sludgeripples
@@ -1423,7 +1423,7 @@ depths/secret/ {
      npc_3 NPCCULT
 
      art_alts [
-       	 [Floater, Ghost][OrbSmall, SmallElectroBall][OrbChomp, OrbChomp_Ghost]
+       	 [Floater, DeathdlyGhost][OrbSmall, SmallElectroBall][OrbChomp, OrbChomp_Ghost]
     	]
 
      music_volume 1
