@@ -2,7 +2,9 @@ NPCcry {
 	movieclip DepthsThing1
 	sound_id NPCGhost
 	text [
-		"Listen to \nthe cry of \nthe acolytes"
+		"\n. . ."
+		"listen to\nthe cry of\nthe acolytes"
+		"\n. . ."
 	]
 }
 
@@ -10,8 +12,8 @@ NPCthem {
 	movieclip DepthsThing2
 	sound_id NPCGhost
 	text [
-		"They loom overhead \njust out of sight"
-		"better get going,\nash."
+		"they loom overhead\njust out of sight"
+		"better get going,\nash"
 	]
 }
 
@@ -19,8 +21,8 @@ NPCbeasts {
 	movieclip NPCG4
 	sound_id NPCGhost
 	text [
-		"would you like \nto feed the \nbeasts?"
-		"they havent eaten \nin months"
+		"would you like\nto feed the\nbeasts?"
+		"they havent eaten\nin months"
 	]
 }
 
@@ -36,37 +38,32 @@ NPCDECEND {
 	movieclip NPCGFaith
 	sound_id death3
 	text [
-		"you've left all \nthat can help you \nnow"
-		"decend into \nthe dark"
-		"the unknown \nwill kill you"
-		"decend into \nthe unknown"
+		"you've left all\nthat can help you\nnow"
+		"descend into\nthe dark"
+		"the unknown\nwill kill you"
+		"descend into\nthe unknown"
 		"you're falling"
-		"embrace it, \ndeny your \nsoul"
-		"dencend \ndecend, \ndecend with us"
-		"you've left all \nthat can help you"
-		"you're alone \n..."
+		"embrace it,\ndeny your\nsoul"
+		"descend\ndescend,\ndescend with us"
+		"you've left all\nthat can help you"
+		"you're alone\n..."
 		"abandon all hope"
-		"and decend \nfurther into the \ncatacombs, Ash" 
+		"and descend\nfurther into the\ncatacombs, ash" 
 	]
 }
 
-NPCTOAST {
-	movieclip NPC4
+NPCEscapeEnd {
+	movieclip NPCGFaith
 	sound_id NPCGhost
 	text [
-		"hey, you"
-		"have you seen \nthese weird skull \nbeasts?"
-		"theyre parasites"
-		"we need these \ncorpses for rituals \nn' shit"
-		"we cant do \nthem with these infecting \nthe corpses"
-		"if you see \none"
-		"itd be a HUGE \nhelp if you \nkilled it"
-		"theres too many"
-		"..."
-		"hmm? me? \nyea im dead"
-		"and i eagerly \nawait the \nsecond death"
-		"if youre not \ngoing to help \nthen fuck off"
-		"thanks <3"
+		"there's\nno way out\nof this"
+		"accept it,\nit's\n'game over'"
+		"\n. . ."
+		"do you think\nsomething will\nchange?"
+		"that can't\nbe right\n. . ."
+		"well, we've\nall been wrong\nbefore"
+		"\n. . ."
+		"come on\nshow us, then"
 	]
 }
 

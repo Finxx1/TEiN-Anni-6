@@ -1347,153 +1347,113 @@ ghostship/x {
 }
 
 depths/main/ {
-	area_name "Depths"
-	area_label_frame 4
-	tile_graphics Tilehell
-	overlay_graphics Overlayscomplex
-	background_graphics bgretro2
-	foreground_graphics none
-	fx_shader sludgeripples
-	palette 7
+	 area_name "Depths"
+     area_label_frame 4
+     tile_graphics Tilehell
+     overlay_graphics Overlaysend
+     background_graphics bgretro2
+     foreground_graphics none
+     fx_shader sludgeripples
+     palette 7
 
-	fx_shader_mid lighting
-	midfx_graphics ShadeBox
-	midfx_layer 2
-	shader_param .5
+     fx_shader_mid lighting
+     midfx_graphics ShadeBox
+     midfx_layer 2
+     shader_param .7
 
-	decoration_1 DiseasesRunes
-	decoration_2 DiseasesRunesBlock
-	decoration_3 DecorationSkeletons
+     decoration_1 DiseasesRunes
+     decoration_2 DiseasesRunesBlock
+     decoration_3 DecorationSkeletons
 
-	npc_1 NPCcry
-	npc_2 NPCthem
-	npc_3 NPCDECEND
+     npc_1 NPCcry
+     npc_2 NPCthem
+     npc_3 NPCDECEND
+	 
+	 music [depths_loop.ogg, depths_loop.ogg]
 
-	art_alts [
-		[Floater, DeathGhost][OrbChomp, SmallElectroBall]
-	]
-
-	music [depths_loop.ogg, depths_loop.ogg]
-
-	8 {
-		decoration_3 Decoration5
-	}
+     art_alts [
+       	 [Floater, Ghost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
+    	]
 	
-	13 {
-		npc_1 NPCTOAST
-	}
-	
-	18 {
-		npc_1 NPCCULT
-	}
-	
-	20 {
-		npc_1 NPCHELL
-	}
-	
-	21 {
-		area_name "Salvation"
-		decoration_2 TheHeart
-		
-		art_alts [
-			[GlowShroom, nothing]
-		]
-	}
-	
-	21x {
-		decoration_3 JarDeco
-	}
+     7 {
+            decoration_3 Decoration7Right
+         }
+
+     10 {
+            decoration_2 ChainLink3 
+         }
+
+     16 {
+            decoration_2 TheHeart 
+         }
+	 16a {
+			decoration_3 JarDeco
+		}
+     18 {
+            decoration_2 Decoration7Right
+         }
+	 1end {
+		npc_1 NPCEscapeEnd
+	 }
 }
 
 depths/secret/ {
-	area_name "???"
-	area_label_frame 4
-	tile_graphics Tilehell
-	overlay_graphics Overlayscomplex
-	background_graphics bgretro2
-	foreground_graphics none
-	fx_shader sludgeripples
-	palette 7
+	 area_name "???"
+     area_label_frame 4
+     tile_graphics Tilehell
+     overlay_graphics Overlayscomplex
+     background_graphics bgretro2
+     foreground_graphics none
+     fx_shader sludgeripples
+     palette 7
 
-	fx_shader_mid lighting
-	midfx_graphics ShadeBox
-	midfx_layer 2
-	shader_param .3
+     fx_shader_mid lighting
+     midfx_graphics ShadeBox
+     midfx_layer 2
+     shader_param .6
 
-	decoration_1 DiseasesRunes
-	decoration_2 DiseasesRunesBlock
-	decoration_3 DecorationSkeletons
+     decoration_1 DiseasesRunes
+     decoration_2 DiseasesRunesBlock
+     decoration_3 DecorationSkeletons
 
-	tile_particle_1 drip
+     tile_particle_1 drip
 
-	npc_1 NPCbeasts
-	npc_2 NPCHELL
-	
+     npc_1 NPCbeasts
+     npc_2 NPCHELL
+     npc_3 NPCCULT
 
-	art_alts [
-	  	[Floater, DeathGhost][OrbChomp, SmallElectroBall]
-	]
+     art_alts [
+       	 [Floater, Ghost][OrbSmall, SmallElectroBall][OrbChomp, OrbChomp_Ghost]
+    	]
 
-	music_volume 1
-	ambience_volume 3
+     music_volume 1
+     ambience_volume 3
 
+     music [depths_secret_loop.ogg, depths_secret_loop.ogg]
+     ambience flesh.ogg
+     stop_previous_music false
+
+     4 {
+        shader_param .5
+    }
+     19 {
+        art_alts [
+       	 [Floater, Cartridge][OrbChomp, SmallElectroBall]
+    	]
 	music none
-	ambience flesh.ogg
-	stop_previous_music false
-
-	3 {
-	   area_name "none"
+    }
+     20 {
+        art_alts [
+       	 [Floater, Cartridge][OrbChomp, SmallElectroBall]
+    	]
 	music none
-	}
-	19 {
-		art_alts [
-			[Floater, BigLife][OrbChomp, SmallElectroBall]
-		]
-		music none
-	}
-	20 {
-		art_alts [
-			[Floater, BigLife][OrbChomp, SmallElectroBall]
-		]
+    }
+     21 {
+        art_alts [
+       	 [Floater, Cartridge][OrbChomp, SmallElectroBall]
+    	]
 	music none
-	}
-	21 {
-		art_alts [
-			[Floater, BigLife][OrbChomp, SmallElectroBall]
-		]
-		music none
-	}
-	21 {
-		art_alts [
-			[Floater, BigLife][OrbChomp, SmallElectroBall][Cartridge, cart2]
-		]
-		decoration_2 TheHeart
-		music none
-	}
-}
-
-6 {
-	area_name "Depths"
-	area_label_frame 4
-	tile_graphics Tilehell
-	overlay_graphics Overlayscomplex
-	background_graphics bgretro2
-	foreground_graphics none
-	fx_shader sludgeripples
-	palette 7
-
-	fx_shader_mid lighting
-	midfx_graphics ShadeBox
-	midfx_layer 2
-	shader_param .5
-
-	decoration_1 DiseasesRunes
-	decoration_2 DiseasesRunesBlock
-	decoration_3 DecorationSkeletons
-
-	art_alts [
-		[Floater, DeathGhost]
-	]
+    }
 }
 
 exhaust/main/ {
