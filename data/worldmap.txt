@@ -1,10 +1,14 @@
 pages {
     lightworld {
-        collectibles 159 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+        collectibles 156 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
     
     darkworld {
         collectibles 8 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+    }
+	
+	leftworld {
+        collectibles 0 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
     
     console {
@@ -31,7 +35,7 @@ meta {
     bodylevel exhaust/main/-17
     heartlevel 6-1end
     
-    mute_warpunlock_message [swamplands/-0 splunt/-1 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[phlegethon/ phlegethon/-2] [1d 1d-1] [gehenna/gh 1d-1] [gehenna/sd 1d-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1 struggle/-1 machiavellismask/-1] //used to set the respawn point in an iron cart
@@ -48,8 +52,8 @@ meta {
     cart_lives_overrides [[$c1-1 39]]
     cart_title_overrides [[$c1-1 "AllStars"] [$i1-1 "Acceptance"]]
     
-    savefile_completion_counter_max 285 //count of total collectible tumors, carts, body parts (3), cart achievements, map warp points (number of levels in the array below), and endings (2)
-    savefile_completion_warpoints [1-1 2-0 3-1 4a-1 4b-1 4c-1 5a-1 5b-1 5c-1 4-1hub 1d-1 2d-0 3d-1 6-1 6-21 7-0] //visiting these levels counts for save file completion
+    savefile_completion_counter_max 214 //165 + 37 + 12: (total collectible tumors, carts, body parts (3), and endings (1)), cart achievements, map warp points (number of levels in the array below)
+    savefile_completion_warpoints [swamplands/-0 ssshithill/main/-0 hive/h-0 steamworks/main/-1 war/us-1 mountmoriah/-1 ghostship/-1 depths/main/-1 exhaust/main/-1 bastion/main/-1 gehenna/gh-1 gehenna/gh-51] //visiting these levels counts for save file completion
     save_initiallevel machiavellismask/x-1
     save_lightspawn swamplands/-0
     save_darkspawn 1d-1
@@ -61,6 +65,13 @@ meta {
 
 nodes {
     //The Past
+	LeftSide {
+		clipname leftside
+		page lightworld
+		unlock_condition visited_levels_any
+        unlock_condition_levels [wip/-1]
+	}
+	
 	SssHitHill {
 		clipname hill
 		entrylevel ssshithill/main/-0
@@ -68,6 +79,7 @@ nodes {
 		levelgroups [ssshithill/main/ ssshithill/secret/]
 		
 		right Swamplands
+		left SecludedStretch
 	}
 	
 	Swamplands {
@@ -184,6 +196,50 @@ nodes {
 		select StevenHead
 		up Steamworks
     }
+	
+	//The Left Side
+	SecludedStretch {
+		clipname stretch
+		entrylevel 1/main/-1
+		page leftworld
+		levelgroups [1/main/ 1/secret/]
+		
+		right SssHitHill
+		down SssHitHill
+		left KipperedWall
+		up KipperedWall
+	}
+	
+	KipperedWall {
+		clipname kipperedwall
+		entrylevel 1/main/-1
+		page leftworld
+		levelgroups [1/main/ 1/secret/]
+		
+		right SecludedStretch
+		left CancerousCan
+		down CancerousCan
+	}
+	
+	CancerousCan {
+		clipname can
+		entrylevel 1/main/-1
+		page leftworld
+		levelgroups [1/main/ 1/secret/]
+		
+		right KipperedWall
+		left SEtIS
+		up SEtIS
+	}
+	SEtIS {
+		clipname setis
+		entrylevel 1/main/-1
+		page leftworld
+		levelgroups [1/main/ 1/secret/]
+		
+		right CancerousCan
+		down CancerousCan
+	}
 	
 	// The Future
 	ThePast {
