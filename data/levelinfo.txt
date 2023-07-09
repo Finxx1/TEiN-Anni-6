@@ -312,52 +312,43 @@
 "ghostship/x-8" {name="???" id=3} #biglife
 
 "depths/main/-1" {name="Depths 1" id=1}
+"depths/main/-1end" {name="Depths 1" id=-1}
 "depths/main/-2" {name="Depths 2" id=2} 
-"depths/main/-3" {name="Depths 3" id=3}
-"depths/main/-4" {name="Depths 4" id=-1}
-"depths/main/-5" {name="Depths 5" id=4}
-"depths/main/-6" {name="Depths 6" id=5}
-"depths/main/-7" {name="Depths 7" id=-1}
-"depths/main/-8" {name="Depths 8" id=6}
-"depths/main/-9" {name="Depths 9" id=7}
-"depths/main/-10" {name="Depths 10" id=8}
-"depths/main/-11" {name="Depths 11" id=9}
-"depths/main/-12" {name="Depths 12" id=-1}
-"depths/main/-13" {name="Depths 13" id=10}
-"depths/main/-14" {name="Depths 14" id=11}
-"depths/main/-15" {name="Depths 15" id=12} 
-"depths/main/-16" {name="Depths 16" id=13}
-"depths/main/-17" {name="Depths 17" id=14}
-"depths/main/-18" {name="Depths 18" id=15} 
-"depths/main/-19" {name="Depths 19" id=16}
-"depths/main/-20" {name="Depths 20" id=17}
-"depths/main/-21" {name="Salvation" id=-1}
-"depths/main/-21x" {name="Salvation" id=-1}
-"6-1end" {name="Depths" id=1}
-"depths/secret/-1" {name="???" id=-1}
-"depths/secret/-2" {name="???" id=1}
-"depths/secret/-3" {name="Depths" id=-1}
-"depths/secret/-4" {name="???" id=1} 
-"depths/secret/-5" {name="???" id=2}
-"depths/secret/-6" {name="???" id=-1} 
-"depths/secret/-7" {name="???" id=3} 
-"depths/secret/-8" {name="???" id=4}
-"depths/secret/-9" {name="???" id=5}
-"depths/secret/-10" {name="???" id=-1}
-"depths/secret/-11" {name="???" id=7}
-"depths/secret/-12" {name="???" id=6}
+"depths/main/-3" {name="Depths 3" id=3} #biglife
+"depths/main/-4" {name="Depths 4" id=4} 
+"depths/main/-5" {name="Depths 5" id=5}#biglife
+"depths/main/-6" {name="Depths 6" id=6}
+"depths/main/-7" {name="Depths 7" id=7} #biglife
+"depths/main/-8" {name="Depths 8" id=8} #biglife
+"depths/main/-9" {name="Depths 9" id=9}
+"depths/main/-10" {name="Depths 10" id=-1}
+"depths/main/-10a" {name= "Depths" id=10}
+"depths/main/-11" {name="Depths 11" id=11} 
+"depths/main/-12" {name="Depths 12" id=12}
+"depths/main/-13" {name="Depths 13" id=13} 
+"depths/main/-14" {name="Depths 14" id=14}
+"depths/main/-15" {name="Depths 15" id=15} #cart
+"depths/main/-16" {name="Salvation 1" id=-1}
+"depths/main/-16a" {name="Salvation 1" id=-1}
+"depths/main/-17" {name="Salvation 2" id=-1} 
+"depths/main/-18" {name="Salvation 3" id=-1} 
+"depths/main/-19" {name="Salvation 4" id=-1} 
+"depths/main/-20" {name="Salvation 5" id=-1}
+"depths/secret/-1" {name="???" id=1}
+"depths/secret/-2" {name="???" id=2}
+"depths/secret/-3" {name="???" id=3}
+"depths/secret/-4" {name="???" id=4} 
+"depths/secret/-5" {name="???" id=5}
+"depths/secret/-6" {name="???" id=-1}
 "depths/secret/-14" {name="???" id=-1}
 "depths/secret/-15" {name="???" id=-1}
 "depths/secret/-16" {name="???" id=-1}
-"depths/secret/-17" {name="???" id=8}
+"depths/secret/-17" {name="???" id=1}
 "depths/secret/-18" {name="???" id=-1}
 "depths/secret/-19" {name="???" id=-1}
 "depths/secret/-20" {name="???" id=-1}
 "depths/secret/-21" {name="???" id=-1}
 "depths/secret/-22" {name="???" id=-1}
-"depths/secret/-23" {name="???" id=-1}
-"depths/secret/-24" {name="???" id=9}
-"depths/secret/-25" {name="???" id=2}
 
 "exhaust/main/-1" {name="Exhaust 1" id=1} #life
 "exhaust/main/-11" {name="Exhaust 11" id=10} #life
