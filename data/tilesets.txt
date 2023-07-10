@@ -234,6 +234,33 @@ war/crt1 {
 
 }
 
+touhell/ {
+    tile_graphics TileGlitch
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 43
+    
+    music [retro/beeth5_intro.ogg, retro/beeth5_loop.ogg]
+    
+    music_volume 1
+    ambience_volume 1
+
+
+    area_type cart
+    
+    cart_intro_png touhell
+    cart_intro_palette 46
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro2][ChainLink, ChainLinkretro2][ChainLink2, ChainLinkretro2]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+    ]
+}
+
 tmjevilution/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
