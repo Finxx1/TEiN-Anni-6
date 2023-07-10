@@ -428,12 +428,12 @@ nodes {
     
     GlitchCart0 {
         clipname g0
-        entrylevel war/crt1-1
+        entrylevel touhell/-1
         page console
-        cart_cheevolevel war/crt1-all
+        cart_cheevolevel touhell/-all
         cart_splashframe glitch
         unlock_condition collected_carts_all
-        unlock_condition_levels [10x-2]
+        unlock_condition_levels [phlegethon/x-2]
         
         down Cart5
         up IronCart2
