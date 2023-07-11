@@ -1464,7 +1464,11 @@ depths/secret/ {
      4 {
         shader_param .5
     }
-     19 {
+     7 {
+		background_graphics hellbg
+		shader_param .3
+	 }
+	 19 {
         art_alts [
        	 [Floater, Cartridge][OrbChomp, SmallElectroBall]
     	]
