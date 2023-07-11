@@ -1965,7 +1965,7 @@ gehenna/gh {
     global_particle_2 blbgrain
 	global_particle_3 cloudwind_light
 	global_particle_4 gorerain
-    decoration_1 Deco10
+    decoration_1 JarDeco
     decoration_2 Deco11
 
 	area_type dark
@@ -2838,6 +2838,8 @@ gehenna/ghw {
     fx_shader_mid thesunfuckingdied
     midfx_graphics ShadeBox
     midfx_layer 2
+	
+	decoration_1 JarDeco
 
     shader_param 0.5
 
