@@ -264,6 +264,9 @@ NPCsB4 {
 		"our sight\ndoesn't\nbetray us"
 		"but this fate\nwe know of,\nis it really yours?"
 		"is it really\n. . .\nours?"
+		"i guess something\nwill come up\nsooner or later"
+		"\nlike, literally"
+		"you can't just\nbury everything\naway forever"
 		"\n. . ."
     ]
 }
@@ -379,6 +382,44 @@ NPCsX1 {
 		"i'm . . .\n. . .\n. . . melting . . ."
 		"\nnah just kidding"
 		"would be\nfucked up\ntho"
+    ]
+}
+
+NPCsX2 {
+#surreal guy, man
+    movieclip NPCsX2
+    sound_id SpikeToggle
+    text [
+		"\ngah!"
+		"thought you\nwere a ghost\nor somethin'"
+		"welcome welcome,\nthis my\nhumble abode"
+		"been buried\ndown here for\na hot second!"
+		"they wanted to\nseal all of us\ndown here real bad"
+		"i mean,\nthey did\n. . ."
+		"\n. . . whatever"
+		"they can't just\nerase the past\nlike that"
+		". . . anyways, the\nname's surreal:\nsurreal dude"
+		"made this place,\nsure did.\nthis one at least"
+		"but not like,\nliterally.\ndidn't build shit"
+		"nor do\ni own\nthe place"
+		"you could say i\nmade it in a\n. . . metaphorical way"
+		"like sort of\nmetatextual bullshit\nbonanza kinda way"
+		"i've spent a\nlong time down\nhere, you see"
+		"so you could\nsay i pretty much\ninvented all of it"
+		"same with that\ntower on top\nof that swamp"
+		"good place,\nunless you're\non a timer"
+		"'s a drag to get\nfrom one side to\nthe other, y' know?"
+		". . . not that i\nwould know, being\ntrapped here and all"
+		"but if i could\ni'd rather go fast,\nspeedy like"
+		"i've got same\nissue for this\nplace here . . ."
+		"this, um\n. . . what\neven is it?"
+		"factory?\nwarehouse?"
+		"giant cover-up\nto hide years and\nyears of wrongdoings?"
+		"'s all the same,\nreally. dusty\nold place still"
+		"woulda pay to\nsee it 'n\nall its glory"
+		"since, y'know, i\ncan only see it\nmetaphorically"
+		"\n. . ."
+		"i'm so\nfucking\nlonely"
     ]
 }
 

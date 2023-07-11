@@ -1185,7 +1185,7 @@ mountmoriah/x {
 ghostship/ {
 	area_name "Ghost Ship"
 	area_label_frame 5
-	tile_graphics Tileairship
+	tile_graphics Tileairshipextended
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
 	palette 15
@@ -1337,7 +1337,7 @@ ghostship/ {
 ghostship/x {
 	area_name "???"
 	area_label_frame 5
-	tile_graphics Tileairship
+	tile_graphics Tileairshipextended
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
 	palette 15
@@ -1664,6 +1664,39 @@ exhaust/secret/ {
 		
 		npc_1 NPCH1
 	}
+	11 {
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .8
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
+	12 {
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .6
+		tile_particle_2 firesmoke2
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
+	13 {
+		npc_1 NPCsX2
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .4
+		tile_particle_2 firesmoke2
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
 	69 {
 		music [diggyhole_intro.ogg, diggyhole_loop.ogg]
 	}
@@ -1865,6 +1898,7 @@ bastion/future/ {
 	tile_particle_2 hugeBellRing
 	
 	music [striken_intro.ogg, striken_loop.ogg]
+	music_volume 1.2
 	ambience labloop_laser.ogg
 	ambience_volume 0.4
 	
@@ -2875,42 +2909,4 @@ gehenna/jv {
     npc_1 NPCB2
     npc_2 NPCG5
     npc_3 none
-}
-
-ultimatum/ {
-     area_name "Ultimatum"
-     area_label_frame 18
-     tile_graphics Tilesewers
-     overlay_graphics Overlaystox2
-     background_graphics neverbg
-     foreground_graphics none
-     fx_shader distortionparticles
-     palette 7
-
-     tile_particle_1 drip
-     tile_particle_2 splash
-     global_particle_1 none
-     global_particle_2 none
-     global_particle_3 none
-
-     art_alts [
-		[ChainLink2, None][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-	]
-
-     music [fur_elise_intro.ogg, fur_elise_loop.ogg]
-     ambience ruins.ogg
-     music_volume 1
-     ambience_volume 1
-   
-	3 {
-	fx_shader gravripples
-	}
-	4 {
-	fx_shader nooverlay
-	}
-	5 {
-	fx_shader gravripples
-	platform_physics "data/platformphysics_steam.txt"
-	tile_particle_5 toxicbubblesflipped
-	}
 }

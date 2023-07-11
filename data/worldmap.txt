@@ -35,7 +35,7 @@ meta {
     bodylevel exhaust/main/-17
     heartlevel depths/main/-1end
     
-    mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ghostship/-25 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[phlegethon/ phlegethon/-2] [1d 1d-1] [gehenna/gh 1d-1] [gehenna/sd 1d-1]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1 struggle/-1 machiavellismask/-1] //used to set the respawn point in an iron cart
