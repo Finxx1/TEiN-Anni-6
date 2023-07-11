@@ -504,4 +504,8 @@ SoundEffectGroups {
     NPCStevenCameo {
         files [StevenNPC.wav]
     }
+	Finxx{
+		files[Finxx.wav]
+		volume 10
+	}
 }

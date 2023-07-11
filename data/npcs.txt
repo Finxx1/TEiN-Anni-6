@@ -423,6 +423,38 @@ NPCsX2 {
     ]
 }
 
+NPCFinxx {
+#finxx deez nuts
+	movieclip NPCsX3
+	sound_id Finxx
+	text [
+		"oh, hey, im \nfinxx"
+		"you seen\neverything\nhere?"
+		"it stretches\non for what\nfeels like miles"
+		"someone has\ngotta be in\ncharge of this"
+		"and that someone\nis me"
+		"i personally\n built only\na little bit"
+		"but i oversaw\nliterally\neverything"
+		"it could have\ncome out\nbetter . . ."
+		"but i am\nhappy with the\nfinal result"
+		"i made lots\nof mistakes"
+		"that i\nwish could\nbe undone"
+		"but it is\ntoo late\nfor that"
+		"\n. . . "
+		"if you see\nderzox, please\ntell him im sorry"
+		"and potassium"
+		"and yexprilester"
+		"and surreal"
+		"and carbon"
+		"and qetuo"
+		"man, i really\nam an\nasshole"
+		"just leave\nme to rot"
+		"it is what\ni deserve"
+		"\n. . ."
+		"im so\nfucking\nlonely"
+	]
+}
+
 NPCdemo {
 #demo guide
     movieclip NPC0

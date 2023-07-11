@@ -1687,6 +1687,7 @@ exhaust/secret/ {
 	}
 	13 {
 		npc_1 NPCsX2
+		npc_2 NPCFinxx
 		fx_shader_mid lightingmodded
 		midfx_graphics ShadeBox
 		midfx_layer 2
