@@ -234,6 +234,33 @@ war/crt1 {
 
 }
 
+touhell/ {
+    tile_graphics TileGlitch
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 43
+    
+    music [retro/beeth5_intro.ogg, retro/beeth5_loop.ogg]
+    
+    music_volume 1
+    ambience_volume 1
+
+
+    area_type cart
+    
+    cart_intro_png touhell
+    cart_intro_palette 46
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro][Floater, RetroGhost2][Slug, SkullSlugretro2][SkullSlug, SkullSlugretro2]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro2][ChainLink, ChainLinkretro2][ChainLink2, ChainLinkretro2]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro]
+    ]
+}
+
 tmjevilution/ {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
@@ -1158,7 +1185,7 @@ mountmoriah/x {
 ghostship/ {
 	area_name "Ghost Ship"
 	area_label_frame 5
-	tile_graphics Tileairship
+	tile_graphics Tileairshipextended
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
 	palette 15
@@ -1310,7 +1337,7 @@ ghostship/ {
 ghostship/x {
 	area_name "???"
 	area_label_frame 5
-	tile_graphics Tileairship
+	tile_graphics Tileairshipextended
 	overlay_graphics Overlaysairship
 	background_graphics airshipbg
 	palette 15
@@ -1372,7 +1399,7 @@ depths/main/ {
 	 music [depths_loop.ogg, depths_loop.ogg]
 
      art_alts [
-       	 [Floater, Ghost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
+       	 [Floater, DeathdlyGhost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
     	]
 	
      7 {
@@ -1401,7 +1428,7 @@ depths/secret/ {
 	 area_name "???"
      area_label_frame 4
      tile_graphics Tilehell
-     overlay_graphics Overlayscomplex
+     overlay_graphics Overlaysend
      background_graphics bgretro2
      foreground_graphics none
      fx_shader sludgeripples
@@ -1423,7 +1450,7 @@ depths/secret/ {
      npc_3 NPCCULT
 
      art_alts [
-       	 [Floater, Ghost][OrbSmall, SmallElectroBall][OrbChomp, OrbChomp_Ghost]
+       	 [Floater, DeathdlyGhost][OrbSmall, SmallElectroBall][OrbChomp, OrbChomp_Ghost]
     	]
 
      music_volume 1
@@ -1637,6 +1664,39 @@ exhaust/secret/ {
 		
 		npc_1 NPCH1
 	}
+	11 {
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .8
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
+	12 {
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .6
+		tile_particle_2 firesmoke2
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
+	13 {
+		npc_1 NPCsX2
+		fx_shader_mid lightingmodded
+		midfx_graphics ShadeBox
+		midfx_layer 2
+		shader_param .4
+		tile_particle_2 firesmoke2
+		tile_particle_3 dust
+		tile_particle_4 drip
+		global_particle_1 mist2
+		global_particle_2 cold
+	}
 	69 {
 		music [diggyhole_intro.ogg, diggyhole_loop.ogg]
 	}
@@ -1838,6 +1898,7 @@ bastion/future/ {
 	tile_particle_2 hugeBellRing
 	
 	music [striken_intro.ogg, striken_loop.ogg]
+	music_volume 1.2
 	ambience labloop_laser.ogg
 	ambience_volume 0.4
 	
@@ -2848,42 +2909,4 @@ gehenna/jv {
     npc_1 NPCB2
     npc_2 NPCG5
     npc_3 none
-}
-
-ultimatum/ {
-     area_name "Ultimatum"
-     area_label_frame 18
-     tile_graphics Tilesewers
-     overlay_graphics Overlaystox2
-     background_graphics neverbg
-     foreground_graphics none
-     fx_shader distortionparticles
-     palette 7
-
-     tile_particle_1 drip
-     tile_particle_2 splash
-     global_particle_1 none
-     global_particle_2 none
-     global_particle_3 none
-
-     art_alts [
-		[ChainLink2, None][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
-	]
-
-     music [fur_elise_intro.ogg, fur_elise_loop.ogg]
-     ambience ruins.ogg
-     music_volume 1
-     ambience_volume 1
-   
-	3 {
-	fx_shader gravripples
-	}
-	4 {
-	fx_shader nooverlay
-	}
-	5 {
-	fx_shader gravripples
-	platform_physics "data/platformphysics_steam.txt"
-	tile_particle_5 toxicbubblesflipped
-	}
 }
