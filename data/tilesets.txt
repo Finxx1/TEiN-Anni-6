@@ -579,6 +579,7 @@ phlegethon/ {
      ambience flesh.ogg
 
 	1 {
+		area_label_frame 0
 		global_particle_2 fgrain_light
 	}
 }
