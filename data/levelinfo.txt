@@ -76,6 +76,8 @@
 "touhell/-6" {name="Touhell Project 6" id=6}
 "touhell/-7" {name="Touhell Project 7" id=7}
 "touhell/-8" {name="Touhell Project 8" id=8}
+"touhell/-9" {name="Touhell Project 9" id=9}
+"touhell/-10" {name="Touhell Project 10" id=10}
 
 "tmjevilution/-1x" {name="TMJ Evilution 1" id=-1}
 "tmjevilution/-1" {name="TMJ Evilution 1" id=-1}
