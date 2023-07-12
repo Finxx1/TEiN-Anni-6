@@ -19,8 +19,8 @@ pages {
 meta {
     default_node Swamplands
     
-    leftwipes [splunt/-1 exhaust/main/-1 steamworks/main/-1 swamplands/-0t]
-    rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2 exhaust/secret/-start]
+    leftwipes [splunt/-1 exhaust/main/-1 steamworks/main/-1 swamplands/-0t gehenna/sdx-1]
+    rightwipes [ssshithill/main/-0 swamplands/-15 splunt/-1 sploot/-2 exhaust/secret/-start gehenna/sd-5]
     upwipes [splunt/-1 swamplands/xu-4 mountmoriah/-5atx steamworks/main/-13]
     downwipes [splunt/-1 sploot/-2 bastion/main/-1 swamplands/-6t mountmoriah/-1 mountmoriah/-8b]
     
@@ -28,7 +28,7 @@ meta {
     steventhreshtumors [100 200 300 0]
     stevenlevels [exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/vd gehenna/ghw war/us phlegethon/ exhaust/future/ bastion/future/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/sdx gehenna/vd gehenna/ghw war/us phlegethon/ exhaust/future/ bastion/future/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
     cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
@@ -313,11 +313,11 @@ nodes {
         clipname gehenna
         entrylevel gehenna/gh-1
         page darkworld
-        levelgroups [gehenna/gh gehenna/ghx gehenna/sd gehenna/vd gehenna/ghw]
+        levelgroups [gehenna/gh gehenna/ghx gehenna/vd gehenna/ghw]
 		
 		up ThePast
 		down RockBottom
-		//right Shutdown
+		right Shutdown
     }
 	
 	RockBottom {
@@ -329,14 +329,14 @@ nodes {
 		//right Ultimatum
     }
 	
-	/*
 	Shutdown {
         clipname shutdown
-        entrylevel gehenna/sd-666
+        entrylevel gehenna/sd-1
         page darkworld
+		levelgroups [gehenna/sd gehenna/sdx]
 		
 		left Gehenna
-    }*/
+    }
 	
 	/*
 	Ultimatum {
@@ -357,8 +357,22 @@ nodes {
         unlock_condition collected_carts_all
         unlock_condition_levels [depths/secret/-17]   
         
-        down Cart2
+        down Cart0
         up IronCart5
+    }
+	
+	Cart0 {
+        clipname c0
+        entrylevel c2-1
+        page console
+        cart_cheevolevel c2-all
+        cart_splashframe basiccart
+        unlock_condition collected_carts_all
+        unlock_condition_levels [ssshithill/main/-a5]   
+        
+		select Cart0
+        down Cart2
+        up Cart1
     }
     
     Cart2 {
@@ -371,7 +385,7 @@ nodes {
         unlock_condition_levels [exhaust/secret/-6]   
         
         down Cart3
-        up Cart1
+        up Cart0
     }
     
     Cart3 {
@@ -485,8 +499,9 @@ nodes {
         cart_cheevolevel rootvain/x-all
         cart_splashframe glitch
         unlock_condition collected_carts_all
-        unlock_condition_levels [9x-6]
+        unlock_condition_levels [gehenna/sdx-5]
         
+		select GlitchCart3
         down IronCart5
         up GlitchCart2
     }

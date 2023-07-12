@@ -57,6 +57,15 @@
 "struggle/-5x" {name="-3-5" id=-1}
 "struggle/b-5" {name="+3-5" id=-1}
 
+"touhell/-1" {name="Touhell Project 1" id=1}
+"touhell/-2" {name="Touhell Project 2" id=2}
+"touhell/-3" {name="Touhell Project 3" id=3}
+"touhell/-4" {name="Touhell Project 4" id=4}
+"touhell/-5" {name="Touhell Project 5" id=5}
+"touhell/-6" {name="Touhell Project 6" id=6}
+"touhell/-7" {name="Touhell Project 7" id=7}
+"touhell/-8" {name="Touhell Project 8" id=8}
+
 "tmjevilution/-1x" {name="TMJ Evilution 1" id=-1}
 "tmjevilution/-1" {name="TMJ Evilution 1" id=-1}
 "tmjevilution/-2" {name="TMJ Evilution 2" id=-1}
@@ -499,6 +508,13 @@
 "gehenna/sd-1" {name="Shutdown 1" id=-1}
 "gehenna/sd-2" {name="Shutdown 2" id=-1}
 "gehenna/sd-3" {name="Shutdown 3" id=-1}
+"gehenna/sd-4" {name="Shutdown 4" id=-1}
+"gehenna/sd-5" {name="Shutdown 5" id=-1}
+"gehenna/sdx-1" {name="Shutdown 6" id=-1}
+"gehenna/sdx-2" {name="Shutdown 7" id=-1}
+"gehenna/sdx-3" {name="Shutdown 8" id=-1}
+"gehenna/sdx-4" {name="Shutdown 9" id=-1}
+"gehenna/sdx-5" {name="Shutdown 10" id=1}
 "gehenna/vd-1" {name="Dark Violence 3" id=-1}
 "gehenna/gh-51" {name="Rock Bottom" id=-1}
 "gehenna/ghx-1" {name="???" id=1} #cart
@@ -517,3 +533,12 @@
 "gehenna/ghx3-2" {name="???" id=-1}
 "gehenna/ghx3-3" {name="???" id=-1}
 "gehenna/ghx-16" {name="???" id=3} #cart
+"gehenna/jv-1" {name="Circus 1" id=-1}
+"gehenna/jv-2" {name="Circus 2" id=-1}
+"gehenna/jv-3" {name="Circus 3" id=-1}
+"gehenna/jv-4" {name="Circus 4" id=-1}
+"gehenna/jv-5" {name="Circus 5" id=-1}
+"gehenna/jv-6" {name="Circus 6" id=-1}
+"gehenna/jv-7" {name="Circus 7" id=-1}
+"gehenna/jv-8" {name="Circus 8" id=-1}
+"gehenna/jv-9" {name="Circus 9" id=-1}

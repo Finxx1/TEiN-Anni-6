@@ -2539,7 +2539,7 @@ gehenna/gh {
 
 gehenna/sd {
     area_name "Shutdown"
-    area_label_frame 11
+    area_label_frame 0
     background_graphics bgmarsh
     ambience none
     tile_graphics Tilefield
@@ -2547,7 +2547,36 @@ gehenna/sd {
 	palette 26
 	global_particle_1 lightning
     overlay_graphics Overlaysfield
+	
+	area_type dark
+}
+gehenna/sdx {
+    area_name "Shutdown"
+    area_label_frame 0
+    tile_graphics Tilecomplex
+    overlay_graphics Overlayscomplex
+    background_graphics bgsolid
+    foreground_graphics None
+    fx_shader sludgeripples
+    fx_shader_mid coreglow
+    midfx_graphics SolidBox
+    midfx_layer 2
+    palette 47
+    
+    area_type dark
 
+    tile_particle_1 spark2
+    tile_particle_2 smoke
+    tile_particle_3 fallout2tile
+    global_particle_1 embers
+    global_particle_2 cold
+    global_particle_3 dark 
+    global_particle_4 lightning
+    music_volume 1
+    ambience_volume 0.7
+
+    music [core_intro.ogg, core_loop.ogg]
+    ambience shiny.ogg
 }
 
 gehenna/vd {

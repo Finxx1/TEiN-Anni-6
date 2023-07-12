@@ -164,6 +164,40 @@ steam_left {
     tags [player_push, collide_tile]
 }
 
+fallout2tile {
+    #system properties
+    movieclip Leaf2
+    max_particles 1000
+    layer 2
+    livebounds [-10, 64, -10, 42]
+    prewarm [20,48]
+    batched true
+    
+    #emitter properties
+    emit_rate 1
+    emit_amount 1
+    emit_direction [0, -1]
+    emit_spread 20
+    emit_box [2, 0]      #54 for "level width", 32 for "level height"    
+    emit_offset [0,0.5]   #27,16 for middle of the level. 0,0 for bottom left. 54,32 for upper right. this one sets it as a strip at the top 
+    
+    #particle animation properties
+    particle_lifetime 30
+    initial_speed [2, 4]
+    initial_rotation [0,360]
+    rotation_speed [-200, 200]
+    force [0, -.5]
+    friction 1
+    size_start [.5,1]
+    size_end 1
+    alpha_start 1
+    alpha_end 1
+    face_moving_direction true
+    speed_scale 0
+    inherit_speed 0
+    tags [collide_tile, player_push]
+}
+
 fallout3Rwind {
     #system properties
     movieclip Leaf2
