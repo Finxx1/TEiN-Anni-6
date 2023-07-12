@@ -504,7 +504,7 @@ SoundEffectGroups {
     NPCStevenCameo {
         files [StevenNPC.wav]
     }
-	Silence {
+    Silence {
         files [silence.wav]
     }
     NPCAxy {
@@ -512,5 +512,8 @@ SoundEffectGroups {
     }
     NPCIce {
         files [ghostlaugh.wav]
+    }
+    Smile {
+        files [smile.wav]
     }
 }

@@ -3364,6 +3364,14 @@ gehenna/ghw {
     npc_3 none
 }
 
+gehenna/_area_unused {
+    background_graphics bgsolid
+    area_name "test"
+    music [___g_intro.ogg, ___g_loop.ogg]
+    art_alts [[SpeechBubble, SpeechBubble2]]
+    npc_1 npc_unused_1
+}
+
 gehenna/jv {
     area_name "Comic Relief"
     area_label_frame 19
