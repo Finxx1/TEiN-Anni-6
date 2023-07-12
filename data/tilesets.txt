@@ -1442,7 +1442,9 @@ depths/main/ {
          }
 
      16 {
-            decoration_2 TheHeart 
+            art_alts [
+			[Floater, DeathdlyGhost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing][Cartridge, TheHeart]
+			]
          }
 	 16a {
 			decoration_3 JarDeco
