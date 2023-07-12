@@ -911,6 +911,185 @@ NPC_prediction {
 	]
 }
 
+npcoes00 {
+	movieclip npcoe00
+	sound_id NPCBlob
+	text [
+		"ah!\nanother like\nme!"
+		"we both\nlost an eye\nat some point"
+		"i dont\nknow when\nthough"
+		"and\ni\nthought"
+		"that i'd\nnever see\nthe day"
+		"that i\nsaw someone\nlike me"
+		"endured\nmore\nthan me"
+		"you've\nbeen places,\nhaven't you?"
+		"wasnt there\nan abandoned\ncity?"
+		"or a\nwater filled\nplace?"
+		"or the\nendless growth\nof that"
+		"that ungodly\ndevouring\ncancer"
+		"it parallels\nwith the\nworld i know"
+		"the\nworld i\nexperienced"
+		"and here\nit's actually\nquite similar"
+	]
+}
+
+npcoem00 {
+	movieclip npcoe05
+	sound_id NPCBlob
+	text [
+		"oi, think\nyou're smart\nhuh?"
+		"then figure\nme this one\nout, punk"
+		"just ahead,\nthings' darn\nimpossible"
+		"yeah that's right,\nnot so clever\neh?"
+		"guess i'll just\nhave to wait\nfor someone"
+		"who's got\nactual\nbrains"
+		"not\nthat\ni do"
+		"but if there\nwere such\na being . . ."
+		"i imagine\nit would hold\nlots of knowledge"
+		"tell the\nwildest tales, seen\nevery corner"
+		"been to\nmore . . . \nsmoke-filled places"
+		"more experienced\nin 'nother areas,\nif you will"
+		"so either fuck\noff and come\nback later . . ."
+		"or just\nfuck off\nplain and simple!" 
+	]
+}
+
+npcoem01 {
+	movieclip NPC5
+	sound_id NPCSkull
+	text [
+		"hey! the fog's\n clearing up\na bit!"
+		"now let me\ntell you some\nadvice"
+		"that i used\nwhen i wasn't\n . . . "
+		"well\n . . . \ndead"
+		"don't get\nsteam mixed up\nwith smoke!"
+		"i'll also tell\nyou how to\ntell them apart!"
+		"smoke is\ndark, like that\none place"
+		"filled\nwith exhaust\npipes!"
+		"steam, on the\nother hand,\nis light"
+		"and works\nits way up\nwith you!"
+		"and the\ntoxic gas has\na green tint"
+		"like that icky\nstretch i saw\nyou pass!"
+		"\n. . ."
+		"don't forget you\ncan fastfall to\nget more propulsion!"
+	]
+}
+
+npcoes01 {
+	movieclip npcoe01
+	sound_id NPCBlob
+	text [
+		"do you\never\n. . ."
+		"have you\nthought that\n. . ."
+		"\nthis world"
+		"could\nbe\ndeadly?"
+		"intertwined\nthought that\nonce"
+		"and that's\nwhy i'm\nhere . . ."
+		"\n. . ."
+		"my\npurpose\nfailed"
+		"my\nmission\n. . ."
+		"left\nunfulfilled\n. . ."
+		"\n. . ."
+		"in other\nnews, though\n. . ."
+		"some strange\nbeing told\nme a code"
+		"i cant remember\nwhat it was\ncurrently . . ."
+		"i think it's\non that pearl\nup there though"
+		"read it when\nyou find the\nother pieces"
+	]
+}
+
+npcoes02 {
+	movieclip npcoe02
+	sound_id NPCBlob
+	text [
+		"\nyou!"
+		"i thought\ni could\nget away!"
+		". . .\nbut\nno!"
+		"you had\nto come all\nthe way"
+		"all the\nway over\nup here"
+		"to\ncatch\nup!"
+		"and\nfor\nwhat?"
+		"discovering\nmy hidden\ncontribution?"
+		"my contribution\nto this\ninterconnected"
+		"community\nof\nworlds?"
+		"\nwhy?"
+		"\n. . ."
+		"just take\nthe game\nand leave"
+		"don't know if\nyour console will\nrecognize it yet"
+		"canonically this\nplace isn't\neven mine"
+	]
+}
+
+npcstolentv{
+#monitor i stole from command so that i can use it for the command secret room
+    movieclip stolentv1
+    sound_id ConsoleUp
+    text [
+		"maor damae\nssained to\nore sysem"
+		"wha he\nf did\nou do?"
+    ]
+}
+npcstolentv2{
+#monitor i stole from command so that i can use it for the command secret room
+    movieclip stolentv2
+    sound_id ConsoleUp
+    text [
+		"\nqhar?!?!"
+    ]
+}
+
+npcoes03 {
+	movieclip npcoe04
+	sound_id NPCBlob
+	text [
+		"watch out\nfor the gummy\nbear album"
+		"in stores\non\nnovember 13th"
+	]
+}
+
+npcoem02 {
+	movieclip npcoe06
+	sound_id NPCSteven
+	text [
+		"\nhey!"
+		"'twas wondering when\ni'd see another face\naround here!"
+		"you may have noticed\nthe increased\nfloatiness here!"
+		"that's because intersected's\ngravity thing"
+		"\nis working here!"
+		"\n. . ."
+		"you don't\nknow who\nintersected is?"
+		"he's the robot\nrunning this\nentire place!"
+		"i think\nhis full\nname is . . ."
+		"six eternities\nintersected soundly\n. . ."
+		"we either call\nhim intersected\nor SEtIS"
+		"it's faster to\nsay that than\nwhatever mess"
+		"the people who\nmade him came\nup with"
+	]
+}
+
+npcsetis {
+	movieclip npcoe03
+	sound_id NPCStevenCameo
+	text [
+		"finally,\nyou're\nhere"
+		"a bit\nlate though,\nit seems"
+		"i don't\nknow how\nmuch longer"
+		"i can\nhold my\npresence here"
+		"\nand then"
+		"it\nwon't be\nlong"
+		"before\nintertwined\nfinds out"
+		"\n. . ."
+		"i couldn't\ntransfer info\non my blight"
+		"that curses\nme in this\nworld"
+		"and\nintertwined can't\nsee my plea"
+		"to shine\na light on\nthis plight"
+		"ignorant\nand\nneglecting"
+		"\n. . ."
+		"feel free\nto use the\npearl scanner"
+		"i've no\nuse for\nit now"
+	]
+}
+
 NPCH1 {
 #basic sideways
     movieclip NPCH1

@@ -57,6 +57,17 @@
 "struggle/-5x" {name="-3-5" id=-1}
 "struggle/b-5" {name="+3-5" id=-1}
 
+"oe/cart/-1" {name="Pain World 1" id=-1}
+"oe/cart/-2" {name="Pain World 2" id=-1}
+"oe/cart/-3" {name="Pain World 3" id=-1}
+"oe/cart/-4" {name="Pain World 4" id=-1}
+"oe/cart/-5" {name="Pain World 5" id=-1}
+"oe/cart/-6" {name="Pain World 6" id=-1}
+"oe/cart/-7" {name="Pain World 7" id=-1}
+"oe/cart/-8" {name="Pain World 8" id=-1}
+"oe/cart/-9" {name="Pain World 9" id=-1}
+"oe/cart/-10" {name="Pain World 10" id=-1}
+
 "touhell/-1" {name="Touhell Project 1" id=1}
 "touhell/-2" {name="Touhell Project 2" id=2}
 "touhell/-3" {name="Touhell Project 3" id=3}
@@ -200,6 +211,7 @@
 "ssshithill/main/-b4" {name="SssHitHill B4" id=10}
 "ssshithill/main/-b5" {name="SssHitHill B5" id=11}
 "ssshithill/main/-1" {name="SssHitHill 2" id=12}
+"ssshithill/main/-x" {name="SssHitHill" id=-1}
 
 "steamworks/main/-1" {name="Steamworks 1" id=1} #life
 "steamworks/main/-2" {name="Steamworks 2" id=2} #life
@@ -449,6 +461,67 @@
 "bastion/future/-5" {name="Laser-Cut 6" id=2} 
 "bastion/future/-6" {name="???" id=-1} 
 "bastion/future/-7" {name="???" id=-1} 
+
+"oe/sj/-0alt" {name="???" id=-1}
+"oe/sj/-0x" {name="???" id=-1}
+"oe/sj/-0y" {name="???" id=-1}
+"oe/sj/-0z" {name="???" id=-1}
+"oe/sj/-1" {name="Secluded Stretch 1" id=1}
+"oe/sj/-2" {name="Secluded Stretch 2" id=2}
+"oe/sj/-3" {name="Secluded Stretch 3" id=3}
+"oe/sj/-4" {name="Secluded Stretch 4" id=4}
+"oe/sj/-5" {name="Secluded Stretch 5" id=5}
+"oe/sj/-5x" {name="Secluded Stretch 5" id=-1}
+"oe/sj/-6" {name="Secluded Stretch 6" id=6}
+"oe/sj/x-1" {name="???" id=-1}
+"oe/sj/x-2" {name="???" id=-1}
+"oe/sj/x-3" {name="???" id=1}
+"oe/sj/x-4" {name="???" id=1}
+
+"oe/uw/-0" {name="???" id=-1}
+"oe/uw/-1" {name="Kippered Wall 1" id=-1}
+"oe/uw/-2" {name="Kippered Wall 2" id=-1}
+"oe/uw/-3" {name="Kippered Wall 3" id=-1}
+"oe/uw/-4" {name="Kippered Wall 4" id=-1}
+"oe/uw/-5" {name="Kippered Wall 5" id=-1}
+"oe/uw/-6" {name="Kippered Wall 6" id=-1}
+"oe/uw/-s0" {name="Kippered Wall" id=-1}
+"oe/uw/-s1" {name="Kippered Wall" id=-1}
+"oe/uw/-s2" {name="Kippered Wall" id=-1}
+"oe/uw/x-1" {name="???" id=-1}
+"oe/uw/x-2" {name="???" id=1}
+"oe/uw/x-3" {name="???" id=-1}
+"oe/uw/x-4" {name="???" id=-1}
+"oe/uw/x-5" {name="???" id=2}
+"oe/uw/x-6" {name="???" id=-1}
+
+"oe/ss/-0" {name="???" id=-1}
+"oe/ss/-0x" {name="???" id=-1}
+"oe/ss/-1" {name="Cancerous Can 1" id=-1}
+"oe/ss/-2" {name="Cancerous Can 2" id=-1}
+"oe/ss/-3" {name="Cancerous Can 3" id=-1}
+"oe/ss/-4" {name="Cancerous Can 4" id=-1}
+"oe/ss/-5" {name="Cancerous Can 5" id=-1}
+"oe/ss/-6" {name="Cancerous Can" id=-1}
+"oe/ss/-7" {name="Cancerous Can" id=-1}
+"oe/ss/-8" {name="Cancerous Can" id=-1}
+"oe/ss/e-1" {name="General Systems Bus" id=-1}
+"oe/ss/e-2" {name="General Systems Bus" id=-1}
+"oe/ss/e-3" {name="General Systems Bus" id=-1}
+"oe/ss/e-4" {name="General Systems Bus" id=-1}
+"oe/ss/e-5" {name="General Systems Bus" id=-1}
+"oe/ss/e-6" {name="General Systems Bus" id=-1}
+"oe/ss/e-7" {name="General Systems Bus" id=1}
+"oe/ss/e-8" {name="General Systems Bus" id=-1}
+"oe/ss/e-9" {name="General Systems Bus" id=-1}
+"oe/ss/ai-ai" {name="Six Eternities Intersecting Soundly" id=-1}
+"oe/ss/x-1" {name="???" id=-1}
+"oe/ss/x-2" {name="???" id=1}
+
+"oe/gate/-shut" {name="???" id=-1}
+"oe/gate/-1" {name="???" id=-1}
+"oe/gate/-2" {name="???" id=-1}
+"oe/gate/-3" {name="???" id=-1}
 
 "1d-1" {name="???" id=-1}
 "gehenna/gh-1" {name="Gehenna 1" id=-1}

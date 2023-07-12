@@ -207,6 +207,36 @@ struggle/b {
 	]
 }
 
+oe/cart/ {
+	tile_graphics TileGlitch
+    overlay_graphics Overlaysretro
+    background_graphics bgretro
+    foreground_graphics none
+    palette 55
+
+    cart_intro_png painworld
+    cart_intro_palette 54
+    
+	music [retro/1812_intro.ogg, retro/1812_loop.ogg]
+    music_volume 1
+    ambience_volume 1
+	
+    area_type glitch
+	
+	decoration_1 oecartrain
+	
+	toxic_timer 0.85
+
+    art_alts [
+        [Player, PlayerRetro][Frog, Frogretro][Floater, Floater2][Slug, Slugretro]
+        [SkullFloater, SkullFloaterretro][Gasser, Gasserretro][Splatter, Splatterretro][CheepCheep, cheepretro][Bullet, bulletretro]
+        [SpitterX, SpitterXretro][SpitterY, SpitterYretro][AimSpitter, SpitterZretro][Cannonball, cannonballretro][Fireball, cannonballfireretro]
+        [Hopper, hopperretro][SkullSlug, SkullSlugretro][SkullCrow, SkullCrowretro][ChainChomp, ChainChompretro][ChainLink, ChainLinkretro][ChainLink2, none]
+        [Mask, Maskretro][Revolver, Revolverretro][GasCloud, GasCloudretro][Cannon,Cannonretro][Cannonstand,Cannonstandretro][Bouncer,Bouncerretro][ChainHitch,ChainHitchRetro][OrbSmall, RetroOrbSmall][OrbLarge, RetroOrbLarge][Fish, RetroFish][CreepingMass, CreepingMassRetro][FloatingMine, FloatingMineRetro]
+		[BigCharger,RetroBigChargerSlug]
+    ]
+}
+
 war/crt1 {
     tile_graphics Tileretro
     overlay_graphics Overlaysretro
@@ -1923,6 +1953,429 @@ bastion/future/ {
 		palette 39
 		global_particle_3 cold
 	}
+}
+
+oe/gate/ {
+    tile_graphics Tilegate
+    overlay_graphics Overlaysretro
+    background_graphics bgsolid
+    palette 60
+    
+	fx_shader_mid lightingmodded
+	midfx_graphics ShadeBox
+	midfx_layer 2
+    shader_param 0.7
+        
+    tile_particle_1 waterfall_gate
+    tile_particle_2 drip
+        
+    decoration_1 OutlyingExtentGateFG
+        
+    music none
+    ambience gateamb.ogg
+    
+    ambience_volume 2
+    
+    sfx_file mainsounds_gate.txt
+	
+	1 {
+		decoration_1 OutlyingExtentGateFG2
+	}
+	
+	shut {
+		decoration_1 OutlyingExtentGateFGalt
+	}
+}
+
+oe/sj/ {
+	area_name "Secluded Stretch"
+	area_label_frame 15
+	tile_graphics Tilefield
+	overlay_graphics Overlaysfield
+	background_graphics field2bg
+	palette 60
+	
+	fx_shader ripples
+	fx_shader_mid lighting
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param 0.5
+	
+	music none
+	ambience rain.ogg
+	
+	ambience_volume 2
+	
+	global_particle_1 bgrain
+	global_particle_2 fog_oe
+	
+	tile_particle_1 oepitsmoke
+	
+	toxic_timer 0.85
+	
+	decoration_1 OEPlant
+	decoration_2 OERoot
+	#decoration_3 SJTrainCar
+	
+	0x {
+		music none
+		area_label_frame 0
+		
+		decoration_3 OEExitRight
+		
+		ambience_volume 1.5
+	}
+	
+	0y {
+		music none
+		area_label_frame 0
+		
+		ambience_volume 1
+	}
+	
+	0z {
+		music none
+		area_label_frame 0
+		
+		ambience_volume 1
+	}
+}
+
+oe/sj/x {
+	area_name "Secluded Stretch"
+	area_label_frame 15
+	tile_graphics Tilefield
+	overlay_graphics Overlaysfield
+	background_graphics field2bg
+	palette 60
+	
+	fx_shader reflectionripples
+	fx_shader_mid lighting
+	midfx_graphics ShadeBox
+	midfx_layer 2
+	shader_param 0.5
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	ambience rain.ogg
+	stop_previous_music false
+	
+	global_particle_1 bgrain
+	global_particle_2 fog_oe
+	
+	tile_particle_1 oepitsmoke
+	
+	decoration_1 OEPlant
+	decoration_2 OERoot
+	#decoration_3 SJTrainCar
+	
+	npc_1 npcoes00
+	
+	art_alts [
+		[Cartridge,OEPearl]
+	]
+	
+	2 {
+		foreground_graphics fg2
+		shader_param 0.7
+	}
+	3 {
+		background_graphics airshipbg
+		foreground_graphics fg1
+		
+		global_particle_1 none
+		global_particle_2 none
+		
+		ambience wind.ogg
+		
+		shader_param 0.9
+	}
+	4 {
+		music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+		
+		toxic_timer 2
+	}
+}
+
+oe/uw/ {
+	area_name "Kippered Wall"
+	area_label_frame 16
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics airshipbg
+	palette 63
+	
+	fx_shader_mid cloudripples
+	midfx_layer 2
+	
+	ambience wind.ogg
+	
+	global_particle_1 fog_oe
+	
+	tile_particle_1 oepitsmoke
+	tile_particle_2 uwfx_steam
+	tile_particle_3 uwfx_steam_left
+	tile_particle_4 uwfx_steam_right
+	tile_particle_5 uwfx_smoke
+	
+	decoration_1 ChainLink3
+	
+	toxic_timer 2
+	lowgrav_physics "data/playerphysics_lowgrav_steam.txt"
+	platform_physics "data/platformphysics_steam.txt"
+	
+	npc_1 npcoem00
+	npc_2 npcoem01
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][Floater, FloaterTile]
+	]
+	
+	0 {
+		area_label_frame 0
+		background_graphics ch4abg
+		palette 62
+		
+		global_particle_1 fog_oe2
+		global_particle_2 bgrain
+		global_particle_3 lightning
+	}
+	1 {
+		background_graphics ch4abg
+		palette 62
+		
+		global_particle_1 fog_oe2
+		global_particle_2 bgrain
+		global_particle_3 lightning
+	}
+	2 {
+		background_graphics ch4abg
+		palette 62
+		
+		global_particle_1 fog_oe2
+		global_particle_2 bgrain
+		global_particle_3 lightning
+	}
+	3 {
+		global_particle_1 fog_oe2
+	}
+	5 {
+		foreground_graphics fg2
+	}
+	6 {
+		foreground_graphics fg1
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	s0 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	s1 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	s2 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+}
+
+oe/uw/x {
+	area_name "Kippered Wall"
+	area_label_frame 16
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics airshipbg
+	palette 63
+	
+	fx_shader_mid cloudripples
+	midfx_layer 2
+	
+	music [gymnopedies_intro.ogg, gymnopedies_loop.ogg]
+	stop_previous_music false
+	ambience wind.ogg
+	
+	global_particle_1 fog_oe
+	
+	tile_particle_1 oepitsmoke
+	tile_particle_2 uwfx_steam
+	tile_particle_3 uwfx_steam_left
+	tile_particle_4 uwfx_steam_right
+	tile_particle_5 uwfx_smoke
+	
+	decoration_1 ChainLink3
+	
+	toxic_timer 2
+	lowgrav_physics "data/playerphysics_lowgrav_steam.txt"
+	platform_physics "data/platformphysics_steam.txt"
+	
+	npc_1 npcoes01
+	npc_2 npcoes02
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][Floater, FloaterTile]
+	]
+	
+	1 {
+		background_graphics ch4abg
+		palette 62
+		
+		global_particle_1 fog_oe2
+		global_particle_2 bgrain
+		global_particle_3 lightning
+		
+		music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+	}
+	2 {
+		background_graphics ch4abg
+		palette 62
+		
+		global_particle_1 fog_oe2
+		global_particle_2 bgrain
+		global_particle_3 lightning
+		
+		music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+		
+		art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][Floater, FloaterTile][Cartridge,OEPearl]
+		]
+	}
+	3 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	4 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	5 {
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+	6 {
+		tile_graphics TileOEskyfoldsecret
+		background_graphics upperwallbg
+		palette 58
+		
+		global_particle_1 none
+	}
+}
+
+oe/ss/ {
+	area_name "Cancerous Can"
+	area_label_frame 17
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics bgsolid
+	palette 57
+	
+	ambience unfortunatedevelopment.ogg
+	
+	do_tilt true
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][MiniDrone,MiniNeuron][Bullet,whythefuckaretheyflashingholyshit]
+	]
+	
+	0 {
+		area_label_frame 0
+		background_graphics upperwallbg
+	}
+	0x {
+		area_label_frame 0
+	}
+	6 {
+		player_physics "data/playerphysics_gsb25.txt"
+	}
+	7 {
+		player_physics "data/playerphysics_gsb50.txt"
+	}
+	8 {
+		lowgrav_physics "data/playerphysics_gsb75.txt"
+	}
+}
+
+oe/ss/x {
+	area_name "Cancerous Can"
+	area_label_frame 17
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics bgsolid
+	palette 57
+	
+	music [hmk_secret_intro.ogg, hmk_secret_loop.ogg]
+	ambience unfortunatedevelopment.ogg
+	stop_previous_music false
+	
+	do_tilt true
+	
+	npc_1 npcoes03
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][MiniDrone,MiniNeuron][Cartridge,OEPearl][Bullet,whythefuckaretheyflashingholyshit]
+	]
+	1 {
+		npc_1 npcstolentv
+		npc_2 npcstolentv2
+		
+		art_alts [
+			[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][MiniDrone,MiniNeuron][SpeechBubble,SpeechBubbleRetroa]
+		]
+	}
+}
+
+oe/ss/e {
+	area_name "SEtIS"
+	area_label_frame 22
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics bgsolid
+	palette 56
+	
+	midfx_graphics funnyrobotgrid
+	midfx_layer 0
+	
+	ambience systemsbus.ogg
+	
+	npc_1 npcoem02
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][MiniFly,MiniNeuron][MiniDrone,MiniNeuron][Cartridge,OEPearl]
+	]
+}
+
+oe/ss/ai {
+	area_name "SEtIS"
+	area_label_frame 22
+	tile_graphics TileOEKW
+	overlay_graphics Overlayscomplex
+	background_graphics bgsolid
+	palette 56
+	
+	midfx_graphics funnyrobotgrid
+	midfx_layer 0
+	
+	ambience systemsbus.ogg
+	
+	npc_1 npcsetis
+	
+	art_alts [
+		[OrbSmall,OrbBlob2][OrbLarge,OrbLarge2][ChainLink2,None][MiniFly,MiniNeuron]
+	]
 }
 
 1d {

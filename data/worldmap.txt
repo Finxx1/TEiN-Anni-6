@@ -28,19 +28,19 @@ meta {
     steventhreshtumors [100 200 300 0]
     stevenlevels [exhaust/future/-1 bastion/future/-0 phlegethon/-1 war/us-0]
     
-    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/sdx gehenna/vd gehenna/ghw war/us phlegethon/ exhaust/future/ bastion/future/] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
-    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/] //launch console automatically when you exit from these worlds
+    mainworlds [depths/main/ exhaust/main/ splunt/ sploot/ abyss/main/ ssshithill/main/ steamworks/main/ swamplands/ mountmoriah/ ghostship/ bastion/main/ hive/h gehenna/gh gehenna/sd gehenna/sdx gehenna/vd gehenna/ghw war/us phlegethon/ exhaust/future/ bastion/future/ oe/sj/ oe/uw/ oe/ss/ oe/ss/e] //if you pause on these worlds, it lets you open the map. otherwise you get "exit area"
+    cartworlds [fate/ membrane/ fallacy/ hypertension/ struggle/ war/crt1 tmjevilution/ painfultonia/ rootvain/ machiavellismask/ oe/cart/] //launch console automatically when you exit from these worlds
     
     headlevel ghostship/-25
     bodylevel exhaust/main/-17
     heartlevel depths/main/-1end
     
-    mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ghostship/-25 ssshithill/main/-a5 ssshithill/main/-b5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-15 gehenna/gh-29 gehenna/ghw-5 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
+    mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ghostship/-25 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-15 gehenna/gh-29 gehenna/ghw-5 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
     game_over_checkpoints [[phlegethon/ phlegethon/-2] [1d 1d-1] [gehenna/gh 1d-1] [gehenna/ghw gehenna/gh-29] [gehenna/sd gehenna/ghw-5]] //if you game over in world "1d", spawn back to 1d-1, etc. this only matters when loading from a save file, otherwise it uses the last checkpoint you visited
     iron_cart_entrypoints [fallacy/-1 struggle/-1 machiavellismask/-1] //used to set the respawn point in an iron cart
     timed_cart_entrypoints [painfultonia/-1] //maybe you want to put a timer on other carts?
-    console_entry_levels [swamplands/-0]
+    console_entry_levels [swamplands/-0 oe/ss/ai-ai]
     nevermore_entry 7-0
     escape_entry depths/main/-16
     nevermore_tumorthresh 450
@@ -69,7 +69,7 @@ nodes {
 		clipname leftside
 		page lightworld
 		unlock_condition visited_levels_any
-        unlock_condition_levels [wip/-1]
+        unlock_condition_levels [oe/sj/-1]
 	}
 	
 	SssHitHill {
@@ -200,9 +200,9 @@ nodes {
 	//The Left Side
 	SecludedStretch {
 		clipname stretch
-		entrylevel 1/main/-1
+		entrylevel oe/sj/-1
 		page leftworld
-		levelgroups [1/main/ 1/secret/]
+		levelgroups [oe/sj/ oe/sj/x]
 		
 		right SssHitHill
 		down SssHitHill
@@ -212,9 +212,9 @@ nodes {
 	
 	KipperedWall {
 		clipname kipperedwall
-		entrylevel 1/main/-1
+		entrylevel oe/uw/-0
 		page leftworld
-		levelgroups [1/main/ 1/secret/]
+		levelgroups [oe/uw/ oe/uw/x]
 		
 		right SecludedStretch
 		left CancerousCan
@@ -223,9 +223,9 @@ nodes {
 	
 	CancerousCan {
 		clipname can
-		entrylevel 1/main/-1
+		entrylevel oe/ss/-1
 		page leftworld
-		levelgroups [1/main/ 1/secret/]
+		levelgroups [oe/ss/ oe/ss/x]
 		
 		right KipperedWall
 		left SEtIS
@@ -233,9 +233,9 @@ nodes {
 	}
 	SEtIS {
 		clipname setis
-		entrylevel 1/main/-1
+		entrylevel oe/ss/e-1
 		page leftworld
-		levelgroups [1/main/ 1/secret/]
+		levelgroups [oe/ss/e]
 		
 		right CancerousCan
 		down CancerousCan
@@ -403,12 +403,12 @@ nodes {
 	
 	Cart4 {
         clipname c4
-        entrylevel hypertension/-1
+        entrylevel oe/cart/-1
         page console
-        cart_cheevolevel hypertension/-all
-        cart_splashframe basiccart
+        cart_cheevolevel oe/cart/-all
+        cart_splashframe glitch
         unlock_condition collected_carts_all
-        unlock_condition_levels [10x-2]
+        unlock_condition_levels [oe/uw/x-5]
         
         down IronCart1
         up Cart3
@@ -517,5 +517,52 @@ nodes {
         
         down Cart1
         up GlitchCart3
+    }
+	
+	//SEtIS
+	Pearl1 {
+        clipname pearl1
+        page setis
+		entrylevel oe/ss/ai-ai
+		levelgroups [oe/ss/ai]
+        unlock_condition collected_carts_all
+        unlock_condition_levels [oe/sj/x-3]   
+        
+		select Pearl1
+        down Pearl2
+        up Pearl4
+    }
+    
+    Pearl2 {
+        clipname pearl2
+        page setis
+        unlock_condition collected_carts_all
+        unlock_condition_levels [oe/uw/x-2]   
+        
+		select Pearl2
+        down Pearl3
+        up Pearl1
+    }
+    
+    Pearl3 {
+        clipname pearl3
+        page setis
+        unlock_condition collected_carts_all
+        unlock_condition_levels [oe/ss/x-2]   
+        
+		select Pearl3
+        down Pearl4
+        up Pearl2
+    }
+	
+	Pearl4 {
+        clipname pearl4
+        page setis
+        unlock_condition collected_carts_all
+        unlock_condition_levels [oe/ss/e-7]   
+        
+		select Pearl4
+        down Pearl1
+        up Pearl3
     }
 }
