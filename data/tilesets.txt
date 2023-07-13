@@ -1702,6 +1702,7 @@ exhaust/secret/ {
 		npc_1 NPCH1
 	}
 	11 {
+		music exhaust_faded.ogg
 		fx_shader_mid lightingmodded
 		midfx_graphics ShadeBox
 		midfx_layer 2
@@ -1712,6 +1713,8 @@ exhaust/secret/ {
 		global_particle_2 cold
 	}
 	12 {
+		music exhaust_faded.ogg
+		music_volume .5
 		fx_shader_mid lightingmodded
 		midfx_graphics ShadeBox
 		midfx_layer 2
@@ -1723,6 +1726,8 @@ exhaust/secret/ {
 		global_particle_2 cold
 	}
 	13 {
+		music exhaust_faded.ogg
+		music_volume 0
 		npc_1 NPCsX2
 		npc_2 NPCFinxx
 		fx_shader_mid lightingmodded
