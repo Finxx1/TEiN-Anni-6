@@ -1,7 +1,7 @@
 {
-    "name": "Anniversary 6 demo",
-    "author": "Finxx + TEiN community",
-    "description": "The grand 6th anniversary mod",
-    "savefile_suffix": ".anni6demo",
+    "name": "Anniversary 6: End of the Road",
+    "author": "The TEiN Community",
+    "description": "Created for the game's 6th anniversary!",
+    "savefile_suffix": ".anni6v1",
     "inherit_save": "none"
 }
