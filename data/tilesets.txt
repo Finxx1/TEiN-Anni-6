@@ -1637,7 +1637,7 @@ exhaust/secret/ {
 	platform_physics "data/platformphysics_steam.txt"
 	
 	start {
-		area_label_frame 0
+		area_label_frame 3
 		music none
 		tile_graphics TileUz
 		overlay_graphics Overlaystheglow
