@@ -4,11 +4,11 @@ pages {
     }
     
     darkworld {
-        collectibles 8 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+        collectibles 9 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
 	
 	leftworld {
-        collectibles 11 //lives + biglives + carts + bodyparts (used for "percent complete" display)
+        collectibles 12 //lives + biglives + carts + bodyparts (used for "percent complete" display)
     }
     
     console {
@@ -52,7 +52,7 @@ meta {
     cart_lives_overrides [[$c1-1 39]]
     cart_title_overrides [[$c1-1 "AllStars"] [$i1-1 "Acceptance"]]
     
-    savefile_completion_counter_max 225 //176 + 37 + 12: (total collectible tumors, carts, body parts (3), and endings (1)), cart achievements, map warp points (number of levels in the array below)
+    savefile_completion_counter_max 226 //178 + 37 + 12: (total collectible tumors, carts, body parts (3), and endings (1)), cart achievements, map warp points (number of levels in the array below)
     savefile_completion_warpoints [swamplands/-0 ssshithill/main/-0 hive/h-0 steamworks/main/-1 war/us-1 mountmoriah/-1 ghostship/-1 depths/main/-1 exhaust/main/-1 bastion/main/-1 gehenna/gh-1 gehenna/gh-51] //visiting these levels counts for save file completion
     save_initiallevel machiavellismask/x-1
     save_lightspawn swamplands/-0
