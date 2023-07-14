@@ -335,7 +335,6 @@
 "ghostship/x-8" {name="???" id=3} #biglife
 
 "depths/main/-1" {name="Depths 1" id=1}
-"depths/main/-1end" {name="Depths 1" id=-1}
 "depths/main/-2" {name="Depths 2" id=2} 
 "depths/main/-3" {name="Depths 3" id=3} #biglife
 "depths/main/-4" {name="Depths 4" id=4} 
@@ -357,13 +356,12 @@
 "depths/main/-18" {name="Salvation 3" id=-1} 
 "depths/main/-19" {name="Salvation 4" id=-1} 
 "depths/main/-20" {name="Salvation 5" id=-1}
+"6-1end" {name="Salvation" id=-1}
 "depths/secret/-1" {name="???" id=1}
 "depths/secret/-2" {name="???" id=2}
 "depths/secret/-3" {name="???" id=3}
 "depths/secret/-4" {name="???" id=4} 
 "depths/secret/-5" {name="???" id=5}
-"depths/secret/-6" {name="???" id=-1}
-"depths/secret/-7" {name="???" id=-1}
 "depths/secret/-14" {name="???" id=-1}
 "depths/secret/-15" {name="???" id=-1}
 "depths/secret/-16" {name="???" id=-1}

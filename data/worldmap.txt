@@ -33,7 +33,7 @@ meta {
     
     headlevel ghostship/-25
     bodylevel exhaust/main/-17
-    heartlevel depths/main/-1end
+    heartlevel 6-1end
     
     mute_warpunlock_message [swamplands/-0 ssshithill/secret/-0 exhaust/main/-18 ghostship/-25 ssshithill/main/-a5 bastion/main/-22 hive/h-21 war/us-20 gehenna/gh-15 gehenna/gh-29 gehenna/ghw-5 gehenna/gh-51 phlegethon/-16] //levels that have a warp point but shouldnt show the "warp point unlocked" message
     
@@ -79,6 +79,7 @@ nodes {
 		levelgroups [ssshithill/main/ ssshithill/secret/]
 		
 		right Swamplands
+		down Swamplands
 		left SecludedStretch
 	}
 	
@@ -160,6 +161,7 @@ nodes {
 		clipname pittimer
 		entrylevel depths/main/-16
 		page lightworld
+		levelgroups [depths/secret/]
 		
 		left Depths
 		right TheFuture

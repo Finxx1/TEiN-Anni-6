@@ -52,18 +52,16 @@ NPCDECEND {
 	]
 }
 
-NPCEscapeEnd {
-	movieclip NPCGFaith
+NPCsecret {
+	movieclip NPCG4
 	sound_id NPCGhost
 	text [
-		"there's\nno way out\nof this"
-		"accept it,\nit's\n'game over'"
-		"\n. . ."
-		"do you think\nsomething will\nchange?"
-		"that can't\nbe right\n. . ."
-		"well, we've\nall been wrong\nbefore"
-		"\n. . ."
-		"come on\nshow us, then"
+		"ITS TIME!!!"
+		"OUR ASCENSION \nITS HERE"
+		"ITS TOO LATE \nFOR YOU"
+		"YOU SHOUDLVE SEEN \nTHE ENGRAVED BRICKS"
+		"THEY REVEALED EVERYTHING \nMY EYES WERE OPENED"
+		"UNFORSEEN INFORMATION \nLIES BEHIND THE \nRUNE BRICKS"
 	]
 }
 

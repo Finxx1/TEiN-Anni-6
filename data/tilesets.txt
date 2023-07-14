@@ -1410,7 +1410,6 @@ depths/main/ {
      tile_graphics Tilehell
      overlay_graphics Overlaysend
      background_graphics bgretro2
-     foreground_graphics none
      fx_shader sludgeripples
      palette 7
 
@@ -1451,10 +1450,8 @@ depths/main/ {
 		}
      18 {
             decoration_2 Decoration7Right
+			npc_1 NPCsecret
          }
-	 1end {
-		npc_1 NPCEscapeEnd
-	 }
 }
 
 depths/secret/ {
@@ -1463,7 +1460,6 @@ depths/secret/ {
      tile_graphics Tilehell
      overlay_graphics Overlaysend
      background_graphics bgretro2
-     foreground_graphics none
      fx_shader sludgeripples
      palette 7
 
@@ -1496,10 +1492,6 @@ depths/secret/ {
      4 {
         shader_param .5
     }
-     7 {
-		background_graphics hellbg
-		shader_param .3
-	 }
 	 19 {
         art_alts [
        	 [Floater, Cartridge][OrbChomp, SmallElectroBall]
@@ -1518,6 +1510,29 @@ depths/secret/ {
     	]
 	music none
     }
+}
+
+6 {
+	area_name "Depths"
+     area_label_frame 4
+     tile_graphics Tilehell
+     overlay_graphics Overlaysend
+     background_graphics bgretro2
+     fx_shader sludgeripples
+     palette 7
+
+     fx_shader_mid lighting
+     midfx_graphics ShadeBox
+     midfx_layer 2
+     shader_param .7
+
+     decoration_1 DiseasesRunes
+     decoration_2 DiseasesRunesBlock
+     decoration_3 DecorationSkeletons
+
+     art_alts [
+       	 [Floater, DeathdlyGhost][OrbChomp, OrbChomp_Ghost][GlowShroom, nothing]
+    	]
 }
 
 exhaust/main/ {
