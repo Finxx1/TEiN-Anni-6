@@ -277,7 +277,7 @@ touhell/ {
     ambience_volume 1
 
 
-    area_type cart
+    area_type glitch
     
     cart_intro_png touhell
     cart_intro_palette 46
@@ -3429,4 +3429,101 @@ gehenna/jv {
     npc_1 NPCB2
     npc_2 NPCG5
     npc_3 none
+}
+
+ultimatum/ {
+     area_name "Ultimatum"
+     area_label_frame 18
+     tile_graphics Tilesewers
+     overlay_graphics Overlaystox2
+     background_graphics neverbg
+     foreground_graphics none
+     fx_shader distortionparticles
+     palette 7
+
+     tile_particle_1 drip
+     tile_particle_2 splash
+
+     art_alts [
+		[ChainLink2, None][OrbSmall, dudsawsmall][OrbLarge, dudsawbig]
+	]
+
+     music [fur_elise_intro.ogg, fur_elise_loop.ogg]
+     ambience ruins.ogg
+     music_volume 1
+     ambience_volume 1
+   
+	3 {
+	fx_shader gravripples
+	}
+	4 {
+	fx_shader nooverlay
+	}
+	5 {
+	fx_shader gravripples
+	platform_physics "data/platformphysics_steam.txt"
+	tile_particle_5 toxicbubblesflipped
+	}
+	
+	exha {
+		palette 48
+		tile_graphics Tileindustrial
+		fx_shader_mid cloudripples
+		midfx_layer 2
+
+		tile_particle_1 smoke_contact
+		tile_particle_2 drip
+		tile_particle_3 splash
+		global_particle_1 bgrain
+		global_particle_2 fgrain
+		decoration_1 SteamGrate1
+		decoration_2 SteamGrate2
+		decoration_3 SteamGrate3
+		art_alts [
+		[OrbSmall, nothing]
+		]
+	}
+	boil {
+		palette 49
+		tile_graphics Tileindustrial
+		fx_shader sludgeripples
+		fx_shader_mid sludgeglow2
+		midfx_graphics SolidBox
+		midfx_layer 2
+		tile_particle_1 lavadump
+		tile_particle_3 toxicdump_right
+		tile_particle_5 toxicbubbles
+		global_particle_1 embers
+	}
+	bast {
+		palette 50
+		fx_shader reflectionripples
+		fx_shader_mid distortionparticles
+		midfx_layer 1
+		tile_graphics Tilesanctuary
+		global_particle_1 cloudwind_light
+		tile_particle_1 waterfall
+		tile_particle_2 waterfall_splash
+		tile_particle_3 bubbles
+		tile_particle_4 drip
+		sfx_file bellbuttons.txt
+		art_alts [
+			[OrbSmall, orbblob][ChainLink2, none]
+		]
+	}
+	lasr {
+		palette 51
+		tile_graphics Tilequarry
+		fx_shader_mid lightingmodded
+		midfx_layer 2
+		midfx_graphics ShadeBox
+		shader_param 0.8
+		decoration_3 OrbHolder
+		global_particle_1 embers
+		global_particle_3 cold
+		sfx_file bellbuttons_future.txt
+		art_alts [
+			[Bullet, BulletLaser][Floater, LaserOrb][ChainLink2, None][OrbSmall, dudsawsmall][OrbLarge, dudsawbig][ThwampGear, ThwampGearFastLeft][Splatter, Splatter2][Mask, Mask2]
+		]
+	}
 }
