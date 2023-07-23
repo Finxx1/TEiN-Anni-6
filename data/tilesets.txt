@@ -2534,7 +2534,7 @@ gehenna/gh {
 		tile_particle_1 toxicbubbles
 		tile_particle_5 toxicbubblesflipped
 		music_volume 1
-		music [trs2_intro.ogg, trs2_loop.ogg]
+		music [tenebre_intro.ogg, tenebre_loop.ogg]
 		tile_graphics Tilefleshy
 		overlay_graphics Overlaysfleshy
 		art_alts [
@@ -2561,7 +2561,7 @@ gehenna/gh {
 		tile_particle_1 toxicbubbles
 		tile_particle_5 toxicbubblesflipped
 		music_volume 1
-		music [trs2_intro.ogg, trs2_loop.ogg]
+		music [tenebre_intro.ogg, tenebre_loop.ogg]
 		tile_graphics Tilefleshy
 		overlay_graphics Overlaysfleshy
 		art_alts [
@@ -2588,7 +2588,7 @@ gehenna/gh {
 		tile_particle_1 toxicbubbles
 		tile_particle_5 toxicbubblesflipped
 		music_volume 1
-		music [trs2_intro.ogg, trs2_loop.ogg]
+		music [tenebre_intro.ogg, tenebre_loop.ogg]
 		tile_graphics Tilefleshy
 		overlay_graphics Overlaysfleshy
 		art_alts [
@@ -2615,7 +2615,7 @@ gehenna/gh {
 		tile_particle_1 toxicbubbles
 		tile_particle_5 toxicbubblesflipped
 		music_volume 1
-		music [trs2_intro.ogg, trs2_loop.ogg]
+		music [tenebre_intro.ogg, tenebre_loop.ogg]
 		tile_graphics Tilefleshy
 		overlay_graphics Overlaysfleshy
 		art_alts [
@@ -2629,10 +2629,10 @@ gehenna/gh {
 		]
 	}
 	21 {
-		music [trs2_outro.ogg, none]
+		music [tenebre_outro.ogg, none]
 	}
 	22 {
-		music [trs3_intro.ogg, trs3_loop.ogg]
+		music [tenebre_intro.ogg, tenebre_loop.ogg]
 	}
 	
 	f1 {
