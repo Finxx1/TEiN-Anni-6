@@ -1545,3 +1545,71 @@ uwfx_steam_left {
     inherit_speed 1
     tags [player_push, collide_tile]
 }
+
+rotting {
+    #system ToxicParticle
+    movieclip ToxicParticle
+    max_particles 300
+    layer 1
+    livebounds [-10, 64, -10, 42]
+    prewarm [20,6]
+    batched true
+    
+    #emitter properties
+    emit_rate 30
+    emit_amount 6
+    emit_direction [0, 1]
+    emit_spread 0
+    emit_box [54, 32]      #54 for "level width", 32 for "level height"    
+    emit_offset [27,16]   #27,16 for middle of the level. 0,0 for bottom left. 54,32 for upper right. this one sets it as a strip at the top 
+    
+    #particle animation properties
+    particle_lifetime [1,2]
+    initial_speed [.3, 1.5]
+    initial_rotation [0,360]
+    rotation_speed [-30, 30]
+    force [0, -1]
+    friction 1
+    size_start [.7,1.2]
+    size_end [.1,.3]
+    alpha_start 1
+    alpha_end 1
+    face_moving_direction true
+    speed_scale 0
+    inherit_speed 0
+    tags []
+}
+
+ghosts {
+    #system 
+    movieclip MiniGhost
+    max_particles 200
+    layer 0
+    livebounds [-10, 64, -10, 42]
+    prewarm [20,48]
+    batched true
+    
+    #emitter properties
+    emit_rate 2
+    emit_amount 2
+    emit_direction [0, 1]
+    emit_spread 20
+    emit_box [54, 16]      #54 for "level width", 32 for "level height"    
+    emit_offset [27,0]   #27,16 for middle of the level. 0,0 for bottom left. 54,32 for upper right. this one sets it as a strip at the top 
+    
+    #particle animation properties
+    particle_lifetime 80
+    initial_speed [.3, 1.5]
+    initial_rotation [0,0]
+    rotation_speed [0,0]
+    force 0
+    friction 1
+    size_start [.75,1.25]
+    size_end 1
+    alpha_start 1
+    alpha_end 1
+    face_moving_direction false
+    speed_scale 0
+    inherit_speed 0
+    tags []
+}
